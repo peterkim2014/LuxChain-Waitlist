@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWallet</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact_page.css') }}">
+</head>
+<body>
+
+    <div id="global">
+        <div id="contact-us">
+            <div class="side-nav-bar">
+                <div class="side-nav-links">
+                    <a href="#contact-us">Contact us</a>
+                </div>
+            </div>
+
+            <div class="contact-body">
+                <div class="top-nav-bar">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact Us</a>
+                </div>
+
+                <div class="contact-main">
+
+                    <div class="intro-body-header">
+                        <div class="intro-header-title">
+                            <img src="../static/media/logo.png" alt="Logo">
+                            <h1>LuxChain</h1>
+                        </div>
+                        <p>Cryptocurrency Asset Wallet</p>
+                    </div>
+
+                    <div class="contact-content">
+                        <h2>Contact Us</h2>
+                        {% with messages = get_flashed_messages(category_filter=['contact']) %}
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <p>{{ message }}</p>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                        <form class="contact-form" action="/contact_submit" method="POST">
+                            <label class="form-name" for="name">
+                                Name
+                                <input type="text" name="name">
+                            </label>
+                            <label class="form-email" for="email">
+                                Email 
+                                <input type="text" name="email">
+                            </label>
+                            <label class="form-header" for="header">
+                                Header 
+                                <input type="text" name="header">
+                            </label>
+                            <label class="form-description" for="description">
+                                Description 
+                                <textarea name="description"></textarea>
+                            </label>
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxChain</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home_page.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='javascript/home_page.js') }}" defer></script>
+</head>
+<body>
+    
+    <div id="global">
+
+        <div id="page-intro">
+            <div class="side-nav-bar">
+                <div class="side-nav-links">
+                    <a href="#page-intro">Intro</a>
+                    <a href="#page-app">App Preview</a>
+                    <a href="#page-waitlist">Join Waitlist</a>
+                </div>
+            </div>
+
+            <div class="body-intro">
+                <div class="top-nav-bar">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact Us</a>
+                </div>
+
+                <div class="intro">
+                    <div class="intro-main">
+                        <div class="intro-title">
+                            <div class="intro-title-header">
+                                <img class="intro-logo" src="../static/media/logo.png" alt="logo">
+                                <h1>LuxChain</h1>
+                            </div>
+                            <p class="intro-slogan">
+                                Cryptocurrency Asset Wallet
+                            </p>
+                        </div>
+                        <div class="intro-description">
+                            <p class="intro-description-text">
+                                <b>Lower</b> Transactions with 
+                            </p>
+                            <p class="second-row">
+                                <b>Faster</b> Block Finalization
+                            </p>
+                        </div>
+                    </div>
+                    <div class="intro-footer">
+                        <p class="intro-footer-text">
+                            Start Journey
+                        </p>
+                        <img class="intro-footer-arrow" src="../static/media/downArrow.png" alt="down arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-app">
+
+            <div class="wallet-intro">
+                <h1>Crypto Wallet</h1>
+
+                <div class="wallet-details">
+                    <div class="wallet-flexibility">
+                        <h2>Transaction Flexibility</h2>
+                        <p>Send and Receive digital currencies at your convenience</p>
+                    </div>
+                    <div class="wallet-borderless">
+                        <h2>Borderless Transactions</h2>
+                        <p>Make transactions anywhere in the world</p>
+                    </div>
+                    <div class="wallet-ownership">
+                        <h2>Ownership of Digital Assets</h2>
+                        <p>Own and Manage your digital assets</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wallet-process">
+                <div class="process-steps">
+                    <img src="../static/media/process-1.png" alt="Step 1">
+                    <p>Invite your friends</p>
+                </div>
+                <div class="process-steps">
+                    <img src="../static/media/process-2.png" alt="Step 2">
+                    <p>Make secure transactions</p>
+                </div>
+                <div class="process-steps">
+                    <img src="../static/media/process-3.png" alt="Step 3">
+                    <p>Process transactions quickly with low transaction cost</p>
+                </div>
+            </div>
+
+            <div class="wallet-strip-3-points">
+                <p>Comprehensive dashboard displaying key information</p>
+                <p>Secure and encrypted transactions</p>
+                <p>One-click access to common wallet functions</p>
+            </div>
+
+            <div class="app-preview">
+                <div class="preview-body">
+                    <div class="diagram-text">
+                        <p class="diagram-account">Account Details</p>
+                        <p class="diagram-functions">Quick Access Functions</p>
+                    </div>
+
+                    <div class="app-icon-description">
+                        <p>Intuitive Wallet Interface</p>
+                        <p>Social Payment Integration</p>
+                        <p>Personalized Transaction Insights</p>
+                    </div>
+                </div>
+
+                <div class="app-preview-footer">
+                    <p class="payment-process">Simplified payment process, reducing friction</p>
+                    <p class="payment-notification">Real-time payment notifications for users' convenience</p>
+                    <p class="payment-interface">Easy-to-follow user interface for blockchain interactions</p>
+                </div>
+            </div>
+
+            <div class="system-comparison">
+                <div class="system-header">
+                    <p class="header-bank">Banking System</p>
+                    <p class="header-lux">Luxchain System</p>
+                </div>
+
+                <div class="system-content">
+                    <div class="bank-content">
+                        <p>Centralized</p>
+                        <p>Susceptible to Fraud</p>
+                        <p>Slow Cross Border Transactions</p>
+                        <p>Not Fully Transparent</p>
+                        <p>High Fees for overdraft, cross border</p>
+                    </div>
+
+                    <div class="lux-content">
+                        <p>Decentralized</p>
+                        <p>Pooled Security</p>
+                        <p>Quick Cross-Chain Transactions</p>
+                        <p>High Level of Privacy</p>
+                        <p>Low Transaction Fees</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="page-waitlist">
+
+            <div class="waitlist-body">
+                <div class="waitlist-main">
+
+                    <div class="waitlist-content">
+                        <h2 class="waitlist-header">Join the Community</h2>
+    
+                        <p><i>Enroll in our waitlist to receive priority rewards!</i></p>
+                    </div>
+    
+                    {% with messages = get_flashed_messages(category_filter=['register']) %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p>{{ message }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+    
+                    <form class="waitlist-form" action="/join_waitlist" method="POST">
+                        <label class="waitlist-first" for="first_name">
+                            First name
+                            <input type="text" name="first_name" placeholder="John">
+                        </label>
+                        <label class="waitlist-last" for="last_name">
+                            Last name
+                            <input type="text" name="last_name" placeholder="Doe">
+                        </label>
+                        <label class="waitlist-email" for="email">
+                            Email
+                            <input type="text" name="email" placeholder="johndoe@gmail.com">
+                        </label>
+                        <button>Submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        <div id=""></div>
+
+    </div>
+
+
+</body>
+</html>

@@ -21,13 +21,7 @@ html{
     scroll-snap-type: y mandatory;
     overscroll-behavior: none;
 }
-[id^="about-"] {
-    scroll-snap-align: start; /* Aligns to the start (top) of the element */
-    /* You may want to add other styles here as needed */
-}
-.disable-snap {
-    scroll-snap-type: none !important;
-}
+
 *, body, html {
     margin: 0;
     /* width: 100%; */

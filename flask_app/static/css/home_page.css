@@ -1,10 +1,3 @@
-[id^="page-"] {
-    scroll-snap-align: start;
-}
-.disable-snap {
-    scroll-snap-type: none !important;
-}
-
 html{
     overflow-x: hidden;
     overflow-y: scroll; /* Enables scrolling if necessary */
@@ -302,7 +295,7 @@ html{
                     width: 50%;
                     text-indent: 10%;
         } .system-comparison {
-            height: 80%;
+            height: 80vh;
             width: 90%;
             display: flex;
             flex-direction: column;
@@ -316,27 +309,28 @@ html{
                 margin-left: 20%;
                 margin-top: 1.5%;
                 } .header-bank {
-                    height: 80%;
+                    height: 85%;
                     width: 25%;
                     font-size: 1.1em;
                     margin-left: 19%;
                 } .header-lux {
-                    height: 80%;
+                    height: 85%;
                     width: 25%;
                     font-size: 1.1em;
             } .system-content {
                 display: flex;
                 justify-content: space-between;
                 align-items: space-around;
-                height: 50%;
+                height: 60%;
                 width: 88%;
-                margin-top: 7%;
+                margin-top: 11.5%;
                 margin-left: 17.5%;
                 } .bank-content {
                     display: flex;
                     flex-direction: column;
-                    height: 74%;
+                    height: 100%;
                     text-align: end;
+                    justify-content: space-between;
                     } .bank-content > p {
                         height: 10%;
                         width: 100%;
@@ -344,15 +338,13 @@ html{
                 } .lux-content {
                     display: flex;
                     flex-direction: column;
-                    height: 74%;
+                    height: 100%;
+                    justify-content: space-between;
                     } .lux-content > p {
                         height: 10%;
                         width: 100%;
-                        font-size: 0.8em;
-                    } 
-
-
-     #page-waitlist {
+                        font-size: 0.8em;              
+    } #page-waitlist {
         width: 100vw;
         height: 100vh;
         background-image: url("../media/waitlistBackground.png");

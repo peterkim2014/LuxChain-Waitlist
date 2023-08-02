@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+    $('a[href*="#page-"]').on('click', function (e) {
+        e.preventDefault();
+        var targetSection = $(this).attr('href');
+        var targetPos = $(targetSection).offset().top;
+
+        $('html, body').animate({
+            scrollTop: targetPos
+        }, 1000);
+    });
+
     $(window).on('scroll', function () {
         var scrollPos = $(window).scrollTop();
 

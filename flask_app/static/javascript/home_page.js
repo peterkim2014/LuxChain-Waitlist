@@ -10,32 +10,6 @@ $(document).ready(function () {
     // Initialize the opacity of all sections to 0
     $('p, h1, h2, h3').css('opacity', '0');
 
-    function checkSection(scrollPos) {
-        var introPos = $('#page-intro').offset().top;
-        var introHeight = $('#page-intro').height();
-        var appPos = $('#page-app').offset().top;
-        var appHeight = $(window).height() * 3.2;
-        var waitlistPos = $('#page-waitlist').offset().top;
-        var waitlistHeight = $('#page-waitlist').height();
-
-        if (scrollPos >= introPos && scrollPos < introPos + introHeight * 0.5) {
-            return '#page-intro';
-        } else if (scrollPos >= appPos && scrollPos < appPos + appHeight) {
-            return '#page-app';
-        } else if (scrollPos >= waitlistPos - waitlistHeight * 0.5 && scrollPos < waitlistPos + waitlistHeight * 0.5) {
-            return '#page-waitlist';
-        } else {
-            return '';
-        }
-    }
-
-    // Determine the current section on page load
-    currentSection = checkSection($(window).scrollTop());
-    if (currentSection) {
-        animateOpacity(currentSection, '1');
-    }
-
-    // Event handlers
     $('a[href*="#page-"]').on('click', function (e) {
         e.preventDefault();
         var targetSection = $(this).attr('href');
@@ -48,7 +22,27 @@ $(document).ready(function () {
 
     $(window).on('scroll', function () {
         var scrollPos = $(window).scrollTop();
-        var newSection = checkSection(scrollPos);
+        var newSection = '';
+
+        var introPos = $('#page-intro').offset().top;
+        var introHeight = $('#page-intro').height();
+        var appPos = $('#page-app').offset().top;
+        var appHeight = $(window).height() * 3.2;
+        var waitlistPos = $('#page-waitlist').offset().top;
+        var waitlistHeight = $('#page-waitlist').height();
+
+        if (scrollPos >= introPos && scrollPos < introPos + introHeight * 0.5) {
+            newSection = '#page-intro';
+            $('.side-nav-links a').css('color', 'white');
+        } else if (scrollPos >= appPos && scrollPos < appPos + appHeight) {
+            newSection = '#page-app';
+            $('.side-nav-links a').css('color', 'black');
+        } else if (scrollPos >= waitlistPos - waitlistHeight * 0.5 && scrollPos < waitlistPos + waitlistHeight * 0.5) {
+            newSection = '#page-waitlist';
+            $('.side-nav-links a').css('color', 'white');
+        } else {
+            $('.side-nav-links a').css('color', 'black');
+        }
 
         // If the active section has changed
         if (newSection !== currentSection && newSection) {
@@ -61,4 +55,5 @@ $(document).ready(function () {
             currentSection = newSection;
         }
     });
+    $(window).trigger('scroll');
 });

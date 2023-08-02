@@ -18,7 +18,7 @@ html{
         text-decoration: none;   
         } #page-intro {
             margin: 0;
-            background-image: url("../media/backgroundIntro.png");
+            background-image: url("../media/backgroundIntro.webp");
             background-size: 100%;
             background-repeat: no-repeat;
             width: 100%;
@@ -386,7 +386,7 @@ html{
     } #page-waitlist {
         width: 100vw;
         height: 100vh;
-        background-image: url("../media/waitlistBackground.png");
+        background-image: url("../media/waitlistBackground.webp");
         background-size: 100%;
         background-repeat: no-repeat;
         display: flex;

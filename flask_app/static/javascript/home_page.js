@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    // Define a function to animate the opacity of specified elements
+    function animateOpacity(elements) {
+        elements.stop(true).css('opacity', '0').animate({
+            opacity: '1'
+        }, 1000);
+    }
 
     $('a[href*="#page-"]').on('click', function (e) {
         e.preventDefault();
@@ -7,7 +13,9 @@ $(document).ready(function () {
 
         $('html, body').animate({
             scrollTop: targetPos
-        }, 1000);
+        }, 1000, function() {
+            animateOpacity($(targetSection).find('p, h1, h2, h3'));
+        });
     });
 
     $(window).on('scroll', function () {
@@ -21,16 +29,15 @@ $(document).ready(function () {
         var waitlistPos = $('#page-waitlist').offset().top;
         var waitlistHeight = $('#page-waitlist').height();
 
-        // Check if the page is scrolled more than 50% through the #page-intro section
+        // Animate opacity for the section that is currently visible
         if (scrollPos >= introPos && scrollPos < introPos + introHeight * 0.5) {
+            animateOpacity($('#page-intro').find('p, h1, h2, h3'));
             $('.side-nav-links a').css('color', 'white');
-        } 
-        // Check if the page is within the #page-app section
-        else if (scrollPos >= appPos && scrollPos < appPos + appHeight) {
+        } else if (scrollPos >= appPos && scrollPos < appPos + appHeight) {
+            animateOpacity($('#page-app').find('p, h1, h2, h3'));
             $('.side-nav-links a').css('color', 'black');
-        } 
-        // Check if the page is scrolled so that at least 50% of the #page-waitlist section is visible
-        else if (scrollPos >= waitlistPos - waitlistHeight * 0.5 && scrollPos < waitlistPos + waitlistHeight * 0.5) {
+        } else if (scrollPos >= waitlistPos - waitlistHeight * 0.5 && scrollPos < waitlistPos + waitlistHeight * 0.5) {
+            animateOpacity($('#page-waitlist').find('p, h1, h2, h3'));
             $('.side-nav-links a').css('color', 'white');
         } else {
             $('.side-nav-links a').css('color', 'black');

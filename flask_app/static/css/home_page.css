@@ -5,6 +5,10 @@
 .side-nav-links a {
     color: white;
 }
+p, h1, h2, h3 {
+    opacity: 0;
+    /* transition: opacity 0.4s ease-in-out; */
+}
 
 html{
     overflow-x: hidden;
@@ -237,7 +241,7 @@ html{
             display: flex;
             justify-content: space-between;
             margin-left: 18.5%;
-            margin-top: 15.8%;
+            margin-top: 16%;
             color: white;
             } .wallet-strip-3-points > p {
                 height: 100%;
@@ -289,7 +293,7 @@ html{
                 height: 14%;
                 width: 100%;
                 align-items: flex-end;
-                margin-top: -8.75%;
+                margin-top: -8.62%;
                 margin-left: 8.5%;
                 font-size: 0.8em;
                 } .payment-process {
@@ -365,7 +369,7 @@ html{
                     height: 100%;
                     justify-content: space-around;
                     width: 50%;
-                    margin-top: 3.25%;
+                    margin-top: 4.25%;
                     margin-left: 35.5%;
                     gap: 3.5vh;
                     } .lux-details {
@@ -493,7 +497,7 @@ html{
                             border-radius: 4px;
                             border-width: 0;
                     } .waitlist-form > button {
-                        height: 11%;
+                        height: 12%;
                         width: 61.25%;
                         margin-left: 1.75%;
                         background-color: rgba(22, 109, 253, 1);

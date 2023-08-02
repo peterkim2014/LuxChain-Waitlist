@@ -1,3 +1,11 @@
+/* p, h1, h2 {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+} */
+.side-nav-links a {
+    color: white;
+}
+
 html{
     overflow-x: hidden;
     overflow-y: scroll; /* Enables scrolling if necessary */

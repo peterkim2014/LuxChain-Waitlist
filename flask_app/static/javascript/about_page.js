@@ -46,7 +46,7 @@ $(document).ready(function () {
         var introPos = $('#about-intro').offset().top;
         var introHeight = $('#about-intro').height();
         var companyPos = $('#about-company').offset().top - $(window).height();
-        var companyHeight = $('#about-company').height() - $(window).height() * 0.5;
+        var companyHeight = $('#about-company').height();
 
         if (scrollPos >= introPos && scrollPos < introPos + introHeight * 0.5) {
             return '#about-intro';

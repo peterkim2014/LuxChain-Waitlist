@@ -21,6 +21,14 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    // Event delegation for the .top-nav-bar links
+    $('.top-nav-bar').on('mouseenter click', 'a', function(event) {
+        // Remove the 'active' class from all links
+        $('.top-nav-bar a').removeClass('active');
+        // Add the 'active' class to the hovered or clicked link
+        $(this).addClass('active');
+    });
+
     $(window).on('scroll', function () {
         var scrollPos = $(window).scrollTop();
         var newSection = checkSection(scrollPos);
@@ -37,8 +45,8 @@ $(document).ready(function () {
     function checkSection(scrollPos) {
         var introPos = $('#about-intro').offset().top;
         var introHeight = $('#about-intro').height();
-        var companyPos = $('#about-company').offset().top - $(window).height() * 0.5;;
-        var companyHeight = $('#about-company').height() - $(window).height() * 0.5;;
+        var companyPos = $('#about-company').offset().top - $(window).height();
+        var companyHeight = $('#about-company').height() - $(window).height() * 0.5;
 
         if (scrollPos >= introPos && scrollPos < introPos + introHeight * 0.5) {
             return '#about-intro';
@@ -54,29 +62,4 @@ $(document).ready(function () {
     if (currentSection) {
         animateOpacity(currentSection, '1');
     }
-
-
-    $(document).ready(function() {
-        // Event delegation for the .top-nav-bar links
-        $('.top-nav-bar').on('mouseenter click', 'a', function(event) {
-            // Remove the 'active' class from all links
-            $('.top-nav-bar a').removeClass('active');
-            // Add the 'active' class to the hovered or clicked link
-            $(this).addClass('active');
-        });
-    
-        // Event delegation for the 'a' tags in .side-nav-links
-        $('.side-nav-links').on('click', 'a', function(event) {
-            var href = $(this).attr('href');
-            var target = $(href);
-    
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 2000, "easeInOutExpo");
-                return false;
-            }
-        });
-    });
-
 });

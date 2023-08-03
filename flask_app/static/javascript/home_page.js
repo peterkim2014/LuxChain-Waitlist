@@ -26,15 +26,15 @@ $(document).ready(function () {
 
         var introPos = $('#page-intro').offset().top;
         var introHeight = $('#page-intro').height();
-        var appPos = $('#page-app').offset().top;
-        var appHeight = $(window).height() * 3.2;
+        var appPos = $('#page-app').offset().top - $(window).height() * 0.5; // Changed this line
+        var appHeight = $(window).height() * 3.2 - - $(window).height() * 0.5;;
         var waitlistPos = $('#page-waitlist').offset().top;
         var waitlistHeight = $('#page-waitlist').height();
 
         if (scrollPos >= introPos && scrollPos < introPos + introHeight * 0.5) {
             newSection = '#page-intro';
             $('.side-nav-links a').css('color', 'white');
-        } else if (scrollPos >= appPos && scrollPos < appPos + appHeight) {
+        } else if (scrollPos >= appPos && scrollPos < appPos + appHeight) { // Updated condition
             newSection = '#page-app';
             $('.side-nav-links a').css('color', 'black');
         } else if (scrollPos >= waitlistPos - waitlistHeight * 0.5 && scrollPos < waitlistPos + waitlistHeight * 0.5) {

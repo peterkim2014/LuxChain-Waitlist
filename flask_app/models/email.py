@@ -8,7 +8,7 @@ old_msg_text = """
     <head>
     </head>
     <body>
-        <div class="email" style="height: 80vh; background: url('emailBackground.png'); background-size: cover; background-repeat: no-repeat;">
+        <div class="email" style="height: 80vh; background-image: url('emailBackground.png'); background-size: cover; background-repeat: no-repeat;">
 
             <p class="email-header" style="height: 12%; width: 100%; text-align: end; direction: rtl; text-align: end;">Ticket #{number}</p>
 
@@ -32,20 +32,19 @@ msg_text = """
     <head>
     </head>
     <body>
-        <table class="email" style="height: 80vh; background: url('emailBackground.png'); background-size: cover; background-repeat: no-repeat;">
-        <tr>
-            <td>
-                <p class="email-header" style="height: 12%; width: 100%; text-align: end; direction: rtl; text-align: end;">Ticket #{number}</p>
-            </td>
-        </tr>
+        <table class="email" style="height: 100vh; background: 'emailBackground.png';">
+            <tr>
+                <td>
+                    <p class="email-header" style="height: 12%; width: 100%; text-align: end;">Ticket #{number}</p>
+                </td>
+            </tr>
 
+            <tr style="text-align: start;">Congratulations! You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</tr>
 
-                <tr>Congratulations! You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</tr>
+            <tr style="text-align: start;">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</tr>
 
-                <tr>LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</tr>
-
-                <tr>Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</tr>
-                <tr>Our best, <br>LuxChain Team</tr>
+            <tr style="text-align: start;">Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</tr>
+            <tr style="text-align: start;">Our best, <br>LuxChain Team</tr>
 
         </table>
     </body>

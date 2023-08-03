@@ -7,7 +7,11 @@ html{
 p, h1, h2, h3 {
     opacity: 0;
     /* transition: opacity 0.4s ease-in-out; */
-}
+} .top-nav-bar a:hover, .top-nav-bar a:active {
+    border-bottom: 2px solid white; /* Change the color to whatever you prefer */
+    } .top-nav-bar a {
+    transition: border-bottom 0.01s ease-in-out;
+} 
 
 *, body, html {
     margin: 0;

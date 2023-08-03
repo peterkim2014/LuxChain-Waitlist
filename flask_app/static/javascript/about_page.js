@@ -7,29 +7,8 @@ $(document).ready(function () {
         }, 1000);
     }
 
-    function checkSection(scrollPos) {
-        var introPos = $('#about-intro').offset().top;
-        var introHeight = $('#about-intro').height();
-        var companyPos = $('#about-company').offset().top;
-        var companyHeight = $('#about-company').height();
-
-        if (scrollPos >= introPos && scrollPos < introPos + introHeight) {
-            return '#about-intro';
-        } else if (scrollPos >= companyPos && scrollPos < companyPos + companyHeight) {
-            return '#about-company';
-        } else {
-            return '';
-        }
-    }
-
     // Initialize the opacity of all sections to 0
     $('p, h1, h2, h3').css('opacity', '0');
-
-    // Determine the current section on page load
-    currentSection = checkSection($(window).scrollTop());
-    if (currentSection) {
-        animateOpacity(currentSection, '1');
-    }
 
     // Event handlers
     $('a[href*="#about-"]').on('click', function (e) {
@@ -54,4 +33,50 @@ $(document).ready(function () {
             currentSection = newSection;
         }
     });
+
+    function checkSection(scrollPos) {
+        var introPos = $('#about-intro').offset().top;
+        var introHeight = $('#about-intro').height();
+        var companyPos = $('#about-company').offset().top - $(window).height() * 0.5;;
+        var companyHeight = $('#about-company').height() - $(window).height() * 0.5;;
+
+        if (scrollPos >= introPos && scrollPos < introPos + introHeight * 0.5) {
+            return '#about-intro';
+        } else if (scrollPos >= companyPos && scrollPos < companyPos + companyHeight) {
+            return '#about-company';
+        } else {
+            return '';
+        }
+    }
+
+    // Determine the current section on page load
+    currentSection = checkSection($(window).scrollTop());
+    if (currentSection) {
+        animateOpacity(currentSection, '1');
+    }
+
+
+    $(document).ready(function() {
+        // Event delegation for the .top-nav-bar links
+        $('.top-nav-bar').on('mouseenter click', 'a', function(event) {
+            // Remove the 'active' class from all links
+            $('.top-nav-bar a').removeClass('active');
+            // Add the 'active' class to the hovered or clicked link
+            $(this).addClass('active');
+        });
+    
+        // Event delegation for the 'a' tags in .side-nav-links
+        $('.side-nav-links').on('click', 'a', function(event) {
+            var href = $(this).attr('href');
+            var target = $(href);
+    
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 2000, "easeInOutExpo");
+                return false;
+            }
+        });
+    });
+
 });

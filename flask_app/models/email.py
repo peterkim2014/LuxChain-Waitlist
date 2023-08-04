@@ -28,12 +28,56 @@ old_msg_text = """
 
 
 msg_text = """
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <table class="email" style="height: 100vh; background: 'emailBackground.png';">
+        <table class="email" width="84.1%" height="50%" valign="top" cellpadding="0" cellspacing="0" border="0">
             <tr>
+                <td width="750" height="815" background="https://i.imgur.com/EZxrgB9.png">
+                    <table cellpadding="0" cellspacing="0" border="0" margin="auto" >
+                        <tr>
+                            <p class="email-header" style="height: 12%; width: 90%; text-align: end;">Ticket #{number}</p>
+                        </tr>
+                        <tr style="padding-left: 5%;">
+                            <p style="text-align: start; width: 75%; height: 20%;">Congratulations! You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</p>
+
+                            <p style="text-align: start; width: 75%; height: 20%;">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</p>
+
+                            <p style="text-align: start; width: 75%; height: 20%;">Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</p>
+                            
+                            <p style="text-align: start; width: 40%; height: 10%;">Our best, <br>LuxChain Team</p>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+"""
+
+new_old_msg_text = """
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <table class="email" width="100%" height="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="background: 'emailBackground.png'; background-size: cover; background-repeat: no-repeat;">
+                    <!--[if gte mso 9]>
+                    <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; width: 100%; height: 100%;" src="emailBackground.png" />
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; width: 100%; height: 100%;">
+                    <v:fill type="tile" src="emailBackground.png" color="#f6f6f6" />
+                    <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                    <![endif]-->
+                    <div>
+                        <tr>
                 <td>
                     <p class="email-header" style="height: 12%; width: 100%; text-align: end;">Ticket #{number}</p>
                 </td>
@@ -45,11 +89,20 @@ msg_text = """
 
             <tr style="text-align: start;">Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</tr>
             <tr style="text-align: start;">Our best, <br>LuxChain Team</tr>
-
+                    </div>
+                    <!--[if gte mso 9]>
+                    </v:textbox>
+                    </v:rect>
+                    </v:image>
+                    <![endif]-->
+                </td>
+            </tr>
         </table>
     </body>
 </html>
+
 """
+
 
 class Email:
 

@@ -93,7 +93,7 @@ $(document).ready(function () {
     // Show processing indication
         var processing = document.getElementById("processing");
         var checkmark = document.getElementById("checkmark");
-        processing.style.display = 'block';
+        // processing.style.display = 'block';
         
         // Save the original button text and disable the button
         var originalButtonText = submitButton.textContent;
@@ -119,6 +119,7 @@ $(document).ready(function () {
                 showSuccessMessage();
             } else {
                 // Handle failure
+
             }
         })
         .catch(error => {

@@ -11,9 +11,9 @@ $(document).ready(function () {
 
     function setSideNavBarBoxPosition(section) {
         if (section === '#about-intro') {
-            $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '157.5%');
+            $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '158.25%');
         } else if (section === '#about-company') {
-            $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '196%');
+            $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '196.75%');
         }
     }
 

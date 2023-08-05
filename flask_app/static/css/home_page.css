@@ -56,13 +56,13 @@ html{
                         margin-left: 25%;
                         color: white;
                 } .side-nav-bar > img {
-                    width: 10%;
-                    height: 2.75%;
-                    transition: margin-top 0.25s ease-in-out;
+                    width: 8.5%;
+                    height: 2.25%;
+                    transition: margin-top 0.3s ease-in-out;
                     margin-top: 135%;
                     /* margin-top: 173.5%; */
                     /* margin-top: 212%; */
-                    margin-left: 25%;
+                    margin-left: 26%;
             } .body-intro {
                 width: 100%;
                 display: flex;

@@ -3,30 +3,6 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from flask_app.models.info import email, app_password, username
 
-old_msg_text = """
-<html>
-    <head>
-    </head>
-    <body>
-        <div class="email" style="height: 80vh; background-image: url('emailBackground.png'); background-size: cover; background-repeat: no-repeat;">
-
-            <p class="email-header" style="height: 12%; width: 100%; text-align: end; direction: rtl; text-align: end;">Ticket #{number}</p>
-
-            <div class="email-body" style="height: 88%; width: 90%; margin-top: 5%;">
-                <p>Congratulations! You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</p>
-
-                <p>LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</p>
-
-                <p>Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</p>
-                <p>Our best, <br>LuxChain Team</p>
-
-            </div>
-        </div>
-    </body>
-</html>
-"""
-
-
 msg_text = """
 <!DOCTYPE html>
 <html>
@@ -61,51 +37,6 @@ msg_text = """
     </body>
 </html>
 """
-
-new_old_msg_text = """
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <table class="email" width="100%" height="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td style="background: 'emailBackground.png'; background-size: cover; background-repeat: no-repeat;">
-                    <!--[if gte mso 9]>
-                    <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; width: 100%; height: 100%;" src="emailBackground.png" />
-                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; width: 100%; height: 100%;">
-                    <v:fill type="tile" src="emailBackground.png" color="#f6f6f6" />
-                    <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-                    <![endif]-->
-                    <div>
-                        <tr>
-                <td>
-                    <p class="email-header" style="height: 12%; width: 100%; text-align: end;">Ticket #{number}</p>
-                </td>
-            </tr>
-
-            <tr style="text-align: start;">Congratulations! You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</tr>
-
-            <tr style="text-align: start;">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</tr>
-
-            <tr style="text-align: start;">Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</tr>
-            <tr style="text-align: start;">Our best, <br>LuxChain Team</tr>
-                    </div>
-                    <!--[if gte mso 9]>
-                    </v:textbox>
-                    </v:rect>
-                    </v:image>
-                    <![endif]-->
-                </td>
-            </tr>
-        </table>
-    </body>
-</html>
-
-"""
-
 
 class Email:
 

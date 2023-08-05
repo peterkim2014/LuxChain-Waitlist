@@ -32,9 +32,14 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         var scrollPos = $(window).scrollTop();
         var newSection = checkSection(scrollPos);
-
+    
         if (newSection !== currentSection && newSection) {
             animateOpacity(newSection, '1');
+            if (newSection === '#about-intro') {
+                $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '157.5%');
+            } else if (newSection === '#about-company') {
+                $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '196%');
+            }
             if (currentSection) {
                 animateOpacity(currentSection, '0');
             }

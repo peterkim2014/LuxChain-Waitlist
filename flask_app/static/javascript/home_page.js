@@ -29,15 +29,15 @@ $(document).ready(function () {
     // Initialize the opacity of all sections to 0
     $('p, h1, h2, h3').css('opacity', '0');
 
-    $('a[href*="#page-"]').on('click', function (e) {
-        e.preventDefault();
-        var targetSection = $(this).attr('href');
-        var targetPos = $(targetSection).offset().top;
+    // $('a[href*="#page-"]').on('click', function (e) {
+    //     e.preventDefault();
+    //     var targetSection = $(this).attr('href');
+    //     var targetPos = $(targetSection).offset().top;
 
-        $('html, body').animate({
-            scrollTop: targetPos
-        }, 1000);
-    });
+    //     $('html, body').animate({
+    //         scrollTop: targetPos
+    //     }, 1000);
+    // });
 
     // Event delegation for the .top-nav-bar links
     $('.top-nav-bar').on('mouseenter click', 'a', function(event) {
@@ -149,7 +149,4 @@ $(document).ready(function () {
             messageContainer.style.opacity = "0";
         }, 10000);
     }
-    
-    
-    
 });

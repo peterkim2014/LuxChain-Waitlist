@@ -142,19 +142,19 @@ html{
                             align-items: flex-end;
                             gap: 0.5vw;
                             } .intro-logo {
-                                height: 105%;
-                                width: 10%;
+                                height: 100%;
+                                width: 8%;
                                 margin-bottom: 1.5%;
                             } .intro-title-header > h1 {
                                 height: 100%;
                                 display: flex;
                                 align-items: flex-end;
-                                font-size: 3rem;
+                                font-size: 2.8rem;
                                 letter-spacing: 0.75px;
                                 font-weight: 900;
                         } .intro-slogan {
                             margin-top: -1.25%;
-                            font-size: 1.2em;
+                            font-size: 1.12em;
                             margin-left: 1%;
                             letter-spacing: 0.25px;
                             height: 80%;
@@ -165,7 +165,7 @@ html{
                         gap: 1.3vh;
                         margin-top: 12%;
                         margin-left: 21%;
-                        font-size: 1.23em;
+                        font-size: 1.18em;
                         } .intro-description-text {
                             height: 30%;
                         } .second-row {

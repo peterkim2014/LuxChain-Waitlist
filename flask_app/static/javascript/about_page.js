@@ -1,10 +1,20 @@
 $(document).ready(function () {
     var currentSection = '';
+    var initialSection = checkSection($(window).scrollTop());
+    setSideNavBarBoxPosition(initialSection);
 
     function animateOpacity(section, targetOpacity) {
         $(section).find('p, h1, h2, h3').stop(true).animate({
             opacity: targetOpacity
         }, 1000);
+    }
+
+    function setSideNavBarBoxPosition(section) {
+        if (section === '#about-intro') {
+            $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '157.5%');
+        } else if (section === '#about-company') {
+            $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '196%');
+        }
     }
 
     // Initialize the opacity of all sections to 0
@@ -35,11 +45,7 @@ $(document).ready(function () {
     
         if (newSection !== currentSection && newSection) {
             animateOpacity(newSection, '1');
-            if (newSection === '#about-intro') {
-                $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '157.5%');
-            } else if (newSection === '#about-company') {
-                $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', '196%');
-            }
+            setSideNavBarBoxPosition(newSection);
             if (currentSection) {
                 animateOpacity(currentSection, '0');
             }

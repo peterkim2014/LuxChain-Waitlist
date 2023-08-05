@@ -7,6 +7,20 @@ $(document).ready(function () {
         }, 1000);
     }
 
+    function setSideNavBarBoxPosition(section) {
+        var marginTop;
+        if (section === '#page-intro') {
+            marginTop = '135%';
+        } else if (section === '#page-app') { // Assuming #page-app corresponds to #page-preview
+            marginTop = '173.5%';
+        } else if (section === '#page-waitlist') {
+            marginTop = '212%';
+        } else {
+            return; // If no match, don't change the margin-top
+        }
+        $('.side-nav-bar > img[alt="Side Nav Bar Box"]').css('margin-top', marginTop);
+    }
+
     // Initialize the opacity of all sections to 0
     $('p, h1, h2, h3').css('opacity', '0');
 
@@ -60,6 +74,7 @@ $(document).ready(function () {
             if (currentSection) {
                 animateOpacity(currentSection, '0');
             }
+            setSideNavBarBoxPosition(newSection);
             currentSection = newSection;
         }
     });

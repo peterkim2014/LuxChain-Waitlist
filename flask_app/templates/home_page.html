@@ -199,7 +199,7 @@
                         {% endif %}
                     {% endwith %}
     
-                    <form class="waitlist-form" action="/join_waitlist" method="POST">
+                    <form id="waitlistForm" class="waitlist-form" action="/join_waitlist" method="POST">
                         <label class="waitlist-first" for="first_name">
                             First name
                             <input type="text" name="first_name" placeholder="John">
@@ -212,7 +212,10 @@
                             Email
                             <input type="text" name="email" placeholder="johndoe@gmail.com">
                         </label>
-                        <button>Submit</button>
+                        <button type="submit">Submit <div id="popup" class="popup">
+                            <div id="processing" class="processing"></div>
+                            <div id="checkmark" class="checkmark">&#10003;</div>
+                        </div></button>
                     </form>
                 </div>
             </div>

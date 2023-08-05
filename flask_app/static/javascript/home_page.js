@@ -11,13 +11,13 @@ $(document).ready(function () {
         var marginTop;
         if (section === '#page-intro') {
             imgSrc = "../static/media/boxSideNavBarWhite.png";
-            marginTop = '135%';
+            marginTop = '136%';
         } else if (section === '#page-app') { // Assuming #page-app corresponds to #page-preview
             imgSrc = "../static/media/boxSideNavBar.png";
-            marginTop = '173.5%';
+            marginTop = '174.5%';
         } else if (section === '#page-waitlist') {
             imgSrc = "../static/media/boxSideNavBarWhite.png";
-            marginTop = '212%';
+            marginTop = '213%';
         } else {
             return; // If no match, don't change the margin-top
         }
@@ -84,4 +84,72 @@ $(document).ready(function () {
         }
     });
     $(window).trigger('scroll');
+
+
+    $('#waitlistForm').on('submit', function(event) {
+        event.preventDefault();
+        var submitButton = this.querySelector('button');
+
+    // Show processing indication
+        var processing = document.getElementById("processing");
+        var checkmark = document.getElementById("checkmark");
+        processing.style.display = 'block';
+        
+        // Save the original button text and disable the button
+        var originalButtonText = submitButton.textContent;
+        submitButton.textContent = "Processing...";
+        submitButton.disabled = true;
+    
+        var formData = new FormData(this);
+        
+        fetch('/join_waitlist', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === "success") {
+                // Hide processing and show checkmark
+                processing.style.display = 'none';
+                checkmark.style.display = 'block';
+                // Redirect and show success message
+                console.log(data)
+                location.hash = '#page-waitlist';
+                $(window).trigger('scroll');
+                showSuccessMessage();
+            } else {
+                // Handle failure
+            }
+        })
+        .catch(error => {
+            console.error('There was an error:', error);
+        })
+        .finally(() => {
+            // Restore the original button text and enable the button
+            submitButton.textContent = originalButtonText;
+            submitButton.disabled = false;
+            processing.style.display = 'none';
+            checkmark.style.display = 'none';
+        });
+    });
+    
+    function showSuccessMessage() {
+        var messageContainer = document.createElement('div');
+        messageContainer.innerHTML = "<h3>Thank you for joining the waitlist!</h3>";
+        messageContainer.style.textAlign = "center";
+        messageContainer.style.padding = "20px";
+        messageContainer.style.zIndex = "9999";
+        messageContainer.style.opacity = "1"; // Set initial opacity to 1
+        messageContainer.style.transition = "opacity 0.4s ease-in-out"; // Add transition
+    
+        document.body.appendChild(messageContainer);
+    
+        // Hide the message after 3 seconds
+        setTimeout(function() {
+            messageContainer.style.opacity = "0";
+        }, 10000);
+    }
+    
+    
+    
 });

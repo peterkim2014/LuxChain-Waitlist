@@ -2,6 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from flask_app.models.info import email, app_password, username
+import random
 
 msg_text = """
 <!DOCTYPE html>
@@ -19,7 +20,7 @@ msg_text = """
 
                 <table cellpadding="0" cellspacing="0" border="0" margin="auto" >
                     <tr>
-                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 5%;">Congratulations {number}! </p>
+                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 5%;">Congratulations {customer}! </p>
                         
                         <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 1%;">You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</p>
 
@@ -38,7 +39,16 @@ msg_text = """
 </html>
 """
 
+
 class Email:
+    generated_numbers = set()
+    @staticmethod
+    def generate_unique_number():
+        while True:
+            unique_number = random.randint(100, 10000000)  # Generate a random number between 100 and 10,000,000
+            if unique_number not in Email.generated_numbers:
+                Email.generated_numbers.add(unique_number)
+                return unique_number
 
     @staticmethod
     def send_mail(text, subject, to_emails=None, from_email=None):
@@ -82,5 +92,6 @@ class Email:
     
     @staticmethod
     def format_text(my_customer):
-        msg = msg_text.format(number=my_customer)
+        unique_number = Email.generate_unique_number() 
+        msg = msg_text.format(number=unique_number, customer=my_customer)
         return msg

@@ -120,6 +120,7 @@ $(document).ready(function () {
                 $(window).trigger('scroll');
                 console.log(data.message)
                 showSuccessMessage(data.message);
+                
             } else if (data.status === "error") {
                 // Handle failure
                 processing.style.display = 'none';

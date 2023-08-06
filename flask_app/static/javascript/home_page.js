@@ -89,20 +89,18 @@ $(document).ready(function () {
     $('#waitlistForm').on('submit', function(event) {
         event.preventDefault();
         var submitButton = this.querySelector('button');
-
-    // Show processing indication
+    
+        // Show processing indication
         var processing = document.getElementById("processing");
-        var checkmark = document.getElementById("checkmark");
-        var failed = document.getElementById("errorIndicator")
-        // processing.style.display = 'block';
-        
+        processing.style.display = 'block';
+    
         // Save the original button text and disable the button
         var originalButtonText = submitButton.textContent;
         submitButton.textContent = "Processing...";
-        submitButton.disabled = true;
+        submitButton.disabled = false;
     
         var formData = new FormData(this);
-        
+    
         fetch('/join_waitlist', {
             method: 'POST',
             body: formData
@@ -112,25 +110,19 @@ $(document).ready(function () {
             if (data.status === "success") {
                 // Hide processing and show checkmark
                 processing.style.display = 'none';
-                checkmark.style.display = 'block';
-                failed.style.display = 'none';
+                showCheckmark(submitButton);
+                hideErrorIndicator(submitButton);
                 // Redirect and show success message
-                console.log(data)
                 location.hash = '#page-waitlist';
                 $(window).trigger('scroll');
-                console.log(data.message)
+                console.log(data.message);
                 showSuccessMessage(data.message);
-                
+                // Remove the event listener to prevent further submissions
             } else if (data.status === "error") {
                 // Handle failure
                 processing.style.display = 'none';
-                checkmark.style.display = 'none';  // hide the success checkmark
-                // Add a failed indicator here if you have one
-                failed.style.display = 'block';
-        
-                console.error(data.message);  // log the general error message
-        
-                // Display each error message from the server
+                showErrorIndicator(submitButton);
+                hideCheckmark(submitButton);
                 data.errors.forEach(error => {
                     console.error(error);  // or show it in some specific way on your webpage
                     showFailedMessage(error);
@@ -144,36 +136,60 @@ $(document).ready(function () {
             // Restore the original button text and enable the button
             submitButton.textContent = originalButtonText;
             submitButton.disabled = false;
-            processing.style.display = 'none';
-            checkmark.style.display = 'none';
         });
     });
+    
+    function showCheckmark(button) {
+        var checkmark = document.createElement('div');
+        checkmark.id = 'checkmark';
+        checkmark.className = 'checkmark';
+        checkmark.textContent = '\u2713'; // Checkmark symbol
+    
+        // Add styling for the checkmark element
+        checkmark.style.color = 'green';
+        checkmark.style.fontSize = '24px';
+    
+        button.appendChild(checkmark);
+    }
+    
+    function showErrorIndicator(button) {
+        var errorIndicator = document.createElement('div');
+        errorIndicator.id = 'errorIndicator';
+        errorIndicator.className = 'error-indicator';
+        errorIndicator.textContent = '\u274C'; // Cross mark symbol
+    
+        // Add styling for the errorIndicator element
+        errorIndicator.style.color = 'red';
+        errorIndicator.style.fontSize = '24px';
+    
+        button.appendChild(errorIndicator);
+    }
+    
+    function hideCheckmark(button) {
+        var checkmark = button.querySelector('#checkmark');
+        if (checkmark) {
+            button.removeChild(checkmark);
+        }
+    }
+    
+    function hideErrorIndicator(button) {
+        var errorIndicator = button.querySelector('#errorIndicator');
+        if (errorIndicator) {
+            button.removeChild(errorIndicator);
+        }
+    }
     
     function showFailedMessage(message) {
         var header = document.querySelector('.waitlist-header');
         if (header) {
             header.textContent = message;
-        
-        var waitlistForm = document.getElementById('waitlistForm');
-        waitlistForm.parentNode.insertBefore(messageContainer, waitlistForm);
-        
-        // setTimeout(function() {
-        //     messageContainer.style.opacity = "0";
-        // }, 10000);
         }
     }
-
+    
     function showSuccessMessage(message) {
         var header = document.querySelector('.waitlist-header');
         if (header) {
             header.textContent = message;
-        
-        var waitlistForm = document.getElementById('waitlistForm');
-        waitlistForm.parentNode.insertBefore(messageContainer, waitlistForm);
-        
-        // setTimeout(function() {
-        //     messageContainer.style.opacity = "0";
-        // }, 10000);
         }
     }
 });

@@ -21,13 +21,13 @@ msg_text = """
 
                 <table cellpadding="0" cellspacing="0" border="0" margin="auto" >
                     <tr>
-                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 5%;">Congratulations {customer}! </p>
+                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 9%;">Congratulations {customer}! </p>
                         
-                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 1%;">You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</p>
+                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; ">You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</p>
 
-                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 1%;">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</p>
+                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; ">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</p>
 
-                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 1%;">Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</p>
+                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; ">Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</p>
                         
                         <p style="text-align: start; width: 40%; height: 10%; padding-left: 12.5%; padding-top: 1%;">Our best, <br>LuxChain Team</p>
                     </tr>

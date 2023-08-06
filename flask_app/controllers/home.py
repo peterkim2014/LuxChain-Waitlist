@@ -22,6 +22,6 @@ def post_waitlist():
     if User.validate_registration(data):
         User.create(data)
         User.email(email_data)
-        return jsonify(status="success", message="Thank you for joining the waitlist!")
+        return jsonify({"status":"success", "message":"Thank you for joining the waitlist!"})
     else:
         return jsonify({"status": "error", "message": "Registration failed!", "errors": get_flashed_messages(category_filter=["register"])})

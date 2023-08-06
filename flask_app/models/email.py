@@ -12,7 +12,8 @@ msg_text = """
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <table class="email" width="84.1%" height="50%" valign="top" cellpadding="0" cellspacing="0" border="0">
+        <span style="opacity: 0">{number}</span>
+        <table class="email" width="84.1%" height="50%" valign="top" cellpadding="0" cellspacing="0" border="0" style="word-break: break-word;">
             <tr>
                 <td width="750" height="815" background="https://i.imgur.com/EZxrgB9.png">
 
@@ -35,6 +36,7 @@ msg_text = """
                 </td>
             </tr>
         </table>
+        <span style="opacity: 0">{number}</span>
     </body>
 </html>
 """

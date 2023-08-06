@@ -1,5 +1,5 @@
 from flask_app import app
-from flask import render_template, redirect, request, session, flash, jsonify
+from flask import render_template, redirect, request, session, flash, jsonify, get_flashed_messages
 from flask_app.config.mysqlconnection import MySQLConnection
 from flask_app.models.user import User
 
@@ -22,8 +22,6 @@ def post_waitlist():
     if User.validate_registration(data):
         User.create(data)
         User.email(email_data)
-        # flash("Thank you for joining the community. Confirmation email has been sent!", "register")
-        return jsonify(status="success")
+        return jsonify(status="success", message="Thank you for joining the waitlist!")
     else:
-        flash("Please fill in the appropriate information below", "register")
-        return jsonify(status="failure")
+        return jsonify({"status": "error", "message": "Registration failed!", "errors": get_flashed_messages(category_filter=["register"])})

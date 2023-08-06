@@ -93,6 +93,7 @@ $(document).ready(function () {
     // Show processing indication
         var processing = document.getElementById("processing");
         var checkmark = document.getElementById("checkmark");
+        var failed = document.getElementById("errorIndicator")
         // processing.style.display = 'block';
         
         // Save the original button text and disable the button
@@ -112,14 +113,27 @@ $(document).ready(function () {
                 // Hide processing and show checkmark
                 processing.style.display = 'none';
                 checkmark.style.display = 'block';
+                failed.style.display = 'none';
                 // Redirect and show success message
                 console.log(data)
                 location.hash = '#page-waitlist';
                 $(window).trigger('scroll');
-                showSuccessMessage();
-            } else {
+                console.log(data.message)
+                showSuccessMessage(data.message);
+            } else if (data.status === "error") {
                 // Handle failure
-
+                processing.style.display = 'none';
+                checkmark.style.display = 'none';  // hide the success checkmark
+                // Add a failed indicator here if you have one
+                failed.style.display = 'block';
+        
+                console.error(data.message);  // log the general error message
+        
+                // Display each error message from the server
+                data.errors.forEach(error => {
+                    console.error(error);  // or show it in some specific way on your webpage
+                    showFailedMessage(error);
+                });
             }
         })
         .catch(error => {
@@ -134,20 +148,31 @@ $(document).ready(function () {
         });
     });
     
-    function showSuccessMessage() {
-        var messageContainer = document.createElement('div');
-        messageContainer.innerHTML = "<h3>Thank you for joining the waitlist!</h3>";
-        messageContainer.style.textAlign = "center";
-        messageContainer.style.padding = "20px";
-        messageContainer.style.zIndex = "9999";
-        messageContainer.style.opacity = "1"; // Set initial opacity to 1
-        messageContainer.style.transition = "opacity 0.4s ease-in-out"; // Add transition
-    
-        document.body.appendChild(messageContainer);
-    
-        // Hide the message after 3 seconds
-        setTimeout(function() {
-            messageContainer.style.opacity = "0";
-        }, 10000);
+    function showFailedMessage(message) {
+        var header = document.querySelector('.waitlist-header');
+        if (header) {
+            header.textContent = message;
+        
+        var waitlistForm = document.getElementById('waitlistForm');
+        waitlistForm.parentNode.insertBefore(messageContainer, waitlistForm);
+        
+        // setTimeout(function() {
+        //     messageContainer.style.opacity = "0";
+        // }, 10000);
+        }
+    }
+
+    function showSuccessMessage(message) {
+        var header = document.querySelector('.waitlist-header');
+        if (header) {
+            header.textContent = message;
+        
+        var waitlistForm = document.getElementById('waitlistForm');
+        waitlistForm.parentNode.insertBefore(messageContainer, waitlistForm);
+        
+        // setTimeout(function() {
+        //     messageContainer.style.opacity = "0";
+        // }, 10000);
+        }
     }
 });

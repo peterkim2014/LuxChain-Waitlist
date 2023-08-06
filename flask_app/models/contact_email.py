@@ -4,16 +4,41 @@ from email.mime.multipart import MIMEMultipart
 from flask_app.models.info import email, app_password, username
 
 contact_msg_text = """
-    Dear {customer},
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <table class="email" width="98.75%" height="30%" valign="top" cellpadding="0" cellspacing="0" border="0">
 
-        New Ticket,
-        {contact_header}
-        {description}
+                <td width="800" height="807.5" background="https://i.imgur.com/oSGPUFl.png">
+                
+                <p class="email-header" style="height: 2.5%; width: 90%; text-align: end; margin: 0; margin-bottom: 7.5%">Ticket #{customer}</p>
 
-        Thank you for your inquiry. You will hear back from us shortly.
+                <h2 style="text-align: start; width: 75%; height: 5%; padding-left: 12.5%; margin: 0;">Name:</h2>
+                <p style="text-align: start; width: 75%; height: 5%; padding-left: 12.5%;">{customer}!</p>
+                
+                <h2 style="text-align: start; width: 75%; height: 5%; padding-left: 12.5%;">Header:</h2>
+                <p style="text-align: start; width: 75%; height: 5%; padding-left: 12.5%;">{contact_header}</p>
 
-    Best regards,
-    LuxChain
+                <h2 style="text-align: start; width: 75%; height: 5%; padding-left: 12.5%;">Description:</h2>
+                <p style="text-align: start; width: 75%; height: 5%; padding-left: 12.5%;">{description}</p>
+
+                <table cellpadding="0" cellspacing="0" border="0" margin="auto" padding-bottom="5%" >
+                    <tr>
+                        <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; padding-top: 1%;">We will get back to you with your question answered! If there are any more questions or concerns, please feel free to visit the website, www.luxchain.io</p>
+                        
+                        <p style="text-align: start; width: 40%; height: 10%; padding-left: 12.5%; padding-top: 1%;">Our best, <br>LuxChain Team</p>
+                    </tr>
+                </table>
+                
+                </td>
+
+        </table>
+    </body>
+</html>
 """
 
 class Contact_Email:
@@ -27,7 +52,7 @@ class Contact_Email:
         msg["To"] = " ,".join(to_emails[0])
         msg["Subject"] = subject
 
-        text_body = MIMEText(text, "plain")
+        text_body = MIMEText(text, "html")
         msg.attach(text_body)
 
         msg_str = msg.as_string()

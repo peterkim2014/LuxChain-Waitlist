@@ -191,14 +191,7 @@
                         <p><i>Enroll in our waitlist to receive priority rewards!</i></p>
                     </div>
     
-                    {% with messages = get_flashed_messages(category_filter=['register']) %}
-                        {% if messages %}
-                            {% for message in messages %}
-                                <p>{{ message }}</p>
-                            {% endfor %}
-                        {% endif %}
-                    {% endwith %}
-    
+                    
                     <form id="waitlistForm" class="waitlist-form" action="/join_waitlist" method="POST">
                         <label class="waitlist-first" for="first_name">
                             First name
@@ -215,7 +208,9 @@
                         <button type="submit">Submit <div id="popup" class="popup">
                             <div id="processing" class="processing"></div>
                             <div id="checkmark" class="checkmark">&#10003;</div>
-                        </div></button>
+                            </div>
+                            <div id="errorIndicator" class="error-indicator">❌</div>
+                        </button>
                     </form>
                 </div>
             </div>

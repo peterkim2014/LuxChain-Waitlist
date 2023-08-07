@@ -51,7 +51,8 @@ p, h1, h2, h3 {
                 width: 15%;
                 height: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
+                position: fixed;
                 } .side-nav-links {
                     margin-left: 20%;
                     display: flex;
@@ -68,6 +69,13 @@ p, h1, h2, h3 {
                         justify-content: flex-end;
                         margin-left: 15%;
                         color: white;
+                } .side-nav-bar > img {
+                    width: 8.5%;
+                    height: 2.25%;
+                    transition: margin-top 0.3s ease-in-out;
+                    margin-top: 158%;
+                    /* margin-top: 196%; */
+                    margin-left: 15%;
         } .contact-main {
             display: flex;
             align-items: center;
@@ -78,7 +86,7 @@ p, h1, h2, h3 {
                 width: 50%;
                 align-items: center;
                 margin-top: -12%;
-                margin-left: -2.5%;
+                margin-left: 7.5%;
                 } .intro-header-title {
                     display: flex;
                     justify-content: center;
@@ -98,7 +106,7 @@ p, h1, h2, h3 {
                     font-size: 1.05em;
                     margin-top: -4.25%;
             } .contact-content {
-                width: 35%;
+                width: 32%;
                 height: 80%;
                 margin-left: 2.5%;
                 margin-top: 3.5%;
@@ -178,7 +186,7 @@ p, h1, h2, h3 {
     } #contact-faq {
         width: 100%;
         height: 100vh;
-        background-image: url("../media/contactBackground.webp");
+        background-image: url("../media/faqBackground.webp");
         background-size: 100%;
         background-repeat: no-repeat;
         display: flex;
@@ -197,64 +205,71 @@ p, h1, h2, h3 {
                 height: 100%;
             } .faq-header > h2 {
                 height: 30%;
-                width: 20%;
+                width: 50%;
+                margin-left: 17.5%;
         } .faq-body {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-start;
             width: 75%;
-            height: 50%;
+            height: 60%;
             margin-left: 15%;
             margin-top: 8.25%;
             } .faq-list-left {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-between;
                 width: 45%;
-                height: 50%;
+                height: 80%;
                 } .one-faq-left {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
-                    height: 70%;
+                    height: 90%;
                     } .one-faq-left > img {
                         width: 6%;
-                        height: 16.25%;
+                        height: 20%;
                         } .faq-text-left {
                             display: flex;
                             flex-direction: column;
-                            height: 25%;
+                            justify-content: space-between;
+                            height: 100%;
                             width: 90%;
+                            gap: 1.75vh;
                             } .faq-question-left {
                                 height: 30%;
                                 width: 100%;
+                                font-size: 0.85em;
                             } .faq-answer-left {
                                 height: 70%;
                                 width: 100%;
+                                font-size: 0.72em;
             } .faq-list-right {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-between;
                 width: 45%;
-                height: 50%;
+                height: 80%;
                 } .one-faq-right {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
-                    height: 70%;
+                    height: 90%;
                     } .one-faq-right > img {
                         width: 6%;
-                        height: 16.25%;
+                        height: 20%;
                         } .faq-text-right {
                             display: flex;
                             flex-direction: column;
-                            height: 25%;
+                            height: 100%;
                             width: 90%;
+                            gap: 1.75vh;
                             } .faq-question-right {
-                                height: 40%;
+                                height: 30%;
                                 width: 100%;
-                                color: black
+                                font-size: 0.85em;
                             } .faq-answer-right {
                                 height: 70%;
                                 width: 100%;
+                                font-size: 0.72em;
                             }

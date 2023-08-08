@@ -8,39 +8,35 @@ $(document).ready(function () {
     }
 
     function setSideNavBarBoxPosition(section) {
-        var marginTop, imgSrc;
+        var marginTop, imgSrc, linkColor;
         if (section === '#contact-us') {
             imgSrc = "../static/media/boxSideNavBarWhite.png";
             marginTop = '158%';
+            linkColor = 'white';
         } else if (section === '#contact-faq') {
             imgSrc = "../static/media/boxSideNavBar.png";
             marginTop = '196%';
+            linkColor = 'black';
         } else {
-            return; // If no match, don't change the margin-top or image source
+            return; 
         }
+        
         var imgElement = $('.side-nav-bar > img[alt="Side Nav Bar Box"]');
         imgElement.css('margin-top', marginTop);
-        imgElement.attr('src', imgSrc); // Change the image source
+        imgElement.attr('src', imgSrc);
+        $('.side-nav-links a').css('color', linkColor);
     }
 
-    // Initialize the opacity of all sections to 0
     $('p, h1, h2, h3').css('opacity', '0');
 
-    // Animate the current section's text to full opacity
-    animateOpacity('#contact-us', '1');
-    animateOpacity('#contact-faq', '1');
-
     $('.top-nav-bar').on('mouseenter click', 'a', function(event) {
-        // Remove the 'active' class from all links
         $('.top-nav-bar a').removeClass('active');
-        // Add the 'active' class to the hovered or clicked link
         $(this).addClass('active');
     });
 
     $('.side-nav-links').on('click', 'a', function(event) {
         var href = $(this).attr('href');
         var target = $(href);
-        
         if (target.length) {
             $('html, body').animate({
                 scrollTop: target.offset().top
@@ -49,38 +45,41 @@ $(document).ready(function () {
         }
     });
 
-    $(window).on('scroll', function () {
-        var scrollPos = $(window).scrollTop();
-        var newSection = '';
+    function checkSection(scrollPos) {
         var contactUsPos = $('#contact-us').offset().top;
         var contactUsHeight = $('#contact-us').height();
-        var contactFaqPos = $('#contact-faq').offset().top - $(window).height();;
+        var contactFaqPos = $('#contact-faq').offset().top - $(window).height();
         var contactFaqHeight = $('#contact-faq').height();
 
-        if (scrollPos >= contactUsPos && scrollPos < contactUsPos + contactUsHeight * 0.5) {
-            newSection = '#contact-us';
-            $('.side-nav-links a').css('color', 'white');
-            setSideNavBarBoxPosition(newSection); // Set the nav bar box's position and image
-        } else if (scrollPos >= contactFaqPos && scrollPos < contactFaqPos + contactFaqHeight) { // Adjusted the condition here
-            newSection = '#contact-faq';
-            $('.side-nav-links a').css('color', 'black');
-            setSideNavBarBoxPosition(newSection); // Set the nav bar box's position and image
+        if (scrollPos >= contactUsPos && scrollPos <= contactUsPos + contactUsHeight * 0.5) {
+            return '#contact-us';
+        } else if (scrollPos >= contactFaqPos && scrollPos <= contactFaqPos + contactFaqHeight) {
+            return '#contact-faq';
         } else {
-            $('.side-nav-links a').css('color', 'black');
+            return '';
         }
+    }
 
-        // If the active section has changed
+    $(window).on('scroll', function () {
+        var scrollPos = $(window).scrollTop();
+        var newSection = checkSection(scrollPos);
+
         if (newSection !== currentSection && newSection) {
-            // Animate the opacity to 1 for the new active section
             animateOpacity(newSection, '1');
-            // Animate the opacity to 0 for the previous active section
             if (currentSection) {
                 animateOpacity(currentSection, '0');
             }
-            
+            setSideNavBarBoxPosition(newSection);
             currentSection = newSection;
         }
     });
 
-    $(window).trigger('scroll'); // Trigger the scroll event on page load to set the initial state
+    // Determine the current section on page load
+    currentSection = checkSection($(window).scrollTop());
+    if (currentSection) {
+        animateOpacity(currentSection, '1');
+        setSideNavBarBoxPosition(currentSection);
+    }
+
+    $(window).trigger('scroll');
 });

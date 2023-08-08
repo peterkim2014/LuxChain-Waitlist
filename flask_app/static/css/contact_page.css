@@ -206,19 +206,21 @@ p, h1, h2, h3 {
             } .faq-header > h2 {
                 height: 30%;
                 width: 50%;
-                margin-left: 17.5%;
+                margin-left: 22%;
+                font-size: 1.25em;
         } .faq-body {
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
             width: 75%;
             height: 60%;
-            margin-left: 15%;
-            margin-top: 8.25%;
+            margin-left: 17.5%;
+            margin-top: 5%;
             } .faq-list-left {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                gap: 5vh;
                 width: 45%;
                 height: 80%;
                 } .one-faq-left {
@@ -250,6 +252,7 @@ p, h1, h2, h3 {
                 justify-content: space-between;
                 width: 45%;
                 height: 80%;
+                gap: 5vh;
                 } .one-faq-right {
                     display: flex;
                     justify-content: space-between;

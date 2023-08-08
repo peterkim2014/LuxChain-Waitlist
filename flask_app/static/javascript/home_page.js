@@ -85,22 +85,22 @@ $(document).ready(function () {
     });
     $(window).trigger('scroll');
 
-
-    $('#waitlistForm').on('submit', function(event) {
+    $(document.body).on('submit', '#waitlistForm', function(event) {
         event.preventDefault();
+        
         var submitButton = this.querySelector('button');
-    
+        
         // Show processing indication
         var processing = document.getElementById("processing");
         processing.style.display = 'block';
-    
+        
         // Save the original button text and disable the button
         var originalButtonText = submitButton.textContent;
         submitButton.textContent = "Processing...";
-        submitButton.disabled = false;
-    
+        submitButton.disabled = true;  // This will disable the button
+        
         var formData = new FormData(this);
-    
+        
         fetch('/join_waitlist', {
             method: 'POST',
             body: formData
@@ -115,16 +115,13 @@ $(document).ready(function () {
                 // Redirect and show success message
                 location.hash = '#page-waitlist';
                 $(window).trigger('scroll');
-                console.log(data.message);
                 showSuccessMessage(data.message);
-                // Remove the event listener to prevent further submissions
             } else if (data.status === "error") {
                 // Handle failure
                 processing.style.display = 'none';
                 showErrorIndicator(submitButton);
                 hideCheckmark(submitButton);
                 data.errors.forEach(error => {
-                    console.error(error);  // or show it in some specific way on your webpage
                     showFailedMessage(error);
                 });
             }
@@ -135,9 +132,10 @@ $(document).ready(function () {
         .finally(() => {
             // Restore the original button text and enable the button
             submitButton.textContent = originalButtonText;
-            submitButton.disabled = false;
+            submitButton.disabled = true;
+            document.getElementById("waitlistForm").reset();
         });
-    });
+    });    
     
     function showCheckmark(button) {
         var checkmark = document.createElement('div');

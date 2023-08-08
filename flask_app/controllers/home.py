@@ -9,7 +9,6 @@ def homepage():
 
 @app.route("/join_waitlist", methods=["POST"])
 def post_waitlist():
-
     data = {
         "first_name": request.form["first_name"],
         "last_name": request.form["last_name"],
@@ -19,9 +18,12 @@ def post_waitlist():
         "first_name": request.form["first_name"],
         "email": request.form["email"],
     }
+
+    errors = []
     if User.validate_registration(data):
         User.create(data)
         User.email(email_data)
-        return jsonify({"status":"success", "message":"Thank you for joining the waitlist!"})
+        return jsonify({"status": "success", "message": "Thank you for joining the waitlist!"})
     else:
-        return jsonify({"status": "error", "message": "Registration failed!", "errors": get_flashed_messages(category_filter=["register"])})
+        errors.append("Registration failed!")
+        return jsonify({"status": "error", "message": "There were errors during registration", "errors": errors})

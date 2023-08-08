@@ -86,56 +86,50 @@ $(document).ready(function () {
     $(window).trigger('scroll');
 
     $(document.body).on('submit', '#waitlistForm', function(event) {
-        event.preventDefault();
-        
+        // event.preventDefault();
+    
         var submitButton = this.querySelector('button');
-        
+    
         // Show processing indication
         var processing = document.getElementById("processing");
         processing.style.display = 'block';
-        
+    
         // Save the original button text and disable the button
         var originalButtonText = submitButton.textContent;
         submitButton.textContent = "Processing...";
         submitButton.disabled = true;  // This will disable the button
-        
+    
         var formData = new FormData(this);
-        
+    
         fetch('/join_waitlist', {
             method: 'POST',
             body: formData
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === "success") {
-                // Hide processing and show checkmark
-                processing.style.display = 'none';
-                showCheckmark(submitButton);
-                hideErrorIndicator(submitButton);
-                // Redirect and show success message
-                location.hash = '#page-waitlist';
-                $(window).trigger('scroll');
-                showSuccessMessage(data.message);
-            } else if (data.status === "error") {
-                // Handle failure
-                processing.style.display = 'none';
-                showErrorIndicator(submitButton);
-                hideCheckmark(submitButton);
-                data.errors.forEach(error => {
-                    showFailedMessage(error);
-                });
+        .then(() => {
+            // This is a redirect so no need to handle JSON response
+            location.hash = '#page-waitlist';
+            $(window).trigger('scroll');
+    
+            // Fetch and show the flash message
+            var message = getFlashMessage();  // You need to implement this function
+            if (message) {
+                var header = document.querySelector('.waitlist-header');
+                if (header) {
+                    header.textContent = message;
+                }
             }
         })
         .catch(error => {
             console.error('There was an error:', error);
         })
         .finally(() => {
+            processing.style.display = 'none';
             // Restore the original button text and enable the button
             submitButton.textContent = originalButtonText;
-            submitButton.disabled = true;
+            submitButton.disabled = false;
             document.getElementById("waitlistForm").reset();
         });
-    });    
+    });
     
     function showCheckmark(button) {
         var checkmark = document.createElement('div');

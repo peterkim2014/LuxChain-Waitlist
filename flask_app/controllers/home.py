@@ -1,5 +1,5 @@
 from flask_app import app
-from flask import render_template, redirect, request, session, flash, jsonify, get_flashed_messages
+from flask import render_template, redirect, request, session, flash, jsonify, get_flashed_messages, url_for
 from flask_app.config.mysqlconnection import MySQLConnection
 from flask_app.models.user import User
 
@@ -9,6 +9,7 @@ def homepage():
 
 @app.route("/join_waitlist", methods=["POST"])
 def post_waitlist():
+    clear_flashed_messages()
     data = {
         "first_name": request.form["first_name"],
         "last_name": request.form["last_name"],
@@ -19,11 +20,14 @@ def post_waitlist():
         "email": request.form["email"],
     }
 
-    errors = []
     if User.validate_registration(data):
         User.create(data)
         User.email(email_data)
-        return jsonify({"status": "success", "message": "Thank you for joining the waitlist!"})
+        flash("Thank you for joining the waitlist!")
+        return redirect(url_for('homepage') + '#page-waitlist')  # replace 'your_route_name' with the correct route
     else:
-        errors.append("Registration failed!")
-        return jsonify({"status": "error", "message": "There were errors during registration", "errors": errors})
+        flash("There were errors during registration")
+        return redirect(url_for('homepage') + '#page-waitlist')  # replace 'your_route_name' with the correct route
+
+def clear_flashed_messages():
+    session['_flashes'] = []

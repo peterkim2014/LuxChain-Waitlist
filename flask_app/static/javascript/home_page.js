@@ -200,7 +200,7 @@ $(document).ready(function () {
         } else {
             $('.side-nav-links').css({
                 'font-size': '16px',
-                'margin-left': '7.75px',
+                'margin-left': '8px',
                 'width': '43.25%'
             });
         }
@@ -209,9 +209,9 @@ $(document).ready(function () {
         if (windowWidth < 400) {
             $('.top-nav-bar a').css('font-size', '10px');
         } else if (windowWidth < 800) {
-            $('.top-nav-bar').css('font-size', '14px');
+            $('.top-nav-bar').css('font-size', '12px');
         } else {
-            $('.top-nav-bar').css('font-size', '18px');
+            $('.top-nav-bar').css('font-size', '16px');
         }
     
         // 3. Intro section
@@ -236,7 +236,7 @@ $(document).ready(function () {
             introTitleHeader.css('font-size', '40px');
             introSlogan.css('font-size', '16px');
             introDescription.css('font-size', '16px')
-            introFooter.css('font-size', '14px')
+            introFooter.css('font-size', '0.88em')
             introLogo.css('width', '8.75%');
         }
     
@@ -280,7 +280,7 @@ $(document).ready(function () {
             walletBorderlessText.css('font-size', '15px');
             walletOwnershipHeader.css('font-size', '16px');
             walletOwnershipText.css('font-size', '15px');
-            walletDetails.css('margin-top', '2.25%');
+            walletDetails.css('margin-top', '2.75%');
             walletDetails.css('gap', '1.25vh');
             walletDetails.css('height', '45%');
         }
@@ -298,20 +298,20 @@ $(document).ready(function () {
             processDetails.css('width', '75%');
             processDetails.css('height', '45%');
         } else {
-            processSteps.css('font-size', '13px');
+            processSteps.css('font-size', '0.88em');
             processDetails.css('width', '100%');
             processDetails.css('height', '50%');
         }
 
         // Wallet 3 points
-        var pointsText = $('.wallet-strip-3-points');
+        var pointsText = $('.wallet-strip-3-points p');
 
         if (windowWidth < 400) {
             pointsText.css('font-size', '2px');
         } else if (windowWidth < 800) {
             pointsText.css('font-size', '7.5px');
         } else {
-            pointsText.css('font-size', '13px');
+            pointsText.css('font-size', '0.75em');
         }
     
 
@@ -338,7 +338,7 @@ $(document).ready(function () {
             appDescription.css('font-size', '0.9em');
             diagramContainer.css('margin-bottom', '16.5%');
             appFooterText.css('font-size', '12px');
-            appFooterText.css('margin-top', '-8.62%');
+            appFooterText.css('margin-top', '-8.75%');
         }
     
         // 7. System comparison headers
@@ -382,8 +382,8 @@ $(document).ready(function () {
             luxHeader.css('font-size', '0.8em');
             bankContainer.css('height', '100%');
             luxContainer.css('height', '100%');
-            bankContainer.css('margin-top', '4.25%');
-            luxContainer.css('margin-top', '4.25%');
+            bankContainer.css('margin-top', '3.5%');
+            luxContainer.css('margin-top', '3.5%');
         }
 
     

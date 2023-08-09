@@ -11,9 +11,9 @@ contact_msg_text = """
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <table class="email" width="98.75%" height="30%" valign="top" cellpadding="0" cellspacing="0" border="0">
+        <table class="email" width="100%" height="30%" valign="top" cellpadding="0" cellspacing="0" border="0">
 
-                <td width="800" height="807.5" background="https://i.imgur.com/oSGPUFl.png">
+                <td width="1050" height="807.5" background="https://i.imgur.com/oSGPUFl.png">
                 
                 <p class="email-header" style="height: 2.5%; width: 90%; text-align: end; margin: 0; margin-bottom: 7.5%">Ticket #{customer}</p>
 

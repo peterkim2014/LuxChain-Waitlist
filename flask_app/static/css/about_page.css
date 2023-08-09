@@ -135,7 +135,7 @@ p, h1, h2, h3 {
                         margin-top: -2%;
     } #about-company {
         width: 100%;
-        height: 178vh;
+        height: 173.25vh;
         background-image: url("../media/companyBackground.webp");
         background-size: 100%;
         background-repeat: no-repeat;
@@ -193,7 +193,7 @@ p, h1, h2, h3 {
                     width: 50%;
                     font-size: 0.88em;
         } .company-problems {
-            height: 65vh;
+            height: 62vh;
             width: 95%;
             display: flex;
             margin-top: 9.5%;

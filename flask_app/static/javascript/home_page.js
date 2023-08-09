@@ -29,16 +29,6 @@ $(document).ready(function () {
     // Initialize the opacity of all sections to 0
     $('p, h1, h2, h3').css('opacity', '0');
 
-    // $('a[href*="#page-"]').on('click', function (e) {
-    //     e.preventDefault();
-    //     var targetSection = $(this).attr('href');
-    //     var targetPos = $(targetSection).offset().top;
-
-    //     $('html, body').animate({
-    //         scrollTop: targetPos
-    //     }, 1000);
-    // });
-
     // Event delegation for the .top-nav-bar links
     $('.top-nav-bar').on('mouseenter click', 'a', function(event) {
         // Remove the 'active' class from all links
@@ -184,4 +174,250 @@ $(document).ready(function () {
             header.textContent = message;
         }
     }
+
+    function handleResize() {
+        var windowWidth = $(window).width();
+    
+        // 1. Side Navigation Bar
+        if (windowWidth < 400) {
+            $('.side-nav-links').css({
+                'font-size': '2.5px',
+                'margin-left': '0px',
+                'width': '20%'
+            });
+        } else if (windowWidth >= 400 && windowWidth < 600) {
+            $('.side-nav-links').css({
+                'font-size': '6px',
+                'margin-left': '0px',
+                'width': '30%'
+            });
+        } else if (windowWidth >= 600 && windowWidth < 768) {
+            $('.side-nav-links').css({
+                'font-size': '10px',
+                'margin-left': '2.5px',
+                'width': '40%'
+            });
+        } else {
+            $('.side-nav-links').css({
+                'font-size': '16px',
+                'margin-left': '7.75px',
+                'width': '43.25%'
+            });
+        }
+    
+        // 2. Top Navigation Bar
+        if (windowWidth < 400) {
+            $('.top-nav-bar a').css('font-size', '10px');
+        } else if (windowWidth < 800) {
+            $('.top-nav-bar').css('font-size', '14px');
+        } else {
+            $('.top-nav-bar').css('font-size', '18px');
+        }
+    
+        // 3. Intro section
+        var introTitleHeader = $('.intro-title-header h1');
+        var introSlogan = $('.intro-slogan');
+        var introLogo = $('.intro-title-header img')
+        var introDescription = $('.intro-description')
+        var introFooter = $('.intro-footer')
+        if (windowWidth < 400) {
+            introTitleHeader.css('font-size', '12px');
+            introSlogan.css('font-size', '5px');
+            introDescription.css('font-size', '5px')
+            introFooter.css('font-size', '5px')
+            introLogo.css('width', '8.5%');
+        } else if (windowWidth >= 400 && windowWidth < 800) {
+            introTitleHeader.css('font-size', '20px');
+            introSlogan.css('font-size', '8.5px');
+            introDescription.css('font-size', '8.5px')
+            introFooter.css('font-size', '8.5px')
+            introLogo.css('width', '10%');
+        } else {
+            introTitleHeader.css('font-size', '40px');
+            introSlogan.css('font-size', '16px');
+            introDescription.css('font-size', '16px')
+            introFooter.css('font-size', '14px')
+            introLogo.css('width', '8.75%');
+        }
+    
+        // 4. Crypto Wallet section
+        var cryptoWalletHeader = $('.wallet-intro h1');
+        var walletFlexibilityHeader = $('.wallet-flexibility h2')
+        var walletFlexibilityText = $('.wallet-flexibility')
+        var walletBorderlessHeader = $('.wallet-borderless h2')
+        var walletBorderlessText = $('.wallet-borderless')
+        var walletOwnershipHeader = $('.wallet-ownership h2')
+        var walletOwnershipText = $('.wallet-ownership')
+        var walletDetails = $('.wallet-details')
+
+        if (windowWidth < 400) {
+            cryptoWalletHeader.css('font-size', '10px');
+            walletFlexibilityHeader.css('font-size', '6px');
+            walletFlexibilityText.css('font-size', '5px');
+            walletBorderlessHeader.css('font-size', '6px');
+            walletBorderlessText.css('font-size', '5px');
+            walletOwnershipHeader.css('font-size', '6px');
+            walletOwnershipText.css('font-size', '5px');
+            walletDetails.css('margin-top', '0%');
+            walletDetails.css('gap', '0vh');
+            walletDetails.css('height', '25%');
+        } else if (windowWidth < 800) {
+            cryptoWalletHeader.css('font-size', '16px');
+            walletFlexibilityHeader.css('font-size', '10px');
+            walletFlexibilityText.css('font-size', '8.5px');
+            walletBorderlessHeader.css('font-size', '10px');
+            walletBorderlessText.css('font-size', '8.5px');
+            walletOwnershipHeader.css('font-size', '10px');
+            walletOwnershipText.css('font-size', '8.5px');
+            walletDetails.css('margin-top', '1.25%');
+            walletDetails.css('gap', '0.5vh');
+            walletDetails.css('height', '35%');
+        } else {
+            cryptoWalletHeader.css('font-size', '24px');
+            walletFlexibilityHeader.css('font-size', '16px');
+            walletFlexibilityText.css('font-size', '15px');
+            walletBorderlessHeader.css('font-size', '16px');
+            walletBorderlessText.css('font-size', '15px');
+            walletOwnershipHeader.css('font-size', '16px');
+            walletOwnershipText.css('font-size', '15px');
+            walletDetails.css('margin-top', '2.25%');
+            walletDetails.css('gap', '1.25vh');
+            walletDetails.css('height', '45%');
+        }
+    
+        // 5. Wallet Process section
+        var processSteps = $('.process-steps');
+        var processDetails = $('.process-steps');
+
+        if (windowWidth < 400) {
+            processSteps.css('font-size', '4px');
+            processDetails.css('width', '50%');
+            processDetails.css('height', '40%');
+        } else if (windowWidth < 800) {
+            processSteps.css('font-size', '8px');
+            processDetails.css('width', '75%');
+            processDetails.css('height', '45%');
+        } else {
+            processSteps.css('font-size', '13px');
+            processDetails.css('width', '100%');
+            processDetails.css('height', '50%');
+        }
+
+        // Wallet 3 points
+        var pointsText = $('.wallet-strip-3-points');
+
+        if (windowWidth < 400) {
+            pointsText.css('font-size', '2px');
+        } else if (windowWidth < 800) {
+            pointsText.css('font-size', '7.5px');
+        } else {
+            pointsText.css('font-size', '13px');
+        }
+    
+
+        // 6. App preview
+        var diagramTexts = $('.diagram-text p');
+        var appDescription = $('.app-icon-description p')
+        var diagramContainer = $('.diagram-account')
+        var appFooterText = $('.app-preview-footer')
+
+        if (windowWidth < 400) {
+            diagramTexts.css('font-size', '5px');
+            appDescription.css('font-size', '5px');
+            diagramContainer.css('margin-bottom', '50%');
+            appFooterText.css('font-size', '3.5px');
+            appFooterText.css('margin-top', '-25%');
+        } else if (windowWidth < 800) {
+            diagramTexts.css('font-size', '7.5px');
+            appDescription.css('font-size', '7.5px');
+            diagramContainer.css('margin-bottom', '35%');
+            appFooterText.css('font-size', '7.5px');
+            appFooterText.css('margin-top', '-15%');
+        } else {
+            diagramTexts.css('font-size', '10px');
+            appDescription.css('font-size', '0.9em');
+            diagramContainer.css('margin-bottom', '16.5%');
+            appFooterText.css('font-size', '12px');
+            appFooterText.css('margin-top', '-8.62%');
+        }
+    
+        // 7. System comparison headers
+        var systemHeaders = $('.system-header p');
+        var systemContainer = $('.system-comparison');
+        var bankText = $('.bank-text');
+        var luxText = $('.lux-text');
+        var bankContainer = $('.bank-content');
+        var luxContainer = $('.lux-content');
+        var bankHeader = $('.bank-header');
+        var luxHeader = $('.lux-header');
+
+        if (windowWidth < 400) {
+            systemHeaders.css('font-size', '4px');
+            systemContainer.css('margin-top', '4px');
+            bankText.css('font-size', '4px');
+            luxText.css('font-size', '4px');
+            bankHeader.css('font-size', '4px');
+            luxHeader.css('font-size', '4px');
+            bankContainer.css('height', '10%');
+            luxContainer.css('height', '10%');
+            bankContainer.css('margin-top', '30%');
+            luxContainer.css('margin-top', '30%');
+        } else if (windowWidth < 800) {
+            systemHeaders.css('font-size', '10px');
+            systemContainer.css('margin-top', '10px');
+            bankText.css('font-size', '4px');
+            luxText.css('font-size', '4px');
+            bankHeader.css('font-size', '9px');
+            luxHeader.css('font-size', '9px');
+            bankContainer.css('height', '40%');
+            luxContainer.css('height', '40%');
+            bankContainer.css('margin-top', '15%');
+            luxContainer.css('margin-top', '15%');
+        } else {
+            systemHeaders.css('font-size', '16px');
+            systemContainer.css('margin-top', '15%');
+            bankText.css('font-size', '0.65em');
+            luxText.css('font-size', '0.65em');
+            bankHeader.css('font-size', '0.8em');
+            luxHeader.css('font-size', '0.8em');
+            bankContainer.css('height', '100%');
+            luxContainer.css('height', '100%');
+            bankContainer.css('margin-top', '4.25%');
+            luxContainer.css('margin-top', '4.25%');
+        }
+
+    
+        // 8. Join waitlist header
+        var waitlistHeader = $('.waitlist-header');
+        var waitlistContent = $('.waitlist-content');
+        var waitlistFirst = $('.waitlist-first');
+        var waitlistLast = $('.waitlist-last');
+        var waitlistEmail = $('.waitlist-email');
+
+        if (windowWidth < 400) {
+            waitlistHeader.css('font-size', '10px');
+            waitlistContent.css('font-size', '7.5px');
+            waitlistFirst.css('font-size', '10px');
+            waitlistLast.css('font-size', '10px');
+            waitlistEmail.css('font-size', '10px');
+        } else if (windowWidth < 800) {
+            waitlistHeader.css('font-size', '16px');
+            waitlistContent.css('font-size', '10px');
+            waitlistFirst.css('font-size', '10px');
+            waitlistLast.css('font-size', '10px');
+            waitlistEmail.css('font-size', '10px');
+        } else {
+            waitlistHeader.css('font-size', '24px');
+            waitlistContent.css('font-size', '18px');
+            waitlistFirst.css('font-size', '18px');
+            waitlistLast.css('font-size', '18px');
+            waitlistEmail.css('font-size', '18px');
+        }
+    }
+    
+    // Call handleResize function initially to set the right state when the page loads.
+    handleResize();
+    
+    // Attach handleResize function to window resize event.
+    $(window).resize(handleResize);
 });

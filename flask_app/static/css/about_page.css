@@ -16,7 +16,7 @@ p, h1, h2, h3 {
 *, body, html {
     margin: 0;
     /* width: 100%; */
-    height: 540px;
+    height: 700px;
     font-family: Garet;
     /* color: white; */
     text-decoration: none;
@@ -77,7 +77,7 @@ p, h1, h2, h3 {
                     margin-left: 11%;
             } .about-intro-body {
                 width: 100%;
-                height: 100%;
+                height: 700px;
                 display: flex;
                 flex-direction: column;
                 } .intro-body {
@@ -88,7 +88,7 @@ p, h1, h2, h3 {
                     } .intro-body-header {
                         display: flex;
                         flex-direction: column;
-                        height: 20%;
+                        height: 100px;
                         width: 50%;
                         align-items: center;
                         margin-left: 29%;
@@ -99,7 +99,7 @@ p, h1, h2, h3 {
                             height: 70%;
                             width: 90%;
                             } .intro-header-title > img {
-                                width: 13.5%;
+                                width: 13%;
                                 height: 80%;
                             } .intro-header-title > h1 {
                                 height: 90%;
@@ -145,7 +145,7 @@ p, h1, h2, h3 {
             display: flex;
             flex-direction: column;
             height: 424.46px;
-            width: 1050px;
+            width: 1000px;
             margin-top: 10%;
             margin-left: 19%;
             justify-content: space-between;
@@ -181,7 +181,7 @@ p, h1, h2, h3 {
                 display: flex;
                 flex-direction: column;
                 height: 25%;
-                width: 90%;
+                width: 95%;
                 gap: 2.25vh;
                 } .company-purpose > h2 {
                     height: 30%;

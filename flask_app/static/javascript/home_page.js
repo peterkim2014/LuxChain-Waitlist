@@ -413,6 +413,54 @@ $(document).ready(function () {
             waitlistLast.css('font-size', '18px');
             waitlistEmail.css('font-size', '18px');
         }
+
+    // 6. iPad specific adjustments
+    if (isiPad) {
+        $('#global', '*').css({
+            'height': '105.5vh'
+        })
+        $('body').css({
+            'height': '105.5vh'
+        })
+        $('html').css({
+            'height': '105.5vh'
+        })
+        $('#page-intro').css({
+            'height': '78vh'
+        })
+        $('.side-nav-bar').css({
+            'width': '11.5%',
+            'margin-left': '0.75%'
+        });
+        $('.side-nav-links').css({
+            'width': '100%',
+            'margin-left': '0%',
+            'gap': '5vh',
+            'margin-top': '158%',
+            // 'height': '60%',
+        })
+        $('.side-nav-links > a').css({
+            'font-size': '0.6em',
+            'width': '100%',
+            'margin-left': '0%',
+            'text-align': 'center'
+        });
+        $('.side-nav-bar > img').css({
+            'width': '12%',
+            'height': '0.8%',
+            'transition': 'margin-top 0.3s ease-in-out',
+            'margin-top': '161%',
+            'margin-left': '5%'
+        });
+        
+
+
+        $('.top-nav-bar a').css('font-size', '12px');
+        // $('#contact-us p').css('font-size', '12px');
+        // $('#contact-us h1').css('font-size', '34px');
+        // $('#contact-us h2').css('font-size', '26px');
+        // $('#contact-us h3').css('font-size', '20px');
+        }
     }
     
     // Call handleResize function initially to set the right state when the page loads.

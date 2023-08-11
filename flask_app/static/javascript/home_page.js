@@ -225,19 +225,19 @@ $(document).ready(function () {
             introSlogan.css('font-size', '5px');
             introDescription.css('font-size', '5px')
             introFooter.css('font-size', '5px')
-            introLogo.css('width', '8.5%');
+            introLogo.css('width', '5%');
         } else if (windowWidth >= 400 && windowWidth < 800) {
             introTitleHeader.css('font-size', '20px');
             introSlogan.css('font-size', '8.5px');
             introDescription.css('font-size', '8.5px')
             introFooter.css('font-size', '8.5px')
-            introLogo.css('width', '10%');
+            introLogo.css('width', '6%');
         } else {
             introTitleHeader.css('font-size', '40px');
             introSlogan.css('font-size', '16px');
             introDescription.css('font-size', '16px')
             introFooter.css('font-size', '0.88em')
-            introLogo.css('width', '8.75%');
+            introLogo.css('width', '7%');
         }
     
         // 4. Crypto Wallet section
@@ -412,54 +412,6 @@ $(document).ready(function () {
             waitlistFirst.css('font-size', '18px');
             waitlistLast.css('font-size', '18px');
             waitlistEmail.css('font-size', '18px');
-        }
-
-    // 6. iPad specific adjustments
-    if (isiPad) {
-        $('#global', '*').css({
-            'height': '105.5vh'
-        })
-        $('body').css({
-            'height': '105.5vh'
-        })
-        $('html').css({
-            'height': '105.5vh'
-        })
-        $('#page-intro').css({
-            'height': '78vh'
-        })
-        $('.side-nav-bar').css({
-            'width': '11.5%',
-            'margin-left': '0.75%'
-        });
-        $('.side-nav-links').css({
-            'width': '100%',
-            'margin-left': '0%',
-            'gap': '5vh',
-            'margin-top': '158%',
-            // 'height': '60%',
-        })
-        $('.side-nav-links > a').css({
-            'font-size': '0.6em',
-            'width': '100%',
-            'margin-left': '0%',
-            'text-align': 'center'
-        });
-        $('.side-nav-bar > img').css({
-            'width': '12%',
-            'height': '0.8%',
-            'transition': 'margin-top 0.3s ease-in-out',
-            'margin-top': '161%',
-            'margin-left': '5%'
-        });
-        
-
-
-        $('.top-nav-bar a').css('font-size', '12px');
-        // $('#contact-us p').css('font-size', '12px');
-        // $('#contact-us h1').css('font-size', '34px');
-        // $('#contact-us h2').css('font-size', '26px');
-        // $('#contact-us h3').css('font-size', '20px');
         }
     }
     

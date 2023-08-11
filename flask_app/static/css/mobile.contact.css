@@ -83,15 +83,69 @@ html{
                 height: 60%;
                 justify-content: center;
                 flex-direction: column;
-                
                 } .contact-form {
                     display: flex;
                     width: 90%;
-                    height: 10%;
+                    height: 50%;
                     flex-direction: column;
-                    gap: 10vw;
+                    gap: 12.5vw;
+                    margin-bottom: 25%;
+                    justify-content: center;
+                    margin-left: 10%;
                     } .form-name {
-                        width: 20%;
-                        height: 30%;
+                        width: 100%;
+                        height: 10%;
                         color: white;
-                        }
+                        } .form-name > input {
+                            border-radius: 4px;
+                            border-width: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(255, 255, 255, 0.1);
+                            color: white;
+                            text-indent: 1%;
+                        }.form-email {
+                            width: 100%;
+                            height: 10%;
+                            color: white;
+                            } .form-email > input {
+                                border-radius: 4px;
+                                border-width: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(255, 255, 255, 0.1);
+                                color: white;
+                                text-indent: 1%;
+                                }.form-header {
+                                    width: 100%;
+                                    height: 10%;
+                                    color: white;
+                                    } .form-header > input {
+                                        border-radius: 4px;
+                                        border-width: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: rgba(255, 255, 255, 0.1);
+                                        color: white;
+                                        text-indent: 1%;
+                                        }.form-description {
+                                            width: 100%;
+                                            height: 500%;
+                                            color: white;
+                                            } .form-description > textarea {
+                                                border-radius: 4px;
+                                                border-width: 0;
+                                                width: 100%;
+                                                height: 200%;
+                                                background-color: rgba(255, 255, 255, 0.1);
+                                                color: white;
+                                                text-indent: 1%;
+                                                } .contact-form > button {
+                                                    height: 80%;
+                                                    text-align: center;
+                                                    border-radius: 4px;
+                                                    border-width: 0;
+                                                    background-color: rgba(22, 109, 253, 1);
+                                                    color: white;
+                                                    margin-top: 25%;
+                                                }

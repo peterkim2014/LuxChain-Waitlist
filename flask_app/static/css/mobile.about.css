@@ -1,0 +1,97 @@
+/* Mobile styles */
+#global-about {
+    width: 414px;
+    height: 896px;
+    background-image: url("../media/mobileBackgroundAbout.webp");
+    background-size: cover;
+}
+
+html{
+    overflow-y: scroll;
+    overscroll-behavior: none;
+    } *, html {
+        margin: 0;
+        height: 100%;
+        font-family: Garet;
+        text-decoration: none;
+        } .mobile-header {
+            margin: 0;
+            width: 100%;
+            height: 17%;
+            display: flex;
+            flex-direction: column;
+            } .hamburger-icon {
+                width: 8%;
+                height: 17%;
+                margin-top: 10%;
+                margin-left: 7%;
+                } .mobile-nav-bar {
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 5%;
+                    } .mobile-nav-box {
+                            width: 5.5%;
+                            height: 35%;
+                            margin-left: 21.5%;
+                            margin-top: 2%;
+                        }.mobile-nav-bar-links {
+                            padding-top: 1%;
+                            display: flex;
+                            justify-content: space-evenly;
+                            font-size: 0.85em;
+                            color: white;
+                            gap: 1.8vw;
+
+                            } .mobile-nav-bar-links > a {
+                                display: flex;
+            } .mobile-body-intro-about {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                height: 40%;
+                } .mobile-body-intro-about-title {
+                    display: flex;
+                    width: 80%;
+                    height: 30%;
+                    padding-top: 90%;
+                    margin-left: 15%;
+                    } .mobile-body-intro-about-title-logo {
+                        width: 20%;
+                        height: 90%;
+                        } .mobile-body-intro-about-title > h2 {
+                            font-size: 4em;
+                            font-family: code light;
+                            color: white;
+                            transform: scale(1, 0.75);
+                } .mobile-about-slogan {
+                    color: white;
+                    font-family: garet;
+                    font-size: 1.15em;
+                    margin-left: 12%;
+                    /* padding-bottom: %; */
+                    height: 100%;
+                    margin-top: -1%;
+                    } .mobile-about-text {
+                        width: 95%;
+                        height: 100%;
+                        display: flex;
+                        color: white;
+                        padding-top: 8%;
+                        font-size: 0.75em;
+                        font-family: futura;
+                        font-style: italic;
+                        text-align: center;
+                        margin-left: 12%;
+                        } .company-establishment {
+                            color:white;
+                            padding-top: 8%;
+                            font-size: 0.75em;
+                            font-family: futura;
+                            font-style: italic;
+                            text-align: center;
+                            margin-left: 12%;
+                        }

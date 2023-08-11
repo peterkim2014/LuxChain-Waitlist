@@ -23,7 +23,7 @@ def homepage():
     user_agent = user_agent.lower()
 
     if is_mobile(user_agent):
-        return render_template('mobile.index.html')
+        return render_template('mobile.home.html')
     else:
         return render_template("home_page.html")
 

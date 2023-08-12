@@ -16,7 +16,7 @@ swipeContainer.addEventListener('touchmove', (e) => {
     if (diffX < -20) {
         // Swiped right
         // You can navigate to another HTML file here
-        window.location.href = 'mobile_apppreview';
+        window.location.href = 'mobile_app_preview';
     }
 
     initialX = null;

@@ -1,0 +1,16 @@
+/* Mobile styles */
+#swipe-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent line breaks */
+    transition: transform 0.3s ease-in-out;
+}
+
+#global-intro {
+    width: 414px;
+    height: 896px;
+    background-image: url("../media/mobileBackgroundIntro.webp");
+    background-size: cover;
+}
+
+

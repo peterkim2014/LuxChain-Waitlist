@@ -27,6 +27,16 @@ def homepage():
     else:
         return render_template("home_page.html")
 
+@app.route("/mobile_apppreview")
+def mobile_home_preview():
+    user_agent = request.headers.get('User-Agent')
+    user_agent = user_agent.lower()
+
+    if is_mobile(user_agent):
+        return render_template('mobile.home.preview.html')
+    else:
+        return render_template("home_page.html")
+    
 @app.route("/join_waitlist", methods=["POST"])
 def post_waitlist():
     clear_flashed_messages()

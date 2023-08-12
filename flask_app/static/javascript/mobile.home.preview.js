@@ -12,11 +12,14 @@ swipeContainer.addEventListener('touchmove', (e) => {
     const currentX = e.touches[0].clientX;
     const diffX = currentX - initialX;
 
+    console.log('DiffX:', diffX);
 
-    if (diffX < -20) {
-        // Swiped right
-        // You can navigate to another HTML file here
-        window.location.href = 'mobile_apppreview';
+    if (diffX > 20) {
+        console.log('Swiped right');
+        window.location.href = '/';
+    } else if (diffX < -20) {
+        console.log('Swiped left');
+        window.location.href = 'mobile.home.preview.html';
     }
 
     initialX = null;

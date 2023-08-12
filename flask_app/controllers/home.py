@@ -27,7 +27,7 @@ def homepage():
     else:
         return render_template("home_page.html")
 
-@app.route("/mobile_apppreview")
+@app.route("/mobile_app_preview")
 def mobile_home_preview():
     user_agent = request.headers.get('User-Agent')
     user_agent = user_agent.lower()

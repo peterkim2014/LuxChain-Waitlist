@@ -27,7 +27,7 @@ swipeContainer.addEventListener('touchmove', (e) => {
         document.body.classList.add('fade-out');
 
         setTimeout(() => {
-            window.location.href = 'mobile.home.preview.html';
+            window.location.href = '/mobile_join_waitlist';
         }, 500); // Match the transition duration
     }
 

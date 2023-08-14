@@ -7,12 +7,16 @@
 }
 
 #global-app {
+    margin: 0;
     width: 414px;
     height: 1706px;
     background-image: url("../media/mobileBackgroundAppPreviewBackground.webp");
     background-size: cover;
 }
 
+body {
+    margin: 0;
+}
  html {
     margin: 0;
     height: 100%;

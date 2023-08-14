@@ -12,7 +12,10 @@ p, h1, h2, h3 {
     border-bottom: 2px solid white; /* Change the color to whatever you prefer */
     } .top-nav-bar a {
     transition: border-bottom 0.01s ease-in-out;
-} 
+} .flash-message {
+    height: 7.5%;
+    width: 105%;
+}
 
 @media only screen and (max-width: 820px) and (max-height: 1180px) {
     *, body, html {

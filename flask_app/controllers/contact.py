@@ -1,5 +1,5 @@
 from flask_app import app
-from flask import render_template, redirect, request, session
+from flask import render_template, redirect, request, session, flash
 from flask_app.config.mysqlconnection import MySQLConnection
 from flask_app.models.contact import Contact
 import re
@@ -40,6 +40,7 @@ def submit_info():
     if Contact.validate_contact(data):
         # Contact.create(data)
         Contact.contact_email(data)
+        flash("Ticket has been created. You will receive a response soon!", "contact")
         return redirect("/contact")
     else:
         return redirect("/contact")

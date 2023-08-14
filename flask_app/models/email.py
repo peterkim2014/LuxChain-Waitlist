@@ -12,10 +12,10 @@ msg_text = """
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <p style="opacity: 0; display: hidden;">{number}</p>
+        <p style="opacity: 0; display: hidden;"> </p>
         <table class="email" width="84.1%" height="50%" valign="top" cellpadding="0" cellspacing="0" border="0" style="word-break: break-word;">
             <tr>
-                <td width="750" height="815" background="https://i.imgur.com/EZxrgB9.png">
+                <td width="750px" height="815px" background="https://i.imgur.com/lFVoNxz.png" background-repeat= "no-repeat" background-size="cover">
 
                 <p class="email-header" style="height: 12%; width: 90%; text-align: end; margin-bottom: 22.5%">Ticket #{number}</p>
 

@@ -45,5 +45,6 @@ class User:
         if not EMAIL_REGEX.match(data["email"]):
             flash("Invalid Email Address", "register")
             is_valid = False
-
+        
+        # flash("Thank you for joining the community!", "register")
         return is_valid

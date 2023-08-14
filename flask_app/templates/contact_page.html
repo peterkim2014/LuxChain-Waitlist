@@ -43,7 +43,7 @@
                         {% with messages = get_flashed_messages(category_filter=['contact']) %}
                             {% if messages %}
                                 {% for message in messages %}
-                                    <p>{{ message }}</p>
+                                    <p class="flash-message">{{ message }}</p>
                                 {% endfor %}
                             {% endif %}
                         {% endwith %}

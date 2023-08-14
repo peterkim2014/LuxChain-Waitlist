@@ -15,21 +15,29 @@ swipeContainer.addEventListener('touchmove', (e) => {
     const diffX = initialX - currentX;
 
     if (diffX > 20) { // This means you've swiped left
-        animateAndChangeRoute();
+        animateBasedOnScreenSize();
     }
 
     initialX = null; // Reset initialX for subsequent swipes
 });
 
-function animateAndChangeRoute() {
-    // Animate the margin-left to 41.75%
+function animateBasedOnScreenSize() {
+    const smallScreenQuery = window.matchMedia("(max-width: 414px) and (max-height: 897px)");
+    const largeScreenQuery = window.matchMedia("(max-width: 820px) and (max-height: 1180px) and (min-width: 415px) and (min-height: 897px)");
+
+    if (smallScreenQuery.matches) {
+        animateAndChangeRoute('41.75%');
+    } else if (largeScreenQuery.matches) {
+        animateAndChangeRoute('45.75%');
+    }
+}
+
+function animateAndChangeRoute(targetMargin) {
     mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
-    mobileNavBarBox.style.marginLeft = '41.75%';
+    mobileNavBarBox.style.marginLeft = targetMargin;
 
     // Wait for the animation to complete (assuming it takes 500ms) then change the route.
     setTimeout(function() {
-        window.location.href = "/mobile_app_preview"; // Update to your new route after animation
+        window.location.href = "/mobile_app_preview"; 
     }, 500);
 }
-
-

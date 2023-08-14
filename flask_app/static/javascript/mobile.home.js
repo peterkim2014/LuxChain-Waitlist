@@ -1,3 +1,18 @@
+// Function to animate opacity of specific elements
+function animateTextOpacity(targetOpacity) {
+    $('#swipe-container').stop(true).animate({
+        opacity: targetOpacity
+    }, 1000);
+}
+
+// Set the initial opacity of text elements to 0.
+$('#swipe-container').css('opacity', '0');
+
+// Upon page load, animate the opacity of these text elements to 1.
+$(document).ready(function() {
+    animateTextOpacity('1');
+});
+
 const swipeContainer = document.getElementById('swipe-container');
 let initialX = null;
 
@@ -9,12 +24,11 @@ swipeContainer.addEventListener('touchstart', (e) => {
 
 swipeContainer.addEventListener('touchmove', (e) => {
     console.log("touched")
-    // if (initialX === null) return;
 
     const currentX = e.touches[0].clientX;
     const diffX = initialX - currentX;
 
-    if (diffX > 20) { // This means you've swiped left
+    if (diffX > 20) { // Detected a left swipe
         animateBasedOnScreenSize();
     }
 
@@ -27,17 +41,23 @@ function animateBasedOnScreenSize() {
 
     if (smallScreenQuery.matches) {
         animateAndChangeRoute('41.75%');
+        // animateAndChangeRoute('100%');
     } else if (largeScreenQuery.matches) {
         animateAndChangeRoute('45.75%');
+        // animateAndChangeRoute('100%');
     }
 }
 
 function animateAndChangeRoute(targetMargin) {
+    // As the nav bar box starts to move, animate the opacity of the specific text elements back to 0.
+    animateTextOpacity('0');
+
+    // Simultaneously animate the margin of the nav bar box.
     mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
     mobileNavBarBox.style.marginLeft = targetMargin;
 
-    // Wait for the animation to complete (assuming it takes 500ms) then change the route.
+    // After the animation is done, redirect.
     setTimeout(function() {
         window.location.href = "/mobile_app_preview"; 
-    }, 500);
+    }, 600);
 }

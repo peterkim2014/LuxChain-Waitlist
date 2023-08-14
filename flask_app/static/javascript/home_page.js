@@ -92,8 +92,8 @@ $(document).ready(function () {
         var formData = new FormData(this);
     
         fetch('/join_waitlist', {
-            method: 'POST',
-            body: formData
+            // method: 'POST',
+            // body: formData
         })
         .then(() => {
             // This is a redirect so no need to handle JSON response

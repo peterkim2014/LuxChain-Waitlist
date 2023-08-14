@@ -19,7 +19,7 @@ swipeContainer.addEventListener('touchmove', (e) => {
         document.body.classList.add('fade-out');
 
         setTimeout(() => {
-            window.location.href = '/mobile_app_preview';
+            window.location.href = '/';
         }, 500); // Match the transition duration
 
     } else if (diffX < -20) {

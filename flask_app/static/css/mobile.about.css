@@ -1,52 +1,57 @@
-@media only screen and (max-width: 820px) and (max-height: 1180px) and (min-width: 769px) and (min-height: 1025px) { 
-
 /* Mobile styles */
+#swipe-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent line breaks */
+    transition: transform 0.3s ease-in-out;
+}
+
 #global-about {
-    max-width: 100%;
-    max-height: max-content;
+    margin: 0;
+    width: 414px;
+    height: 1706px;
     background-image: url("../media/mobileBackgroundAbout.webp");
     background-size: cover;
 }
 
-html{
-    overflow-y: scroll;
-    overscroll-behavior: none;
-    } *, html {
+body {
+    margin: 0;
+}
+ html {
+    margin: 0;
+    height: 100%;
+    font-family: Garet;
+    text-decoration: none;
+    } .mobile-header {
         margin: 0;
-        height: 100%;
-        font-family: Garet;
-        text-decoration: none;
-        } .mobile-header {
-            margin: 0;
-            width: 100%;
+        max-height: 17%;
+        display: flex;
+        flex-direction: column;
+        } .hamburger-icon {
+            width: 8%;
             height: 17%;
-            display: flex;
-            flex-direction: column;
-            } .hamburger-icon {
-                width: 8%;
-                height: 17%;
-                margin-top: 10%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
-                    width: 100%;
-                    height: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 5%;
-                    } .mobile-nav-box {
-                            width: 3.5%;
-                            height: 27.5%;
-                            margin-left: 27%;
-                            margin-top: 5%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
+            margin-top: 10%;
+            margin-left: 7%;
+            } .mobile-nav-bar {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+                } .mobile-nav-box {
+                        width: 3.5%;
+                        height: 30%;
+                        margin-left: 18.5%;
+                        margin-top: 5%;
+                    }.mobile-nav-bar-links {
+                        padding-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.85em;
+                        color: black;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
                             display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.9em;
-                            color: white;
-                            gap: 1.8vw;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
             } .mobile-body-intro-about {
                 display: flex;
                 flex-direction: column;
@@ -97,7 +102,6 @@ html{
                             text-align: center;
                             margin-left: 12%;
                         }
-}
 
 @media only screen and (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) and (min-height: 897px) { 
 /* Mobile styles */

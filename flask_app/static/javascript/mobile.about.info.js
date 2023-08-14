@@ -57,11 +57,12 @@ function animateAndChangeRoute(targetMargin) {
     animateTextOpacity('0');
 
     // Simultaneously animate the margin of the nav bar box.
-    mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
-    mobileNavBarBox.style.marginLeft = targetMargin;
+    // mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
+    // mobileNavBarBox.style.marginLeft = targetMargin;
 
     // After the animation is done, redirect.
     setTimeout(function() {
-        window.location.href = "/about_info"; 
+        window.location.href = "/about"; 
     }, 600);
 }
+

@@ -1,0 +1,56 @@
+/* Mobile styles */
+#swipe-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent line breaks */
+    transition: transform 0.3s ease-in-out;
+}
+
+#global-about-info {
+    margin: 0;
+    width: 414px;
+    height: 1706px;
+    background-image: url("../media/mobileBackgroundAboutInfo.webp");
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+}
+
+ html {
+    margin: 0;
+    height: 100%;
+    font-family: Garet;
+    text-decoration: none;
+    } .mobile-header {
+        margin: 0;
+        max-height: 17%;
+        display: flex;
+        flex-direction: column;
+        } .hamburger-icon {
+            width: 8%;
+            height: 17%;
+            margin-top: 10%;
+            margin-left: 7%;
+            } .mobile-nav-bar {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+                } .mobile-nav-box {
+                        width: 3.5%;
+                        height: 30%;
+                        margin-left: 18.5%;
+                        margin-top: 5%;
+                    }.mobile-nav-bar-links {
+                        padding-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.85em;
+                        color: black;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
+                            display: flex;
+                        }

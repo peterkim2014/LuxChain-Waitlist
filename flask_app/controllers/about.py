@@ -25,3 +25,15 @@ def aboutpage():
         return render_template('mobile.about.html')
     else:
         return render_template("about_page.html")
+
+@app.route("/about_info")
+def aboutinfo():
+    user_agent = request.headers.get('User-Agent')
+    user_agent = user_agent.lower()
+
+    if is_mobile(user_agent):
+        return render_template('mobile.about.info.html')
+    else:
+        return render_template("about_page.html")
+
+

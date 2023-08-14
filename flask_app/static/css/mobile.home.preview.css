@@ -39,10 +39,10 @@ body {
                 flex-direction: column;
                 margin-top: 5%;
                 } .mobile-nav-box {
-                        width: 3.5%;
+                        width: 5%;
                         height: 30%;
                         margin-left: 18.5%;
-                        margin-top: 5%;
+                        margin-top: 2.85%;
                     }.mobile-nav-bar-links {
                         padding-top: 1%;
                         display: flex;

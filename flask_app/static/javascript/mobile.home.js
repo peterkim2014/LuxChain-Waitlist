@@ -22,10 +22,14 @@ swipeContainer.addEventListener('touchstart', (e) => {
     initialX = e.touches[0].clientX;
 });
 
+
+
 swipeContainer.addEventListener('touchmove', (e) => {
     console.log("touched")
 
     const currentX = e.touches[0].clientX;
+
+
     const diffX = initialX - currentX;
 
     if (diffX > 20) { // Detected a left swipe
@@ -61,3 +65,4 @@ function animateAndChangeRoute(targetMargin) {
         window.location.href = "/mobile_app_preview"; 
     }, 600);
 }
+

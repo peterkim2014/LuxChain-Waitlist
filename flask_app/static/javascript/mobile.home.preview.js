@@ -15,11 +15,20 @@ swipeContainer.addEventListener('touchmove', (e) => {
     console.log('DiffX:', diffX);
 
     if (diffX > 20) {
-        console.log('Swiped right');
-        window.location.href = '/';
+        // Swiped right
+        document.body.classList.add('fade-out');
+
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 500); // Match the transition duration
+
     } else if (diffX < -20) {
-        console.log('Swiped left');
-        window.location.href = 'mobile.home.preview.html';
+        // Swiped left
+        document.body.classList.add('fade-out');
+
+        setTimeout(() => {
+            window.location.href = 'mobile.home.preview.html';
+        }, 500); // Match the transition duration
     }
 
     initialX = null;

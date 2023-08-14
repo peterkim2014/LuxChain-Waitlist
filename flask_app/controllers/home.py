@@ -51,7 +51,7 @@ def post_waitlist():
     }
 
     if User.validate_registration(data):
-        User.create(data)
+        # User.create(data)
         User.email(email_data)
         flash("Thank you for joining the waitlist!")
         return redirect(url_for('homepage') + '#page-waitlist')  # replace 'your_route_name' with the correct route

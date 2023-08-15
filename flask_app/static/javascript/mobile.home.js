@@ -63,6 +63,6 @@ function animateAndChangeRoute(targetMargin) {
     // After the animation is done, redirect.
     setTimeout(function() {
         window.location.href = "/mobile_app_preview"; 
-    }, 600);
+    }, 350);
 }
 

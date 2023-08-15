@@ -52,5 +52,5 @@ function animateAndChangeRoute(targetMargin, targetRoute) {
     // After the animation is done, redirect.
     setTimeout(function() {
         window.location.href = targetRoute;
-    }, 600);
+    }, 350);
 }

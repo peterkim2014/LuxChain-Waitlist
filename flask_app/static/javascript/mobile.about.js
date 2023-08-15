@@ -44,7 +44,7 @@ function animateBasedOnScreenSize() {
     const largeScreenQuery = window.matchMedia("(max-width: 820px) and (max-height: 1180px) and (min-width: 415px) and (min-height: 897px)");
 
     if (smallScreenQuery.matches) {
-        animateAndChangeRoute('41.75%');
+        animateAndChangeRoute('62.5%');
         // animateAndChangeRoute('100%');
     } else if (largeScreenQuery.matches) {
         animateAndChangeRoute('45.75%');

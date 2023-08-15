@@ -267,7 +267,6 @@ body {
             width: 100%;
             height: 35%;
             padding-top: 15%;
-            
             } .company-info-one {
                 display: flex;
                 flex-direction: column;
@@ -286,44 +285,44 @@ body {
                         /* margin-left: 20%; */
                         text-align: center;
                         margin-top: -3.5%;
-                    } .company-info-two {
-                        display: flex;
-                        flex-direction: column;
-                        width: 80%;
-                        height: 33%;
-                        margin-left: 10%;
-                        margin-top: -3%;
-                        } .company-info-two > h2 {
-                            color: white;
-                            font-size: 25px;
-                            /* margin-left: 60%; */
-                            text-align: center;
-                            } .company-info-two > p {
-                                width: 100%;
+                        } .company-info-two {
+                            display: flex;
+                            flex-direction: column;
+                            width: 80%;
+                            height: 33%;
+                            margin-left: 10%;
+                            margin-top: -3%;
+                            } .company-info-two > h2 {
                                 color: white;
-                                font-size: 8.5px;
-                                /* margin-left: 20%; */
+                                font-size: 25px;
+                                /* margin-left: 60%; */
                                 text-align: center;
-                                margin-top: -3.5%;
-                            } .company-info-three {
-                                display: flex;
-                                flex-direction: column;
-                                width: 80%;
-                                height: 33%;
-                                margin-left: 10%;
-                                margin-top: -3%;
-                                } .company-info-three > h2 {
+                                } .company-info-two > p {
+                                    width: 100%;
                                     color: white;
-                                    font-size: 25px;
-                                    /* margin-left: 60%; */
+                                    font-size: 8.5px;
+                                    /* margin-left: 20%; */
                                     text-align: center;
-                                    } .company-info-three > p {
-                                        width: 100%;
-                                        color: white;
-                                        font-size: 8.5px;
-                                        /* margin-left: 20%; */
-                                        text-align: center;
-                                        margin-top: -3.5%;
+                                    margin-top: -3.5%;
+                                    } .company-info-three {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 80%;
+                                        height: 33%;
+                                        margin-left: 10%;
+                                        margin-top: -3%;
+                                        } .company-info-three > h2 {
+                                            color: white;
+                                            font-size: 25px;
+                                            /* margin-left: 60%; */
+                                            text-align: center;
+                                            } .company-info-three > p {
+                                                width: 100%;
+                                                color: white;
+                                                font-size: 8.5px;
+                                                /* margin-left: 20%; */
+                                                text-align: center;
+                                                margin-top: -3.5%;
             } .problem-solution {
                 padding-top: 3.5%;
                 display: flex;
@@ -343,21 +342,21 @@ body {
                             margin-left: 25%;
                             text-align: center;
                             margin-top: 1.25%;
-                } .solution {
-                    display: flex;
-                    flex-direction: column;
-                    } .solution > h2 {
-                        font-size: 15px;
-                        color: white;
-                        margin-left: 53%;
-                        /* margin-top: 0%; */
-                        } .solution > p {
-                            font-size: 8.5px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                }
+                            } .solution {
+                                display: flex;
+                                flex-direction: column;
+                                } .solution > h2 {
+                                    font-size: 15px;
+                                    color: white;
+                                    margin-left: 53%;
+                                    /* margin-top: 0%; */
+                                    } .solution > p {
+                                        font-size: 8.5px;
+                                        color: white;
+                                        margin-left: 25%;
+                                        text-align: center;
+                                        margin-top: 1.25%;
+                            }
 }
 @media only screen and (max-width: 390px) and (max-height: 844px) and (min-width: 361px) and (min-height: 741px) { 
 /* Mobile styles */

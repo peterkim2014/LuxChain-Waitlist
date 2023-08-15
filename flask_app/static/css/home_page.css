@@ -131,8 +131,8 @@ html{
                         color: white;
                         text-decoration: none;
                         width: fit-content;
-                        height: 75%;
-                        font-size: 0.9em;
+                        height: 65%;
+                        /* font-size: 0.9em; */
                 } .intro-main {
                     margin: 0;
                     margin-top: 15%;

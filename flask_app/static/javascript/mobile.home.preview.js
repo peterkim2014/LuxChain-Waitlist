@@ -2,6 +2,14 @@ const swipeContainer = document.getElementById('swipe-container');
 let initialX = null;
 const mobileNavBarBox = document.querySelector('[alt="mobile nav bar box"]');
 
+// Set the initial opacity of text elements to 0.
+$('#swipe-container').css('opacity', '0');
+
+// Upon page load, animate the opacity of these text elements to 1.
+$(document).ready(function() {
+    animateTextOpacity('1');
+});
+
 swipeContainer.addEventListener('touchstart', (e) => {
     console.log('Touchstart detected');
     initialX = e.touches[0].clientX;

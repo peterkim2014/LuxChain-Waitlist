@@ -22,6 +22,8 @@ body {
     height: 100%;
     font-family: Garet;
     text-decoration: none;
+    overscroll-behavior: none;
+    overflow-y: scroll;
     } .mobile-header {
         margin: 0;
         max-height: 17%;
@@ -39,10 +41,10 @@ body {
                 flex-direction: column;
                 margin-top: 5%;
                 } .mobile-nav-box {
-                        width: 5%;
-                        height: 30%;
-                        margin-left: 18.5%;
-                        margin-top: 2.85%;
+                        width: 3.75%;
+                        height: 10%;
+                        margin-left: 41.75%;
+                        margin-top: 3.5%;
                     }.mobile-nav-bar-links {
                         padding-top: 1%;
                         display: flex;

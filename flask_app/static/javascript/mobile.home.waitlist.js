@@ -1,9 +1,6 @@
-// Function to animate opacity of specific elements
-function animateTextOpacity(targetOpacity) {
-    $('#swipe-container').stop(true).animate({
-        opacity: targetOpacity
-    }, 1000);
-}
+const swipeContainer = document.getElementById('swipe-container');
+let initialX = null;
+const mobileNavBarBox = document.querySelector('[alt="mobile nav bar box"]');
 
 // Set the initial opacity of text elements to 0.
 $('#swipe-container').css('opacity', '0');
@@ -13,46 +10,38 @@ $(document).ready(function() {
     animateTextOpacity('1');
 });
 
-const swipeContainer = document.getElementById('swipe-container');
-let initialX = null;
-
-const mobileNavBarBox = document.querySelector('[alt="mobile nav bar box"]');
-
 swipeContainer.addEventListener('touchstart', (e) => {
+    console.log('Touchstart detected');
     initialX = e.touches[0].clientX;
 });
 
-
-
 swipeContainer.addEventListener('touchmove', (e) => {
-    console.log("touched")
+    if (initialX === null) return;
 
     const currentX = e.touches[0].clientX;
+    const diffX = currentX - initialX;
 
+    console.log('DiffX:', diffX);
 
-    const diffX = initialX - currentX;
-
-    if (diffX < -20) { // Detected a left swipe
-        animateBasedOnScreenSize();
+    if (diffX > 20) {
+        // Swiped right
+        handleSwipeRight();
     }
 
-    initialX = null; // Reset initialX for subsequent swipes
+    initialX = null;
 });
 
-function animateBasedOnScreenSize() {
-    const smallScreenQuery = window.matchMedia("(max-width: 414px) and (max-height: 897px)");
-    const largeScreenQuery = window.matchMedia("(max-width: 820px) and (max-height: 1180px) and (min-width: 415px) and (min-height: 897px)");
-
-    if (smallScreenQuery.matches) {
-        animateAndChangeRoute('41.75%');
-        // animateAndChangeRoute('100%');
-    } else if (largeScreenQuery.matches) {
-        animateAndChangeRoute('45.75%');
-        // animateAndChangeRoute('100%');
-    }
+function handleSwipeRight() {
+    animateAndChangeRoute('41.75%', '/mobile_app_preview');
 }
 
-function animateAndChangeRoute(targetMargin) {
+function animateTextOpacity(targetOpacity) {
+    $('#swipe-container').stop(true).animate({
+        opacity: targetOpacity
+    }, 1000);
+}
+
+function animateAndChangeRoute(targetMargin, targetRoute) {
     // As the nav bar box starts to move, animate the opacity of the specific text elements back to 0.
     animateTextOpacity('0');
 
@@ -62,7 +51,6 @@ function animateAndChangeRoute(targetMargin) {
 
     // After the animation is done, redirect.
     setTimeout(function() {
-        window.location.href = "/mobile_app_preview"; 
+        window.location.href = targetRoute;
     }, 600);
 }
-

@@ -9,27 +9,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px;
-    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
     z-index: 1000; /* Ensures the side nav bar appears above other content */
     display: flex; /* Initially hidden */
     flex-direction: column;
     justify-content: space-between;
-
+    transform: translateX(-100%); /* Move it off the screen */
+    transition: transform 0.5s ease-in-out; /* Animation */
     }.hamburger-return {
         height: 3%;
         width: 19%;
         margin-top: 15%;
         margin-left: 70%;
         } .side-nav-links {
-
-    overflow: hidden; /* Hide overflowing content */
-    transform: translateX(-100%); /* Move it off the screen */
-    transition: transform 0.5s ease-in-out; /* Animation */
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    width: 100%;
-    padding-bottom: 187.5%;
+            /* overflow: hidden; Hide overflowing content */
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 100%;
+            padding-bottom: 187.5%;
     } .nav-links {
         display: flex;
         flex-direction: column;

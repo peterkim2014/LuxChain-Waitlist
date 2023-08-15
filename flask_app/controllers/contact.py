@@ -26,6 +26,16 @@ def contact_page():
         return render_template('mobile.contact.html')
     else:
         return render_template("contact_page.html")
+    
+@app.route("/FAQ")
+def faq_page():
+    user_agent = request.headers.get('User-Agent')
+    user_agent = user_agent.lower()
+
+    if is_mobile(user_agent):
+        return render_template('mobile.contact.FAQ.html')
+    else:
+        return render_template("contact_page.html")
 
 @app.route("/contact_submit", methods=["POST"])
 def submit_info():

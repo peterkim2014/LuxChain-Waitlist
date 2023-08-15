@@ -38,9 +38,9 @@
             } .head-links > img {
                 height: 100%;
                 width: 20%;
-            } .head-links > a {
-                height: 100%;
-                width: 75%;
+                } .head-links > a {
+                    height: 100%;
+                    width: 75%;
         } .nav-sub-links {
             display: flex;
             flex-direction: column;
@@ -58,10 +58,10 @@
                     } .head-links > img {
                         height: 100%;
                         width: 20%;
-                    } .head-links > a {
-                        height: 100%;
-                        width: 75%;
-                        color: white;
+                        } .head-links > a {
+                            height: 100%;
+                            width: 75%;
+                            color: white;
                 } .nav-sub-links {
                     display: flex;
                     flex-direction: column;
@@ -103,93 +103,93 @@
                                             height: 100%;
                                             font-size: 11.5px;
                                             color: white;
-                                } .nav-link-two {
-                                    display: flex;
-                                    flex-direction: column;
-                                    height: 54%;
-                                    width: 100%;
-                                    padding-left: 7%;
-                                    margin-top: 20%;
-                                    } .head-link-two {
-                                        display: flex;
-                                        width: 100%;
-                                        height: 70%;
-                                        margin-top: -2%;
-                                        } .head-link-two > img {
-                                            margin-top: -6.5%;
-                                            height: 30%;
-                                            width: 11%;
-                                            padding-right: 6%;
-                                            } .head-link-two > a {
-                                                font-weight: 100;
-                                                font-size: 18px;
-                                                margin-top: -8%;
-                                                height: 20%;
-                                                width: 40%;
-                                                color: white;
-                                                margin-left: -2%;
-                                                } .nav-sub-link-two {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    width: 100%;
-                                                    height: 25%;
-                                                    margin-top: -23%;
-                                                    gap: 3.8vw;
-                                                    margin-left: -5%;
-                                                    justify-content: start;
-                                                } .nav-sub-link-two-one {
-                                                        height: 50%;
-                                                        font-size: 11.5px;
-                                                        color: white;
-                                                        } .nav-sub-link-two-two {
-                                                            height: 50%;
-                                                            font-size: 11.5px;
-                                                            color: white;
-                                                            margin-left: 12.5%;
-                                    } .nav-link-three {
+                    } .nav-link-two {
+                        display: flex;
+                        flex-direction: column;
+                        height: 54%;
+                        width: 100%;
+                        padding-left: 7%;
+                        margin-top: 20%;
+                        } .head-link-two {
+                            display: flex;
+                            width: 100%;
+                            height: 70%;
+                            margin-top: -2%;
+                            } .head-link-two > img {
+                                margin-top: -6.5%;
+                                height: 30%;
+                                width: 11%;
+                                padding-right: 6%;
+                                } .head-link-two > a {
+                                    font-weight: 100;
+                                    font-size: 18px;
+                                    margin-top: -8%;
+                                    height: 20%;
+                                    width: 40%;
+                                    color: white;
+                                    margin-left: -2%;
+                                    } .nav-sub-link-two {
                                         display: flex;
                                         flex-direction: column;
-                                        height: 100%;
                                         width: 100%;
-                                        padding-left: 7%;
-                                        margin-top: 20%;
-                                        } .head-link-three {
-                                            display: flex;
-                                            width: 100%;
-                                            height: 20%;
-                                            margin-top: -18%;
-                                            } .head-link-three > img {
+                                        height: 25%;
+                                        margin-top: -23%;
+                                        gap: 3.8vw;
+                                        margin-left: -5%;
+                                        justify-content: start;
+                                    } .nav-sub-link-two-one {
+                                            height: 50%;
+                                            font-size: 11.5px;
+                                            color: white;
+                                            } .nav-sub-link-two-two {
                                                 height: 50%;
-                                                width: 11%;
-                                                padding-right: 6%;
-                                                margin-top: -0.5%;
-                                                } .head-link-three > a {
-                                                    font-weight: 100;
-                                                    font-size: 18px;
-                                                    margin-top: -2%;
-                                                    height: 34%;
-                                                    width: 60%;
-                                                    color: white;
-                                                    margin-left: 1%;
-                                                    } .nav-sub-link-three {
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        width: 100%;
-                                                        height: 100%;
-                                                        margin-top: -1%;
-                                                        gap: 0.5vw;
-                                                        justify-content: start;
-                                                        margin-left: -5%;
-                                                        } .nav-sub-link-three-one {
-                                                            height: 15%;
-                                                            font-size: 11.5px;
-                                                            color: white;
-                                                            margin-left: 4%;
-                                                            } .nav-sub-link-three-two {
-                                                                height: 15%;
-                                                                font-size: 11.5px;
-                                                                color: white;
-                                                                margin-left: -27.5%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                margin-left: 12.5%;
+                    } .nav-link-three {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width: 100%;
+                        padding-left: 7%;
+                        margin-top: 20%;
+                        } .head-link-three {
+                            display: flex;
+                            width: 100%;
+                            height: 20%;
+                            margin-top: -18%;
+                            } .head-link-three > img {
+                                height: 50%;
+                                width: 11%;
+                                padding-right: 6%;
+                                margin-top: -0.5%;
+                                } .head-link-three > a {
+                                    font-weight: 100;
+                                    font-size: 18px;
+                                    margin-top: -2%;
+                                    height: 34%;
+                                    width: 60%;
+                                    color: white;
+                                    margin-left: 1%;
+                                    } .nav-sub-link-three {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 100%;
+                                        height: 100%;
+                                        margin-top: -1%;
+                                        gap: 0.5vw;
+                                        justify-content: start;
+                                        margin-left: -5%;
+                                        } .nav-sub-link-three-one {
+                                            height: 15%;
+                                            font-size: 11.5px;
+                                            color: white;
+                                            margin-left: 4%;
+                                            } .nav-sub-link-three-two {
+                                                height: 15%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                margin-left: -27.5%;
 
                     } 
 

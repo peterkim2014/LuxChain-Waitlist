@@ -62,6 +62,7 @@ function animateAndChangeRoute(targetMargin) {
 
     // After the animation is done, redirect.
     setTimeout(function() {
-        window.location.href = "/FAQ"; 
+        window.location.href = "/contact"; 
     }, 600);
 }
+

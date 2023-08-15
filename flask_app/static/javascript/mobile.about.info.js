@@ -28,6 +28,22 @@ $(document).ready(function() {
         $('.hamburger-icon').show();
         // $('.hamburger-return').hide();
     });
+
+    // Close the side nav bar when clicked outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.side-nav-bar').length && !$(e.target).hasClass('hamburger-icon')) {
+            closeSideNavBar();
+        }
+    });
+
+    function closeSideNavBar() {
+        // Slide the side nav bar out
+        $('.side-nav-bar').css('transform', 'translateX(-100%)');
+
+        // Show the hamburger-icon and hide the hamburger-return icon
+        $('.hamburger-icon').show();
+        // $('.hamburger-return').hide();
+    }
 });
 
 const swipeContainer = document.getElementById('swipe-container');

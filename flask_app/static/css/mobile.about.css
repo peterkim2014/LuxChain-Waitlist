@@ -22,14 +22,6 @@
         margin-top: 15%;
         margin-left: 70%;
         } .side-nav-links {
-<<<<<<< HEAD
-<<<<<<< HEAD
-         
-=======
-=======
-
->>>>>>> 94ef552b6a508fda41e3e3b5ff36c73fea74e4aa
-            /* overflow: hidden; Hide overflowing content */
             display: flex;
             flex-direction: column;
             height: 50%;
@@ -50,11 +42,6 @@
                 height: 100%;
                 width: 75%;
         } .nav-sub-links {
-
-<<<<<<< HEAD
->>>>>>> c806908092dac448353ef33be691ac9c0e558f37
-=======
->>>>>>> 94ef552b6a508fda41e3e3b5ff36c73fea74e4aa
             display: flex;
             flex-direction: column;
             height: 50%;

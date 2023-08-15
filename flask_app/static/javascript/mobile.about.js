@@ -11,6 +11,24 @@ $('#swipe-container').css('opacity', '0');
 // Upon page load, animate the opacity of these text elements to 1.
 $(document).ready(function() {
     animateTextOpacity('1');
+    
+    $('.hamburger-icon').on('click', function() {
+        // Show the side nav bar
+        $('.side-nav-bar').show();
+
+        // Hide the hamburger-icon and show the hamburger-return icon
+        // $('.hamburger-icon').hide();
+        $('.hamburger-return').show();
+    });
+
+    $('.hamburger-return').on('click', function() {
+        // Hide the side nav bar
+        $('.side-nav-bar').hide();
+
+        // Show the hamburger-icon and hide the hamburger-return icon
+        $('.hamburger-icon').show();
+        $('.hamburger-return').hide();
+    });
 });
 
 const swipeContainer = document.getElementById('swipe-container');

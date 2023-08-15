@@ -9,7 +9,7 @@
 #global-about-info {
     margin: 0;
     width: 414px;
-    height: 1706px;
+    height: 1000px;
     background-image: url("../media/mobileBackgroundAboutInfo.webp");
     background-size: cover;
 }
@@ -38,9 +38,9 @@ body {
                 height: 40%;
                 display: flex;
                 flex-direction: column;
-                margin-top: 5%;
+                margin-top: 2.85%;
                 } .mobile-nav-box {
-                        width: 3.5%;
+                        width: 5%;
                         height: 30%;
                         margin-left: 18.5%;
                         margin-top: 5%;
@@ -49,8 +49,76 @@ body {
                         display: flex;
                         justify-content: space-evenly;
                         font-size: 0.85em;
-                        color: black;
+                        color: white;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
                             display: flex;
+        } .company-information {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 35%;
+            padding-top: 15%;
+            
+            } .company-info-one {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                height: 33%;
+                text-align: center;
+                } .company-info-one > h2 {
+                    color: white;
+                    font-size: 15px;
+                    margin-left: 60%;
+                    } .company-info-one > p {
+                        color: white;
+                        font-size: 8.5px;
+                        margin-left: 30%;
+                        text-align: center;
+                        margin-top: -3.5%;
+                    } .company-info-two {
+                        margin-top: -8%;
+                        display: flex;
+                        flex-direction: column;
+                        width: 80%;
+                        height: 33%;
+                        text-align: center;
+                        } .company-info-two > h2 {
+                            color: white;
+                            font-size: 15px;
+                            margin-left: 60%;
+                            } .company-info-two > p {
+                                color: white;
+                                font-size: 8.5px;
+                                margin-left: 30%;
+                                text-align: center;
+                                margin-top: -3.5%;
+                            } .company-info-three {
+                                margin-top: -8%;
+                                display: flex;
+                                flex-direction: column;
+                                width: 80%;
+                                height: 33%;
+                                text-align: center;
+                                } .company-info-three > h2 {
+                                    color: white;
+                                    font-size: 15px;
+                                    margin-left: 60%;
+                                    } .company-info-three > p {
+                                        color: white;
+                                        font-size: 8.5px;
+                                        margin-left: 30%;
+                                        text-align: center;
+                                        margin-top: -3.5%;
+            } .problem-solution {
+                padding-top: 9%;
+                display: flex;
+                width: 80%;
+                height: 30%;
+                } .problem {
+                    display: flex;
+                    flex-direction: column;
+                    } .problem > h2 {
+                        font-size: 15px;
+                        color: white;
                         }

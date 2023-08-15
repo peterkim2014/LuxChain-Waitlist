@@ -59,7 +59,7 @@ body {
             height: 13%;
             justify-content: center;
             /* padding-bottom: 5%; */
-            } .opening-features > a {
+            } .opening-features > p {
                 display: flex;
                 width: 30%;
                 height: 10%;
@@ -73,7 +73,7 @@ body {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-                    gap: 6vw;
+                    gap: 3vw;
                     margin-left: 8%;
                 }.opening-features-one {
                     display: flex;
@@ -84,11 +84,13 @@ body {
                     margin-left: 3%;
                     /* margin-top: 5%; */
                     gap: -5vw;
-                    } .opening-features-one > a {
+                    } .opening-features-one {
                         font-size: 0.6em;
                         color: white;
                         font-weight: 600;
-                        margin-left: -5%;
+                        margin-left: -1%;
+                        margin-top: -1%;
+                        padding-top: 1%;
                         } .opening-features-two {
                                 display: flex;
                                 width: 100%;
@@ -98,24 +100,22 @@ body {
                                 margin-left: 3%;
                                 margin-top: 5%;
                                 gap: -5vw;
-                                } .opening-features-two > a {
+                                font-size: 0.6em;
+                                color: white;
+                                font-weight: 600;
+                                } .opening-features-three {
+                                    display: flex;
+                                    width: 100%;
+                                    height: 14%;
+                                    flex-direction: column;
+                                    text-align: start;
+                                    margin-left: 3%;
+                                    margin-top: 5%;
+                                    gap: -5vw;
                                     font-size: 0.6em;
                                     color: white;
                                     font-weight: 600;
-                                    } .opening-features-three {
-                                            display: flex;
-                                            width: 100%;
-                                            height: 14%;
-                                            flex-direction: column;
-                                            text-align: start;
-                                            margin-left: 3%;
-                                            margin-top: 5%;
-                                            gap: -5vw;
-                                            } .opening-features-three > a {
-                                                font-size: 0.6em;
-                                                color: white;
-                                                font-weight: 600;
-                                                margin-left: 5%;
+                                    margin-left: 5%;
         } .swiping-features {
             display: flex;
             width: 100%;
@@ -133,10 +133,6 @@ body {
                     font-size: 0.7em;
                     margin-left: -41.5%;
                     padding-top: 8%;
-                    } .swiping-features-one-description > a {
-                        width: 100%;
-                        height: 20%;
-                        font-weight: 600;
                     } .swiping-features-one-description > p {
                         width: 100%;
                         height: 30%;
@@ -189,9 +185,9 @@ body {
             } .feature-descriptions {
                 display: flex;
                 flex-direction: column;
-                gap: 2vw;
-                padding-top: 6.5%;
-                } .feature-descriptions > a {
+                /* gap: -4vw; */
+                padding-top: 4.5%;
+                } .feature-descriptions > p {
                     color: white;
                     font-size: 7px;
                     text-align: center;
@@ -221,7 +217,7 @@ body {
                                 height: 60%;
                                 gap: 10vw;
                                 margin-right: 5%;
-                                padding-top: 12%;
+                                padding-top: 7%;
                                 } .feature-icon-one-components {
                                     display: flex;
                                     flex-direction: column;
@@ -269,7 +265,7 @@ body {
                         width: 50%;
                         height: 75%;
                         padding-left: 13.5%;
-                        padding-top: 17.5%;
+                        padding-top: 14.5%;
                         } .polkadot-technology-description > a {
                             color: white;
                             font-size: 0.9em;
@@ -286,7 +282,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                margin-top: -7%;
+                margin-top: -10%;
                 } .banking-system > p {
                     font-weight: 600;
                     font-size: 12px;

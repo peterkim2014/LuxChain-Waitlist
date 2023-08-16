@@ -231,6 +231,8 @@
         height: 100%;
         font-family: Garet;
         text-decoration: none;
+        overflow-y: scroll;
+        overscroll-behavior: none;
         } .mobile-header {
             margin: 0;
             max-height: 17%;
@@ -575,6 +577,8 @@
         height: 100%;
         font-family: Garet;
         text-decoration: none;
+        overflow-y: scroll;
+        overscroll-behavior: none;
         } .mobile-header {
             margin: 0;
             max-height: 17%;
@@ -928,6 +932,8 @@
         height: 100%;
         font-family: Garet;
         text-decoration: none;
+        overflow-y: scroll;
+        overscroll-behavior: none;
         } .mobile-header {
             margin: 0;
             max-height: 17%;
@@ -1281,6 +1287,8 @@
         height: 100%;
         font-family: Garet;
         text-decoration: none;
+        overflow-y: scroll;
+        overscroll-behavior: none;
         } .mobile-header {
             margin: 0;
             max-height: 17%;
@@ -1425,6 +1433,8 @@
         height: 100%;
         font-family: Garet;
         text-decoration: none;
+        overflow-y: scroll;
+        overscroll-behavior: none;
         } .mobile-header {
             margin: 0;
             max-height: 17%;
@@ -1569,6 +1579,8 @@
         height: 100%;
         font-family: Garet;
         text-decoration: none;
+        overflow-y: scroll;
+        overscroll-behavior: none;
         } .mobile-header {
             margin: 0;
             max-height: 17%;

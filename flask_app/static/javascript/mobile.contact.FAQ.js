@@ -83,10 +83,10 @@ function animateBasedOnScreenSize() {
     const largeScreenQuery = window.matchMedia("(max-width: 820px) and (max-height: 1180px) and (min-width: 415px) and (min-height: 897px)");
 
     if (smallScreenQuery.matches) {
-        animateAndChangeRoute('41.75%');
+        animateAndChangeRoute('28.5%');
         // animateAndChangeRoute('100%');
     } else if (largeScreenQuery.matches) {
-        animateAndChangeRoute('45.75%');
+        animateAndChangeRoute('28.5%');
         // animateAndChangeRoute('100%');
     }
 }
@@ -96,12 +96,12 @@ function animateAndChangeRoute(targetMargin) {
     animateTextOpacity('0');
 
     // Simultaneously animate the margin of the nav bar box.
-    // mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
-    // mobileNavBarBox.style.marginLeft = targetMargin;
+    mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
+    mobileNavBarBox.style.marginLeft = targetMargin;
 
     // After the animation is done, redirect.
     setTimeout(function() {
         window.location.href = "/contact"; 
-    }, 600);
+    }, 350);
 }
 

@@ -279,65 +279,65 @@
                         } .question-one-answer {
                             font-size: 10px;
                             margin-top: -3%;
-                        } .question-two {
-                            display: flex;
-                            width: 80%;
-                            flex-direction: column;
-                            margin-top: 2%;
-                            text-wrap: wrap;
-                            } .question-two-header {
-                                font-size: 13px;
-                                font-weight: 600;
-                                } .question-two-answer {
-                                    font-size: 10px;
-                                    margin-top: -3%;
-                                }.question-three {
-                                    display: flex;
-                                    width: 80%;
-                                    flex-direction: column;
-                                    margin-top: 1.8%;
-                                    text-wrap: wrap;
-                                    } .question-three-header {
-                                        font-size: 13px;
-                                        font-weight: 600;
-                                        } .question-three-answer {
-                                            font-size: 10px;
-                                            margin-top: -3%;
-                                        } .question-four {
-                                            margin-top: 1%;
-                                            display: flex;
-                                            width: 80%;
-                                            flex-direction: column;
-                                            text-wrap: wrap;
-                                            } .question-four-header {
-                                                font-size: 13px;
-                                                font-weight: 600;
-                                                } .question-four-answer {
-                                                    font-size: 10px;
-                                                    margin-top: -3%;
-                                                } .question-five {
-                                                    margin-top: 1%;
-                                                    display: flex;
-                                                    width: 80%;
-                                                    flex-direction: column;
-                                                    text-wrap: wrap;
-                                                    } .question-five-header {
-                                                        font-size: 13px;
-                                                        font-weight: 600;
-                                                        } .question-five-answer {
-                                                            font-size: 10px;
-                                                            margin-top: -3%;
-                                                        } .question-six {
-                                                            margin-top: 1%;
-                                                            display: flex;
-                                                            width: 80%;
-                                                            flex-direction: column;
-                                                            text-wrap: wrap;
-                                                            } .question-six-header {
-                                                                font-size: 13px;
-                                                                font-weight: 600;
-                                                                } .question-six-answer {
-                                                                    font-size: 10px;
-                                                                    margin-top: -3%;
-                                                                }
+                } .question-two {
+                    display: flex;
+                    width: 80%;
+                    flex-direction: column;
+                    margin-top: 2%;
+                    text-wrap: wrap;
+                    } .question-two-header {
+                        font-size: 13px;
+                        font-weight: 600;
+                        } .question-two-answer {
+                            font-size: 10px;
+                            margin-top: -3%;
+                }.question-three {
+                    display: flex;
+                    width: 80%;
+                    flex-direction: column;
+                    margin-top: 1.8%;
+                    text-wrap: wrap;
+                    } .question-three-header {
+                        font-size: 13px;
+                        font-weight: 600;
+                        } .question-three-answer {
+                            font-size: 10px;
+                            margin-top: -3%;
+                } .question-four {
+                    margin-top: 1%;
+                    display: flex;
+                    width: 80%;
+                    flex-direction: column;
+                    text-wrap: wrap;
+                    } .question-four-header {
+                        font-size: 13px;
+                        font-weight: 600;
+                        } .question-four-answer {
+                            font-size: 10px;
+                            margin-top: -3%;
+                } .question-five {
+                    margin-top: 1%;
+                    display: flex;
+                    width: 80%;
+                    flex-direction: column;
+                    text-wrap: wrap;
+                    } .question-five-header {
+                        font-size: 13px;
+                        font-weight: 600;
+                        } .question-five-answer {
+                            font-size: 10px;
+                            margin-top: -3%;
+                } .question-six {
+                    margin-top: 1%;
+                    display: flex;
+                    width: 80%;
+                    flex-direction: column;
+                    text-wrap: wrap;
+                    } .question-six-header {
+                        font-size: 13px;
+                        font-weight: 600;
+                        } .question-six-answer {
+                            font-size: 10px;
+                            margin-top: -3%;
+                        }
 }

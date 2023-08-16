@@ -304,12 +304,15 @@ html{
             width: 75%;
             display: flex;
             justify-content: space-between;
-            margin-left: 18.5%;
+            margin-left: 22.5%;
             margin-top: 16%;
             color: white;
             } .wallet-strip-3-points > p {
-                height: 100%;
+                height: 10%;
                 font-size: 0.75em;
+                width: 100%;
+            } .middle-strip-point {
+                padding-left: 2.5%;
         } .app-preview {
             height: 25%;
             width: 95%;
@@ -357,7 +360,7 @@ html{
                 height: 14%;
                 width: 100%;
                 align-items: flex-end;
-                margin-top: -8.62%;
+                margin-top: -8.9%;
                 margin-left: 8.5%;
                 font-size: 0.8em;
                 } .payment-process {

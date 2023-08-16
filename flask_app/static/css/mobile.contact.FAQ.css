@@ -1261,14 +1261,15 @@
         overflow: auto;
         white-space: nowrap;
         transition: transform 0.3s ease-in-out;
+        /* height: 100%; */
     }
     #global-faq {
         width: fit-content;
         max-height: max-content;
         background-image: url("../media/mobileBackgroundFAQ.webp");
-        background-size: 100% 100%;
+        background-size: 100% ;
         background-position: center;
-        /* height: 100vh; */
+        height: 100vh;
     }
 
     

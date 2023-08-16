@@ -754,10 +754,10 @@ html{
                     flex-direction: column;
                     margin-top: 10.5%;
                     } .mobile-nav-box {
-                            width: 5.25%;
-                            height: 35%;
+                            width: 5.2%;
+                            height: 31%;
                             margin-left: 28.5%;
-                            margin-top: -1.25%;
+                            margin-top: 0.25%;
                         }.mobile-nav-bar-links {
                             padding-top: 1%;
                             display: flex;

@@ -7,7 +7,7 @@ def is_mobile(user_agent):
     # Regular expressions for common mobile device strings
     mobile_patterns = [
         "iphone", "ipod", "ipad", "android", "blackberry",
-        "windows phone", "nokia", "samsung", "mobile"
+        "windows phone", "nokia", "samsung", "mobile", "linux"
     ]
     for pattern in mobile_patterns:
         if re.search(pattern, user_agent):
@@ -23,6 +23,8 @@ def aboutpage():
 
     if is_mobile(user_agent):
         return render_template('mobile.about.html')
+    elif "linux" in user_agent:
+        return render_template("home_page.html")
     else:
         return render_template("about_page.html")
 
@@ -33,6 +35,8 @@ def aboutinfo():
 
     if is_mobile(user_agent):
         return render_template('mobile.about.info.html')
+    elif "linux" in user_agent:
+        return render_template("home_page.html")
     else:
         return render_template("about_page.html")
 

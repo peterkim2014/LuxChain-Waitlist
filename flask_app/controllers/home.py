@@ -24,6 +24,8 @@ def homepage():
 
     if is_mobile(user_agent):
         return render_template('mobile.home.html')
+    elif "linux" in user_agent:
+        return render_template("home_page.html")
     else:
         return render_template("home_page.html")
 
@@ -34,6 +36,8 @@ def mobile_home_preview():
 
     if is_mobile(user_agent):
         return render_template('mobile.home.preview.html')
+    elif "linux" in user_agent:
+        return render_template("home_page.html")
     else:
         return render_template("home_page.html")
     
@@ -44,6 +48,8 @@ def mobile_home_waitlist():
 
     if is_mobile(user_agent):
         return render_template('mobile.home.waitlist.html')
+    elif "linux" in user_agent:
+        return render_template("home_page.html")
     else:
         return render_template("home_page.html")
     

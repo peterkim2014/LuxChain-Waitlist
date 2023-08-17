@@ -488,7 +488,7 @@ body {
                 margin-top: -11%;
                 font-weight: 700;
                 margin-left: 5%;
-                padding-bottom: 1%;
+                padding-bottom: 2%;
                 font-size: 2em;
                 } .opening-features-descriptions {
                     margin-top: 2%;
@@ -510,7 +510,7 @@ body {
                     } .opening-features-one {
                         font-size: 1.1em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: -1%;
                         margin-top: -1%;
                         padding-top: 1%;
@@ -520,12 +520,12 @@ body {
                             height: 14%;
                             flex-direction: column;
                             text-align: start;
-                            margin-left: 3%;
-                            margin-top: 5%;
+                            margin-left: 2.35%;
+                            margin-top: 4.4%;
                             gap: -5vw;
                             font-size: 1.1em;
                             color: white;
-                            font-weight: 600;
+                            font-weight: 300;
                     } .opening-features-three {
                         display: flex;
                         width: 100%;
@@ -537,7 +537,7 @@ body {
                         gap: -5vw;
                         font-size: 1.1em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: 5%;
         } .swiping-features {
             display: flex;
@@ -557,11 +557,12 @@ body {
                     margin-left: -37.5%;
                     padding-top: 9%;
                     } .swiping-features-one-description > a {
-                        font-size: 1.25em;
+                        font-size: 20px;
+                        font-weight: 600;
                     } .swiping-features-one-description > p {
                         width: 100%;
                         height: 30%;
-                        font-size: 0.7em;
+                        font-size: 15px;
                     }.swiping-features-icon-one {
                         display: flex;
                         width: 100vw;
@@ -611,12 +612,13 @@ body {
             } .feature-descriptions {
                 display: flex;
                 flex-direction: column;
-                /* gap: -4vw; */
-                padding-top: 5%;
+                gap: 2.4vw;
+                padding-top: 6.5%;
                 } .feature-descriptions > p {
                     color: white;
                     font-size: 14px;
                     text-align: center;
+                    margin: 0;
             } .iphone-features {
                 display: flex;
                 width: 100%;
@@ -627,14 +629,15 @@ body {
                     width: 70%;
                     flex-direction: column;
                     justify-content: center;
-                    padding-top: 1.75%;
+                    padding-top: 11.75%;
+                    margin-left: -5%;
                     } .iphone-features-text > a {
-                        font-size: 1em;
+                        font-size: 12px;
                         margin-left: 62%;
                         margin-top: -45%;
                     } .iphone-features-text > p {
-                        padding-top: 9%;
-                        font-size: 1em;
+                        padding-top: 11%;
+                        font-size: 12px;
                         margin-left: 66%;
                         /* margin-top: -40%; */
                         } .feature-icons {
@@ -643,8 +646,8 @@ body {
                             width: 30%;
                             height: 60%;
                             gap: 10vw;
-                            margin-right: 5%;
-                            padding-top: 7%;
+                            margin-right: 9%;
+                            padding-top: 15%;
                             } .feature-icon-one-components {
                                 display: flex;
                                 flex-direction: column;
@@ -692,7 +695,7 @@ body {
                         width: 50%;
                         height: 75%;
                         padding-left: 13.5%;
-                        padding-top: 14%;
+                        padding-top: 18%;
                         } .polkadot-technology-description > a {
                             color: white;
                             font-size: 1.5em;
@@ -701,25 +704,32 @@ body {
                             } .polkadot-technology-description > p {
                                 font-size: 12px;
                                 color: white;
+                                width: 100
             } .bank-comparison {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 30%;
-                justify-content: center;
+                height: 65%;
+                /* justify-content: center; */
                 align-items: center;
                 text-align: center;
-                margin-top: -10%;
+                /* margin-top: -10%; */
                 } .banking-system {
                     font-weight: 600;
                     font-size: 20px;
                     /* margin-bottom: 10%; */
-                    /* margin-top: -10%; */
+                    margin-top: 50%;
                     /* margin: 0; */
-                    height: 10%;
-                    padding-top: 7%;
-                    } .bank-comparison-icon-titles {
-                        padding-top: 29%;
+                    height: 5%;
+                    margin-top: 7%;
+                    } .bank-comparison-icon {
+                        height: 2.3%;
+                        width: 13%;
+                        margin-top: -11%;
+                    }.bank-comparison-icon-titles {
+                        /* padding-top: 31%; */
+                        height: 6%;
+                        margin-top: 31.5%;
                         display: flex;
                         justify-content: space-around;
                         font-size: 16px;
@@ -728,14 +738,25 @@ body {
                         display: flex;
                         font-size: 16px;
                         gap: 6vw;
-                        /* margin-top: -2%; */
+                        margin-top: -4%;
+                        height: 6%;
                     } .blockchain-system {
                         font-weight: 600;
                         font-size: 20px;
-                        padding-top: 30%;
+                        /* padding-top: 10%; */
+                        /* margin: 0; */
+                        margin-left: 1%;
+                        margin-top: 25%;
+                        height: 5%;
                     } .vs-comparison {
-                        margin: 0;
-                        margin-top: 3.5%;
+                        /* margin: 0; */
+                        margin-top: -3%;
+                        height: 3%;
+                    } .blockchain-comparison-icon {
+                        height: 2.2%;
+                        width: 20%;
+                        margin-top: -11.5%;
+                        margin-left: 1%;
                     }
 }
 @media only screen and (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) and (min-height: 897px) { 
@@ -982,8 +1003,8 @@ body {
         display: flex;
         flex-direction: column;
         } .hamburger-icon {
-            width: 8%;
-            height: 17%;
+            width: 7%;
+            height: 10%;
             margin-top: 10%;
             margin-left: 7%;
             } .mobile-nav-bar {
@@ -995,8 +1016,8 @@ body {
                 } .mobile-nav-box {
                         width: 3.75%;
                         height: 10%;
-                        margin-left: 41.75%;
-                        margin-top: 6.75%;
+                        margin-left: 44.75%;
+                        margin-top: 7.45%;
                     }.mobile-nav-bar-links {
                         padding-top: 1%;
                         display: flex;
@@ -1013,6 +1034,7 @@ body {
             height: 14%;
             justify-content: center;
             /* padding-bottom: 5%; */
+            margin-top: 2%;
             } .opening-features > p {
                 display: flex;
                 width: 30%;
@@ -1020,7 +1042,7 @@ body {
                 margin-top: -15%;
                 font-weight: 700;
                 margin-left: 5%;
-                padding-bottom: 6%;
+                padding-bottom: 2%;
                 font-size: 2em;
                 } .opening-features-descriptions {
                     margin-top: 2%;
@@ -1042,7 +1064,7 @@ body {
                     } .opening-features-one {
                         font-size: 1.1em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: -1%;
                         margin-top: -1%;
                         padding-top: 1%;
@@ -1052,12 +1074,12 @@ body {
                             height: 14%;
                             flex-direction: column;
                             text-align: start;
-                            margin-left: 3%;
-                            margin-top: 5%;
+                            margin-left: 2.4%;
+                            margin-top: 4.4%;
                             gap: -5vw;
                             font-size: 1.1em;
                             color: white;
-                            font-weight: 600;
+                            font-weight: 300;
                     } .opening-features-three {
                         display: flex;
                         width: 100%;
@@ -1069,13 +1091,13 @@ body {
                         gap: -5vw;
                         font-size: 1.1em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: 5%;
         } .swiping-features {
             display: flex;
             width: 100%;
             height: 7.5%;
-            padding-top: 10%;
+            padding-top: 8%;
             } .swiping-features-one {
                 display: flex;
                 width: 100%;
@@ -1087,13 +1109,14 @@ body {
                     width: 100%;
                     font-size: 1.25em;
                     margin-left: -37.5%;
-                    padding-top: 9%;
+                    padding-top: 8.4%;
                     } .swiping-features-one-description > a {
-                        font-size: 1.25em;
+                        font-size: 1.07em;
+                        font-weight: 600;
                     } .swiping-features-one-description > p {
                         width: 100%;
                         height: 30%;
-                        font-size: 0.7em;
+                        font-size: 15px;
                     }.swiping-features-icon-one {
                         display: flex;
                         width: 100vw;
@@ -1143,12 +1166,13 @@ body {
             } .feature-descriptions {
                 display: flex;
                 flex-direction: column;
-                /* gap: -4vw; */
-                padding-top: 5%;
+                gap: 2vw;
+                padding-top: 7%;
                 } .feature-descriptions > p {
                     color: white;
-                    font-size: 14px;
+                    font-size: 15px;
                     text-align: center;
+                    margin: 0;
             } .iphone-features {
                 display: flex;
                 width: 100%;
@@ -1159,24 +1183,24 @@ body {
                     width: 70%;
                     flex-direction: column;
                     justify-content: center;
-                    padding-top: 1.75%;
+                    padding-top: 9.75%;
                     } .iphone-features-text > a {
-                        font-size: 1em;
+                        font-size: 12px;
                         margin-left: 62%;
                         margin-top: -45%;
                     } .iphone-features-text > p {
                         padding-top: 9%;
-                        font-size: 1em;
+                        font-size: 12px;
                         margin-left: 66%;
-                        /* margin-top: -40%; */
+                        margin-top: 4%;
                         } .feature-icons {
                             display: flex;
                             flex-direction: column;
                             width: 30%;
                             height: 60%;
                             gap: 10vw;
-                            margin-right: 5%;
-                            padding-top: 7%;
+                            margin-right: 9%;
+                            padding-top: 16%;
                             } .feature-icon-one-components {
                                 display: flex;
                                 flex-direction: column;
@@ -1216,15 +1240,15 @@ body {
                 height: 14%;
                 padding-top: 10%;
                 } .polkadot-technology-image {
-                    width: 36%;
+                    width: 40%;
                     height: 65%;
-                    padding-top: 13%;
+                    padding-top: 16%;
                     margin-left: 3%;
                     } .polkadot-technology-description{
                         width: 50%;
                         height: 75%;
-                        padding-left: 13.5%;
-                        padding-top: 14%;
+                        padding-left: 11.5%;
+                        padding-top: 18.3%;
                         } .polkadot-technology-description > a {
                             color: white;
                             font-size: 1.5em;
@@ -1237,37 +1261,54 @@ body {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 30%;
-                justify-content: center;
+                height: 65%;
+                /* justify-content: center; */
                 align-items: center;
                 text-align: center;
-                margin-top: -10%;
+                /* margin-top: -10%; */
                 } .banking-system {
                     font-weight: 600;
                     font-size: 20px;
                     /* margin-bottom: 10%; */
-                    /* margin-top: -10%; */
+                    margin-top: 50%;
                     /* margin: 0; */
-                    height: 10%;
-                    padding-top: 7%;
-                    } .bank-comparison-icon-titles {
-                        padding-top: 29%;
+                    height: 5%;
+                    margin-top: 7.5%;
+                    } .bank-comparison-icon {
+                        height: 2.3%;
+                        width: 13%;
+                        margin-top: -11%;
+                    }.bank-comparison-icon-titles {
+                        /* padding-top: 31%; */
+                        height: 6%;
+                        margin-top: 31.5%;
                         display: flex;
                         justify-content: space-around;
                         font-size: 16px;
-                        gap: 6vw;
+                        gap: 5vw;
                     } .blockchain-comparison-icon-titles {
                         display: flex;
                         font-size: 16px;
-                        gap: 6vw;
-                        /* margin-top: -2%; */
+                        gap: 5vw;
+                        margin-top: -4%;
+                        height: 6%;
                     } .blockchain-system {
                         font-weight: 600;
                         font-size: 20px;
-                        padding-top: 30%;
+                        /* padding-top: 10%; */
+                        /* margin: 0; */
+                        margin-left: 1%;
+                        margin-top: 25%;
+                        height: 5%;
                     } .vs-comparison {
-                        margin: 0;
-                        margin-top: 3.5%;
+                        /* margin: 0; */
+                        margin-top: -3%;
+                        height: 3%;
+                    } .blockchain-comparison-icon {
+                        height: 2.2%;
+                        width: 20%;
+                        margin-top: -11.5%;
+                        margin-left: 1%;
                     }
 }
 
@@ -1486,12 +1527,13 @@ body {
     overflow: hidden;
     white-space: nowrap; /* Prevent line breaks */
     transition: transform 0.3s ease-in-out;
+    height: 1565px;
 }
 
 #global-app {
     margin: 0;
     max-width: max-content;
-    height: 1465px;
+    height: 1665px;
     /* max-height: 100%; */
     background-image: url("../media/mobileBackgroundAppPreviewBackground.webp");
     background-size: 100%;
@@ -1543,15 +1585,16 @@ body {
             width: 100%;
             height: 12%;
             justify-content: center;
+            margin-top: -1.2%;
             /* padding-bottom: 5%; */
             } .opening-features > p {
                 display: flex;
                 width: 30%;
                 height: 10%;
                 margin-top: -15%;
-                font-weight: 700;
+                font-weight: 600;
                 margin-left: 5%;
-                padding-bottom: 6%;
+                padding-bottom: 2%;
                 } .opening-features-descriptions {
                     margin-top: 2%;
                     height: 20%;
@@ -1572,7 +1615,7 @@ body {
                     } .opening-features-one {
                         font-size: 0.6em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: -1%;
                         margin-top: -1%;
                         padding-top: 1%;
@@ -1582,12 +1625,12 @@ body {
                                 height: 14%;
                                 flex-direction: column;
                                 text-align: start;
-                                margin-left: 3%;
-                                margin-top: 5%;
+                                margin-left: 2.4%;
+                                margin-top: 4.7%;
                                 gap: -5vw;
                                 font-size: 0.6em;
                                 color: white;
-                                font-weight: 600;
+                                font-weight: 300;
                                 } .opening-features-three {
                                     display: flex;
                                     width: 100%;
@@ -1599,13 +1642,13 @@ body {
                                     gap: -5vw;
                                     font-size: 0.6em;
                                     color: white;
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     margin-left: 5%;
         } .swiping-features {
             display: flex;
             width: 100%;
-            height: 7.5%;
-            padding-top: 10%;
+            height: 6.8%;
+            padding-top: 7%;
             } .swiping-features-one {
                 display: flex;
                 width: 100%;
@@ -1616,12 +1659,14 @@ body {
                     flex-direction: column;
                     width: 100%;
                     font-size: 0.7em;
-                    margin-left: -37.5%;
-                    padding-top: 9%;
+                    margin-left: -39.5%;
+                    padding-top: 7.9%;
+                    font-weight: 600;
                     } .swiping-features-one-description > p {
                         width: 100%;
                         height: 30%;
                         font-size: 0.8em;
+                        font-weight: 300;
                     }.swiping-features-icon-one {
                         display: flex;
                         width: 100vw;
@@ -1671,29 +1716,34 @@ body {
             } .feature-descriptions {
                 display: flex;
                 flex-direction: column;
-                /* gap: -4vw; */
-                padding-top: 7.5%;
+                gap: 2vw;
+                /* padding-top: 7.5%; */
+                margin-top: 7.7%;
                 } .feature-descriptions > p {
                     color: white;
-                    font-size: 7px;
+                    font-size: 8px;
                     text-align: center;
+                    height: 10%;
+                    margin: 0;
             } .iphone-features {
                 display: flex;
                 width: 100%;
                 height: 18%;
-                padding-left: 2.5%;
+                /* padding-left: 1.5%; */
+                margin-top: 4%;
                 } .iphone-features-text {
                     display: flex;
                     width: 70%;
                     flex-direction: column;
                     justify-content: center;
+                    margin-top: -9%;
                     } .iphone-features-text > a {
-                        font-size: 0.3em;
+                        font-size: 7px;
                         margin-left: 62%;
                         margin-top: -45%;
                     } .iphone-features-text > p {
-                        padding-top: 8%;
-                        font-size: 0.3em;
+                        padding-top: 8.3%;
+                        font-size: 7px;
                         margin-left: 66%;
                         /* margin-top: -40%; */
                         } .feature-icons {
@@ -1702,8 +1752,8 @@ body {
                             width: 30%;
                             height: 60%;
                             gap: 10vw;
-                            margin-right: 5%;
-                            padding-top: 7%;
+                            margin-right: 8%;
+                            margin-top: 10%;
                             } .feature-icon-one-components {
                                 display: flex;
                                 flex-direction: column;
@@ -1740,18 +1790,18 @@ body {
             } .polkadot-technology {
                 display: flex;
                 width: 100%;
-                height: 14%;
-                padding-top: 10%;
+                height: 10%;
+                padding-top: 6%;
                 } .polkadot-technology-image {
-                    width: 36%;
-                    height: 65%;
-                    padding-top: 13%;
+                    width: 38%;
+                    height: 63%;
+                    padding-top: 3%;
                     margin-left: 3%;
                     } .polkadot-technology-description{
                         width: 50%;
                         height: 75%;
-                        padding-left: 13.5%;
-                        padding-top: 14%;
+                        padding-left: 11.5%;
+                        padding-top: 5.2%;
                         } .polkadot-technology-description > a {
                             color: white;
                             font-size: 0.9em;
@@ -1764,21 +1814,28 @@ body {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 30%;
-                justify-content: center;
+                height: 58%;
+                /* justify-content: center; */
                 align-items: center;
                 text-align: center;
-                margin-top: -10%;
+                margin-top: 5.4%;
+                margin: 0;
                 } .banking-system {
                     font-weight: 600;
                     font-size: 12px;
                     /* margin-bottom: 10%; */
-                    /* margin-top: -10%; */
+                    margin-top: 5.5%;
                     /* margin: 0; */
-                    height: 10%;
-                    padding-top: 8%;
-                    } .bank-comparison-icon-titles {
-                        padding-top: 29%;
+                    height: 5%;
+                    /* margin-top: 7%; */
+                    } .bank-comparison-icon {
+                        height: 2.3%;
+                        width: 13%;
+                        margin-top: -11%;
+                    }.bank-comparison-icon-titles {
+                        /* padding-top: 31%; */
+                        height: 6%;
+                        margin-top: 31.5%;
                         display: flex;
                         justify-content: space-around;
                         font-size: 7.5px;
@@ -1787,23 +1844,244 @@ body {
                         display: flex;
                         font-size: 7.5px;
                         gap: 6vw;
-                        margin-top: -3%;
+                        margin-top: -6%;
+                        height: 6%;
                     } .blockchain-system {
                         font-weight: 600;
                         font-size: 12px;
-                        padding-top: 30%;
+                        /* padding-top: 10%; */
+                        /* margin: 0; */
+                        margin-left: 1%;
+                        margin-top: 24%;
+                        height: 5%;
                     } .vs-comparison {
-                        margin: 0;
-                        margin-bottom: 0.75%;
+                        /* margin: 0; */
+                        margin-top: -3%;
+                        height: 3%;
+                        font-size: 10px;
+                    } .blockchain-comparison-icon {
+                        height: 2.2%;
+                        width: 20%;
+                        margin-top: -11.5%;
+                        margin-left: 1%;
                     }
 }
 @media only screen and (max-width: 390px) and (max-height: 844px) and (min-width: 361px) and (min-height: 741px) { 
+
+    .side-nav-bar {
+        position: fixed;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 100%;
+        background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+        /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
+        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        display: flex; /* Initially hidden */
+        flex-direction: column;
+        justify-content: space-between;
+        transform: translateX(-100%); /* Move it off the screen */
+        transition: transform 0.5s ease-in-out; /* Animation */
+        }.hamburger-return {
+            height: 3%;
+            width: 19%;
+            margin-top: 15%;
+            margin-left: 70%;
+            } .side-nav-links {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                width: 100%;
+                padding-bottom: 187.5%;
+        } .nav-links {
+            display: flex;
+            flex-direction: column;
+            height: 26.5%;
+            } .head-links {
+                display: flex;
+                justify-content: space-around;
+                height: 25%;
+                } .head-links > img {
+                    height: 100%;
+                    width: 20%;
+                    } .head-links > a {
+                        height: 100%;
+                        width: 75%;
+                        text-decoration: none;
+            } .nav-sub-links {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                width: 100%;
+                padding-bottom: 180.5%;
+                } .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                    height: 26.5%;
+                    } .head-links {
+                        display: flex;
+                        justify-content: space-around;
+                        height: 25%;
+                        } .head-links > img {
+                            height: 100%;
+                            width: 20%;
+                            } .head-links > a {
+                                height: 100%;
+                                width: 75%;
+                                color: white;
+                                text-decoration: none;
+                    } .nav-sub-links {
+                        display: flex;
+                        flex-direction: column;
+                        height: 50%;
+                        padding-bottom: 150.5%;
+                        width: 100%;
+                        } .nav-link-one {
+                            display: flex;
+                            flex-direction: column;
+                            height: 68%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: -5%;
+                            } .head-link-one {
+                                display: flex;
+                                width: 100%;
+                                height: 30%;
+                                } .head-link-one > img {
+                                    height: 50%;
+                                    width: 10%;
+                                    padding-right: 6%;
+                                    margin-top: 8.5%;
+                                    } .head-link-one > a {
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        margin-top: 7%;
+                                        height: 50%;
+                                        width: 40%;
+                                        color: white;
+                                        margin-left: -2%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-one {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 50%;
+                                            margin-top: 6%;
+                                            gap: 2.5vw;
+                                            justify-content: start;
+                                            margin-left: -5%;
+                                            } .nav-sub-link-one > a {
+                                                height: 100%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                text-decoration: none;
+                        } .nav-link-two {
+                            display: flex;
+                            flex-direction: column;
+                            height: 54%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: 23.5%;
+                            } .head-link-two {
+                                display: flex;
+                                width: 100%;
+                                height: 70%;
+                                margin-top: -2%;
+                                } .head-link-two > img {
+                                    margin-top: -6.5%;
+                                    height: 30%;
+                                    width: 11%;
+                                    padding-right: 6%;
+                                    } .head-link-two > a {
+                                        font-weight: 100;
+                                        font-size: 18px;
+                                        margin-top: -9.5%;
+                                        height: 20%;
+                                        width: 40%;
+                                        color: white;
+                                        margin-left: -2%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-two {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 25%;
+                                            margin-top: -22%;
+                                            gap: 3.8vw;
+                                            margin-left: -5%;
+                                            justify-content: start;
+                                        } .nav-sub-link-two-one {
+                                                height: 50%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                text-decoration: none;
+                                                } .nav-sub-link-two-two {
+                                                    height: 50%;
+                                                    font-size: 11.5px;
+                                                    color: white;
+                                                    margin-left: 12.5%;
+                                                    text-decoration: none;
+                        } .nav-link-three {
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: 20%;
+                            } .head-link-three {
+                                display: flex;
+                                width: 100%;
+                                height: 20%;
+                                margin-top: -15%;
+                                } .head-link-three > img {
+                                    height: 51.5%;
+                                    width: 10%;
+                                    padding-right: 6%;
+                                    margin-top: -0.5%;
+                                    } .head-link-three > a {
+                                        font-weight: 100;
+                                        font-size: 18px;
+                                        margin-top: -3.3%;
+                                        height: 34%;
+                                        width: 60%;
+                                        color: white;
+                                        margin-left: 1%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-three {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 100%;
+                                            margin-top: -1%;
+                                            gap: 0.8vw;
+                                            justify-content: start;
+                                            margin-left: -5%;
+                                            } .nav-sub-link-three-one {
+                                                height: 15%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                margin-left: 4%;
+                                                text-decoration: none;
+                                                } .nav-sub-link-three-two {
+                                                    height: 15%;
+                                                    font-size: 11.5px;
+                                                    color: white;
+                                                    margin-left: -27.5%;
+                                                    text-decoration: none;
+    
+                        }
+
 /* Mobile styles */
 #swipe-container {
     /* max-width: fit-content; */
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap; /* Prevent line breaks */
     transition: transform 0.3s ease-in-out;
+    height: 1600px;
 }
 
 #global-app {
@@ -1861,6 +2139,7 @@ body {
             width: 100%;
             height: 12%;
             justify-content: center;
+            margin-top: 2%;
             /* padding-bottom: 5%; */
             } .opening-features > p {
                 display: flex;
@@ -1869,7 +2148,7 @@ body {
                 margin-top: -15%;
                 font-weight: 700;
                 margin-left: 5%;
-                padding-bottom: 6%;
+                padding-bottom: 3%;
                 } .opening-features-descriptions {
                     margin-top: 2%;
                     height: 20%;
@@ -1890,7 +2169,7 @@ body {
                     } .opening-features-one {
                         font-size: 0.6em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: -1%;
                         margin-top: -1%;
                         padding-top: 1%;
@@ -1900,12 +2179,12 @@ body {
                                 height: 14%;
                                 flex-direction: column;
                                 text-align: start;
-                                margin-left: 3%;
-                                margin-top: 5%;
+                                margin-left: 2.2%;
+                                margin-top: 4.4%;
                                 gap: -5vw;
                                 font-size: 0.6em;
                                 color: white;
-                                font-weight: 600;
+                                font-weight: 300;
                                 } .opening-features-three {
                                     display: flex;
                                     width: 100%;
@@ -1917,7 +2196,7 @@ body {
                                     gap: -5vw;
                                     font-size: 0.6em;
                                     color: white;
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     margin-left: 5%;
         } .swiping-features {
             display: flex;
@@ -1934,11 +2213,13 @@ body {
                     flex-direction: column;
                     width: 100%;
                     font-size: 0.7em;
-                    margin-left: -37.5%;
-                    padding-top: 9%;
+                    margin-left: -39.5%;
+                    padding-top: 8.2%;
+                    font-weight: 600;
                     } .swiping-features-one-description > p {
                         width: 100%;
                         height: 30%;
+                        font-weight: 300;
                         font-size: 0.8em;
                     }.swiping-features-icon-one {
                         display: flex;
@@ -1989,12 +2270,13 @@ body {
             } .feature-descriptions {
                 display: flex;
                 flex-direction: column;
-                /* gap: -4vw; */
-                padding-top: 7.5%;
+                gap: 2vw;
+                padding-top: 9.5%;
                 } .feature-descriptions > p {
                     color: white;
-                    font-size: 7px;
+                    font-size: 8.1px;
                     text-align: center;
+                    margin: 0;
             } .iphone-features {
                 display: flex;
                 width: 100%;
@@ -2005,14 +2287,19 @@ body {
                     width: 70%;
                     flex-direction: column;
                     justify-content: center;
+                    margin-top: 10;
                     } .iphone-features-text > a {
-                        font-size: 0.3em;
-                        margin-left: 62%;
-                        margin-top: -45%;
+                        font-size: 7px;
+                        margin-left: 59%;
+                        margin-top: -33%;
+                        height: 4%;
+                        /* margin: 0; */
                     } .iphone-features-text > p {
-                        padding-top: 8%;
-                        font-size: 0.3em;
-                        margin-left: 66%;
+                        padding-top: 10%;
+                        font-size: 7px;
+                        margin-left: 62%;
+                        height: 4%;
+                        /* margin: 0; */
                         /* margin-top: -40%; */
                         } .feature-icons {
                             display: flex;
@@ -2020,8 +2307,8 @@ body {
                             width: 30%;
                             height: 60%;
                             gap: 10vw;
-                            margin-right: 5%;
-                            padding-top: 7%;
+                            margin-right: 10%;
+                            padding-top: 15%;
                             } .feature-icon-one-components {
                                 display: flex;
                                 flex-direction: column;
@@ -2082,21 +2369,28 @@ body {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 30%;
-                justify-content: center;
+                height: 45%;
+                /* justify-content: center; */
                 align-items: center;
                 text-align: center;
-                margin-top: -10%;
+                margin-top: -2%;
+                margin: 0;
                 } .banking-system {
                     font-weight: 600;
                     font-size: 12px;
                     /* margin-bottom: 10%; */
-                    /* margin-top: -10%; */
+                    margin-top: 6%;
                     /* margin: 0; */
-                    height: 10%;
-                    padding-top: 8%;
-                    } .bank-comparison-icon-titles {
-                        padding-top: 29%;
+                    height: 5%;
+                    margin-top: 4.5%;
+                    } .bank-comparison-icon {
+                        height: 3.2%;
+                        width: 13%;
+                        margin-top: -7%;
+                    }.bank-comparison-icon-titles {
+                        /* padding-top: 31%; */
+                        height: 6%;
+                        margin-top: 31.5%;
                         display: flex;
                         justify-content: space-around;
                         font-size: 7.5px;
@@ -2105,14 +2399,26 @@ body {
                         display: flex;
                         font-size: 7.5px;
                         gap: 6vw;
-                        margin-top: -3%;
+                        margin-top: -2%;
+                        height: 6%;
                     } .blockchain-system {
                         font-weight: 600;
                         font-size: 12px;
-                        padding-top: 30%;
+                        /* padding-top: 10%; */
+                        /* margin: 0; */
+                        margin-left: 1%;
+                        margin-top: 29%;
+                        height: 5%;
                     } .vs-comparison {
-                        margin: 0;
-                        margin-bottom: 0.75%;
+                        /* margin: 0; */
+                        margin-top: 0.8%;
+                        height: 3%;
+                        font-size: 10px;
+                    } .blockchain-comparison-icon {
+                        height: 3.4%;
+                        width: 22%;
+                        margin-top: -7.5%;
+                        margin-left: 1%;
                     }
 }
 @media only screen and (max-width: 375px) and (max-height: 667px) and (min-width: 361px) { 
@@ -2387,6 +2693,7 @@ body {
             height: 12%;
             justify-content: center;
             /* padding-bottom: 5%; */
+            margin-top: 2%;
             } .opening-features > p {
                 display: flex;
                 width: 30%;
@@ -2394,7 +2701,7 @@ body {
                 margin-top: -15%;
                 font-weight: 700;
                 margin-left: 5%;
-                padding-bottom: 6%;
+                padding-bottom: 3%;
                 } .opening-features-descriptions {
                     margin-top: 2%;
                     height: 20%;
@@ -2415,7 +2722,7 @@ body {
                     } .opening-features-one {
                         font-size: 0.6em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: -1%;
                         margin-top: -1%;
                         padding-top: 1%;
@@ -2425,12 +2732,12 @@ body {
                                 height: 14%;
                                 flex-direction: column;
                                 text-align: start;
-                                margin-left: 3%;
-                                margin-top: 5%;
+                                margin-left: 2.4%;
+                                margin-top: 4.4%;
                                 gap: -5vw;
                                 font-size: 0.6em;
                                 color: white;
-                                font-weight: 600;
+                                font-weight: 300;
                                 } .opening-features-three {
                                     display: flex;
                                     width: 100%;
@@ -2442,7 +2749,7 @@ body {
                                     gap: -5vw;
                                     font-size: 0.6em;
                                     color: white;
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     margin-left: 5%;
         } .swiping-features {
             display: flex;
@@ -2459,12 +2766,14 @@ body {
                     flex-direction: column;
                     width: 100%;
                     font-size: 0.7em;
-                    margin-left: -37.5%;
-                    padding-top: 9%;
+                    margin-left: -39.5%;
+                    padding-top: 8%;
+                    font-weight: 600;
                     } .swiping-features-one-description > p {
                         width: 100%;
                         height: 30%;
                         font-size: 0.8em;
+                        font-weight: 300;
                     }.swiping-features-icon-one {
                         display: flex;
                         width: 100vw;
@@ -2514,12 +2823,13 @@ body {
             } .feature-descriptions {
                 display: flex;
                 flex-direction: column;
-                /* gap: -4vw; */
-                padding-top: 7.5%;
+                gap: 2vw;
+                padding-top: 8.6%;
                 } .feature-descriptions > p {
                     color: white;
-                    font-size: 7px;
+                    font-size: 7.7px;
                     text-align: center;
+                    margin: 0;
             } .iphone-features {
                 display: flex;
                 width: 100%;
@@ -2530,23 +2840,25 @@ body {
                     width: 70%;
                     flex-direction: column;
                     justify-content: center;
+                    margin-top: 8%;
+                    margin-left: -4.2%;
                     } .iphone-features-text > a {
-                        font-size: 0.3em;
+                        font-size: 7px;
                         margin-left: 62%;
-                        margin-top: -45%;
+                        margin-top: -43%;
                     } .iphone-features-text > p {
-                        padding-top: 8%;
-                        font-size: 0.3em;
+                        padding-top: 7%;
+                        font-size: 7px;
                         margin-left: 66%;
-                        /* margin-top: -40%; */
+                        margin-top: 5%;
                         } .feature-icons {
                             display: flex;
                             flex-direction: column;
                             width: 30%;
                             height: 60%;
                             gap: 10vw;
-                            margin-right: 5%;
-                            padding-top: 7%;
+                            margin-right: 9%;
+                            padding-top: 15%;
                             } .feature-icon-one-components {
                                 display: flex;
                                 flex-direction: column;
@@ -2588,13 +2900,13 @@ body {
                 } .polkadot-technology-image {
                     width: 36%;
                     height: 65%;
-                    padding-top: 13%;
+                    padding-top: 16%;
                     margin-left: 3%;
                     } .polkadot-technology-description{
                         width: 50%;
                         height: 75%;
                         padding-left: 13.5%;
-                        padding-top: 14%;
+                        padding-top: 18%;
                         } .polkadot-technology-description > a {
                             color: white;
                             font-size: 0.9em;
@@ -2607,21 +2919,27 @@ body {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 30%;
-                justify-content: center;
+                height: 65%;
+                /* justify-content: center; */
                 align-items: center;
                 text-align: center;
-                margin-top: -10%;
+                margin-top: 3.4%;
                 } .banking-system {
                     font-weight: 600;
                     font-size: 12px;
                     /* margin-bottom: 10%; */
-                    /* margin-top: -10%; */
+                    margin-top: 3%;
                     /* margin: 0; */
-                    height: 10%;
-                    padding-top: 8%;
-                    } .bank-comparison-icon-titles {
-                        padding-top: 29%;
+                    height: 5%;
+                    /* margin-top: 7%; */
+                    } .bank-comparison-icon {
+                        height: 2.3%;
+                        width: 13%;
+                        margin-top: -11%;
+                    }.bank-comparison-icon-titles {
+                        /* padding-top: 31%; */
+                        height: 6%;
+                        margin-top: 31.5%;
                         display: flex;
                         justify-content: space-around;
                         font-size: 7.5px;
@@ -2630,23 +2948,243 @@ body {
                         display: flex;
                         font-size: 7.5px;
                         gap: 6vw;
-                        margin-top: -3%;
+                        margin-top: -6%;
+                        height: 6%;
                     } .blockchain-system {
                         font-weight: 600;
                         font-size: 12px;
-                        padding-top: 30%;
+                        /* padding-top: 10%; */
+                        /* margin: 0; */
+                        margin-left: 1%;
+                        margin-top: 24%;
+                        height: 5%;
                     } .vs-comparison {
-                        margin: 0;
-                        margin-bottom: 0.75%;
+                        /* margin: 0; */
+                        margin-top: -3%;
+                        height: 3%;
+                        font-size: 10px;
+                    } .blockchain-comparison-icon {
+                        height: 2.2%;
+                        width: 20%;
+                        margin-top: -11.5%;
+                        margin-left: 1%;
                     }
 }
 @media only screen and (max-width: 414px) and (max-height: 896px) and (min-width: 391px) and (min-height: 845px) { 
+
+    .side-nav-bar {
+        position: fixed;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 100%;
+        background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+        /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
+        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        display: flex; /* Initially hidden */
+        flex-direction: column;
+        justify-content: space-between;
+        transform: translateX(-100%); /* Move it off the screen */
+        transition: transform 0.5s ease-in-out; /* Animation */
+        }.hamburger-return {
+            height: 3%;
+            width: 19%;
+            margin-top: 15%;
+            margin-left: 70%;
+            } .side-nav-links {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                width: 100%;
+                padding-bottom: 187.5%;
+        } .nav-links {
+            display: flex;
+            flex-direction: column;
+            height: 26.5%;
+            } .head-links {
+                display: flex;
+                justify-content: space-around;
+                height: 25%;
+                } .head-links > img {
+                    height: 100%;
+                    width: 20%;
+                    } .head-links > a {
+                        height: 100%;
+                        width: 75%;
+            } .nav-sub-links {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                width: 100%;
+                padding-bottom: 180.5%;
+                } .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                    height: 26.5%;
+                    } .head-links {
+                        display: flex;
+                        justify-content: space-around;
+                        height: 25%;
+                        } .head-links > img {
+                            height: 100%;
+                            width: 20%;
+                            } .head-links > a {
+                                height: 100%;
+                                width: 75%;
+                                color: white;
+                                text-decoration: none;
+                    } .nav-sub-links {
+                        display: flex;
+                        flex-direction: column;
+                        height: 50%;
+                        padding-bottom: 150.5%;
+                        width: 100%;
+                        } .nav-link-one {
+                            display: flex;
+                            flex-direction: column;
+                            height: 68%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: -5%;
+                            } .head-link-one {
+                                display: flex;
+                                width: 100%;
+                                height: 30%;
+                                } .head-link-one > img {
+                                    height: 50%;
+                                    width: 10%;
+                                    padding-right: 6%;
+                                    margin-top: 8.5%;
+                                    } .head-link-one > a {
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        margin-top: 7.5%;
+                                        height: 50%;
+                                        width: 40%;
+                                        color: white;
+                                        margin-left: -2%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-one {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 50%;
+                                            margin-top: 7.5%;
+                                            gap: 2.5vw;
+                                            justify-content: start;
+                                            margin-left: -5%;
+                                            } .nav-sub-link-one > a {
+                                                height: 100%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                text-decoration: none;
+                        } .nav-link-two {
+                            display: flex;
+                            flex-direction: column;
+                            height: 54%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: 23.5%;
+                            } .head-link-two {
+                                display: flex;
+                                width: 100%;
+                                height: 70%;
+                                margin-top: -2%;
+                                } .head-link-two > img {
+                                    margin-top: -6.5%;
+                                    height: 30%;
+                                    width: 11%;
+                                    padding-right: 6%;
+                                    } .head-link-two > a {
+                                        font-weight: 100;
+                                        font-size: 18px;
+                                        margin-top: -8%;
+                                        height: 20%;
+                                        width: 40%;
+                                        color: white;
+                                        margin-left: -2%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-two {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 25%;
+                                            margin-top: -22%;
+                                            gap: 3.8vw;
+                                            margin-left: -5%;
+                                            justify-content: start;
+                                        } .nav-sub-link-two-one {
+                                                height: 50%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                text-decoration: none;
+                                                } .nav-sub-link-two-two {
+                                                    height: 50%;
+                                                    font-size: 11.5px;
+                                                    color: white;
+                                                    margin-left: 12.5%;
+                                                    text-decoration: none;
+                        } .nav-link-three {
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: 20%;
+                            } .head-link-three {
+                                display: flex;
+                                width: 100%;
+                                height: 20%;
+                                margin-top: -15%;
+                                } .head-link-three > img {
+                                    height: 51.5%;
+                                    width: 10%;
+                                    padding-right: 6%;
+                                    margin-top: -0.5%;
+                                    } .head-link-three > a {
+                                        font-weight: 100;
+                                        font-size: 18px;
+                                        margin-top: -2%;
+                                        height: 34%;
+                                        width: 60%;
+                                        color: white;
+                                        margin-left: 1%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-three {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 100%;
+                                            margin-top: -1%;
+                                            gap: 0.8vw;
+                                            justify-content: start;
+                                            margin-left: -5%;
+                                            } .nav-sub-link-three-one {
+                                                height: 15%;
+                                                font-size: 11.5px;
+                                                color: white;
+                                                margin-left: 4%;
+                                                text-decoration: none;
+                                                } .nav-sub-link-three-two {
+                                                    height: 15%;
+                                                    font-size: 11.5px;
+                                                    color: white;
+                                                    margin-left: -27.5%;
+                                                    text-decoration: none;
+    
+                        }
+
 /* Mobile styles */
 #swipe-container {
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap; /* Prevent line breaks */
     transition: transform 0.3s ease-in-out;
+    height: 1706px;
 }
 
 #global-app {
@@ -2708,10 +3246,10 @@ body {
                 display: flex;
                 width: 30%;
                 height: 10%;
-                margin-top: -15%;
+                margin-top: -13%;
                 font-weight: 700;
                 margin-left: 5%;
-                padding-bottom: 6%;
+                padding-bottom: 2.5%;
                 } .opening-features-descriptions {
                     margin-top: 2%;
                     height: 20%;
@@ -2732,7 +3270,7 @@ body {
                     } .opening-features-one {
                         font-size: 0.6em;
                         color: white;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin-left: -1%;
                         margin-top: -1%;
                         padding-top: 1%;
@@ -2742,12 +3280,12 @@ body {
                                 height: 14%;
                                 flex-direction: column;
                                 text-align: start;
-                                margin-left: 3%;
-                                margin-top: 5%;
+                                margin-left: 2.4%;
+                                margin-top: 4.4%;
                                 gap: -5vw;
                                 font-size: 0.6em;
                                 color: white;
-                                font-weight: 600;
+                                font-weight: 300;
                                 } .opening-features-three {
                                     display: flex;
                                     width: 100%;
@@ -2759,7 +3297,7 @@ body {
                                     gap: -5vw;
                                     font-size: 0.6em;
                                     color: white;
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     margin-left: 5%;
         } .swiping-features {
             display: flex;
@@ -2777,11 +3315,13 @@ body {
                     width: 100%;
                     font-size: 0.7em;
                     margin-left: -41.5%;
-                    padding-top: 8%;
+                    padding-top: 8.5%;
+                    font-weight: 600;
                     } .swiping-features-one-description > p {
                         width: 100%;
                         height: 30%;
                         font-size: 0.8em;
+                        font-weight: 300;
                     }.swiping-features-icon-one {
                         display: flex;
                         } .swiping-features-two {
@@ -2830,11 +3370,12 @@ body {
             } .feature-descriptions {
                 display: flex;
                 flex-direction: column;
-                /* gap: -4vw; */
-                padding-top: 4.5%;
+                gap: 2vw;
+                padding-top: 7%;
                 } .feature-descriptions > p {
                     color: white;
-                    font-size: 7px;
+                    font-size: 8px;
+                    margin: 0;
                     text-align: center;
             } .iphone-features {
                 display: flex;
@@ -2846,13 +3387,16 @@ body {
                     width: 70%;
                     flex-direction: column;
                     justify-content: center;
+                    margin-left: 1.5%;
+                    margin-top: -1%;
                     } .iphone-features-text > a {
-                        font-size: 0.3em;
+                        font-size: 7px;
                         margin-left: 62%;
+
                         margin-top: -46%;
                         } .iphone-features-text > p {
                             padding-top: 10%;
-                            font-size: 0.3em;
+                            font-size: 7px;
                             margin-left: 66%;
                             /* margin-top: -40%; */
                             } .feature-icons {
@@ -2861,8 +3405,8 @@ body {
                                 width: 30%;
                                 height: 60%;
                                 gap: 10vw;
-                                margin-right: 5%;
-                                padding-top: 7%;
+                                margin-right: 9%;
+                                padding-top: 10%;
                                 } .feature-icon-one-components {
                                     display: flex;
                                     flex-direction: column;
@@ -2910,7 +3454,7 @@ body {
                         width: 50%;
                         height: 75%;
                         padding-left: 13.5%;
-                        padding-top: 14.5%;
+                        padding-top: 17%;
                         } .polkadot-technology-description > a {
                             color: white;
                             font-size: 0.9em;
@@ -2923,29 +3467,55 @@ body {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 30%;
-                justify-content: center;
+                height: 45%;
+                /* justify-content: center; */
                 align-items: center;
                 text-align: center;
-                margin-top: -10%;
-                } .banking-system > p {
+                margin-top: 3.4%;
+                margin: 0;
+                } .banking-system {
                     font-weight: 600;
                     font-size: 12px;
                     /* margin-bottom: 10%; */
-                    /* margin-top: -20%; */
-                    } .bank-comparison-icon-titles {
-                        padding-top: 35%;
+                    margin-top: 6%;
+                    /* margin: 0; */
+                    height: 5%;
+                    /* margin-top: 7%; */
+                    } .bank-comparison-icon {
+                        height: 3.2%;
+                        width: 13%;
+                        margin-top: -7%;
+                    }.bank-comparison-icon-titles {
+                        /* padding-top: 31%; */
+                        height: 6%;
+                        margin-top: 31.5%;
+                        display: flex;
+                        justify-content: space-around;
+                        font-size: 7.5px;
+                        gap: 6vw;
+                    } .blockchain-comparison-icon-titles {
                         display: flex;
                         font-size: 7.5px;
                         gap: 6vw;
-                        } .blockchain-comparison-icon-titles {
-                            display: flex;
-                            font-size: 7.5px;
-                            gap: 6vw;
-                            margin-top: -3%;
-                            } .blockchain-system {
-                                font-weight: 600;
-                                font-size: 12px;
-                                padding-top: 20%;
-                            }
+                        margin-top: -2%;
+                        height: 6%;
+                    } .blockchain-system {
+                        font-weight: 600;
+                        font-size: 12px;
+                        /* padding-top: 10%; */
+                        /* margin: 0; */
+                        margin-left: 1%;
+                        margin-top: 29.7%;
+                        height: 5%;
+                    } .vs-comparison {
+                        /* margin: 0; */
+                        margin-top: 0.8%;
+                        height: 3%;
+                        font-size: 10px;
+                    } .blockchain-comparison-icon {
+                        height: 3.4%;
+                        width: 22%;
+                        margin-top: -7.5%;
+                        margin-left: 1%;
+                    }
 }

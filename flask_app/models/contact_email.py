@@ -11,7 +11,7 @@ contact_msg_text = """
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <table class="email" width="100%" height="30%" valign="top" cellpadding="0" cellspacing="0" border="0">
+        <table class="email" width="1050" height="807.5" valign="top" cellpadding="0" cellspacing="0" border="0">
 
                 <td width="1050" height="807.5" background="https://i.imgur.com/oSGPUFl.png">
                 

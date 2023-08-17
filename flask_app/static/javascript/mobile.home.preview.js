@@ -86,6 +86,13 @@ $(document).ready(function() {
 // Set up an interval to switch the swiping-features div every 3 seconds
 setInterval(switchSwipingFeature, 3000);
 
+window.addEventListener("orientationchange", function() {
+    if (window.orientation === 90 || window.orientation === -90) {
+        // alert("Please use portrait mode!");
+        window.location.reload();
+    }
+});
+
 });
 
 swipeContainer.addEventListener('touchstart', (e) => {

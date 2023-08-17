@@ -13,9 +13,9 @@ msg_text = """
     </head>
     <body>
         <p style="opacity: 0; display: hidden;"> </p>
-        <table class="email" width="84.1%" height="50%" valign="top" cellpadding="0" cellspacing="0" border="0" style="word-break: break-word;">
+        <table class="email" width="620" height="815" valign="top" cellpadding="0" cellspacing="0" border="0" style="word-break: break-word;">
             <tr>
-                <td width="750px" height="815px" background="https://i.imgur.com/lFVoNxz.png" background-repeat= "no-repeat" background-size="cover">
+                <td width="725" height="815" background="https://i.imgur.com/lFVoNxz.png" background-repeat="no-repeat" background-size="cover" background-position="center">
 
                 <p class="email-header" style="height: 12%; width: 90%; text-align: end; margin-bottom: 22.5%">Ticket #{number}</p>
 
@@ -29,14 +29,14 @@ msg_text = """
 
                         <p style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; ">Have any questions about the application? Please visit the website, www.luxchain.io, and fill out the form under contact us!</p>
                         
-                        <p style="text-align: start; width: 40%; height: 10%; padding-left: 12.5%; padding-top: 1%;">Our best, <br>LuxChain Team</p>
+                        <p style="text-align: start; width: 40%; height: 10%; padding-left: 12.5%; padding-top: 1%;">Our best, <br>LuxChain Team</p>    
                     </tr>
                 </table>
                 
                 </td>
             </tr>
         </table>
-        <p style="opacity: 0; display: hidden;">{number}</p>
+        <p style="opacity: 0; display: none;">{number}</p>
     </body>
 </html>
 """

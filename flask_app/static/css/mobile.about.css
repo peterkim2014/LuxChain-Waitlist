@@ -478,28 +478,29 @@ html{
                     margin-left: 11%;
                     justify-content: center;
                     } .mobile-body-intro-about-title-logo {
-                        width: 12.5%;
+                        width: 11.5%;
                         height: 88.5%;
                         } .mobile-body-intro-about-title > h2 {
                             font-size: 4em;
                             font-family: code light;
                             color: white;
                             transform: scale(1, 0.75);
+                            padding-left: 1%;
                 } .mobile-about-slogan {
                     color: white;
                     font-family: garet;
-                    font-size: 1.15em;
+                    font-size: 20px;
                     margin-left: 12%;
                     /* padding-bottom: %; */
                     height: 100%;
                     margin-top: -1%;
                     } .mobile-about-text {
-                        width: 55%;
+                        width: 70%;
                         height: 100%;
                         display: flex;
                         color: white;
                         padding-top: 8%;
-                        font-size: 0.92em;
+                        font-size: 17px;
                         font-family: futura;
                         font-style: italic;
                         text-align: center;

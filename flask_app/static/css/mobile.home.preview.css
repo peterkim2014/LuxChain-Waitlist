@@ -1,10 +1,25 @@
 .swiping-features > div {
-    display: none;
-  }
-  
-  .swiping-features > div.active {
-    display: flex;
-  }
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: opacity 1s, visibility 1s, transform 1s;
+    } .swiping-features > div.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+    } .swiping-features > div.out {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    } .swiping-features > div.entering {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+    } .swiping-features {
+        position: relative;
+        overflow: hidden;
+    }
 
 
 .side-nav-bar {

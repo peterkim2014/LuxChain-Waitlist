@@ -54,7 +54,6 @@ $(document).ready(function() {
     // Set the first div as the active div
     swipingFeatures[0].classList.add('active');
 
-    // Function to switch to the next swiping-features div
     function switchSwipingFeature() {
     // Find the current active div
     let activeDiv = document.querySelector('.swiping-features > div.active');
@@ -65,12 +64,28 @@ $(document).ready(function() {
     // Find the index of the next div
     let nextIndex = (Array.from(swipingFeatures).indexOf(activeDiv) + 1) % swipingFeatures.length;
 
+    // Add the out class to the current active div
+    activeDiv.classList.add('out');
+
     // Add the active class to the next div
-    swipingFeatures[nextIndex].classList.add('active');
+    swipingFeatures[nextIndex].classList.add('entering');
+
+    // After the transition has completed
+    setTimeout(() => {
+        // Remove the out class from the current div
+        activeDiv.classList.remove('out');
+
+        // Remove the entering class from the next div
+        swipingFeatures[nextIndex].classList.remove('entering');
+
+        // Add the active class to the next div
+        swipingFeatures[nextIndex].classList.add('active');
+    }, 1000);
     }
 
-    // Set up an interval to switch the swiping-features div every 3 seconds
-    setInterval(switchSwipingFeature, 3000);
+// Set up an interval to switch the swiping-features div every 3 seconds
+setInterval(switchSwipingFeature, 3000);
+
 });
 
 swipeContainer.addEventListener('touchstart', (e) => {

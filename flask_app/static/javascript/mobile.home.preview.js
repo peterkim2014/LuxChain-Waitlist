@@ -47,6 +47,30 @@ $(document).ready(function() {
 // Upon page load, animate the opacity of these text elements to 1.
 $(document).ready(function() {
     animateTextOpacity('1');
+
+    // Grab all the swiping-features divs
+    let swipingFeatures = document.querySelectorAll('.swiping-features > div');
+
+    // Set the first div as the active div
+    swipingFeatures[0].classList.add('active');
+
+    // Function to switch to the next swiping-features div
+    function switchSwipingFeature() {
+    // Find the current active div
+    let activeDiv = document.querySelector('.swiping-features > div.active');
+
+    // Remove the active class from the current active div
+    activeDiv.classList.remove('active');
+
+    // Find the index of the next div
+    let nextIndex = (Array.from(swipingFeatures).indexOf(activeDiv) + 1) % swipingFeatures.length;
+
+    // Add the active class to the next div
+    swipingFeatures[nextIndex].classList.add('active');
+    }
+
+    // Set up an interval to switch the swiping-features div every 3 seconds
+    setInterval(switchSwipingFeature, 3000);
 });
 
 swipeContainer.addEventListener('touchstart', (e) => {

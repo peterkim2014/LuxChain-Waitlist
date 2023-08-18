@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.home.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='javascript/mobile.home.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </head>
 <body class="fade-in">
 
@@ -91,6 +92,239 @@
                 </div>
 
             </div>
+        </div>
+
+
+
+
+        <div id="global-app">
+
+            <div class="mobile-header">
+
+                <img src="../static/media/blackHamburger.webp" class="hamburger-icon" alt="hamburger-icon">
+
+                <div class="mobile-nav-bar">
+                    <img class="mobile-nav-box" src="../static/media/boxSideNavBar.png" alt="mobile nav bar box">
+                    <div class="mobile-nav-bar-links">
+                        <a>Intro</a>
+                        <a>App Preview</a>
+                        <a>Join Waitlist</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="opening-features">
+                <p>
+                    Crypto Wallet
+                </p>
+                <div class="opening-features-descriptions">
+                        <p class="opening-features-one">
+                            Transaction Flexibility
+                        </p>
+                        <p class="opening-features-two">
+                            Borderless Transactions
+                        </p>
+                        <p class="opening-features-three">
+                            Ownership of Digital Assets
+                        </p>
+                </div>
+            </div>
+
+            <div class="swiping-features">
+                <div class="swiping-features-one">
+                    <img class="swiping-features-icon-one" src="../static/media/mobileSwipingFeaturesOne.webp" alt="swiping features icon one">
+                    <div class="swiping-features-one-description">
+                        <a>
+                            Invite your Friends
+                        </a>
+                        <p>
+                            Transfer to friends with one <br>click after connecting with <br>them
+                        </p>
+                    </div>
+                </div>
+                <div class="swiping-features-two">
+                    <img class="swiping-features-icon-two" src="../static/media/mobileSwipingFeaturestwo.webp" alt="swiping features icon two">
+                    <div class="swiping-features-two-description">
+                        <a>
+                            Make Secure Transactions
+                        </a>
+                        <p>
+                            With the security of the blockchain technology, users can make safe transactions
+                        </p>
+                    </div>
+                </div>
+                <div class="swiping-features-three">
+                    <img class="swiping-features-icon-three" src="../static/media/mobileSwipingFeaturesthree.webp" alt="swiping features icon three">
+                    <div class="swiping-features-three-description">
+                        <a>
+                            Process transactions quickly with low transaction cost
+                        </a>
+                        <p>
+                            Matching the transaction cost from the user and the company will help finalize blocks faster
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-descriptions">
+                <p>
+                    Comprehensive dashboard displaying key information
+                </p>
+                <p>
+                    One-click access to common wallet functions
+                </p>
+                <p>
+                    Secure and encrypted transactions
+                </p>
+            </div>
+
+            <div class="iphone-features">
+                <div class="iphone-features-text">
+                    <a>
+                        Account Details
+                    </a>
+                    <p>
+                        Quick-Access
+                    </p>
+                </div>
+                <div class="feature-icons">
+                    <div class="feature-icon-one-components">
+                        <img class="feature-icon-one" src="../static/media/mobileFeature1.webp">
+                        <a>
+                            Intuitive Wallet<br> Interface
+                        </a>
+                    </div>
+                    <div class="feature-icon-two-components">
+                        <img class="feature-icon-two" src="../static/media/mobileFeature2.webp">
+                        <a>
+                            Social Payment <br>Integration
+                        </a>
+                    </div>
+                    <div class="feature-icon-three-components">
+                        <img class="feature-icon-three" src="../static/media/mobileFeature3.webp">
+                        <a>
+                            Personalized <br>Transaction Insights
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="polkadot-technology">
+                <img class="polkadot-technology-image" src="../static/media/polkadotTechnologyDiagram.webp">
+                <div class="polkadot-technology-description">
+                    <a>
+                        Polkadot Technology
+                    </a>
+                    <p>
+                        Polkadot's Relay Chain is the central hub that<br> connects different blockchains ensuring <br>security and consensus across the network.
+                    </p>
+                    <p>
+                        Parachains are individual blockchains that run <br>parallel within the Polkadot network, benefitting <br>from the Relay Chain's security and <br>interoperability features.
+                    </p>
+                    <p>
+                        Together, they form a scalable, decentralized <br>network that enables different blockchains to <br>transfer messages and value seamlessly, <br>fostering a connected and versatile ecosystem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bank-comparison">
+                <p class="banking-system">Banking System</p>
+                <img src="../static/media/bankComparisonIcon.webp" class="bank-comparison-icon" alt="bank comparison icon">
+                <div class="bank-comparison-icon-titles">
+                    <p class="bank-comparison-icon-titles-one">
+                        Centralized
+                    </p>
+                    <p class="bank-comparison-icon-titles-two">
+                        Susceptible <br>to Fraud
+                    </p>
+                    <p class="bank-comparison-icon-titles-three">
+                        Slow Cross Border <br>Transactions
+                    </p>
+                    <p class="bank-comparison-icon-titles-four">
+                        Not Fully <br>Transparent
+                    </p>
+                    <p class="bank-comparison-icon-titles-five">
+                        High Fees
+                    </p>
+                </div>
+                <p class="vs-comparison">
+                    VS
+                </p>
+                <div class="blockchain-comparison-icon-titles">
+                    <p class="blockchain-comparison-icon-titles-one">
+                        Decentralized
+                    </p>
+                    <p class="blockchain-comparison-icon-titles-two">
+                        Pooled <br>Security
+                    </p>
+                    <p class="blockchain-comparison-icon-titles-three">
+                        Quick Cross-Chain <br>Transactions
+                    </p>
+                    <p class="blockchain-comparison-icon-titles-four">
+                        High Level of <br>Privacy
+                    </p>
+                    <p class="blockchain-comparison-icon-titles-five">
+                        Low Transaction <br>Fees
+                    </p>
+                </div>
+                <p class="blockchain-system">
+                    Luxora System
+                </p>
+                <img src="../static/media/blockchainComparisonIcon.webp" class="blockchain-comparison-icon" alt="blockchain comparison icon">
+            </div>
+
+        </div>
+
+
+
+
+        <div id="global-waitlist">
+
+            <div class="mobile-header">
+                <img src="../static/media/hamburger.webp" class="hamburger-icon" alt="hamburger-icon">
+
+                <div class="mobile-nav-bar">
+                    <img class="mobile-nav-box" src="../static/media/boxSideNavBarWhite.png" alt="mobile nav bar box">
+                    <div class="mobile-nav-bar-links">
+                        <a>Intro</a>
+                        <a>App Preview</a>
+                        <a>Join Waitlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-waitlist-body">
+                <div class="waitlist-title">
+                    <img class="mobile-waitlist-banner" src="../static/media/mobileWaitlistBanner.webp" alt="mobile waitlist banner">
+                    <a>
+                        Join the Community
+                    </a>
+                    <p>
+                        Enroll in our waitlist to receive priority rewards!
+                    </p>
+                </div>
+
+                <form id="waitlistForm" class="waitlist-form" action="/join_waitlist" method="POST">
+                    <label class="waitlist-first" for="first_name">
+                        First name
+                        <input type="text" name="first_name" placeholder="John">
+                    </label>
+                    <label class="waitlist-last" for="last_name">
+                        Last name
+                        <input type="text" name="last_name" placeholder="Doe">
+                    </label>
+                    <label class="waitlist-email" for="email">
+                        Email
+                        <input type="text" name="email" placeholder="johndoe@gmail.com">
+                    </label>
+                    <button type="submit">Submit 
+                        <div id="processing" class="processing"></div>
+                    </button>
+                </form>
+            </div>
+
+
         </div>
     </div>
 

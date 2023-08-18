@@ -30,7 +30,7 @@ class Contact:
     
     @classmethod
     def contact_email(cls, data):
-        send_email = [data["email"], "customersupport@luxorawallet.io"]
+        send_email = [data["email"], "program.python.test@gmail.com"]
         Contact_Email.contact_send(data["name"], to_email=send_email, data=data)
         return 
 

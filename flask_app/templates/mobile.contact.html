@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.contact.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='javascript/mobile.contact.js') }}" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </head>
 <body>
     <div id="swipe-container">
@@ -57,7 +56,7 @@
         </div>
 
 
-        <div id="global-contact" class="dynamicLoad">
+        <div id="global-contact">
 
             <div class="mobile-header">
 
@@ -83,13 +82,13 @@
 
 
             <div class="contact-content">
-                <!-- {% with messages = get_flashed_messages(category_filter=['contact']) %}
+                {% with messages = get_flashed_messages(category_filter=['contact']) %}
                     {% if messages %}
                         {% for message in messages %}
-                            <p class="flash-contact" style="color: white; width: 100%; text-align: center; height: 10%; margin-top: 7.5%; margin-bottom: -7.5%;">{{ message }}</p>
+                            <p>{{ message }}</p>
                         {% endfor %}
                     {% endif %}
-                {% endwith %} -->
+                {% endwith %}
                 <form class="contact-form" action="/contact_submit" method="POST">
                     <label class="form-name" for="name">
                         Name
@@ -112,77 +111,6 @@
             </div>
         </div>
 
-
-        <div id="global-faq" class="dynamicLoad">
-            
-            <div class="mobile-header">
-
-                <img src="../static/media/blackHamburger.webp" class="hamburger-icon" alt="hamburger-icon">
-
-                <div class="mobile-nav-bar">
-                    <img class="mobile-nav-box" src="../static/media/boxSideNavBar.png" alt="mobile nav bar box">
-                    <div class="mobile-nav-bar-links">
-                        <a>Contact us</a>
-                        <a>FAQ</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="all-questions">
-                <div class="question-one">
-                    <p class="question-one-header">
-                        How Secure Are My Funds and Personal Information in the Blockchain Banking App?
-                    </p>
-                    <P class="question-one-answer">
-                        The application employs advanced encryption and blockchain's decentralized nature to secure your funds and personal information, making it resistant to common threats and fraud.
-                    </P>
-                </div>
-                <div class="question-two">
-                    <p class="question-two-header">
-                        What Control Do I Have Over My Personal Data in the App?
-                    </p>
-                    <P class="question-two-answer">
-                        You have full control over your personal data. The decentralized nature of blockchain ensures that your information is not stored centrally, minimizing the risk of unauthorized access.
-                    </P>
-                </div>
-                <div class="question-three">
-                    <p class="question-three-header">
-                        Can I Use the Blockchain Banking App to Manage Multiple Cryptocurrencies?
-                    </p>
-                    <P class="question-three-answer">
-                        Yes, depending on the app's design and integration with Polkadot, you can manage and transact with multiple cryptocurrencies, all within a unified interface.
-                    </P>
-                </div>
-                <div class="question-four">
-                    <p class="question-four-header">
-                        How Can Users Trust a Blockchain Banking Application?
-                    </p>
-                    <P class="question-four-answer">
-                        By leveraging blockchain's immutability and transparency, a blockchain banking application ensures that transactions are secure, traceable, and free from tampering.
-                    </P>
-                </div>
-                <div class="question-five">
-                    <p class="question-five-header">
-                        What Are the Benefits of Using a Blockchain Banking Application Over Traditional Banking?
-                    </p>
-                    <P class="question-five-answer">
-                        Blockchain banking applications offer advantages like reduced fees, faster transaction times, greater accessibility, and enhanced privacy and control over personal financial data.
-                    </P>
-                </div>
-                <div class="question-six">
-                    <p class="question-six-header">
-                        Why Should I Choose a Blockchain-Based Banking System?
-                    </p>
-                    <P class="question-six-answer">
-                        Blockchain-based banking provides enhanced security, transparency, and efficiency in transactions, offering a more user-friendly experience and potentially lower fees compared to traditional banking.
-                    </P>
-                </div>
-
-            </div>
-            
-
-        </div>
     </div>
 
 </body>

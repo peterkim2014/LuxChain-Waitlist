@@ -439,7 +439,7 @@
                         }
 
 /* Mobile styles */
-#about {
+#global-about {
     max-width: 100%;
     max-height: max-content;
     background-image: url("../media/mobileBackgroundAboutInfoIpad3.webp");
@@ -536,153 +536,6 @@ html{
                             text-align: center;
                             margin-left: 12%;
                         }
-
-#about-info {
-    margin: 0;
-    max-width: 100%;
-    height: 2100px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
-    background-size: cover;
-}
-
-body {
-    margin: 0;
-}
-
-    html {
-    margin: 0;
-    height: 100%;
-    font-family: Garet;
-    text-decoration: none;
-    overflow-y: scroll;
-    overscroll-behavior: none;
-    } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 6%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 3.5%;
-                        height: 25%;
-                        margin-left: 64%;
-                        margin-top: 6.4%;
-                    }.mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 15px;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex;
-        } .company-information {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 35%;
-            padding-top: 15%;
-            } .company-info-one {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                } .company-info-one > h2 {
-                    color: white;
-                    font-size: 25px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-one > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 14px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-            } .company-info-two {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                margin-top: -3%;
-                } .company-info-two > h2 {
-                    color: white;
-                    font-size: 25px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-two > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 14px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-            } .company-info-three {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                margin-top: -3%;
-                } .company-info-three > h2 {
-                    color: white;
-                    font-size: 25px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-three > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 14px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-            } .problem-solution {
-                padding-top: 10%;
-                display: flex;
-                width: 80%;
-                height: 30%;
-                flex-direction: column;
-                } .problem {
-                    display: flex;
-                    flex-direction: column;
-                    } .problem > h2 {
-                        font-size: 25px;
-                        color: white;
-                        margin-left: 53%;
-                        } .problem > p {
-                            font-size: 14px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                } .solution {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 8.5%;
-                    } .solution > h2 {
-                        font-size: 25px;
-                        color: white;
-                        margin-left: 53%;
-                        /* margin-top: 0%; */
-                        } .solution > p {
-                            font-size: 14px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                            }
 }
 @media only screen and (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) and (min-height: 897px) { 
 
@@ -896,7 +749,7 @@ body {
                         }
 
 /* Mobile styles */
-#about {
+#global-about {
     max-width: 100%;
     max-height: max-content;
     background-image: url("../media/mobileBackgroundAboutInfoIpad4.webp");
@@ -992,159 +845,11 @@ html{
                             text-align: center;
                             margin-left: 12%;
                         }
-
-#about-info {
-    margin: 0;
-    max-width: 100%;
-    height: 2100px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
-    background-size: cover;
-}
-
-body {
-    margin: 0;
-}
-
-    html {
-    margin: 0;
-    height: 100%;
-    font-family: Garet;
-    text-decoration: none;
-    overflow-y: scroll;
-    overscroll-behavior: none;
-    } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 8%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 4.5%;
-                        height: 28.5%;
-                        margin-left: 62.5%;
-                        margin-top: 5.75%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
-                                display: flex;
-        } .company-information {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 35%;
-            padding-top: 15%;
-            } .company-info-one {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                } .company-info-one > h2 {
-                    color: white;
-                    font-size: 25px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-one > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 14px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-            } .company-info-two {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                margin-top: -3%;
-                } .company-info-two > h2 {
-                    color: white;
-                    font-size: 25px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-two > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 14px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-            } .company-info-three {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                margin-top: -3%;
-                } .company-info-three > h2 {
-                    color: white;
-                    font-size: 25px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-three > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 14px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-            } .problem-solution {
-                padding-top: 10%;
-                display: flex;
-                width: 80%;
-                height: 30%;
-                flex-direction: column;
-                margin-left: 2.5%;
-                } .problem {
-                    display: flex;
-                    flex-direction: column;
-                    } .problem > h2 {
-                        font-size: 25px;
-                        color: white;
-                        margin-left: 53%;
-                        } .problem > p {
-                            font-size: 14px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                } .solution {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 8.5%;
-                    } .solution > h2 {
-                        font-size: 25px;
-                        color: white;
-                        margin-left: 53%;
-                        /* margin-top: 0%; */
-                        } .solution > p {
-                            font-size: 14px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                            }
 }
 
 @media only screen and (max-width: 390px) and (max-height: 844px) and (min-width: 361px) and (min-height: 741px) { 
 /* Mobile styles */
-#about {
+#global-about {
     max-width: 100%;
     max-height: max-content;
     background-image: url("../media/mobileBackgroundAbout.webp");
@@ -1241,157 +946,11 @@ html{
                             text-align: center;
                             margin-left: 12%;
                         }
-#about-info {
-    margin: 0;
-    max-width: 100%;
-    height: 1000px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
-    background-size: cover;
-}
-
-body {
-    margin: 0;
-}
-
-    html {
-    margin: 0;
-    height: 100%;
-    font-family: Garet;
-    text-decoration: none;
-    overflow-y: scroll;
-    overscroll-behavior: none;
-    } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 8%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 4.5%;
-                        height: 28.5%;
-                        margin-left: 62.5%;
-                        margin-top: 4.25%;
-                    }.mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 0.85em;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex;
-        } .company-information {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 35%;
-            padding-top: 15%;
-            
-            } .company-info-one {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                } .company-info-one > h2 {
-                    color: white;
-                    font-size: 15px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-one > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 8.5px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-                    } .company-info-two {
-                        display: flex;
-                        flex-direction: column;
-                        width: 80%;
-                        height: 33%;
-                        margin-left: 10%;
-                        margin-top: -3%;
-                        } .company-info-two > h2 {
-                            color: white;
-                            font-size: 15px;
-                            /* margin-left: 60%; */
-                            text-align: center;
-                            } .company-info-two > p {
-                                width: 100%;
-                                color: white;
-                                font-size: 8.5px;
-                                /* margin-left: 20%; */
-                                text-align: center;
-                                margin-top: -3.5%;
-                            } .company-info-three {
-                                display: flex;
-                                flex-direction: column;
-                                width: 80%;
-                                height: 33%;
-                                margin-left: 10%;
-                                margin-top: -3%;
-                                } .company-info-three > h2 {
-                                    color: white;
-                                    font-size: 15px;
-                                    /* margin-left: 60%; */
-                                    text-align: center;
-                                    } .company-info-three > p {
-                                        width: 100%;
-                                        color: white;
-                                        font-size: 8.5px;
-                                        /* margin-left: 20%; */
-                                        text-align: center;
-                                        margin-top: -3.5%;
-            } .problem-solution {
-                padding-top: 3.5%;
-                display: flex;
-                width: 80%;
-                height: 30%;
-                flex-direction: column;
-                } .problem {
-                    display: flex;
-                    flex-direction: column;
-                    } .problem > h2 {
-                        font-size: 15px;
-                        color: white;
-                        margin-left: 53%;
-                        } .problem > p {
-                            font-size: 8.5px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                } .solution {
-                    display: flex;
-                    flex-direction: column;
-                    } .solution > h2 {
-                        font-size: 15px;
-                        color: white;
-                        margin-left: 53%;
-                        /* margin-top: 0%; */
-                        } .solution > p {
-                            font-size: 8.5px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                }
 }
 
 @media only screen and (max-width: 360px) and (max-height: 740px) { 
 /* Mobile styles */
-#about {
+#global-about {
     max-width: 100%;
     max-height: max-content;
     background-image: url("../media/mobileBackgroundAbout.webp");
@@ -1490,151 +1049,6 @@ html{
                             text-align: center;
                             margin-left: 12%;
                         }
-#about-info {
-    margin: 0;
-    max-width: 100%;
-    height: 1000px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
-    background-size: cover;
-}
-
-body {
-    margin: 0;
-}
-
-    html {
-    margin: 0;
-    height: 100%;
-    font-family: Garet;
-    text-decoration: none;
-    overflow-y: scroll;
-    overscroll-behavior: none;
-    } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 8%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 4.5%;
-                        height: 28.5%;
-                        margin-left: 62.5%;
-                        margin-top: 6.25%;
-                    }.mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 0.85em;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex;
-        } .company-information {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 35%;
-            padding-top: 15%;
-            
-            } .company-info-one {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                } .company-info-one > h2 {
-                    color: white;
-                    font-size: 15px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-one > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 8.5px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-                    } .company-info-two {
-                        display: flex;
-                        flex-direction: column;
-                        width: 80%;
-                        height: 33%;
-                        margin-left: 10%;
-                        margin-top: -3%;
-                        } .company-info-two > h2 {
-                            color: white;
-                            font-size: 15px;
-                            /* margin-left: 60%; */
-                            text-align: center;
-                            } .company-info-two > p {
-                                width: 100%;
-                                color: white;
-                                font-size: 8.5px;
-                                /* margin-left: 20%; */
-                                text-align: center;
-                                margin-top: -3.5%;
-                            } .company-info-three {
-                                display: flex;
-                                flex-direction: column;
-                                width: 80%;
-                                height: 33%;
-                                margin-left: 10%;
-                                margin-top: -3%;
-                                } .company-info-three > h2 {
-                                    color: white;
-                                    font-size: 15px;
-                                    /* margin-left: 60%; */
-                                    text-align: center;
-                                    } .company-info-three > p {
-                                        width: 100%;
-                                        color: white;
-                                        font-size: 8.5px;
-                                        /* margin-left: 20%; */
-                                        text-align: center;
-                                        margin-top: -3.5%;
-            } .problem-solution {
-                padding-top: 5%;
-                display: flex;
-                width: 80%;
-                height: 30%;
-                flex-direction: column;
-                } .problem {
-                    display: flex;
-                    flex-direction: column;
-                    } .problem > h2 {
-                        font-size: 15px;
-                        color: white;
-                        margin-left: 53%;
-                        } .problem > p {
-                            font-size: 8.5px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                } .solution {
-                    display: flex;
-                    flex-direction: column;
-                    } .solution > h2 {
-                        font-size: 15px;
-                        color: white;
-                        margin-left: 53%;
-                        margin-top: 0%;
-                        } .solution > p {
-                            font-size: 8.5px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                }
 }
 
 @media only screen and (max-width: 375px) and (max-height: 667px) and (min-width: 361px) { 
@@ -1846,7 +1260,7 @@ body {
                         }
 
 /* Mobile styles */
-#about {
+#global-about {
     max-width: 100%;
     max-height: max-content;
     background-image: url("../media/mobileBackgroundAboutInfoIpad5.webp");
@@ -1946,272 +1360,28 @@ html{
                             text-align: center;
                             margin-left: 12%;
                         }
-#about-info {
-    margin: 0;
-    max-width: 100%;
-    height: 1000px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
+}
+@media only screen and (max-width: 414px) and (max-height: 896px) and (min-width: 391px) and (min-height: 845px) { 
+/* Mobile styles */
+#global-about {
+    width: 414px;
+    height: 896px;
+    background-image: url("../media/mobileBackgroundAbout.webp");
     background-size: cover;
 }
 
-body {
-    margin: 0;
-}
-
-    html {
-    margin: 0;
-    height: 100%;
-    font-family: Garet;
-    text-decoration: none;
+html{
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 8%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 4.5%;
-                        height: 28.5%;
-                        margin-left: 62.5%;
-                        margin-top: 5%;
-                    }.mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 0.85em;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex;
-        } .company-information {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 35%;
-            padding-top: 15%;
-            
-            } .company-info-one {
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                height: 33%;
-                margin-left: 10%;
-                } .company-info-one > h2 {
-                    color: white;
-                    font-size: 15px;
-                    /* margin-left: 60%; */
-                    text-align: center;
-                    } .company-info-one > p {
-                        width: 100%;
-                        color: white;
-                        font-size: 8.5px;
-                        /* margin-left: 20%; */
-                        text-align: center;
-                        margin-top: -3.5%;
-                    } .company-info-two {
-                        display: flex;
-                        flex-direction: column;
-                        width: 80%;
-                        height: 33%;
-                        margin-left: 10%;
-                        margin-top: -3%;
-                        } .company-info-two > h2 {
-                            color: white;
-                            font-size: 15px;
-                            /* margin-left: 60%; */
-                            text-align: center;
-                            } .company-info-two > p {
-                                width: 100%;
-                                color: white;
-                                font-size: 8.5px;
-                                /* margin-left: 20%; */
-                                text-align: center;
-                                margin-top: -3.5%;
-                            } .company-info-three {
-                                display: flex;
-                                flex-direction: column;
-                                width: 80%;
-                                height: 33%;
-                                margin-left: 10%;
-                                margin-top: -3%;
-                                } .company-info-three > h2 {
-                                    color: white;
-                                    font-size: 15px;
-                                    /* margin-left: 60%; */
-                                    text-align: center;
-                                    } .company-info-three > p {
-                                        width: 100%;
-                                        color: white;
-                                        font-size: 8.5px;
-                                        /* margin-left: 20%; */
-                                        text-align: center;
-                                        margin-top: -3.5%;
-            } .problem-solution {
-                padding-top: 5%;
-                display: flex;
-                width: 80%;
-                height: 30%;
-                flex-direction: column;
-                } .problem {
-                    display: flex;
-                    flex-direction: column;
-                    } .problem > h2 {
-                        font-size: 15px;
-                        color: white;
-                        margin-left: 53%;
-                        } .problem > p {
-                            font-size: 8.5px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                            margin-top: 1.25%;
-                } .solution {
-                    display: flex;
-                    flex-direction: column;
-                    } .solution > h2 {
-                        font-size: 15px;
-                        color: white;
-                        margin-left: 53%;
-                        margin-top: 0%;
-                        } .solution > p {
-                            font-size: 8.5px;
-                            color: white;
-                            margin-left: 25%;
-                            text-align: center;
-                }
-}
-@media only screen and (max-width: 414px) and (max-height: 896px) and (min-width: 391px) and (min-height: 845px) { 
-    #about {
-        width: 414px;
-        height: 896px;
-        background-image: url("../media/mobileBackgroundAbout.webp");
-        background-size: cover;
-    }
-    
-    html{
-        overflow-y: scroll;
-        overscroll-behavior: none;
-        } *, html {
-            margin: 0;
-            height: 100%;
-            font-family: Garet;
-            text-decoration: none;
-            } .mobile-header {
-                margin: 0;
-                width: 100%;
-                height: 17%;
-                display: flex;
-                flex-direction: column;
-                } .hamburger-icon {
-                    width: 8%;
-                    height: 17%;
-                    margin-top: 10%;
-                    margin-left: 7%;
-                    } .mobile-nav-bar {
-                        width: 100%;
-                        height: 40%;
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 5%;
-                        } .mobile-nav-box {
-                                width: 5.5%;
-                                height: 35%;
-                                margin-left: 21.5%;
-                                margin-top: 2%;
-                            }.mobile-nav-bar-links {
-                                padding-top: 1%;
-                                display: flex;
-                                justify-content: space-evenly;
-                                font-size: 0.85em;
-                                color: white;
-                                gap: 1.8vw;
-    
-                                } .mobile-nav-bar-links > a {
-                                    display: flex;
-                } .mobile-body-intro-about {
-                    display: flex;
-                    flex-direction: column;
-                    width: 90%;
-                    justify-content: center;
-                    align-items: center;
-                    height: 40%;
-                    } .mobile-body-intro-about-title {
-                        display: flex;
-                        width: 80%;
-                        height: 30%;
-                        padding-top: 90%;
-                        margin-left: 15%;
-                        } .mobile-body-intro-about-title-logo {
-                            width: 20%;
-                            height: 90%;
-                            } .mobile-body-intro-about-title > h2 {
-                                font-size: 4em;
-                                font-family: code light;
-                                color: white;
-                                transform: scale(1, 0.75);
-                    } .mobile-about-slogan {
-                        color: white;
-                        font-family: garet;
-                        font-size: 1.15em;
-                        margin-left: 12%;
-                        /* padding-bottom: %; */
-                        height: 100%;
-                        margin-top: -1%;
-                        } .mobile-about-text {
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            color: white;
-                            padding-top: 8%;
-                            font-size: 11px;
-                            font-family: futura;
-                            font-style: italic;
-                            text-align: center;
-                            margin-left: 15%;
-                            } .company-establishment {
-                                color:white;
-                                padding-top: 8%;
-                                font-size: 0.75em;
-                                font-family: futura;
-                                font-style: italic;
-                                text-align: center;
-                                margin-left: 12%;
-                            }
-    
-    #about-info {
-        margin: 0;
-        max-width: 100%;
-        height: 1000px;
-        background-image: url("../media/mobileBackgroundAboutInfo.webp");
-        background-size: cover;
-    }
-    
-    body {
-        margin: 0;
-    }
-    
-        html {
+    } *, html {
         margin: 0;
         height: 100%;
         font-family: Garet;
         text-decoration: none;
-        overflow-y: scroll;
-        overscroll-behavior: none;
         } .mobile-header {
             margin: 0;
-            max-height: 17%;
+            width: 100%;
+            height: 17%;
             display: flex;
             flex-direction: column;
             } .hamburger-icon {
@@ -2224,115 +1394,69 @@ body {
                     height: 40%;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 2.85%;
+                    margin-top: 5%;
                     } .mobile-nav-box {
-                            width: 4.5%;
-                            height: 28.5%;
-                            margin-left: 62.5%;
-                            margin-top: 4.25%;
+                            width: 5.5%;
+                            height: 35%;
+                            margin-left: 21.5%;
+                            margin-top: 2%;
                         }.mobile-nav-bar-links {
                             padding-top: 1%;
                             display: flex;
                             justify-content: space-evenly;
                             font-size: 0.85em;
                             color: white;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
+                            gap: 1.8vw;
+
+                            } .mobile-nav-bar-links > a {
                                 display: flex;
-            } .company-information {
+            } .mobile-body-intro-about {
                 display: flex;
                 flex-direction: column;
-                width: 100%;
-                height: 35%;
-                padding-top: 15%;
-                
-                } .company-info-one {
-                    display: flex;
-                    flex-direction: column;
-                    width: 80%;
-                    height: 33%;
-                    margin-left: 10%;
-                    } .company-info-one > h2 {
-                        color: white;
-                        font-size: 15px;
-                        /* margin-left: 60%; */
-                        text-align: center;
-                        } .company-info-one > p {
-                            width: 100%;
-                            color: white;
-                            font-size: 8.5px;
-                            /* margin-left: 20%; */
-                            text-align: center;
-                            margin-top: -3.5%;
-                        } .company-info-two {
-                            display: flex;
-                            flex-direction: column;
-                            width: 80%;
-                            height: 33%;
-                            margin-left: 10%;
-                            margin-top: -3%;
-                            } .company-info-two > h2 {
-                                color: white;
-                                font-size: 15px;
-                                /* margin-left: 60%; */
-                                text-align: center;
-                                } .company-info-two > p {
-                                    width: 100%;
-                                    color: white;
-                                    font-size: 8.5px;
-                                    /* margin-left: 20%; */
-                                    text-align: center;
-                                    margin-top: -3.5%;
-                                } .company-info-three {
-                                    display: flex;
-                                    flex-direction: column;
-                                    width: 80%;
-                                    height: 33%;
-                                    margin-left: 10%;
-                                    margin-top: -3%;
-                                    } .company-info-three > h2 {
-                                        color: white;
-                                        font-size: 15px;
-                                        /* margin-left: 60%; */
-                                        text-align: center;
-                                        } .company-info-three > p {
-                                            width: 100%;
-                                            color: white;
-                                            font-size: 8.5px;
-                                            /* margin-left: 20%; */
-                                            text-align: center;
-                                            margin-top: -3.5%;
-                } .problem-solution {
-                    padding-top: 9%;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                height: 40%;
+                } .mobile-body-intro-about-title {
                     display: flex;
                     width: 80%;
                     height: 30%;
-                    flex-direction: column;
-                    } .problem {
-                        display: flex;
-                        flex-direction: column;
-                        } .problem > h2 {
-                            font-size: 15px;
+                    padding-top: 90%;
+                    margin-left: 15%;
+                    } .mobile-body-intro-about-title-logo {
+                        width: 20%;
+                        height: 90%;
+                        } .mobile-body-intro-about-title > h2 {
+                            font-size: 4em;
+                            font-family: code light;
                             color: white;
-                            margin-left: 53%;
-                            } .problem > p {
-                                font-size: 8.5px;
-                                color: white;
-                                margin-left: 25%;
-                                text-align: center;
-                                margin-top: 1.25%;
-                    } .solution {
+                            transform: scale(1, 0.75);
+                } .mobile-about-slogan {
+                    color: white;
+                    font-family: garet;
+                    font-size: 1.15em;
+                    margin-left: 12%;
+                    /* padding-bottom: %; */
+                    height: 100%;
+                    margin-top: -1%;
+                    } .mobile-about-text {
+                        width: 100%;
+                        height: 100%;
                         display: flex;
-                        flex-direction: column;
-                        } .solution > h2 {
-                            font-size: 15px;
-                            color: white;
-                            margin-left: 53%;
-                            /* margin-top: 0%; */
-                            } .solution > p {
-                                font-size: 8.5px;
-                                color: white;
-                                margin-left: 25%;
-                                text-align: center;
-                    }
+                        color: white;
+                        padding-top: 8%;
+                        font-size: 11px;
+                        font-family: futura;
+                        font-style: italic;
+                        text-align: center;
+                        margin-left: 15%;
+                        } .company-establishment {
+                            color:white;
+                            padding-top: 8%;
+                            font-size: 0.75em;
+                            font-family: futura;
+                            font-style: italic;
+                            text-align: center;
+                            margin-left: 12%;
+                        }
 }

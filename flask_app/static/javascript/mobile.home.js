@@ -43,6 +43,29 @@ $(document).ready(function() {
     // Upon page load, animate the opacity of these text elements to 1.
     animateTextOpacity('1');
 
+    $('.hamburger-icon').on('click', function() {
+        // Slide the side nav bar in
+        $('.side-nav-bar').css('transform', 'translateX(0)');
+
+        // Hide the hamburger-icon and show the hamburger-return icon
+        $('.hamburger-return').show();
+    });
+
+    $('.hamburger-return').on('click', function() {
+        // Slide the side nav bar out
+        $('.side-nav-bar').css('transform', 'translateX(-100%)');
+
+        // Show the hamburger-icon and hide the hamburger-return icon
+        $('.hamburger-icon').show();
+        // $('.hamburger-return').hide();
+    });
+    // Close the side nav bar when clicked outside the side-nav-bar or hamburger-icon
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.side-nav-bar').length && !$(e.target).hasClass('hamburger-icon')) {
+            closeSideNavBar();
+        }
+    });
+
     // Animate the mobile nav box and position
     const mobileNavBox = $('.mobile-nav-box');
     const routeMap = {
@@ -137,28 +160,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.hamburger-icon').on('click', function() {
-        // Slide the side nav bar in
-        $('.side-nav-bar').css('transform', 'translateX(0)');
-
-        // Hide the hamburger-icon and show the hamburger-return icon
-        $('.hamburger-return').show();
-    });
-
-    $('.hamburger-return').on('click', function() {
-        // Slide the side nav bar out
-        $('.side-nav-bar').css('transform', 'translateX(-100%)');
-
-        // Show the hamburger-icon and hide the hamburger-return icon
-        $('.hamburger-icon').show();
-        // $('.hamburger-return').hide();
-    });
-    // Close the side nav bar when clicked outside the side-nav-bar or hamburger-icon
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('.side-nav-bar').length && !$(e.target).hasClass('hamburger-icon')) {
-            closeSideNavBar();
-        }
-    });
+    
 
     let swipingFeatures = document.querySelectorAll('.swiping-features > div');
     swipingFeatures[0].classList.add('active');

@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask_app.models.info import email, app_password, username
+from flask_app.models.info import contact_email, contact_app_password, contact_username
 
 contact_msg_text = """
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -110,8 +110,8 @@ class Contact_Email:
         server = smtplib.SMTP(host="smtp.gmail.com", port=587)
         server.ehlo()
         server.starttls()
-        print(username, email, app_password)
-        server.login(username, app_password)
+        print(contact_username, contact_email, contact_app_password)
+        server.login(contact_username, contact_app_password)
         print("logged in")
         server.sendmail(from_email, to_emails[0], msg_str)
 
@@ -123,7 +123,7 @@ class Contact_Email:
         my_msg = Contact_Email.contact_format_text(my_customer=customer, contact_header=data["header"], description=data["description"])
         subject = "LuxChain Inquiry"
         try:
-            Contact_Email.contact_send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=email)
+            Contact_Email.contact_send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=contact_email)
             sent = True
         except:
             sent = False

@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask_app.models.info import email, app_password, username
+from flask_app.models.info import waitlist_email, waitlist_app_password, waitlist_username
 import random
 
 msg_text = """
@@ -115,8 +115,8 @@ class Email:
         server = smtplib.SMTP(host="smtp.gmail.com", port=587)
         server.ehlo()
         server.starttls()
-        print(username, email, app_password)
-        server.login(username, app_password)
+        print(waitlist_username, waitlist_email, waitlist_app_password)
+        server.login(waitlist_username, waitlist_app_password)
         print("logged in")
         server.sendmail(from_email, to_emails, msg_str)
 
@@ -128,8 +128,8 @@ class Email:
         my_msg = Email.format_text(my_customer=customer)
         subject = "LuxChain waitlist confirmation"
         try:
-            print(email)
-            Email.send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=email)
+            print(waitlist_email)
+            Email.send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=waitlist_email)
             sent = True
         except:
             sent = False

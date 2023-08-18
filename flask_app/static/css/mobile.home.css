@@ -2021,7 +2021,7 @@
                         height: 100%;
                         margin-top: -14%;
                         z-index: 4;
-                    }  .mobile-nav-box-intro {
+                    }  .mobile-nav-box {
                         width: 5.2%;
                         height: 42%;
                         margin-left: 12.7%;
@@ -2140,7 +2140,7 @@
                         height: 100%;
                         margin-top: -14%;
                         z-index: 4;
-                    }  .mobile-nav-box-app {
+                    }  .mobile-nav-box {
                         width: 5.2%;
                         height: 42%;
                         margin-left: 40.7%;
@@ -2544,7 +2544,7 @@
                         height: 100%;
                         margin-top: -14%;
                         z-index: 4;
-                    }  .mobile-nav-box-waitlist {
+                    }  .mobile-nav-box {
                         width: 5%;
                         height: 40%;
                         margin-left: 74.7%;

@@ -11,6 +11,16 @@ $('#swipe-container').css('opacity', '0');
 // Upon page load, animate the opacity of these text elements to 1.
 $(document).ready(function() {
     animateTextOpacity('1');
+<<<<<<< HEAD
+=======
+
+    window.addEventListener("orientationchange", function() {
+    if (window.orientation === 90 || window.orientation === -90) {
+        // alert("Please use portrait mode!");
+        window.location.reload();
+    }
+});
+>>>>>>> 599f1811631901f7bb66abdb2e2eb025344a1e01
     
     $('.hamburger-icon').on('click', function() {
         // Slide the side nav bar in

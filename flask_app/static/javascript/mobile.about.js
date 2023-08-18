@@ -1,9 +1,31 @@
-// Function to animate opacity of specific elements
-function animateTextOpacity(targetOpacity) {
-    $('#swipe-container').stop(true).animate({
-        opacity: targetOpacity
-    }, 1000);
-}
+
+$(document).ready(function() {
+    function animateTextOpacity(targetOpacity) {
+        $('#swipe-container').stop(true).animate({
+            opacity: targetOpacity
+        }, 1000);
+    }
+
+    function switchSection(dynamicLoad) {
+        if (dynamicLoad) {
+            // Hide all sections
+            $(".dynamicLoad").hide();
+            // Show the selected section
+            $(`#${dynamicLoad}`).show();
+            // Update the URL hash
+            window.location.hash = dynamicLoad;
+        }
+    }
+    
+
+    // Listen to the hashchange event and switch to the appropriate section
+    $(window).on('hashchange', function() {
+        switchSection(window.location.hash.substring(1));
+    });
+
+    // Set the initial opacity of the swipe container to 1
+    $('#swipe-container').css('opacity', '0');
+
 
 // Set the initial opacity of text elements to 0.
 $('#swipe-container').css('opacity', '0');
@@ -12,12 +34,14 @@ $('#swipe-container').css('opacity', '0');
 $(document).ready(function() {
     animateTextOpacity('1');
 
+
     window.addEventListener("orientationchange", function() {
     if (window.orientation === 90 || window.orientation === -90) {
         // alert("Please use portrait mode!");
         window.location.reload();
     }
 });
+
     
     $('.hamburger-icon').on('click', function() {
         // Slide the side nav bar in

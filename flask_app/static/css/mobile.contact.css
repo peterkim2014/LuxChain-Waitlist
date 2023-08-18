@@ -439,6 +439,8 @@
     height: 896px;
     background-image: url("../media/mobileBackgroundContact.webp");
     background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 html{
@@ -450,38 +452,47 @@ html{
         font-family: Garet;
         text-decoration: none;
         } .mobile-header {
-            margin: 0;
-            width: 100%;
-            height: 36%;
+            /* margin: 0; */
+            max-height: 17%;
             display: flex;
             flex-direction: column;
             position: fixed;
+            margin-top: 50;
             } .hamburger-icon {
-                width: 9%;
-                height: 10%;
-                margin-top: 10%;
+                width: 6%;
+                height: 13%;
+                margin-top: 11.4%;
                 margin-left: 7%;
                 } .mobile-nav-bar {
                     width: 100%;
-                    height: 44%;
+                    height: 40%;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 10.5%;
-                    } .mobile-nav-box {
-                            width: 5.5%;
-                            height: 33%;
-                            margin-left: 28.5%;
-                            /* margin-top: 0.25%; */
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
+                    /* margin-top: 5%; */
+                    z-index: 6;
+                    } .mobile-nav-bar-box-container {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: -2%;
+                    }  .mobile-nav-box {
+                        width: 3.7%;
+                        height: 38%;
+                        margin-left: 18.2%;
+                        margin-top: 9.45%;
+                    } .mobile-nav-bar-line {
+                        width: 100%;
+                        height: 20%;
+                        margin-top: -15.4%;
+                        z-index: 2;
+                    } .mobile-nav-bar-links {
+                        margin-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.9em;
+                        color: white;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
                             display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 10vw;
-                            margin-left: 0.5%;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
         } .mobile-body-intro-about {
             display: flex;
             flex-direction: column;
@@ -519,6 +530,7 @@ html{
                 height: 60%;
                 justify-content: center;
                 flex-direction: column;
+                margin-top: 80%;
                 } .contact-form {
                     display: flex;
                     width: 90%;
@@ -591,6 +603,8 @@ html{
             height: 930px;
             background-image: url("../media/mobileBackgroundFAQ.webp");
             background-size: cover;
+            overflow-y: hidden;
+            overflow-x: hidden;
         }
 
 
@@ -928,6 +942,8 @@ html{
     max-height: max-content;
     background-image: url("../media/mobileBackgroundContact.webp");
     background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 html{
@@ -938,39 +954,48 @@ html{
         height: 100%;
         font-family: Garet;
         text-decoration: none;
-        } .mobile-header {
-            margin: 0;
-            width: 100%;
-            height: 36%;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            } .hamburger-icon {
-                width: 9%;
-                height: 10%;
-                margin-top: 10%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
+    } .mobile-header {
+        /* margin: 0; */
+        max-height: 17%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-top: 50;
+        } .hamburger-icon {
+            width: 6%;
+            height: 13%;
+            margin-top: 11.4%;
+            margin-left: 7%;
+            } .mobile-nav-bar {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 5%; */
+                z-index: 6;
+                } .mobile-nav-bar-box-container {
                     width: 100%;
-                    height: 44%;
+                    height: 100%;
+                    margin-top: -2%;
+                }  .mobile-nav-box {
+                    width: 3.7%;
+                    height: 38%;
+                    margin-left: 18.2%;
+                    margin-top: 9.45%;
+                } .mobile-nav-bar-line {
+                    width: 100%;
+                    height: 20%;
+                    margin-top: -15.4%;
+                    z-index: 2;
+                } .mobile-nav-bar-links {
+                    margin-top: 1%;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 10.5%;
-                    } .mobile-nav-box {
-                            width: 5.25%;
-                            height: 40%;
-                            margin-left: 28.5%;
-                            margin-top: 1.75%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 10vw;
-                            margin-left: 0.5%;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
+                    justify-content: space-evenly;
+                    font-size: 0.9em;
+                    color: white;
+                    gap: 1.3vw;
+                    } .mobile-nav-bar-links > p {
+                        display: flex;
         } .mobile-body-intro-about {
             display: flex;
             flex-direction: column;
@@ -1429,6 +1454,8 @@ body {
     max-height: max-content;
     background-image: url("../media/mobileBackgroundContact.webp");
     background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 html{
@@ -1439,39 +1466,48 @@ html{
         height: 100%;
         font-family: Garet;
         text-decoration: none;
-        } .mobile-header {
-            margin: 0;
-            width: 100%;
-            height: 36%;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            } .hamburger-icon {
-                width: 9%;
-                height: 10%;
-                margin-top: 10%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
+    } .mobile-header {
+        /* margin: 0; */
+        max-height: 17%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-top: 50;
+        } .hamburger-icon {
+            width: 6%;
+            height: 13%;
+            margin-top: 11.4%;
+            margin-left: 7%;
+            } .mobile-nav-bar {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 5%; */
+                z-index: 6;
+                } .mobile-nav-bar-box-container {
                     width: 100%;
-                    height: 44%;
+                    height: 100%;
+                    margin-top: -2%;
+                }  .mobile-nav-box {
+                    width: 3.7%;
+                    height: 38%;
+                    margin-left: 18.2%;
+                    margin-top: 9.45%;
+                } .mobile-nav-bar-line {
+                    width: 100%;
+                    height: 20%;
+                    margin-top: -15.4%;
+                    z-index: 2;
+                } .mobile-nav-bar-links {
+                    margin-top: 1%;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 10.5%;
-                    } .mobile-nav-box {
-                            width: 5.2%;
-                            height: 31%;
-                            margin-left: 28.5%;
-                            margin-top: -1.25%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 10vw;
-                            margin-left: 0.5%;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
+                    justify-content: space-evenly;
+                    font-size: 0.9em;
+                    color: white;
+                    gap: 1.3vw;
+                    } .mobile-nav-bar-links > p {
+                        display: flex;
         } .mobile-body-intro-about {
             display: flex;
             flex-direction: column;
@@ -1931,6 +1967,8 @@ body {
     max-height: max-content;
     background-image: url("../media/mobileBackgroundContact.webp");
     background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 html{
@@ -1941,39 +1979,48 @@ html{
         height: 100%;
         font-family: Garet;
         text-decoration: none;
-        } .mobile-header {
-            margin: 0;
-            width: 100%;
-            height: 36%;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            } .hamburger-icon {
-                width: 9%;
-                height: 10%;
-                margin-top: 10%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
+    } .mobile-header {
+        /* margin: 0; */
+        max-height: 17%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-top: 50;
+        } .hamburger-icon {
+            width: 6%;
+            height: 13%;
+            margin-top: 11.4%;
+            margin-left: 7%;
+            } .mobile-nav-bar {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 5%; */
+                z-index: 6;
+                } .mobile-nav-bar-box-container {
                     width: 100%;
-                    height: 44%;
+                    height: 100%;
+                    margin-top: -2%;
+                }  .mobile-nav-box {
+                    width: 3.7%;
+                    height: 38%;
+                    margin-left: 18.2%;
+                    margin-top: 9.45%;
+                } .mobile-nav-bar-line {
+                    width: 100%;
+                    height: 20%;
+                    margin-top: -15.4%;
+                    z-index: 2;
+                } .mobile-nav-bar-links {
+                    margin-top: 1%;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 10.5%;
-                    } .mobile-nav-box {
-                            width: 5.25%;
-                            height: 35%;
-                            margin-left: 28.5%;
-                            margin-top: -2.75%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 10vw;
-                            margin-left: 0.5%;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
+                    justify-content: space-evenly;
+                    font-size: 0.9em;
+                    color: white;
+                    gap: 1.3vw;
+                    } .mobile-nav-bar-links > p {
+                        display: flex;
         } .mobile-body-intro-about {
             display: flex;
             flex-direction: column;
@@ -2437,6 +2484,8 @@ body {
     background-size: 100% 100%;
     background-position: center center;
     height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 html{
@@ -2447,39 +2496,48 @@ html{
         height: 100%;
         font-family: Garet;
         text-decoration: none;
-        } .mobile-header {
-            margin: 0;
-            width: 100%;
-            height: 23%;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            } .hamburger-icon {
-                width: 5%;
-                height: 12%;
-                margin-top: 10%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
+    } .mobile-header {
+        /* margin: 0; */
+        max-height: 17%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-top: 50;
+        } .hamburger-icon {
+            width: 6%;
+            height: 13%;
+            margin-top: 11.4%;
+            margin-left: 7%;
+            } .mobile-nav-bar {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 5%; */
+                z-index: 6;
+                } .mobile-nav-bar-box-container {
                     width: 100%;
-                    height: 44%;
+                    height: 100%;
+                    margin-top: -2%;
+                }  .mobile-nav-box {
+                    width: 3.7%;
+                    height: 38%;
+                    margin-left: 18.2%;
+                    margin-top: 9.45%;
+                } .mobile-nav-bar-line {
+                    width: 100%;
+                    height: 20%;
+                    margin-top: -15.4%;
+                    z-index: 2;
+                } .mobile-nav-bar-links {
+                    margin-top: 1%;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 10.5%;
-                    } .mobile-nav-box {
-                            width: 3.25%;
-                            height: 70%;
-                            margin-left: 29.3%;
-                            margin-top: -1.75%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 10vw;
-                            margin-left: 0.5%;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
+                    justify-content: space-evenly;
+                    font-size: 0.9em;
+                    color: white;
+                    gap: 1.3vw;
+                    } .mobile-nav-bar-links > p {
+                        display: flex;
         } .mobile-body-intro-about {
             display: flex;
             flex-direction: column;
@@ -2945,6 +3003,8 @@ html{
     background-size: 100% 100%;
     background-position: center center;
     height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 html{
@@ -2955,39 +3015,48 @@ html{
         height: 100%;
         font-family: Garet;
         text-decoration: none;
-        } .mobile-header {
-            margin: 0;
-            width: 100%;
-            height: 22%;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            } .hamburger-icon {
-                width: 5%;
-                height: 12%;
-                margin-top: 10%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
+    } .mobile-header {
+        /* margin: 0; */
+        max-height: 17%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-top: 50;
+        } .hamburger-icon {
+            width: 6%;
+            height: 13%;
+            margin-top: 11.4%;
+            margin-left: 7%;
+            } .mobile-nav-bar {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 5%; */
+                z-index: 6;
+                } .mobile-nav-bar-box-container {
                     width: 100%;
-                    height: 44%;
+                    height: 100%;
+                    margin-top: -2%;
+                }  .mobile-nav-box {
+                    width: 3.7%;
+                    height: 38%;
+                    margin-left: 18.2%;
+                    margin-top: 9.45%;
+                } .mobile-nav-bar-line {
+                    width: 100%;
+                    height: 20%;
+                    margin-top: -15.4%;
+                    z-index: 2;
+                } .mobile-nav-bar-links {
+                    margin-top: 1%;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 10.5%;
-                    } .mobile-nav-box {
-                            width: 3.25%;
-                            height: 70%;
-                            margin-left: 29%;
-                            margin-top: -2.2%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 10vw;
-                            margin-left: 0.5%;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
+                    justify-content: space-evenly;
+                    font-size: 0.9em;
+                    color: white;
+                    gap: 1.3vw;
+                    } .mobile-nav-bar-links > p {
+                        display: flex;
         } .mobile-body-intro-about {
             display: flex;
             flex-direction: column;

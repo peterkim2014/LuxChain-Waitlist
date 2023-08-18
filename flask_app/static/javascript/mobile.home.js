@@ -46,11 +46,40 @@ switchSection(window.location.hash.substring(1) || "global-intro");
 animateTextOpacity('1');
 
 
-window.addEventListener("orientationchange", function() {
-    if (window.orientation === 90 || window.orientation === -90) {
-        // alert("Please use portrait mode!");
-        window.location.reload();
+$(document).ready(function() {
+    let swipingFeatures = document.querySelectorAll('.swiping-features > div');
+    swipingFeatures[0].classList.add('active');
+
+    function switchSwipingFeature() {
+        let activeDiv = document.querySelector('.swiping-features > div.active');
+        activeDiv.classList.remove('active');
+
+        let nextIndex = (Array.from(swipingFeatures).indexOf(activeDiv) + 1) % swipingFeatures.length;
+
+        activeDiv.classList.add('out');
+        swipingFeatures[nextIndex].classList.add('entering');
+
+        setTimeout(() => {
+            activeDiv.classList.remove('out');
+            swipingFeatures[nextIndex].classList.remove('entering');
+            swipingFeatures[nextIndex].classList.add('active');
+        }, 1000); // This timing might need adjustment
+
+        // Ensure that other text elements are hidden
+        for (let i = 0; i < swipingFeatures.length; i++) {
+            if (i !== nextIndex) {
+                swipingFeatures[i].classList.remove('active');
+            }
+        }
     }
+
+    setInterval(switchSwipingFeature, 3000);
+
+    window.addEventListener("orientationchange", function() {
+        if (window.orientation === 90 || window.orientation === -90) {
+            window.location.reload();
+        }
+    });
 });
 
 $('.hamburger-icon').on('click', function() {

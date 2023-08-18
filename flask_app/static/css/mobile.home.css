@@ -647,7 +647,7 @@
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
                             display: flex;
-                        }.opening-features {
+            }.opening-features {
                 display: flex;
                 flex-direction: column;
                 width: 95%;

@@ -490,10 +490,12 @@
         font-family: Garet;
         text-decoration: none;
         } .mobile-header {
-            margin: 0;
+            /* margin: 0; */
             max-height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
+            margin-top: 50;
             } .hamburger-icon {
                 width: 6%;
                 height: 13%;
@@ -513,7 +515,7 @@
                     }  .mobile-nav-box {
                         width: 3.7%;
                         height: 38%;
-                        margin-left: 75%;
+                        margin-left: 18.2%;
                         margin-top: 9.45%;
                     } .mobile-nav-bar-line {
                         width: 100%;
@@ -524,7 +526,7 @@
                         margin-top: 1%;
                         display: flex;
                         justify-content: space-evenly;
-                        font-size: 0.85em;
+                        font-size: 0.9em;
                         color: white;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
@@ -533,7 +535,8 @@
             display: flex;
             width: 100%;
             height: 40%;
-            margin-top: 30%;
+            padding-top: 53%;
+            /* margin-top: -10%; */
             align-items: center;
             flex-direction: column;
             } .mobile-body-intro-header {
@@ -587,7 +590,7 @@
         /* max-width: max-content; */
         height: 3350px;
         /* max-height: 100%; */
-        background-image: url("../media/mobileBackgroundAppPreviewBackground1.webp");
+        background-image: url("../media/mobileBackgroundAppPreview1.webp");
         background-size: cover;
         width: 820px;
     }
@@ -602,7 +605,49 @@
         text-decoration: none;
         overscroll-behavior: none;
         overflow-y: scroll; 
-        } .opening-features {
+        } .mobile-header {
+            /* margin: 0; */
+            max-height: 17%;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            margin-top: 50;
+            } .hamburger-icon {
+                width: 6%;
+                height: 13%;
+                margin-top: 11.4%;
+                margin-left: 7%;
+                } .mobile-nav-bar {
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    /* margin-top: 5%; */
+                    } .mobile-nav-bar-box-container {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: -2%;
+                        z-index: 4;
+                    }  .mobile-nav-box {
+                        width: 3.7%;
+                        height: 38%;
+                        margin-left: 18.2%;
+                        margin-top: 9.45%;
+                    } .mobile-nav-bar-line {
+                        width: 100%;
+                        height: 34%;
+                        margin-top: -15.4%;
+                        z-index: 2;
+                    } .mobile-nav-bar-links {
+                        margin-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.9em;
+                        color: white;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
+                            display: flex;
+                        }.opening-features {
                 display: flex;
                 flex-direction: column;
                 width: 95%;

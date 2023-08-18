@@ -496,31 +496,39 @@
             flex-direction: column;
             } .hamburger-icon {
                 width: 6%;
-                height: 17%;
-                margin-top: 10%;
+                height: 13%;
+                margin-top: 11.4%;
                 margin-left: 7%;
                 } .mobile-nav-bar {
                     width: 100%;
                     height: 40%;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 5%;
-                    } .mobile-nav-box {
-                            width: 3.5%;
-                            height: 38%;
-                            margin-left: 18.5%;
-                            margin-top: 5%;
-                            transition: margin-left 0.5s ease-out;
-                        } .mobile-nav-bar-links {
-                            padding-top: 3%;
+                    /* margin-top: 5%; */
+                    } .mobile-nav-bar-box-container {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: -2%;
+                        z-index: 4;
+                    }  .mobile-nav-box {
+                        width: 3.7%;
+                        height: 38%;
+                        margin-left: 75%;
+                        margin-top: 9.45%;
+                    } .mobile-nav-bar-line {
+                        width: 100%;
+                        height: 34%;
+                        margin-top: -15.4%;
+                        z-index: 2;
+                    } .mobile-nav-bar-links {
+                        margin-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.85em;
+                        color: white;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
                             display: flex;
-                            justify-content: space-evenly;
-                            font-size: 15px;
-                            color: white;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > a {
-                                display: flex;
-                                margin-top: 2%;
         } .mobile-body-intro {
             display: flex;
             width: 100%;
@@ -593,47 +601,7 @@
         font-family: Garet;
         text-decoration: none;
         overscroll-behavior: none;
-        overflow-y: scroll;
-        } .mobile-header {
-            margin: 0;
-            max-height: 17%;
-            display: flex;
-            flex-direction: column;
-            } .hamburger-icon {
-                width: 6%;
-                height: 13%;
-                margin-top: 11.4%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
-                    width: 100%;
-                    height: 40%;
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 5%;
-                    } .mobile-nav-bar-box-container {
-                        width: 100%;
-                        height: 100%;
-                        margin-top: -2%;
-                        z-index: 4;
-                    }  .mobile-nav-box {
-                        width: 3.7%;
-                        height: 50%;
-                        margin-left: 75%;
-                        margin-top: 8.45%;
-                    } .mobile-nav-bar-line {
-                        width: 100%;
-                        height: 34%;
-                        margin-top: -4.4%;
-                        z-index: 2;
-                    } .mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 0.85em;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex;
+        overflow-y: scroll; 
         } .opening-features {
                 display: flex;
                 flex-direction: column;

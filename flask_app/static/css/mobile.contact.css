@@ -455,6 +455,7 @@ html{
             height: 36%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 9%;
                 height: 10%;
@@ -603,7 +604,7 @@ html{
             text-decoration: none;
             overflow-y: scroll;
             overscroll-behavior: none;
-            } .mobile-header {
+            /* } .mobile-header {
                 margin: 0;
                 max-height: 17%;
                 display: flex;
@@ -632,7 +633,7 @@ html{
                                 color: black;
                                 gap: 1.3vw;
                                 } .mobile-nav-bar-links > p {
-                                    display: flex;
+                                    display: flex; */
                 } .all-questions {
                     display: flex;
                     width: 100%;
@@ -943,6 +944,7 @@ html{
             height: 36%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 9%;
                 height: 10%;
@@ -1094,7 +1096,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -1124,7 +1126,7 @@ body {
                         color: black;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
-                            display: flex;
+                            display: flex; */
         } .all-questions {
             display: flex;
             width: 85%;
@@ -1443,6 +1445,7 @@ html{
             height: 36%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 9%;
                 height: 10%;
@@ -1595,7 +1598,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -1625,7 +1628,7 @@ body {
                         color: black;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
-                            display: flex;
+                            display: flex; */
         } .all-questions {
             display: flex;
             width: 85%;
@@ -1944,6 +1947,7 @@ html{
             height: 36%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 9%;
                 height: 10%;
@@ -2096,7 +2100,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -2126,7 +2130,7 @@ body {
                         color: black;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
-                            display: flex;
+                            display: flex; */
         } .all-questions {
             display: flex;
             width: 85%;
@@ -2449,6 +2453,7 @@ html{
             height: 23%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 5%;
                 height: 12%;
@@ -2600,7 +2605,7 @@ html{
         text-decoration: none;
         overflow-y: scroll;
         overscroll-behavior: none;
-        } .mobile-header {
+        /* } .mobile-header {
             margin: 0;
             max-height: 17%;
             display: flex;
@@ -2630,7 +2635,7 @@ html{
                             color: black;
                             gap: 1.3vw;
                             } .mobile-nav-bar-links > p {
-                                display: flex;
+                                display: flex; */
             } .all-questions {
                 display: flex;
                 width: 85%;
@@ -2956,6 +2961,7 @@ html{
             height: 22%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 5%;
                 height: 12%;
@@ -3106,7 +3112,7 @@ html{
         text-decoration: none;
         overflow-y: scroll;
         overscroll-behavior: none;
-        } .mobile-header {
+        /* } .mobile-header {
             margin: 0;
             max-height: 17%;
             display: flex;
@@ -3136,7 +3142,7 @@ html{
                             color: black;
                             gap: 1.3vw;
                             } .mobile-nav-bar-links > p {
-                                display: flex;
+                                display: flex; */
             } .all-questions {
                 display: flex;
                 width: 85%;

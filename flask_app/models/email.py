@@ -42,8 +42,6 @@ msg_text = """
                         
                         <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</p>
                         <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 21px;">
-
-
                           
                         </table>
                         

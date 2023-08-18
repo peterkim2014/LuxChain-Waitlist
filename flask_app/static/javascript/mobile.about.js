@@ -15,7 +15,6 @@ $(document).ready(function() {
             window.location.hash = dynamicLoad;
         }
     }
-    
 
     // Listen to the hashchange event and switch to the appropriate section
     $(window).on('hashchange', function() {
@@ -32,11 +31,11 @@ $(document).ready(function() {
     animateTextOpacity('1');
 
     window.addEventListener("orientationchange", function() {
-    if (window.orientation === 90 || window.orientation === -90) {
-        // alert("Please use portrait mode!");
-        window.location.reload();
-    }
-});
+        if (window.orientation === 90 || window.orientation === -90) {
+            // alert("Please use portrait mode!");
+            window.location.reload();
+        }
+    });
     
     $('.hamburger-icon').on('click', function() {
         // Slide the side nav bar in

@@ -3695,14 +3695,17 @@
                     }
 
     #global-intro {
-        max-width: 100%;
+        /* max-width: 100%; */
         max-height: max-content;
-        background-image: url("../media/mobileBackgroundIntro.webp");
+        background-image: url("../media/mobileBackgroundIntro1.webp");
         background-size: cover;
+        width: 375px;
+        margin: 0;
+        overflow-y: none;
     }
 
     html{
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         overscroll-behavior: none;
     } *, html {
         margin: 0;
@@ -3710,42 +3713,52 @@
         font-family: Garet;
         text-decoration: none;
         } .mobile-header {
-            margin: 0;
-            max-height: 17%;
+            /* margin: 0; */
+            max-height: 13%;
             display: flex;
             flex-direction: column;
+            position: fixed;
+            margin-top: 50;
             } .hamburger-icon {
-                width: 8%;
-                height: 17%;
-                margin-top: 10%;
+                width: 6%;
+                height: 13%;
+                margin-top: 11.4%;
                 margin-left: 7%;
                 } .mobile-nav-bar {
                     width: 100%;
-                    height: 50%;
+                    height: 40%;
                     display: flex;
                     flex-direction: column;
-                    padding-top: 2.75%;
-                    } .mobile-nav-box {
-                            width: 4.25%;
-                            height: 26.5%;
-                            margin-left: 13%;
-                            /* margin-left: 41.75%; */
-                            margin-top: 5.75%;
-                            transition: margin-left 0.5s ease-out;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
+                    margin-top: -10%;
+                    } .mobile-nav-bar-box-container {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: -12%;
+                        z-index: 4;
+                    }  .mobile-nav-box {
+                        width: 5.2%;
+                        height: 42%;
+                        margin-left: 12.7%;
+                        margin-top: 22.6%;
+                    } .mobile-nav-bar-line {
+                        width: 100%;
+                        height: 15%;
+                        margin-top: -25.4%;
+                        z-index: 2;
+                    } .mobile-nav-bar-links-preview {
+                        margin-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.8em;
+                        color: black;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
                             display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
-                                display: flex;
         } .mobile-body-intro {
             display: flex;
             width: 100%;
             height: 40%;
-            padding-top: 25%;
+            padding-top: 60%;
             align-items: center;
             flex-direction: column;
             } .mobile-body-intro-header {
@@ -3765,16 +3778,18 @@
                     } .mobile-body-intro-main-title-logo {
                         width: 14%;
                         height: 85%;
+                        padding-top: -1%;
                     } .mobile-body-intro-main > h2 {
-                        font-size: 4em;
+                        font-size: 3.5em;
                         font-family: code light;
                         color: white;
                         transform: scale(1, 0.75);
+                        margin-top: -70.4%;
                         } .mobile-body-intro-header > p {
                             color: white;
                             font-family: garet;
-                            font-size: 1.2em;
-                            margin-right: -5%;
+                            font-size: 1.05em;
+                            margin-right: -15%;
                             padding-top: 1%;
                             height: 30%;
                             width: 80%;
@@ -3796,11 +3811,14 @@
 
     #global-app {
         margin: 0;
-        max-width: max-content;
+        /* max-width: max-content; */
         height: 1550px;
         /* max-height: 100%; */
-        background-image: url("../media/mobileBackgroundAppPreviewBackground.webp");
-        background-size: 100%;
+        background-image: url("../media/mobileBackgroundAppPreview1.webp");
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 375px;
     }
     
     body {
@@ -3850,17 +3868,17 @@
                 height: 12%;
                 justify-content: center;
                 /* padding-bottom: 5%; */
-                margin-top: 2%;
+                margin-top: 36.6%;
                 } .opening-features > p {
                     display: flex;
-                    width: 30%;
+                    width: 60%;
                     height: 10%;
                     margin-top: -15%;
                     font-weight: 700;
                     margin-left: 5%;
                     padding-bottom: 3%;
                     } .opening-features-descriptions {
-                        margin-top: 2%;
+                        margin-top: 7.6%;
                         height: 20%;
                         width: 100%;
                         display: flex;
@@ -3932,6 +3950,7 @@
                             height: 30%;
                             font-size: 0.6em;
                             font-weight: 300;
+                            margin-top: -82.6%;
                         }.swiping-features-icon-one {
                             display: flex;
                             width: 100vw;
@@ -3955,6 +3974,7 @@
                             font-size: 0.6em;
                             font-weight: 300;
                             text-wrap: wrap;
+                            margin-top: -82.6%;
                         }.swiping-features-icon-two {
                             display: flex;
                             width: 100vw;
@@ -3970,7 +3990,7 @@
                         width: 100%;
                         font-size: 0.6em;
                         margin-left: -39.5%;
-                        padding-top: 7%;
+                        padding-top: 6.7%;
                         font-weight: 600;
                         text-wrap: wrap;
                         } .swiping-features-three-description > p {
@@ -3979,6 +3999,7 @@
                             font-size: 0.6em;
                             font-weight: 300;
                             text-wrap: wrap;
+                            margin-top: -72.6%;
                         }.swiping-features-icon-three {
                             display: flex;
                             width: 100vw;
@@ -3988,32 +4009,38 @@
                     flex-direction: column;
                     gap: 2vw;
                     padding-top: 8.6%;
+                    height: 10%;
                     } .feature-descriptions > p {
                         color: white;
                         font-size: 7.7px;
                         text-align: center;
                         margin: 0;
+                        height: 7%;
                 } .iphone-features {
                     display: flex;
                     width: 100%;
                     height: 18%;
                     padding-left: 2.5%;
+                    margin-top: -25%;
                     } .iphone-features-text {
                         display: flex;
                         width: 70%;
                         flex-direction: column;
                         justify-content: center;
-                        margin-top: 8%;
-                        margin-left: -4.2%;
+                        margin-top: 24%;
+                        margin-left: -2.2%;
+                        height: 30%;
                         } .iphone-features-text > a {
                             font-size: 7px;
                             margin-left: 62%;
-                            margin-top: -43%;
+                            margin-top: -41%;
+                            height: 10%;
                         } .iphone-features-text > p {
                             padding-top: 7%;
                             font-size: 7px;
                             margin-left: 66%;
-                            margin-top: 5%;
+                            margin-top: 6.5%;
+                            height: 10%;
                             } .feature-icons {
                                 display: flex;
                                 flex-direction: column;
@@ -4021,7 +4048,7 @@
                                 height: 60%;
                                 gap: 10vw;
                                 margin-right: 9%;
-                                padding-top: 15%;
+                                padding-top: 11%;
                                 } .feature-icon-one-components {
                                     display: flex;
                                     flex-direction: column;
@@ -4063,21 +4090,24 @@
                     } .polkadot-technology-image {
                         width: 36%;
                         height: 65%;
-                        padding-top: 16%;
+                        padding-top: 13%;
                         margin-left: 3%;
                         } .polkadot-technology-description{
                             width: 50%;
                             height: 75%;
                             padding-left: 13.5%;
-                            padding-top: 17.3%;
+                            padding-top: 11.3%;
                             } .polkadot-technology-description > a {
                                 color: white;
                                 font-size: 0.9em;
                                 justify-content: center;
                                 align-items: center;
+                                margin-top: -2%;
                                 } .polkadot-technology-description > p {
                                     font-size: 6.5px;
                                     color: white;
+                                    height: 24%;
+                                    margin-top: 2%;
                 } .bank-comparison {
                     display: flex;
                     flex-direction: column;
@@ -4181,7 +4211,7 @@
         margin: 0;
         width: 100%;
         height: 100vh;
-        background-image: url("../media/mobileBackgroundWaitlist.webp");
+        background-image: url("../media/mobileBackgroundWaitlist1.webp");
         background-size: cover;
     }
     
@@ -4214,9 +4244,9 @@
                     margin-top: 5%;
                     } .mobile-nav-box {
                             width: 4.5%;
-                            height: 30%;
+                            height: 34%;
                             margin-left: 75%;
-                            margin-top: 2.5%;
+                            margin-top: 14.1%;
                         }.mobile-nav-bar-links {
                             padding-top: 1%;
                             display: flex;
@@ -4231,6 +4261,7 @@
                 flex-direction: column;
                 width: 100%;
                 height: 60%;
+                padding-top: 34%;
                 } .waitlist-title {
                     padding-top: 20%;
                     width: 100%;
@@ -4241,7 +4272,7 @@
                     text-align: center;
                     } .mobile-waitlist-banner {
                         width: 100%;
-                        height: 40%;
+                        height: 50%;
                         } .waitlist-title > a {
                             color: black;
                             font-size: 25px;

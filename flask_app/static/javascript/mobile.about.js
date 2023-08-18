@@ -1,16 +1,41 @@
-// Function to animate opacity of specific elements
-function animateTextOpacity(targetOpacity) {
-    $('#swipe-container').stop(true).animate({
-        opacity: targetOpacity
-    }, 1000);
-}
-
-// Set the initial opacity of text elements to 0.
-$('#swipe-container').css('opacity', '0');
-
-// Upon page load, animate the opacity of these text elements to 1.
 $(document).ready(function() {
+    function animateTextOpacity(targetOpacity) {
+        $('#swipe-container').stop(true).animate({
+            opacity: targetOpacity
+        }, 1000);
+    }
+
+    function switchSection(dynamicLoad) {
+        if (dynamicLoad) {
+            // Hide all sections
+            $(".dynamicLoad").hide();
+            // Show the selected section
+            $(`#${dynamicLoad}`).show();
+            // Update the URL hash
+            window.location.hash = dynamicLoad;
+        }
+    }
+
+    // Listen to the hashchange event and switch to the appropriate section
+    $(window).on('hashchange', function() {
+        switchSection(window.location.hash.substring(1));
+    });
+
+    // Set the initial opacity of the swipe container to 1
+    $('#swipe-container').css('opacity', '0');
+
+    // Show the correct section based on the initial URL hash
+    switchSection(window.location.hash.substring(1) || "about");
+
+    // Upon page load, animate the opacity of these text elements to 1.
     animateTextOpacity('1');
+
+    window.addEventListener("orientationchange", function() {
+        if (window.orientation === 90 || window.orientation === -90) {
+            // alert("Please use portrait mode!");
+            window.location.reload();
+        }
+    });
     
     $('.hamburger-icon').on('click', function() {
         // Slide the side nav bar in
@@ -45,63 +70,23 @@ $(document).ready(function() {
         // $('.hamburger-return').hide();
     }
 
-    window.addEventListener("orientationchange", function() {
-        if (window.orientation === 90 || window.orientation === -90) {
-            // alert("Please use portrait mode!");
-            window.location.reload();
-        }
+    // Initialize Hammer.js on the swipe container
+    const swipeContainer = document.getElementById('swipe-container');
+    const hammer = new Hammer(swipeContainer);
+
+    // Handle swipe left
+    hammer.on('swipeleft', function() {
+        switchSection("about-info");
     });
+
+    // Handle swipe right
+    hammer.on('swiperight', function() {
+        switchSection("about");
+    });
+
+    // Show the correct section based on the initial URL hash
+    switchSection(window.location.hash.substring(1) || "about");
+
+    // Set the initial opacity of the swipe container to 1
+    $('#swipe-container').css('opacity', '1');
 });
-
-const swipeContainer = document.getElementById('swipe-container');
-let initialX = null;
-
-const mobileNavBarBox = document.querySelector('[alt="mobile nav bar box"]');
-
-swipeContainer.addEventListener('touchstart', (e) => {
-    initialX = e.touches[0].clientX;
-});
-
-
-
-swipeContainer.addEventListener('touchmove', (e) => {
-    console.log("touched")
-
-    const currentX = e.touches[0].clientX;
-
-
-    const diffX = initialX - currentX;
-
-    if (diffX < -20) { // Detected a left swipe
-        animateBasedOnScreenSize();
-    }
-
-    initialX = null; // Reset initialX for subsequent swipes
-});
-
-function animateBasedOnScreenSize() {
-    const smallScreenQuery = window.matchMedia("(max-width: 414px) and (max-height: 897px)");
-    const largeScreenQuery = window.matchMedia("(max-width: 820px) and (max-height: 1180px) and (min-width: 415px) and (min-height: 897px)");
-
-    if (smallScreenQuery.matches) {
-        animateAndChangeRoute('62.5%');
-        // animateAndChangeRoute('100%');
-    } else if (largeScreenQuery.matches) {
-        animateAndChangeRoute('45.75%');
-        // animateAndChangeRoute('100%');
-    }
-}
-
-function animateAndChangeRoute(targetMargin) {
-    // As the nav bar box starts to move, animate the opacity of the specific text elements back to 0.
-    animateTextOpacity('0');
-
-    // Simultaneously animate the margin of the nav bar box.
-    mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
-    mobileNavBarBox.style.marginLeft = targetMargin;
-
-    // After the animation is done, redirect.
-    setTimeout(function() {
-        window.location.href = "/about_info"; 
-    }, 350);
-}

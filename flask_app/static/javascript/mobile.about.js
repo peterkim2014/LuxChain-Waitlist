@@ -29,6 +29,13 @@ $(document).ready(function() {
 
     // Upon page load, animate the opacity of these text elements to 1.
     animateTextOpacity('1');
+
+    window.addEventListener("orientationchange", function() {
+        if (window.orientation === 90 || window.orientation === -90) {
+            // alert("Please use portrait mode!");
+            window.location.reload();
+        }
+    });
     
     $('.hamburger-icon').on('click', function() {
         // Slide the side nav bar in

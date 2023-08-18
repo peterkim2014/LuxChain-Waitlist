@@ -1,44 +1,10 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask_app.models.info import email, app_password, username
+from flask_app.models.info import waitlist_email, waitlist_app_password, waitlist_username
 import random
 
 msg_text = """
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body style="margin-left: 2%;">
-        <a style="opacity: 0; display: hidden;"> </a>
-        <table class="email" width="620" height="815" valign="top" cellpadding="0" cellspacing="0" border="0" style="word-break: break-word;">
-            <tr>
-                <td width="725" height="815" background="https://i.imgur.com/lFVoNxz.png" background-repeat="no-repeat" background-size="cover" background-position="center" margin-top: 10%;>
-
-                <a class="email-header" style="height: 12%; width: 90%; text-align: end; margin-bottom: 26.5%">Ticket #{number}</a>
-
-                <table cellpadding="0" cellspacing="0" border="0" margin="auto" >
-                    <tr>
-                        <a style="text-align: start; width: 75%; height: 20%; margin-left: 12.5%; margin-top: 12%;">Congratulations {customer}! </a>
-                        
-                        <a style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; text-decoration: none; border: none; color: #000001">You are now on the waitlist for LuxChain Wallet Application! Stay tuned for more announcements & updates on the release date.</a>
-
-                        <a style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</a>
-
-                        <a style="text-align: start; width: 75%; height: 20%; padding-left: 12.5%; ">Have any questions about the application? Please visit the website, www.luxorawallet.io, and fill out the form under contact us!</a>
-                        
-                        <a style="text-align: start; width: 40%; height: 10%; padding-left: 12.5%; padding-top: 1%;">Our best, <br>LuxChain Team</a>    
-                    </tr>
-                </table>
-                
-                </td>
-            </tr>
-        </table>
-        <p style="opacity: 0; display: none;">{number}</p>
-=======
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" style="color-scheme: light dark; supported-color-schemes: light dark;">
   <head>
@@ -76,6 +42,8 @@ msg_text = """
                         
                         <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">LuxChain is a user-friendly application designed to streamline the transaction process, promoting the adoption and growth of blockchain technology. Especially valuable during economic uncertainty, LuxChain ensures users a high degree of privacy and trust. The application provides a decentralized platform for safe and efficient transactions, transforming the way people purchase items.</p>
                         <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 21px;">
+
+
                           
                         </table>
                         
@@ -115,7 +83,6 @@ msg_text = """
         </td>
       </tr>
     </table>
->>>>>>> 599f1811631901f7bb66abdb2e2eb025344a1e01
     </body>
 </html>
 """
@@ -145,11 +112,11 @@ class Email:
 
         msg_str = msg.as_string()
         # login smtp server
-        server = smtplib.SMTP(host="smtp.gmail.com", port=587)
+        server = smtplib.SMTP(host="smtp.luxorawallet.io", port=587)
         server.ehlo()
         server.starttls()
-        print(username, email, app_password)
-        server.login(username, app_password)
+        print(waitlist_username, waitlist_email, waitlist_app_password)
+        server.login(waitlist_username, waitlist_app_password)
         print("logged in")
         server.sendmail(from_email, to_emails, msg_str)
 
@@ -161,8 +128,8 @@ class Email:
         my_msg = Email.format_text(my_customer=customer)
         subject = "LuxChain waitlist confirmation"
         try:
-            print(email)
-            Email.send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=email)
+            print(waitlist_email)
+            Email.send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=waitlist_email)
             sent = True
         except:
             sent = False

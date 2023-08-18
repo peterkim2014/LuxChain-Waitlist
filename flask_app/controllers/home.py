@@ -70,10 +70,10 @@ def post_waitlist():
         # User.create(data)
         User.email(email_data)
         flash("Thank you for joining the community!", "register")
-        return redirect(url_for('homepage') + '#page-waitlist')  # replace 'your_route_name' with the correct route
+        return redirect(url_for('homepage') + '#global-waitlist')  # replace 'your_route_name' with the correct route
     else:
         # flash("There were errors during registration", "register")
-        return redirect(url_for('homepage') + '#page-waitlist')  # replace 'your_route_name' with the correct route
+        return redirect(url_for('homepage') + '#global-waitlist')  # replace 'your_route_name' with the correct route
 
 def clear_flashed_messages():
     session['_flashes'] = []

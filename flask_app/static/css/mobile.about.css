@@ -459,6 +459,7 @@ html{
             height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 6%;
                 height: 15%;
@@ -556,7 +557,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -585,7 +586,7 @@ body {
                         color: white;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
-                            display: flex;
+                            display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
@@ -916,6 +917,7 @@ html{
             height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 8%;
                 height: 17%;
@@ -1012,7 +1014,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -1041,7 +1043,7 @@ body {
                             color: white;
                             gap: 1.3vw;
                             } .mobile-nav-bar-links > p {
-                                display: flex;
+                                display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
@@ -1165,6 +1167,7 @@ html{
             height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 8%;
                 height: 17%;
@@ -1260,7 +1263,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -1289,7 +1292,7 @@ body {
                         color: white;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
-                            display: flex;
+                            display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
@@ -1412,6 +1415,7 @@ html{
             height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 8%;
                 height: 17%;
@@ -1509,7 +1513,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -1538,7 +1542,7 @@ body {
                         color: white;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
-                            display: flex;
+                            display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
@@ -1867,6 +1871,7 @@ html{
             height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
             } .hamburger-icon {
                 width: 8%;
                 height: 17%;
@@ -1965,7 +1970,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    } .mobile-header {
+    /* } .mobile-header {
         margin: 0;
         max-height: 17%;
         display: flex;
@@ -1994,7 +1999,7 @@ body {
                         color: white;
                         gap: 1.3vw;
                         } .mobile-nav-bar-links > p {
-                            display: flex;
+                            display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
@@ -2114,6 +2119,7 @@ body {
                 height: 17%;
                 display: flex;
                 flex-direction: column;
+                position: fixed;
                 } .hamburger-icon {
                     width: 8%;
                     height: 17%;
@@ -2209,7 +2215,7 @@ body {
         text-decoration: none;
         overflow-y: scroll;
         overscroll-behavior: none;
-        } .mobile-header {
+        /* } .mobile-header {
             margin: 0;
             max-height: 17%;
             display: flex;
@@ -2238,7 +2244,7 @@ body {
                             color: white;
                             gap: 1.3vw;
                             } .mobile-nav-bar-links > p {
-                                display: flex;
+                                display: flex; */
             } .company-information {
                 display: flex;
                 flex-direction: column;

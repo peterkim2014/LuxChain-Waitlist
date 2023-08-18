@@ -4559,17 +4559,12 @@
 /* Mobile styles */
 #global-intro {
     width: 414px;
-    height: 896px;
+    /* height: 896px; */
     background-image: url("../media/mobileBackgroundIntro1.webp");
     background-size: cover;
-}
-
-
-#swipe-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap; /* Prevent line breaks */
-    transition: transform 0.3s ease-in-out;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 html{
@@ -4601,7 +4596,7 @@ html{
                 } .mobile-nav-bar-box-container {
                     width: 100%;
                     height: 100%;
-                    margin-top: -4%;
+                    margin-top: -14%;
                     z-index: 4;
                 }  .mobile-nav-box {
                     width: 5.2%;
@@ -4614,7 +4609,7 @@ html{
                     margin-top: -25.4%;
                     z-index: 2;
                 } .mobile-nav-bar-links-preview {
-                    margin-top: 1%;
+                    margin-top: -1%;
                     display: flex;
                     justify-content: space-evenly;
                     font-size: 0.9em;
@@ -4622,6 +4617,7 @@ html{
                     gap: 1.3vw;
                     } .mobile-nav-bar-links > p {
                         display: flex;
+                        margin-top: -10%;
     } .mobile-body-intro {
         display: flex;
         width: 100%;
@@ -4629,6 +4625,8 @@ html{
         padding-top: 30%;
         align-items: center;
         flex-direction: column;
+        margin: 0;
+        padding-top: 58%;
         } .mobile-body-intro-header {
             display: flex;
             justify-content: center;
@@ -4636,6 +4634,7 @@ html{
             flex-direction: column;
             width: 100%;
             height: 40%;
+            margin-left: 3%;
             } .mobile-body-intro-main {
                 display: flex;
                 justify-content: center;
@@ -4644,19 +4643,20 @@ html{
                 gap: 1.3vw;
                 padding-right: 5%;
                 } .mobile-body-intro-main-title-logo {
-                    width: 17.5%;
-                    height: 100%;
+                    width: 13.6%;
+                    height: 80%;
+                    margin-top: 0.5%;
                 } .mobile-body-intro-main > h2 {
-                    font-size: 4em;
+                    font-size: 3.5em;
                     font-family: code light;
                     color: white;
                     transform: scale(1, 0.75);
                     } .mobile-body-intro-header > p {
                         color: white;
                         font-family: garet;
-                        font-size: 1.2em;
+                        font-size: 1.07em;
                         margin-right: 3.5%;
-                        padding-top: 1%;
+                        margin-top: -1%;
                         height: 30%;
     } .mobile-body-intro-description {
         display: flex;
@@ -4676,10 +4676,12 @@ html{
 
     #global-app {
         margin: 0;
-        width: 414px;
-        height: 1706px;
-        background-image: url("../media/mobileBackgroundAppPreviewBackground.webp");
+        height: 1700px;
+        background-image: url("../media/mobileBackgroundAppPreview1.webp");
         background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 414px;
     }
     
     body {
@@ -4714,7 +4716,7 @@ html{
                             margin-left: 41.75%;
                             margin-top: 3.5%;
                         }.mobile-nav-bar-links {
-                            padding-top: 1%;
+                            margin-top: 10%;
                             display: flex;
                             justify-content: space-evenly;
                             font-size: 0.85em;
@@ -4728,6 +4730,7 @@ html{
                 width: 100%;
                 height: 13%;
                 justify-content: center;
+                margin-top: 35%;
                 /* padding-bottom: 5%; */
                 } .opening-features > p {
                     display: flex;
@@ -4738,7 +4741,7 @@ html{
                     margin-left: 5%;
                     padding-bottom: 2.5%;
                     } .opening-features-descriptions {
-                        margin-top: 2%;
+                        margin-top: 9%;
                         height: 20%;
                         width: 80%;
                         display: flex;
@@ -4809,6 +4812,7 @@ html{
                             height: 30%;
                             font-size: 0.8em;
                             font-weight: 300;
+                            margin-top: -87%;
                         }.swiping-features-icon-one {
                             display: flex;
                             width: 100vw;
@@ -4832,6 +4836,7 @@ html{
                                         font-size: 0.8em;
                                         font-weight: 300;
                                         text-wrap: wrap;
+                                        margin-top: -87%;
                                     }.swiping-features-icon-two {
                                         display: flex;
                                         width: 100%;
@@ -4855,6 +4860,7 @@ html{
                                                             height: 30%;
                                                             font-size: 0.8em;
                                                             font-weight: 300;
+                                                            margin-top: -82%;
                                                         }.swiping-features-icon-three {
                                                             display: flex;
                                                             width: 100%;
@@ -4862,35 +4868,38 @@ html{
                 } .feature-descriptions {
                     display: flex;
                     flex-direction: column;
-                    gap: 2vw;
-                    padding-top: 7%;
+                    gap: 2.3vw;
+                    margin-top: 6.5%;
+                    height: 10%;
                     } .feature-descriptions > p {
                         color: white;
                         font-size: 8px;
                         margin: 0;
                         text-align: center;
+                        height: 5%;
                 } .iphone-features {
                     display: flex;
                     width: 100%;
                     height: 18%;
-                    padding-top: 5%;
+                    margin-top: -25%;
+
                     } .iphone-features-text {
                         display: flex;
                         width: 70%;
                         flex-direction: column;
                         justify-content: center;
                         margin-left: 1.5%;
-                        margin-top: -1%;
+                        /* margin-top: %; */
                         } .iphone-features-text > a {
                             font-size: 7px;
                             margin-left: 62%;
     
-                            margin-top: -46%;
+                            margin-top: 24%;
                             } .iphone-features-text > p {
-                                padding-top: 10%;
+                                /* padding-top: 10%; */
                                 font-size: 7px;
                                 margin-left: 66%;
-                                /* margin-top: -40%; */
+                                margin-top: -60%;
                                 } .feature-icons {
                                     display: flex;
                                     flex-direction: column;
@@ -4936,15 +4945,16 @@ html{
                     display: flex;
                     width: 100%;
                     height: 14%;
-                    padding-top: 4%;
+                    /* padding-top: 4%; */
+                    margin-top: 2%;
                     } .polkadot-technology-image {
-                        width: 36%;
+                        width: 38%;
                         height: 65%;
-                        padding-top: 14%;
+                        padding-top: 16%;
                         margin-left: 3%;
                         } .polkadot-technology-description{
                             width: 50%;
-                            height: 75%;
+                            height: 45%;
                             padding-left: 13.5%;
                             padding-top: 17%;
                             } .polkadot-technology-description > a {
@@ -4953,8 +4963,10 @@ html{
                                 justify-content: center;
                                 align-items: center;
                                 } .polkadot-technology-description > p {
+                                    margin-top: 2%;
                                     font-size: 6.5px;
                                     color: white;
+                                    height: 40%;
                 } .bank-comparison {
                     display: flex;
                     flex-direction: column;
@@ -5094,9 +5106,9 @@ html{
                             width: 4.5%;
                             height: 30%;
                             margin-left: 75%;
-                            margin-top: 2.5%;
+                            margin-top: 16.1%;
                         }.mobile-nav-bar-links {
-                            padding-top: 1%;
+                            margin-top: -1%;
                             display: flex;
                             justify-content: space-evenly;
                             font-size: 0.85em;
@@ -5109,6 +5121,7 @@ html{
                 flex-direction: column;
                 width: 100%;
                 height: 60%;
+                padding-top: 34%;
                 } .waitlist-title {
                     padding-top: 20%;
                     width: 100%;

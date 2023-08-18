@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.about.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='javascript/mobile.about.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </head>
 <body>
     <div id="swipe-container">
@@ -55,7 +56,7 @@
             </div>
         </div>
 
-        <div id="global-about">
+        <div id="about" class="dynamicLoad">
 
             <div class="mobile-header">
 
@@ -82,6 +83,70 @@
                         Est. 2023
                     </p>
             </div>
+        </div>
+
+        <div id="about-info" class="dynamicLoad">
+            
+            <div class="mobile-header">
+
+                <img src="../static/media/hamburger.webp" class="hamburger-icon" alt="hamburger-icon">
+
+                <div class="mobile-nav-bar">
+                    <img class="mobile-nav-box" src="../static/media/boxSideNavBarWhite.png" alt="mobile nav bar box">
+                    <div class="mobile-nav-bar-links">
+                        <a>Intro</a>
+                        <a>Company Values</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="company-information">
+                <div class="company-info-one">
+                    <h2>
+                        Vision
+                    </h2>
+                    <p>
+                        "Our vision is to redefine the global banking system, establishing <br>a new standard of trust, accessibility, and efficiency <br>through innovative blockchain technology."
+                    </p>
+                </div>
+                <div class="company-info-two">
+                    <h2>
+                        Mission
+                    </h2>
+                    <p>
+                        "Our mission is to leverage blockchain technology to build <br>a decentralized banking system that is driven by and for<br> the community."
+                    </p>
+                </div>
+                <div class="company-info-three">
+                    <h2>
+                        Purpose
+                    </h2>
+                    <p>
+                        "We exist to revolutionize finance. Our aim: harness the <br>power of blockchain to tackle traditional banking's flaws—<br>inefficiency, opacity, and exclusion. With a community-<br>centric ethos, we're committed to providing a transparent, <br>swift, and inclusive banking alternative, creating a <br>democratized financial future for all."
+                    </p>
+                </div>
+            </div>
+
+            <div class="problem-solution">
+                <div class="problem">
+                    <h2>
+                        Problem
+                    </h2>
+                    <p>
+                        Centralized traditional banking systems cause high <br>transaction costs, slow processing times, lack of <br>transparency, and potential single points of <br>failure. They also exclude large segments <br>of the global population, leading to <br>financial exclusion and inequality, <br>hindering economic growth and <br>personal financial freedom
+                    </p>
+                </div>
+                <div class="solution">
+                    <h2>
+                        Solution
+                    </h2>
+                    <p>
+                        Our integration of Polkadot, a state-of-the-art blockchain <br>platform, enhances your experience by enabling <br>seamless communication and compatibility with <br>multiple blockchain networks. With Polkadot's <br>advanced technology, you can confidently <br>navigate the world of digital assets,<br> enjoying fast, secure transactions, and a <br>user-friendly, feature-rich experience
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 

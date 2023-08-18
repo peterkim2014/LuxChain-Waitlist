@@ -15,6 +15,7 @@ $(document).ready(function() {
             window.location.hash = dynamicLoad;
         }
     }
+    
 
     // Listen to the hashchange event and switch to the appropriate section
     $(window).on('hashchange', function() {

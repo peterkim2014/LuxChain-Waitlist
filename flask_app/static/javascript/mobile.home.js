@@ -47,6 +47,49 @@ animateTextOpacity('1');
 
 
 $(document).ready(function() {
+    // Animate the mobile nav box and position
+    const mobileNavBox = $('.mobile-nav-box');
+    const routeMap = {
+        "/#global-intro": "route-intro",
+        "/#global-app": "route-app",
+        "/#global-waitlist": "route-waitlist"
+    };
+
+    function animateMobileNavBox(route) {
+        const targetClass = routeMap[route];
+        if (targetClass) {
+            mobileNavBox.removeClass("route-intro route-app route-waitlist");
+            mobileNavBox.addClass(targetClass);
+        }
+    }
+
+    // Set the initial position of the side nav bar box and animate
+    function setSideNavBarBoxPositionAndAnimate(section) {
+        const targetMarginLeft = {
+            "#global-intro": '18.2%',
+            "#global-app": '50%',
+            "#global-waitlist": '80%',
+        };
+        mobileNavBox.css({
+            'margin-left': targetMarginLeft[section],
+            'transition': 'margin-left 0.5s ease-in-out' // Add smooth transition
+        });
+
+        animateMobileNavBox(section);
+    }
+
+    // Animate mobile nav box and position on page load and hashchange
+    setSideNavBarBoxPositionAndAnimate(getCurrentSection());
+
+    $(window).on('hashchange', function() {
+        setSideNavBarBoxPositionAndAnimate(window.location.hash);
+    });
+
+
+
+
+
+
     let swipingFeatures = document.querySelectorAll('.swiping-features > div');
     swipingFeatures[0].classList.add('active');
 
@@ -145,35 +188,4 @@ switchSection(window.location.hash.substring(1) || "global-intro");
 // Set the initial opacity of the swipe container to 1
 $('#swipe-container').css('opacity', '1');
 // });
-
-
-
-
-
-// function animateBasedOnScreenSize() {
-//     const smallScreenQuery = window.matchMedia("(max-width: 414px) and (max-height: 897px)");
-//     const largeScreenQuery = window.matchMedia("(max-width: 820px) and (max-height: 1180px) and (min-width: 415px) and (min-height: 897px)");
-
-//     if (smallScreenQuery.matches) {
-//         animateAndChangeRoute('41.75%');
-//         // animateAndChangeRoute('100%');
-//     } else if (largeScreenQuery.matches) {
-//         animateAndChangeRoute('45.75%');
-//         // animateAndChangeRoute('100%');
-//     }
-// }
-
-// function animateAndChangeRoute(targetMargin) {
-//     // As the nav bar box starts to move, animate the opacity of the specific text elements back to 0.
-//     animateTextOpacity('0');
-
-//     // Simultaneously animate the margin of the nav bar box.
-//     mobileNavBarBox.style.transition = "margin-left 0.5s ease-out";
-//     mobileNavBarBox.style.marginLeft = targetMargin;
-
-//     // After the animation is done, redirect.
-//     setTimeout(function() {
-//         window.location.href = "/mobile_app_preview"; 
-//     }, 350);
-// }
 

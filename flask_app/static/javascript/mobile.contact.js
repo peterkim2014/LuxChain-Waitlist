@@ -62,8 +62,8 @@ function alignMobileNavBox() {
 // Set the initial position of the side nav bar box and animate
 function setSideNavBarBoxPositionAndAnimate(section) {
     const targetMarginLeft = {
-        "#global-contact": '15%',
-        "#global-faq": '65%',
+        "#global-contact": '32%',
+        "#global-faq": '67.5%',
     };
     mobileNavBox.css({
         'margin-left': targetMarginLeft[section],

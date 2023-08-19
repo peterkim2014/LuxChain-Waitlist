@@ -1402,7 +1402,7 @@ body {
 #about {
     max-width: 100%;
     max-height: max-content;
-    background-image: url("../media/mobileBackgroundAbout.webp");
+    background-image: url("../media/mobileBackgroundAbout4.webp");
     background-size: cover;
 }
 
@@ -1438,11 +1438,12 @@ html{
                     width: 100%;
                     height: 100%;
                     margin-top: -2%;
+                    z-index: 4;
                 }  .mobile-nav-box {
-                    width: 3.7%;
-                    height: 38%;
+                    width: 4.7%;
+                    height: 32%;
                     margin-left: 18.2%;
-                    margin-top: 9.45%;
+                    margin-top: 16.45%;
                 } .mobile-nav-bar-line {
                     width: 100%;
                     height: 20%;
@@ -1452,7 +1453,7 @@ html{
                     margin-top: 1%;
                     display: flex;
                     justify-content: space-evenly;
-                    font-size: 0.9em;
+                    font-size: 0.8em;
                     color: white;
                     gap: 1.3vw;
                     } .mobile-nav-bar-links > p {
@@ -1464,16 +1465,18 @@ html{
                 justify-content: center;
                 align-items: center;
                 height: 40%;
+                padding-top: 38%;
                 } .mobile-body-intro-about-title {
                     display: flex;
                     width: 80%;
                     height: 30%;
                     padding-top: 90%;
-                    margin-left: 15%;
+                    margin-left: 18%;
                     align-items: center;
                     } .mobile-body-intro-about-title-logo {
-                        width: 17%;
-                        height: 76%;
+                        width: 16.3%;
+                        height: 74%;
+                        margin-top: -1%;
                         } .mobile-body-intro-about-title > h2 {
                             font-size: 50px;
                             font-family: code light;
@@ -1485,10 +1488,10 @@ html{
                     color: white;
                     font-family: garet;
                     font-size: 15.6px;
-                    margin-left: 6%;
+                    margin-left: 8%;
                     /* padding-bottom: %; */
                     height: 100%;
-                    margin-top: -1%;
+                    margin-top: -2%;
                     } .mobile-about-text {
                         width: 95%;
                         height: 100%;
@@ -1512,8 +1515,8 @@ html{
 #about-info {
     margin: 0;
     max-width: 100%;
-    height: 1000px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
+    height: 900px;
+    background-image: url("../media/mobileBackgroundAboutInfo1.webp");
     background-size: cover;
 }
 
@@ -1528,42 +1531,12 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    /* } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 8%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 4.5%;
-                        height: 28.5%;
-                        margin-left: 62.5%;
-                        margin-top: 6.25%;
-                    }.mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 0.85em;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
             width: 100%;
             height: 35%;
-            padding-top: 15%;
+            padding-top: 55%;
             
             } .company-info-one {
                 display: flex;
@@ -1576,32 +1549,36 @@ body {
                     font-size: 15px;
                     /* margin-left: 60%; */
                     text-align: center;
+                    height: 10%;
                     } .company-info-one > p {
                         width: 100%;
                         color: white;
                         font-size: 8.5px;
                         /* margin-left: 20%; */
                         text-align: center;
-                        margin-top: -3.5%;
+                        margin-top: 4.5%;
+                        height: 20%;
                     } .company-info-two {
                         display: flex;
                         flex-direction: column;
                         width: 80%;
                         height: 33%;
                         margin-left: 10%;
-                        margin-top: -3%;
+                        margin-top: -5%;
                         } .company-info-two > h2 {
                             color: white;
                             font-size: 15px;
                             /* margin-left: 60%; */
                             text-align: center;
+                            height: 10%;
                             } .company-info-two > p {
                                 width: 100%;
                                 color: white;
                                 font-size: 8.5px;
                                 /* margin-left: 20%; */
                                 text-align: center;
-                                margin-top: -3.5%;
+                                margin-top: 4.5%;
+                                height: 20%;
                             } .company-info-three {
                                 display: flex;
                                 flex-direction: column;
@@ -1614,13 +1591,15 @@ body {
                                     font-size: 15px;
                                     /* margin-left: 60%; */
                                     text-align: center;
+                                    height: 10%;
                                     } .company-info-three > p {
                                         width: 100%;
                                         color: white;
                                         font-size: 8.5px;
                                         /* margin-left: 20%; */
                                         text-align: center;
-                                        margin-top: -3.5%;
+                                        margin-top: 4.5%;
+                                        height: 40%;
             } .problem-solution {
                 padding-top: 5%;
                 display: flex;
@@ -1630,29 +1609,39 @@ body {
                 } .problem {
                     display: flex;
                     flex-direction: column;
+                    margin-left: -6%;
+                    margin-top: -3.5%;
                     } .problem > h2 {
                         font-size: 15px;
                         color: white;
-                        margin-left: 53%;
+                        margin-left: 54%;
+                        margin-top: 3%;
                         } .problem > p {
                             font-size: 8.5px;
                             color: white;
                             margin-left: 25%;
                             text-align: center;
-                            margin-top: 1.25%;
+                            margin-top: 2.25%;
+                            width: 80%;
                 } .solution {
                     display: flex;
                     flex-direction: column;
+                    margin-top: 9%;
+                    margin-left: -7%;
                     } .solution > h2 {
                         font-size: 15px;
                         color: white;
                         margin-left: 53%;
-                        margin-top: 0%;
+                        margin-top: -4%;
+                        height: 20%;
                         } .solution > p {
                             font-size: 8.5px;
                             color: white;
-                            margin-left: 25%;
+                            margin-left: 19%;
                             text-align: center;
+                            width: 90%;
+                            height: 42%;
+                            margin-top: 2%;
                 }
 }
 
@@ -1866,10 +1855,12 @@ body {
 
 /* Mobile styles */
 #about {
-    max-width: 100%;
-    max-height: max-content;
-    background-image: url("../media/mobileBackgroundAboutInfoIpad5.webp");
+    /* max-width: 100%; */
+    /* max-height: max-content; */
+    background-image: url("../media/mobileBackgroundAboutInfoIpad9.webp");
     background-size: cover;
+    width: 375px;
+    height: 667px;
 }
 
 html{
@@ -1904,11 +1895,12 @@ html{
                     width: 100%;
                     height: 100%;
                     margin-top: -2%;
+                    z-index: 4;
                 }  .mobile-nav-box {
-                    width: 3.7%;
-                    height: 38%;
+                    width: 4.7%;
+                    height: 35%;
                     margin-left: 18.2%;
-                    margin-top: 9.45%;
+                    margin-top: 14.45%;
                 } .mobile-nav-bar-line {
                     width: 100%;
                     height: 20%;
@@ -1918,7 +1910,7 @@ html{
                     margin-top: 1%;
                     display: flex;
                     justify-content: space-evenly;
-                    font-size: 0.9em;
+                    font-size: 0.8em;
                     color: white;
                     gap: 1.3vw;
                     } .mobile-nav-bar-links > p {
@@ -1930,15 +1922,16 @@ html{
                 justify-content: center;
                 align-items: center;
                 height: 40%;
+                padding-top: 32%;
                 } .mobile-body-intro-about-title {
                     display: flex;
                     width: 80%;
                     height: 30%;
                     padding-top: 90%;
-                    margin-left: 20.7%;
+                    margin-left: 27.1%;
                     align-items: center;
                     } .mobile-body-intro-about-title-logo {
-                        width: 17%;
+                        width: 15%;
                         height: 76%;
                         margin-top: -2%;
                         /* margin-lef */
@@ -1952,10 +1945,10 @@ html{
                     color: white;
                     font-family: garet;
                     font-size: 15.4px;
-                    margin-left: 10.3%;
+                    margin-left: 13.6%;
                     /* padding-bottom: %; */
                     height: 100%;
-                    margin-top: -1%;
+                    margin-top: -3%;
                     } .mobile-about-text {
                         width: 99%;
                         height: 100%;
@@ -1980,7 +1973,7 @@ html{
     margin: 0;
     max-width: 100%;
     height: 1000px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
+    background-image: url("../media/mobileBackgroundAboutInfo1.webp");
     background-size: cover;
 }
 
@@ -1995,99 +1988,74 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    /* } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 8%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 4.5%;
-                        height: 28.5%;
-                        margin-left: 62.5%;
-                        margin-top: 5%;
-                    }.mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 0.85em;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
             width: 100%;
             height: 35%;
-            padding-top: 15%;
-            
+            padding-top: 55%;
             } .company-info-one {
                 display: flex;
                 flex-direction: column;
                 width: 80%;
                 height: 33%;
-                margin-left: 10%;
+                margin-left: 11.1%;
                 } .company-info-one > h2 {
                     color: white;
                     font-size: 15px;
                     /* margin-left: 60%; */
                     text-align: center;
+                    height: 10%;
                     } .company-info-one > p {
                         width: 100%;
                         color: white;
                         font-size: 8.5px;
                         /* margin-left: 20%; */
                         text-align: center;
-                        margin-top: -3.5%;
+                        margin-top: 4.5%;
+                        height: 20%;
                     } .company-info-two {
                         display: flex;
                         flex-direction: column;
                         width: 80%;
                         height: 33%;
-                        margin-left: 10%;
+                        margin-left: 11.1%;
                         margin-top: -3%;
                         } .company-info-two > h2 {
                             color: white;
                             font-size: 15px;
                             /* margin-left: 60%; */
                             text-align: center;
+                            height: 10%;
                             } .company-info-two > p {
                                 width: 100%;
                                 color: white;
                                 font-size: 8.5px;
                                 /* margin-left: 20%; */
                                 text-align: center;
-                                margin-top: -3.5%;
+                                margin-top: 4.5%;
+                                height: 20%;
                             } .company-info-three {
                                 display: flex;
                                 flex-direction: column;
                                 width: 80%;
                                 height: 33%;
-                                margin-left: 10%;
+                                margin-left: 11.1%;
                                 margin-top: -3%;
                                 } .company-info-three > h2 {
                                     color: white;
                                     font-size: 15px;
                                     /* margin-left: 60%; */
                                     text-align: center;
+                                    height: 10%;
                                     } .company-info-three > p {
                                         width: 100%;
                                         color: white;
                                         font-size: 8.5px;
                                         /* margin-left: 20%; */
                                         text-align: center;
-                                        margin-top: -3.5%;
+                                        margin-top: 4.5%;
+                                        height: 40%;
             } .problem-solution {
                 padding-top: 5%;
                 display: flex;
@@ -2101,33 +2069,42 @@ body {
                         font-size: 15px;
                         color: white;
                         margin-left: 53%;
+                        height: 14%;
+                        margin-top: -1%;
                         } .problem > p {
                             font-size: 8.5px;
                             color: white;
-                            margin-left: 25%;
+                            margin-left: 24.5%;
                             text-align: center;
-                            margin-top: 1.25%;
+                            margin-top: 2.25%;
+                            width: 80%;
                 } .solution {
                     display: flex;
                     flex-direction: column;
+                    margin-top: -2%;
                     } .solution > h2 {
                         font-size: 15px;
                         color: white;
                         margin-left: 53%;
-                        margin-top: 0%;
+                        margin-top: -1%;
+                        height: 20%;
                         } .solution > p {
                             font-size: 8.5px;
                             color: white;
-                            margin-left: 25%;
+                            margin-left: 18.7%;
                             text-align: center;
+                            width: 90%;
+                            margin-top: 2%;
                 }
 }
 @media only screen and (max-width: 414px) and (max-height: 896px) and (min-width: 391px) and (min-height: 845px) { 
     #about {
         width: 414px;
         height: 896px;
-        background-image: url("../media/mobileBackgroundAbout.webp");
+        background-image: url("../media/mobileBackgroundAbout4.webp");
         background-size: cover;
+        max-height: max-content;
+        /* overflow-y: hidden; */
     }
     
     html{
@@ -2135,7 +2112,7 @@ body {
         overscroll-behavior: none;
         } *, html {
             margin: 0;
-            /* height: 100%; */
+            height: 100%;
             font-family: Garet;
             text-decoration: none;
             } .mobile-header {
@@ -2162,11 +2139,12 @@ body {
                             width: 100%;
                             height: 100%;
                             margin-top: -2%;
+                            z-index: 4;
                         }  .mobile-nav-box {
-                            width: 3.7%;
-                            height: 38%;
+                            width: 4.7%;
+                            height: 32%;
                             margin-left: 18.2%;
-                            margin-top: 9.45%;
+                            margin-top: 16.45%;
                         } .mobile-nav-bar-line {
                             width: 100%;
                             height: 20%;
@@ -2176,7 +2154,7 @@ body {
                             margin-top: 1%;
                             display: flex;
                             justify-content: space-evenly;
-                            font-size: 0.9em;
+                            font-size: 0.8em;
                             color: white;
                             gap: 1.3vw;
                             } .mobile-nav-bar-links > p {
@@ -2188,21 +2166,24 @@ body {
                     justify-content: center;
                     align-items: center;
                     height: 40%;
-                    margin-top: 20%;
+                    /* margin-top: 20%; */
+                    padding-top: 65%;
                     } .mobile-body-intro-about-title {
                         display: flex;
                         width: 80%;
                         height: 30%;
-                        /* padding-top: 90%; */
+                        padding-top: 30%;
                         margin-left: 15%;
                         } .mobile-body-intro-about-title-logo {
-                            width: 20%;
-                            height: 90%;
+                            width: 17%;
+                            height: 80%;
+                            margin-top: 0.6%;
                             } .mobile-body-intro-about-title > h2 {
                                 font-size: 4em;
                                 font-family: code light;
                                 color: white;
                                 transform: scale(1, 0.75);
+                                padding-left: 2%;;
                     } .mobile-about-slogan {
                         color: white;
                         font-family: garet;
@@ -2210,7 +2191,7 @@ body {
                         margin-left: 12%;
                         /* padding-bottom: %; */
                         height: 100%;
-                        margin-top: -1%;
+                        margin-top: -2.5%;
                         } .mobile-about-text {
                             width: 100%;
                             height: 100%;
@@ -2221,7 +2202,7 @@ body {
                             font-family: futura;
                             font-style: italic;
                             text-align: center;
-                            margin-left: 15%;
+                            margin-left: 13%;
                             } .company-establishment {
                                 color:white;
                                 padding-top: 8%;
@@ -2236,7 +2217,7 @@ body {
         margin: 0;
         max-width: 100%;
         height: 1000px;
-        background-image: url("../media/mobileBackgroundAboutInfo.webp");
+        background-image: url("../media/mobileBackgroundAboutInfo1.webp");
         background-size: cover;
     }
     
@@ -2251,42 +2232,12 @@ body {
         text-decoration: none;
         overflow-y: scroll;
         overscroll-behavior: none;
-        /* } .mobile-header {
-            margin: 0;
-            max-height: 17%;
-            display: flex;
-            flex-direction: column;
-            } .hamburger-icon {
-                width: 8%;
-                height: 17%;
-                margin-top: 10%;
-                margin-left: 7%;
-                } .mobile-nav-bar {
-                    width: 100%;
-                    height: 40%;
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 2.85%;
-                    } .mobile-nav-box {
-                            width: 4.5%;
-                            height: 28.5%;
-                            margin-left: 62.5%;
-                            margin-top: 4.25%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
-                                display: flex; */
             } .company-information {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 height: 35%;
-                padding-top: 15%;
+                padding-top: 52%;
                 
                 } .company-info-one {
                     display: flex;
@@ -2299,13 +2250,15 @@ body {
                         font-size: 15px;
                         /* margin-left: 60%; */
                         text-align: center;
+                        height: 10%;
                         } .company-info-one > p {
                             width: 100%;
                             color: white;
                             font-size: 8.5px;
                             /* margin-left: 20%; */
                             text-align: center;
-                            margin-top: -3.5%;
+                            margin-top: 4.5%;
+                            height: 20%;
                         } .company-info-two {
                             display: flex;
                             flex-direction: column;
@@ -2318,13 +2271,15 @@ body {
                                 font-size: 15px;
                                 /* margin-left: 60%; */
                                 text-align: center;
+                                height: 10%;
                                 } .company-info-two > p {
                                     width: 100%;
                                     color: white;
                                     font-size: 8.5px;
                                     /* margin-left: 20%; */
                                     text-align: center;
-                                    margin-top: -3.5%;
+                                    margin-top: 4.5%;
+                                    height: 20%;
                                 } .company-info-three {
                                     display: flex;
                                     flex-direction: column;
@@ -2337,13 +2292,15 @@ body {
                                         font-size: 15px;
                                         /* margin-left: 60%; */
                                         text-align: center;
+                                        height: 10%;
                                         } .company-info-three > p {
                                             width: 100%;
                                             color: white;
                                             font-size: 8.5px;
                                             /* margin-left: 20%; */
                                             text-align: center;
-                                            margin-top: -3.5%;
+                                            margin-top: 4.5%;
+                                            height: 37%;
                 } .problem-solution {
                     padding-top: 9%;
                     display: flex;
@@ -2353,28 +2310,38 @@ body {
                     } .problem {
                         display: flex;
                         flex-direction: column;
+                        margin-top: 2%;
                         } .problem > h2 {
                             font-size: 15px;
                             color: white;
                             margin-left: 53%;
+                            height: 20%;
+                            margin-top: 1%;
                             } .problem > p {
                                 font-size: 8.5px;
                                 color: white;
                                 margin-left: 25%;
                                 text-align: center;
                                 margin-top: 1.25%;
+                                height: 42%;
                     } .solution {
                         display: flex;
                         flex-direction: column;
+                        margin-top: 9.5%;
                         } .solution > h2 {
                             font-size: 15px;
                             color: white;
                             margin-left: 53%;
                             /* margin-top: 0%; */
+                            height: 20%;
                             } .solution > p {
                                 font-size: 8.5px;
                                 color: white;
-                                margin-left: 25%;
+                                margin-left: 17%;
                                 text-align: center;
+                                height: 42%;
+                                width: 90%;
+                                margin-top: 1.5%;
+                                /* margin-left: 17%; */
                     }
 }

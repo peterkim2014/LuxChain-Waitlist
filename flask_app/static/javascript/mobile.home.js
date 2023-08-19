@@ -63,6 +63,13 @@ $(document).ready(function() {
         }
     }
 
+    // Function to align mobile nav box based on the hash
+    function alignMobileNavBox() {
+        const currentHash = window.location.hash;
+        animateMobileNavBox(currentHash);
+        setSideNavBarBoxPositionAndAnimate(currentHash);
+    }
+
     // Set the initial position of the side nav bar box and animate
     function setSideNavBarBoxPositionAndAnimate(section) {
         const targetMarginLeft = {
@@ -78,6 +85,9 @@ $(document).ready(function() {
         animateMobileNavBox(section);
     }
 
+    // Align mobile nav box on page load and hashchange
+    alignMobileNavBox();
+
     // Animate mobile nav box and position on page load and hashchange
     setSideNavBarBoxPositionAndAnimate(getCurrentSection());
 
@@ -86,6 +96,73 @@ $(document).ready(function() {
     });
 
 
+
+    // Track scroll position
+    let lastScrollPos = 0;
+    const opaqueDistance = window.innerHeight * 0.2; // 20% of the viewport height
+
+    // Function to handle scroll and opacity animation
+    function handleScroll() {
+        const currentScrollPos = window.scrollY;
+
+        if (currentScrollPos > lastScrollPos) {
+            // Scrolling down
+            $('.content').removeClass('opaque');
+            $('#global-app').removeClass('hidden'); // Ensure #global-app is visible when scrolling down
+        } else {
+            // Scrolling up
+            if (currentScrollPos <= opaqueDistance) {
+                $('.content').addClass('opaque');
+                $('#global-app').addClass('hidden'); // Hide #global-app
+            } else {
+                $('.content').removeClass('opaque');
+                $('#global-app').removeClass('hidden');
+            }
+        }
+
+        lastScrollPos = currentScrollPos;
+    }
+    // Attach scroll event listener
+    $(window).on('scroll', handleScroll);
+
+    // Initialize Hammer.js on the swipe container
+    const swipeContainer = document.getElementById('swipe-container');
+    const hammer = new Hammer(swipeContainer);
+
+    // Variable to keep track of initial pan position
+    let initialPanPos = null;
+
+    // Attach pan event listener
+    hammer.on('panstart', function(e) {
+        initialPanPos = e.center.y;
+    });
+
+    hammer.on('panmove', function(e) {
+        if (initialPanPos !== null) {
+            const currentPanPos = e.center.y;
+            const deltaY = currentPanPos - initialPanPos;
+
+            // Update the initial pan position for the next iteration
+            initialPanPos = currentPanPos;
+
+            // Calculate the new scroll position
+            const currentScrollPos = window.scrollY - deltaY;
+
+            // Handle scroll based on the new position
+            handleScroll(currentScrollPos);
+        }
+    });
+
+    hammer.on('panend', function() {
+        // Reset the initial pan position
+        initialPanPos = null;
+    });
+
+    // Attach scroll event listener for desktop browsers
+    $(window).on('scroll', function() {
+        // Handle scroll based on the current scroll position
+        handleScroll(window.scrollY);
+    });
 
 
 

@@ -19,7 +19,11 @@
     } .swiping-features {
         position: relative;
         overflow: hidden;
-    }
+} /* Class to make content opaque */
+.opaque {
+    opacity: 0.1; /* Opacity value */
+    transition: opacity 0.1s ease; /* Transition effect */
+}
 
 @media screen and (orientation:landscape) {
     body::before {

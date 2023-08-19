@@ -566,7 +566,7 @@
                             font-family: garet;
                             font-size: 20.5px;
                             margin-left: 9%;
-                            /* padding-top: -1%; */
+                            margin-top: -3%;
                             height: 30%;
                             width: 60%;
         } .mobile-body-intro-description {
@@ -579,6 +579,7 @@
                 color: white;
                 padding-top: 18%;
                 font-size: 17px;
+                margin-left: 0.7%;
                 } .mobile-body-intro-description-two {
                     display: flex;
                     color: white;
@@ -1041,7 +1042,7 @@
                             z-index: 4;
                         }  .mobile-nav-box {
                             width: 3.7%;
-                            height: 38%;
+                            height: 37%;
                             margin-left: 18.2%;
                             margin-top: 9.45%;
                         } .mobile-nav-bar-line {
@@ -1363,55 +1364,72 @@
                         }
 
     #global-intro {
-        max-width: 100%;
+        /* max-width: 100%; */
+        /* height: 1024px; */
         max-height: max-content;
-        background-image: url("../media/mobileBackgroundIntro.webp");
+        background-image: url("../media/mobileBackgroundIntro1.webp");
         background-size: cover;
+        width: 768px;
+        /* margin: 0; */
+        /* overflow-y: hidden; */
     }
 
     html{
-        overflow-y: scroll;
-        overscroll-behavior: none;
+        overflow-y: hidden;
+        /* overflow-x: none; */
+        overscroll-behavior: none; 
     } *, html {
         margin: 0;
         height: 100%;
         font-family: Garet;
         text-decoration: none;
         } .mobile-header {
-            margin: 0;
+            /* margin: 0; */
             max-height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
+            margin-top: 50;
             } .hamburger-icon {
-                width: 8%;
-                height: 17%;
-                margin-top: 10%;
+                width: 6%;
+                height: 13%;
+                margin-top: 11.4%;
                 margin-left: 7%;
                 } .mobile-nav-bar {
                     width: 100%;
                     height: 40%;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 5%;
-                    } .mobile-nav-box {
-                        width: 3.75%;
-                        height: 10%;
-                        margin-left: 41.75%;
-                        margin-top: 6.75%;
-                    }.mobile-nav-bar-links {
-                            padding-top: 1%;
+                    /* margin-top: 5%; */
+                    } .mobile-nav-bar-box-container {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: -7%;
+                        z-index: 4;
+                    }  .mobile-nav-box {
+                        width: 3.7%;
+                        height: 38%;
+                        margin-left: 18.2%;
+                        margin-top: 9.45%;
+                    } .mobile-nav-bar-line {
+                        width: 100%;
+                        height: 34%;
+                        margin-top: -15.4%;
+                        z-index: 2;
+                    } .mobile-nav-bar-links {
+                        margin-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.9em;
+                        color: white;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
                             display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
-                                display: flex;
         } .mobile-body-intro {
             display: flex;
             width: 100%;
             height: 40%;
-            margin-top: 30%;
+            padding-top: 50%;
             align-items: center;
             flex-direction: column;
             } .mobile-body-intro-header {
@@ -1428,7 +1446,7 @@
                     gap: 1.3vw;
                     justify-content: center;
                     } .mobile-body-intro-main-title-logo {
-                        width: 13%;
+                        width: 12.3%;
                         height: 85%;
                     } .mobile-body-intro-main > h2 {
                         font-size: 4em;
@@ -1438,8 +1456,8 @@
                         } .mobile-body-intro-header > p {
                             color: white;
                             font-family: garet;
-                            font-size: 1.2em;
-                            margin-left: 10%;
+                            font-size: 1.25em;
+                            margin-left: 7.5%;
                             /* padding-top: 1%; */
                             height: 30%;
                             width: 60%;
@@ -1451,12 +1469,12 @@
                 display: flex;
                 color: white;
                 padding-top: 18%;
-                font-size: 0.9em;
+                font-size: 1em;
                 } .mobile-body-intro-description-two {
                     display: flex;
                     color: white;
                     padding-bottom: 35%;
-                    font-size: 0.9em;
+                    font-size: 1em;
                 }
 
 
@@ -1465,9 +1483,11 @@
         /* max-width: max-content; */
         height: 3150px;
         /* max-height: 100%; */
-        background-image: url("../media/mobileBackgroundAppPreviewBackground.webp");
-        background-size: 100%;
+        background-image: url("../media/mobileBackgroundAppPreview1.webp");
+        background-size: cover;
         width: 768px;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
     
     body {
@@ -1481,35 +1501,47 @@
         overscroll-behavior: none;
         overflow-y: scroll;
         } .mobile-header {
-            margin: 0;
+            /* margin: 0; */
             max-height: 17%;
             display: flex;
             flex-direction: column;
+            position: fixed;
+            margin-top: 50;
             } .hamburger-icon {
-                width: 7%;
-                height: 10%;
-                margin-top: 10%;
+                width: 6%;
+                height: 13%;
+                margin-top: 11.4%;
                 margin-left: 7%;
                 } .mobile-nav-bar {
                     width: 100%;
                     height: 40%;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 1.5%;
-                    } .mobile-nav-box {
-                            width: 3.75%;
-                            height: 10%;
-                            margin-left: 44.75%;
-                            margin-top: 7.45%;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
+                    /* margin-top: 5%; */
+                    } .mobile-nav-bar-box-container {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: -7%;
+                        z-index: 4;
+                    }  .mobile-nav-box {
+                        width: 3.7%;
+                        height: 38%;
+                        margin-left: 18.2%;
+                        margin-top: 10.45%;
+                    } .mobile-nav-bar-line {
+                        width: 100%;
+                        height: 34%;
+                        margin-top: -15.4%;
+                        z-index: 2;
+                    } .mobile-nav-bar-links-preview {
+                        margin-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.9em;
+                        color: black;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links-preview > p {
                             display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: black;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
-                                display: flex;
             } .opening-features {
                 display: flex;
                 flex-direction: column;
@@ -1517,18 +1549,18 @@
                 height: 14%;
                 justify-content: center;
                 /* padding-bottom: 5%; */
-                margin-top: 2%;
+                margin-top: 33%;
                 } .opening-features > p {
                     display: flex;
-                    width: 30%;
+                    width: 50%;
                     height: 10%;
                     margin-top: -15%;
                     font-weight: 700;
                     margin-left: 5%;
-                    padding-bottom: 2%;
+                    padding-bottom: 2.5%;
                     font-size: 2em;
                     } .opening-features-descriptions {
-                        margin-top: 2%;
+                        margin-top: 6.2%;
                         height: 20%;
                         width: 100%;
                         display: flex;
@@ -1600,6 +1632,7 @@
                             width: 100%;
                             height: 30%;
                             font-size: 15px;
+                            margin-top: -61.5%;
                         }.swiping-features-icon-one {
                             display: flex;
                             width: 100%;
@@ -1623,6 +1656,7 @@
                             height: 30%;
                             font-size: 15px;
                             text-wrap: wrap;
+                            margin-top: -60%;
                         }.swiping-features-icon-two {
                             display: flex;
                             width: 100%;
@@ -1643,23 +1677,26 @@
                             font-weight: 600;
                             text-wrap: wrap;
                         } .swiping-features-three-description > p {
-                            width: 100%;
+                            width: 94%;
                             height: 30%;
                             font-size: 15px;
                             text-wrap: wrap;
+                            margin-top: -52.5%;
                         }.swiping-features-icon-three {
                             display: flex;
                             width: 100%;
                 } .feature-descriptions {
                     display: flex;
                     flex-direction: column;
-                    gap: 2vw;
-                    padding-top: 6%;
+                    gap: 2.4vw;
+                    padding-top: 6.6%;
+                    height: 4%;
                     } .feature-descriptions > p {
                         color: white;
                         font-size: 15px;
                         text-align: center;
                         margin: 0;
+                        height: 10%;
                 } .iphone-features {
                     display: flex;
                     width: 100%;
@@ -1670,16 +1707,18 @@
                         width: 70%;
                         flex-direction: column;
                         justify-content: center;
-                        padding-top: 8.7%;
+                        padding-top: 2.7%;
                         } .iphone-features-text > a {
                             font-size: 12px;
                             margin-left: 62%;
-                            margin-top: -45%;
+                            margin-top: -49%;
+                            height: 10%;
                         } .iphone-features-text > p {
-                            padding-top: 9%;
+                            /* padding-top: 7.2%; */
                             font-size: 12px;
                             margin-left: 66%;
-                            margin-top: 4%;
+                            margin-top: 5%;
+                            height: 10%;
                             } .feature-icons {
                                 display: flex;
                                 flex-direction: column;
@@ -1687,7 +1726,7 @@
                                 height: 60%;
                                 gap: 10vw;
                                 margin-right: 9%;
-                                padding-top: 16%;
+                                padding-top: 10%;
                                 } .feature-icon-one-components {
                                     display: flex;
                                     flex-direction: column;
@@ -1729,21 +1768,24 @@
                     } .polkadot-technology-image {
                         width: 40%;
                         height: 65%;
-                        padding-top: 16%;
+                        padding-top: 10%;
                         margin-left: 3%;
                         } .polkadot-technology-description{
                             width: 50%;
                             height: 75%;
                             padding-left: 11.5%;
-                            padding-top: 16.8%;
+                            margin-top: 9.1%;
                             } .polkadot-technology-description > a {
+                                /* padding-top: 3%; */
                                 color: white;
                                 font-size: 1.5em;
                                 justify-content: center;
                                 align-items: center;
                                 } .polkadot-technology-description > p {
+                                    margin-top: 3.5%;
                                     font-size: 12px;
                                     color: white;
+                                    height: 20%;
                 } .bank-comparison {
                     display: flex;
                     flex-direction: column;
@@ -1846,7 +1888,7 @@
         margin: 0;
         width: 100%;
         height: 100vh;
-        background-image: url("../media/mobileBackgroundWaitlist.webp");
+        background-image: url("../media/mobileBackgroundWaitlist1.webp");
         background-size: cover;
     }
     
@@ -1873,10 +1915,10 @@
                     flex-direction: column;
                     margin-top: 5%;
                     } .mobile-nav-box {
-                            width: 4.5%;
-                            height: 30%;
+                            width: 3.9%;
+                            height: 38%;
                             margin-left: 75%;
-                            margin-top: 4%;
+                            margin-top: 9%;
                         }.mobile-nav-bar-links {
                             padding-top: 1%;
                             display: flex;
@@ -1891,6 +1933,7 @@
                 flex-direction: column;
                 width: 100%;
                 height: 60%;
+                padding-top: 25%;
                 } .waitlist-title {
                     margin-top: 20%;
                     width: 100%;
@@ -1901,15 +1944,16 @@
                     text-align: center;
                     } .mobile-waitlist-banner {
                         width: 100%;
-                        height: 40%;
+                        height: 50%;
                         /* padding-top: -50%; */
                         } .waitlist-title > a {
                             color: black;
                             font-size: 32px;
-                            margin-top: -5.9%;
+                            margin-top: -6.5%;
                             } .waitlist-title > p {
                                 color: white;
-                                font-size: 12px;
+                                font-size: 14px;
+                                margin-top: 3%;
             } .waitlist-form {
                 display: flex;
                 flex-direction: column;
@@ -2065,19 +2109,20 @@
                     justify-content: center;
                     align-items: center;
                     } .mobile-body-intro-main-title-logo {
-                        width: 15%;
-                        height: 80%;
+                        width: 12.7%;
+                        height: 72.3%;
+                        margin-top: -2.3%;
                     } .mobile-body-intro-main > h2 {
-                        font-size: 4em;
+                        font-size: 3.7em;
                         font-family: code light;
                         color: white;
                         transform: scale(1, 0.75);
                         } .mobile-body-intro-header > p {
                             color: white;
                             font-family: garet;
-                            font-size: 1.2em;
-                            margin-right: -10%;
-                            /* padding-top: 1%; */
+                            font-size: 1.07em;
+                            padding-left: 17%;
+                            margin-top: -3%;
                             height: 30%;
                             width: 80%;
         } .mobile-body-intro-description {
@@ -2087,12 +2132,12 @@
             } .mobile-body-intro-description-one {
                 display: flex;
                 color: white;
-                padding-top: 18%;
+                padding-top: 15%;
                 font-size: 0.9em;
                 } .mobile-body-intro-description-two {
                     display: flex;
                     color: white;
-                    padding-bottom: 35%;
+                    padding-bottom: 32%;
                     font-size: 0.9em;
                 }
 
@@ -4673,7 +4718,7 @@ html{
                 gap: 1.3vw;
                 padding-right: 5%;
                 } .mobile-body-intro-main-title-logo {
-                    width: 13.6%;
+                    width: 12.9%;
                     height: 80%;
                     margin-top: 0.5%;
                 } .mobile-body-intro-main > h2 {

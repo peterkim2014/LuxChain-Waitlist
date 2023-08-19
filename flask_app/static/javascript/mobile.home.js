@@ -70,13 +70,49 @@ $(document).ready(function() {
         setSideNavBarBoxPositionAndAnimate(currentHash);
     }
 
-    // Set the initial position of the side nav bar box and animate
+    // Function to set the initial position of the side nav bar box and animate
     function setSideNavBarBoxPositionAndAnimate(section) {
-        const targetMarginLeft = {
-            "#global-intro": '18.2%',
-            "#global-app": '45%',
-            "#global-waitlist": '75%',
-        };
+        const viewportWidth = $(window).width();
+        const viewportHeight = $(window).height();
+
+        let targetMarginLeft = {};
+
+        if (viewportWidth >= 769 && viewportWidth <= 820 && viewportHeight >= 1025 && viewportHeight <= 1180) {
+            targetMarginLeft = {
+                "#global-intro": '18.2%',
+                "#global-app": '45%',
+                "#global-waitlist": '75%',
+            };
+        } else if (viewportWidth >= 415 && viewportWidth <= 768 && viewportHeight >= 897 && viewportHeight <= 1024) {
+            // Add more conditions for other media queries
+            targetMarginLeft = {
+                "#global-intro": '18.2%',
+                "#global-app": '45%',
+                "#global-waitlist": '75%',
+            };
+        } else if (viewportWidth >= 361 && viewportWidth <= 390 && viewportHeight >= 741 && viewportHeight <= 844) {
+            // Add more conditions for other media queries
+            targetMarginLeft = {
+                "#global-intro": '13%',
+                "#global-app": '42%',
+                "#global-waitlist": '75%',
+            };
+        } else if (viewportWidth >= 361 && viewportWidth <= 375 && viewportHeight >= 667 && viewportHeight <= 896) {
+            // Add more conditions for other media queries
+            targetMarginLeft = {
+                "#global-intro": '13%',
+                "#global-app": '42%',
+                "#global-waitlist": '75%',
+            };
+        } else if (viewportWidth >= 391 && viewportWidth <= 414 && viewportHeight >= 845 && viewportHeight <= 896) {
+            // Add more conditions for other media queries
+            targetMarginLeft = {
+                "#global-intro": '14%',
+                "#global-app": '42%',
+                "#global-waitlist": '75%',
+            };
+        }
+
         mobileNavBox.css({
             'margin-left': targetMarginLeft[section],
             'transition': 'margin-left 0.5s ease-in-out' // Add smooth transition

@@ -37,6 +37,43 @@ window.addEventListener("orientationchange", function() {
     }
 });
 
+// Animate the mobile nav box and position
+const mobileNavBox = $('.mobile-nav-box');
+const routeMap = {
+    "/#global-contact": "route-global-contact",
+    "/#global-faq": "route-global-faq",
+};
+
+function animateMobileNavBox(route) {
+    const targetClass = routeMap[route];
+    if (targetClass) {
+        mobileNavBox.removeClass("route-global-contact route-global-faq");
+        mobileNavBox.addClass(targetClass);
+    }
+}
+
+// Set the initial position of the side nav bar box and animate
+function setSideNavBarBoxPositionAndAnimate(section) {
+    const targetMarginLeft = {
+        "#global-contact": '15%',
+        "#global-faq": '65%',
+    };
+    mobileNavBox.css({
+        'margin-left': targetMarginLeft[section],
+        'transition': 'margin-left 0.5s ease-in-out' // Add smooth transition
+    });
+
+    animateMobileNavBox(section);
+}
+
+// Animate mobile nav box and position on page load and hashchange
+setSideNavBarBoxPositionAndAnimate(window.location.hash);
+
+$(window).on('hashchange', function() {
+    setSideNavBarBoxPositionAndAnimate(window.location.hash);
+});
+
+
 $('.hamburger-icon').on('click', function() {
     // Slide the side nav bar in
     $('.side-nav-bar').css('transform', 'translateX(0)');

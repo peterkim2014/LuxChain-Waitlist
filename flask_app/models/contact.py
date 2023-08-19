@@ -15,11 +15,12 @@ class Contact:
         self.email = data["email"]
         self.header = data["header"]
         self.description = data["description"]
+        self.ticket = data["ticket"]
 
     @classmethod
     def save(cls, data):
         query = """
-            INSERT INTO contacts (name, email, header, description) VALUES (%(name)s, %(email)s, %(header)s, %(description)s);
+            INSERT INTO contacts (name, email, header, description, ticket) VALUES (%(name)s, %(email)s, %(header)s, %(description)s, %(ticket)s);
         """
         result = MySQLConnection(cls.dB).query_db(query, data)
 

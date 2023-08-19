@@ -1,7 +1,9 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask_app.models.info import contact_email, contact_app_password, contact_username
+# from flask_app.models.info import contact_email, contact_app_password, contact_username
+from flask_app.models.info import email, app_password, username
+import random
 
 contact_msg_text = """
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -15,15 +17,18 @@ contact_msg_text = """
     <title></title>
   </head>
   <body style="width: 100% !important; height: 100%; -webkit-text-size-adjust: none; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; background-color: #F4F4F7; color: #51545E; margin: 0;" bgcolor="#F4F4F7">
-    <span class="preheader" style="display: none !important; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden;">Ticket #{customer} for Luxura Wallet</span>
+    <span class="preheader" style="display: none !important; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden;">Ticket #{ticket} for Luxura Wallet</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; background-color: #F4F4F7; margin: 0; padding: 0;" bgcolor="#F4F4F7">
       <tr>
         <td align="center" style="word-break: break-word; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
           <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; margin: 0; padding: 0;">
             <tr>
-              <td class="email-masthead" style="word-break: break-word; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 25px 0;" align="center">
-                <a href="https://example.com" class="f-fallback email-masthead_name" style="color: #A8AAAF; font-size: 16px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+              <td class="email-masthead" style="word-break: break-word; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 25px 0; vertical-align: center;" align="center">
+                <img width="80" height="80" src="https://i.imgur.com/YcnIiOy.png" alt="Contact Picture">
+                <a class="f-fallback email-masthead_name" style="color: #A8AAAF; font-size: 24px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+
                 Luxora Wallet
+
               </a>
               </td>
             </tr>
@@ -35,7 +40,8 @@ contact_msg_text = """
                   <tr>
                     <td class="content-cell" style="word-break: break-word; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px; padding: 35px;">
                       <div class="f-fallback">
-                        <p style="margin-top: 0; color: #333333; font-size: 16px; font-weight: bold; text-align: right;" align="left">Ticket #{customer}</p>
+
+                        <p style="margin-top: 0; color: #333333; font-size: 16px; font-weight: bold; text-align: right;" align="left">Ticket #{ticket}</p>
                         <h1 style="margin-top: 0; color: #333333; font-size: 22px; font-weight: bold; text-align: left;" align="left">Name</h1>
                         <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">{customer}</p>
                         <h1 style="margin-top: 0; color: #333333; font-size: 22px; font-weight: bold; text-align: left;" align="left">Header</h1>
@@ -92,29 +98,40 @@ contact_msg_text = """
 """
 
 class Contact_Email:
+    generated_numbers = set()
+    @staticmethod
+    def generate_unique_number():
+        while True:
+            unique_number = random.randint(100, 10000000)  # Generate a random number between 100 and 10,000,000
+            if unique_number not in Contact_Email.generated_numbers:
+                Contact_Email.generated_numbers.add(unique_number)
+                return unique_number
 
     @staticmethod
-    def contact_send_mail(text, subject, to_emails=None, from_email=None):
+    def contact_send_mail(text, subject, to_emails=None, from_email=None, data=None):
+        from flask_app.models.contact import Contact
+
         assert isinstance(to_emails, list)
         print(to_emails[0])
         msg = MIMEMultipart("alternative")
         msg["From"] = from_email
-        msg["To"] = " ,".join(to_emails[0])
+        msg["To"] = ", ".join(to_emails[0])
         msg["Subject"] = subject
 
-        text_body = MIMEText(text, "html")
+        print("working here")
+        # print(text)
+        text_body = MIMEText(text["msg"], "html")
         msg.attach(text_body)
-
         msg_str = msg.as_string()
         # login smtp server
         server = smtplib.SMTP(host="smtp.gmail.com", port=587)
         server.ehlo()
         server.starttls()
-        print(contact_username, contact_email, contact_app_password)
-        server.login(contact_username, contact_app_password)
+        print(username, email, app_password)
+        server.login(username, app_password)
         print("logged in")
         server.sendmail(from_email, to_emails[0], msg_str)
-
+        Contact.create(data)
         server.quit()
 
     @staticmethod
@@ -122,8 +139,10 @@ class Contact_Email:
         # assert to_email != None
         my_msg = Contact_Email.contact_format_text(my_customer=customer, contact_header=data["header"], description=data["description"])
         subject = "LuxChain Inquiry"
+        data["ticket"]= my_msg["ticket_number"]
+        print(data)
         try:
-            Contact_Email.contact_send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=contact_email)
+            Contact_Email.contact_send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=email, data=data)
             sent = True
         except:
             sent = False
@@ -134,5 +153,10 @@ class Contact_Email:
     
     @staticmethod
     def contact_format_text(my_customer, contact_header, description):
-        msg = contact_msg_text.format(customer=my_customer, contact_header=contact_header, description=description)
-        return msg
+        unique_number = Contact_Email.generate_unique_number()
+        msg = contact_msg_text.format(ticket=unique_number, customer=my_customer, contact_header=contact_header, description=description)
+        message_data = {
+            "msg": msg,
+            "ticket_number": unique_number
+        }
+        return message_data

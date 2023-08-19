@@ -92,8 +92,8 @@ $(document).ready(function() {
     // Set the initial position of the side nav bar box and animate
     function setSideNavBarBoxPositionAndAnimate(section) {
         const targetMarginLeft = {
-            "#about": '20%',
-            "#about-info": '70%',
+            "#about": '26.75%',
+            "#about-info": '64.25%',
         };
         mobileNavBox.css({
             'margin-left': targetMarginLeft[section],

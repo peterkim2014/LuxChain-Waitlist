@@ -442,7 +442,7 @@
 #about {
     max-width: 100%;
     max-height: max-content;
-    background-image: url("../media/mobileBackgroundAboutInfoIpad3.webp");
+    background-image: url("../media/mobileBackgroundAboutInfoIpad6.webp");
     background-size: cover;
 }
 html{
@@ -471,28 +471,29 @@ html{
                 display: flex;
                 flex-direction: column;
                 /* margin-top: 5%; */
-                z-index: 6;
                 } .mobile-nav-bar-box-container {
                     width: 100%;
                     height: 100%;
                     margin-top: -2%;
+                    z-index: 4;
                 }  .mobile-nav-box {
                     width: 3.7%;
                     height: 38%;
-                    margin-left: 18.2%;
+                    margin-left: 24.2%;
                     margin-top: 9.45%;
                 } .mobile-nav-bar-line {
                     width: 100%;
-                    height: 20%;
+                    height: 34%;
                     margin-top: -15.4%;
                     z-index: 2;
                 } .mobile-nav-bar-links {
-                    margin-top: 1%;
+                    margin-top: 1.4%;
                     display: flex;
                     justify-content: space-evenly;
                     font-size: 0.9em;
                     color: white;
                     gap: 1.3vw;
+                    /* margin-top: 1%; */
                     } .mobile-nav-bar-links > p {
                         display: flex;
             } .mobile-body-intro-about {
@@ -502,6 +503,7 @@ html{
                 justify-content: center;
                 align-items: center;
                 height: 40%;
+                padding-top: 25%;
                 } .mobile-body-intro-about-title {
                     display: flex;
                     width: 80%;
@@ -551,7 +553,7 @@ html{
     margin: 0;
     max-width: 100%;
     height: 2100px;
-    background-image: url("../media/mobileBackgroundAboutInfo.webp");
+    background-image: url("../media/mobileBackgroundAboutInfo1.webp");
     background-size: cover;
 }
 
@@ -566,60 +568,33 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     overscroll-behavior: none;
-    /* } .mobile-header {
-        margin: 0;
-        max-height: 17%;
-        display: flex;
-        flex-direction: column;
-        } .hamburger-icon {
-            width: 6%;
-            height: 17%;
-            margin-top: 10%;
-            margin-left: 7%;
-            } .mobile-nav-bar {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2.85%;
-                } .mobile-nav-box {
-                        width: 3.5%;
-                        height: 25%;
-                        margin-left: 64%;
-                        margin-top: 6.4%;
-                    }.mobile-nav-bar-links {
-                        padding-top: 1%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        font-size: 15px;
-                        color: white;
-                        gap: 1.3vw;
-                        } .mobile-nav-bar-links > p {
-                            display: flex; */
         } .company-information {
             display: flex;
             flex-direction: column;
             width: 100%;
             height: 35%;
-            padding-top: 15%;
+            padding-top: 45%;
             } .company-info-one {
                 display: flex;
                 flex-direction: column;
                 width: 80%;
                 height: 33%;
                 margin-left: 10%;
+
                 } .company-info-one > h2 {
                     color: white;
                     font-size: 25px;
                     /* margin-left: 60%; */
                     text-align: center;
+                    height: 10%;
                     } .company-info-one > p {
                         width: 100%;
                         color: white;
                         font-size: 14px;
                         /* margin-left: 20%; */
                         text-align: center;
-                        margin-top: -3.5%;
+                        margin-top: 3.5%;
+                        height: 22%;
             } .company-info-two {
                 display: flex;
                 flex-direction: column;
@@ -632,13 +607,15 @@ body {
                     font-size: 25px;
                     /* margin-left: 60%; */
                     text-align: center;
+                    height: 10%;
                     } .company-info-two > p {
                         width: 100%;
                         color: white;
                         font-size: 14px;
                         /* margin-left: 20%; */
                         text-align: center;
-                        margin-top: -3.5%;
+                        margin-top: 3.5%;
+                        height: 22%;
             } .company-info-three {
                 display: flex;
                 flex-direction: column;
@@ -651,15 +628,17 @@ body {
                     font-size: 25px;
                     /* margin-left: 60%; */
                     text-align: center;
+                    height: 10%;
                     } .company-info-three > p {
                         width: 100%;
                         color: white;
                         font-size: 14px;
                         /* margin-left: 20%; */
                         text-align: center;
-                        margin-top: -3.5%;
+                        margin-top: 3.5%;
+                        height: 40%;
             } .problem-solution {
-                padding-top: 10%;
+                padding-top: 13.7%;
                 display: flex;
                 width: 80%;
                 height: 30%;
@@ -667,31 +646,40 @@ body {
                 } .problem {
                     display: flex;
                     flex-direction: column;
+                    margin-top: -0.7%;
+                    height: 60%;
                     } .problem > h2 {
                         font-size: 25px;
                         color: white;
                         margin-left: 53%;
+                        height: 20%;
+                        margin-top: 0.7%;
                         } .problem > p {
                             font-size: 14px;
                             color: white;
                             margin-left: 25%;
                             text-align: center;
-                            margin-top: 1.25%;
+                            margin-top: -2.75%;
+                            height: 42%;
                 } .solution {
                     display: flex;
                     flex-direction: column;
-                    margin-top: 8.5%;
+                    margin-top: -8.5%;
+                    height: 30%;
+                    width: 86%;
+                    margin-left: 8.7%;
                     } .solution > h2 {
                         font-size: 25px;
                         color: white;
                         margin-left: 53%;
+                        height: 23%;
                         /* margin-top: 0%; */
                         } .solution > p {
                             font-size: 14px;
                             color: white;
                             margin-left: 25%;
                             text-align: center;
-                            margin-top: 1.25%;
+                            margin-top: 2.75%;
                             }
 }
 @media only screen and (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) and (min-height: 897px) { 

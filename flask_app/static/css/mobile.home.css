@@ -2864,14 +2864,16 @@
                         }
 
     #global-intro {
-        max-width: 100%;
-        max-height: max-content;
-        background-image: url("../media/mobileBackgroundIntro.webp");
+        width: 360px;
+        /* max-height: max-content; */
+        background-image: url("../media/mobileBackgroundIntro1.webp");
         background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin: 0%;
     }
 
     html{
-        overflow-y: scroll;
         overscroll-behavior: none;
     } *, html {
         margin: 0;
@@ -2879,41 +2881,52 @@
         font-family: Garet;
         text-decoration: none;
         } .mobile-header {
-            margin: 0;
-            max-height: 17%;
+            /* margin: 0; */
+            max-height: 13%;
             display: flex;
             flex-direction: column;
+            position: fixed;
+            margin-top: 50;
             } .hamburger-icon {
-                width: 8%;
-                height: 17%;
-                margin-top: 10%;
+                width: 6%;
+                height: 13%;
+                margin-top: 11.4%;
                 margin-left: 7%;
                 } .mobile-nav-bar {
                     width: 100%;
                     height: 40%;
                     display: flex;
                     flex-direction: column;
-                    padding-top: 2.75%;
-                    } .mobile-nav-box {
-                            width: 5%;
-                            height: 32%;
-                            margin-left: 12.75%;
-                            margin-top: 5%;
-                            transition: margin-left 0.5s ease-out;
-                        }.mobile-nav-bar-links {
-                            padding-top: 1%;
+                    margin-top: -10%;
+                    } .mobile-nav-bar-box-container {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: -13.5%;
+                        z-index: 4;
+                    }  .mobile-nav-box {
+                        width: 5.2%;
+                        height: 42%;
+                        margin-left: 12.7%;
+                        margin-top: 22.6%;
+                    } .mobile-nav-bar-line {
+                        width: 100%;
+                        height: 15%;
+                        margin-top: -25.4%;
+                        z-index: 2;
+                    } .mobile-nav-bar-links-preview {
+                        margin-top: 1%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        font-size: 0.8em;
+                        color: black;
+                        gap: 1.3vw;
+                        } .mobile-nav-bar-links > p {
                             display: flex;
-                            justify-content: space-evenly;
-                            font-size: 0.85em;
-                            color: white;
-                            gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
-                                display: flex;
         } .mobile-body-intro {
             display: flex;
             width: 100%;
             height: 40%;
-            margin-top: 30%;
+            padding-top: 60%;
             align-items: center;
             flex-direction: column;
             } .mobile-body-intro-header {
@@ -2923,6 +2936,7 @@
                 align-items: center;
                 width: 100%;
                 height: 40%;
+                /* margin-left: 2%; */
                 } .mobile-body-intro-main {
                     display: flex;
                     width: 100%;
@@ -2930,11 +2944,13 @@
                     gap: 1.3vw;
                     justify-content: center;
                     align-items: center;
+                    margin-left: 3%;
                     } .mobile-body-intro-main-title-logo {
-                        width: 15%;
-                        height: 80%;
+                        width: 13.6%;
+                        height: 76%;
+                        margin-top: -1.3%;
                     } .mobile-body-intro-main > h2 {
-                        font-size: 4em;
+                        font-size: 3.5em;
                         font-family: code light;
                         color: white;
                         transform: scale(1, 0.75);
@@ -2943,9 +2959,10 @@
                         } .mobile-body-intro-header > p {
                             color: white;
                             font-family: garet;
-                            font-size: 1.2em;
-                            margin-right: -1%;
-                            padding-top: 1%;
+                            font-size: 1.05em;
+                            margin-right: -10%;
+                            /* padding-top: 1%; */
+                            margin-top: -2%;
                             height: 30%;
                             width: 80%;
         } .mobile-body-intro-description {
@@ -2966,11 +2983,14 @@
 
     #global-app {
         margin: 0;
-        max-width: max-content;
+        /* max-width: max-content; */
         height: 1500px;
         /* max-height: 100%; */
-        background-image: url("../media/mobileBackgroundAppPreviewBackground.webp");
-        background-size: 100%;
+        background-image: url("../media/mobileBackgroundAppPreview1.webp");
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 360px;
     }
     
     body {
@@ -3019,18 +3039,18 @@
                 width: 100%;
                 height: 12%;
                 justify-content: center;
-                margin-top: 0.7%;
+                margin-top: 33%;
                 /* padding-bottom: 5%; */
                 } .opening-features > p {
                     display: flex;
-                    width: 30%;
+                    width: 50%;
                     height: 10%;
-                    margin-top: -15%;
+                    margin-top: -9%;
                     font-weight: 600;
                     margin-left: 5%;
                     padding-bottom: 2%;
                     } .opening-features-descriptions {
-                        margin-top: 2%;
+                        margin-top: 9%;
                         height: 20%;
                         width: 100%;
                         display: flex;
@@ -3082,11 +3102,11 @@
                 display: flex;
                 width: 100%;
                 height: 6.8%;
-                padding-top: 11%;
+                padding-top: 13%;
                 } .swiping-features-one {
                     display: flex;
                     width: 100%;
-                    height: 78%;
+                    height: 74%;
                     margin-left: -0.5%;
                     } .swiping-features-one-description {
                         display: flex;
@@ -3094,20 +3114,21 @@
                         width: 100%;
                         font-size: 9px;
                         margin-left: -39.5%;
-                        padding-top: 8.1%;
+                        padding-top: 9.5%;
                         font-weight: 600;
                         } .swiping-features-one-description > p {
                             width: 100%;
                             height: 30%;
                             font-size: 8px;
                             font-weight: 300;
+                            margin-top: -67%;
                         }.swiping-features-icon-one {
                             display: flex;
                             width: 100vw;
                 } .swiping-features-two {
                     display: flex;
                     width: 100%;
-                    height: 78%;
+                    height: 74%;
                     margin-left: -2%;
                     } .swiping-features-two-description {
                         display: flex;
@@ -3115,7 +3136,7 @@
                         width: 90%;
                         font-size: 9px;
                         margin-left: -39.5%;
-                        padding-top: 7.9%;
+                        padding-top: 8.8%;
                         font-weight: 600;
                         } .swiping-features-two-description > p {
                             width: 90%;
@@ -3123,13 +3144,14 @@
                             font-size: 8px;
                             font-weight: 300;
                             text-wrap: wrap;
+                            margin-top: -66%;
                         }.swiping-features-icon-two {
                             display: flex;
                             width: 100vw;
                 } .swiping-features-three {
                     display: flex;
                     width: 100%;
-                    height: 78%;
+                    height: 73%;
                     margin-left: -3.5%;
                     } .swiping-features-three-description {
                         display: flex;
@@ -3146,39 +3168,44 @@
                             font-size: 8px;
                             font-weight: 300;
                             text-wrap: wrap;
+                            margin-top: -53%;
                         }.swiping-features-icon-three {
                             display: flex;
                             width: 100vw;
                 } .feature-descriptions {
                     display: flex;
                     flex-direction: column;
-                    gap: 1.8vw;
+                    gap: 2.05vw;
                     /* padding-top: 7.5%; */
-                    margin-top: 10.76%;
+                    margin-top: 12.5%;
+                    height: 10%;
                     } .feature-descriptions > p {
                         color: white;
                         font-size: 8px;
                         text-align: center;
                         height: 10%;
                         margin: 0;
+                        height: 5.57%;
                 } .iphone-features {
                     display: flex;
                     width: 100%;
                     height: 18%;
                     /* padding-left: 1.5%; */
-                    margin-top: 4%;
+                    margin-top: -21%;
                     } .iphone-features-text {
                         display: flex;
                         width: 70%;
                         flex-direction: column;
                         justify-content: center;
                         margin-top: -2%;
+                        height: 27%;
+                        margin-left: 2%;
                         } .iphone-features-text > a {
                             font-size: 7px;
                             margin-left: 62%;
-                            margin-top: -45%;
+                            margin-top: 28%;
                         } .iphone-features-text > p {
-                            padding-top: 9%;
+                            padding-top: 13%;
                             font-size: 7px;
                             margin-left: 66%;
                             /* margin-top: -40%; */
@@ -3189,7 +3216,7 @@
                                 height: 60%;
                                 gap: 10vw;
                                 margin-right: 8%;
-                                margin-top: 10%;
+                                margin-top: 7%;
                                 } .feature-icon-one-components {
                                     display: flex;
                                     flex-direction: column;
@@ -3227,26 +3254,28 @@
                     display: flex;
                     width: 100%;
                     height: 10%;
-                    padding-top: 14%;
+                    padding-top: 6%;
                     } .polkadot-technology-image {
                         width: 38%;
-                        height: 90%;
-                        padding-top: 6%;
+                        height: 85%;
+                        padding-top: 10%;
                         margin-left: 3%;
                         } .polkadot-technology-description{
                             width: 50%;
                             height: 75%;
                             padding-left: 11.5%;
-                            padding-top: 4.9%;
+                            padding-top: 8%;
                             gap: 0.5vw;
                             } .polkadot-technology-description > a {
                                 color: white;
-                                font-size: 0.9em;
+                                font-size: 0.75em;
                                 justify-content: center;
                                 align-items: center;
                                 } .polkadot-technology-description > p {
                                     font-size: 6.5px;
                                     color: white;
+                                    height: 37%;
+                                    /* margin-top:  */
                 } .bank-comparison {
                     display: flex;
                     flex-direction: column;
@@ -3386,7 +3415,7 @@
                             width: 4.5%;
                             height: 30%;
                             margin-left: 75%;
-                            margin-top: 2.25%;
+                            margin-top: 16%;
                         }.mobile-nav-bar-links {
                             padding-top: 1%;
                             display: flex;
@@ -3401,6 +3430,7 @@
                 flex-direction: column;
                 width: 100%;
                 height: 60%;
+                padding-top: 34%;
                 } .waitlist-title {
                     padding-top: 20%;
                     width: 100%;

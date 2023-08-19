@@ -52,6 +52,13 @@ $(document).ready(function() {
         }
     }
 
+    // Function to align mobile nav box based on the hash
+    function alignMobileNavBox() {
+        const currentHash = window.location.hash;
+        animateMobileNavBox(currentHash);
+        setSideNavBarBoxPositionAndAnimate(currentHash);
+    }
+
     // Set the initial position of the side nav bar box and animate
     function setSideNavBarBoxPositionAndAnimate(section) {
         const targetMarginLeft = {
@@ -65,6 +72,9 @@ $(document).ready(function() {
 
         animateMobileNavBox(section);
     }
+
+    // Align mobile nav box on page load and hashchange
+    alignMobileNavBox();
 
     // Animate mobile nav box and position on page load and hashchange
     setSideNavBarBoxPositionAndAnimate(window.location.hash);

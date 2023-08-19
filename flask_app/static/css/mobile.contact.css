@@ -1,3 +1,14 @@
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh; /* 20% of viewport height */
+    background-color: rgba(255, 255, 255, 0.45); /* Adjust the background color and opacity */
+    z-index: 1000; /* Ensure the banner appears above other content */
+}
+
+
 @media screen and (orientation:landscape) {
     body::before {
         content: "Please rotate your device to portrait mode";
@@ -29,9 +40,9 @@
     background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 15px;
     /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-    z-index: 1000; /* Ensures the side nav bar appears above other content */
+    z-index: 1200; /* Ensures the side nav bar appears above other content */
     display: flex; /* Initially hidden */
     flex-direction: column;
     justify-content: space-between;
@@ -239,7 +250,7 @@
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -630,6 +641,7 @@ html{
                 position: fixed;
                 margin-top: 50;
                 /* padding-top: 10%; */
+                z-index: 1100; /* Ensure the banner appears above other content */
                 } .hamburger-icon {
                     width: 6%;
                     height: 13%;
@@ -761,7 +773,7 @@ html{
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -1153,6 +1165,7 @@ body {
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -1305,7 +1318,7 @@ body {
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -1699,11 +1712,14 @@ body {
         flex-direction: column;
         position: fixed;
         /* margin-top: 50; */
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
             margin-top: 11.4%;
             margin-left: 7%;
+            padding: 20px;
+            cursor: pointer;
             } .mobile-nav-bar {
                 width: 100%;
                 height: 40%;
@@ -1854,7 +1870,7 @@ body {
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -2248,6 +2264,7 @@ body {
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -2399,7 +2416,7 @@ body {
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -2793,6 +2810,7 @@ html{
             max-height: 17%;
             display: flex;
             flex-direction: column;
+            z-index: 1100; /* Ensure the banner appears above other content */
             } .hamburger-icon {
                 width: 6%;
                 height: 13%;
@@ -2938,7 +2956,7 @@ html{
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -3330,6 +3348,7 @@ html{
             max-height: 17%;
             display: flex;
             flex-direction: column;
+            z-index: 1100; /* Ensure the banner appears above other content */
             } .hamburger-icon {
                 width: 6%;
                 height: 13%;

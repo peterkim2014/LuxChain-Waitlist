@@ -31,6 +31,8 @@
     height: 20vh; /* 20% of viewport height */
     background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
     z-index: 1000; /* Ensure the banner appears above other content */
+} .small {
+    max-height: 10%; /* Adjust the height as needed */
 }
 
 
@@ -630,6 +632,7 @@
             position: fixed;
             margin-top: 50;
             z-index: 1100; /* Higher z-index value than the banner */
+            transition: max-height 0.3s ease-in-out; /* Add transition */
             } .hamburger-icon {
                 width: 6%;
                 height: 13%;
@@ -1522,6 +1525,7 @@
             flex-direction: column;
             position: fixed;
             margin-top: 50;
+            transition: max-height 0.3s ease-in-out; /* Add transition */
             } .hamburger-icon {
                 width: 6%;
                 height: 13%;
@@ -2186,6 +2190,7 @@
             position: fixed;
             margin-top: 50;
             z-index: 1100; /* Higher z-index value than the banner */
+            transition: max-height 0.3s ease-in-out; /* Add transition */
             } .hamburger-icon {
                 width: 6%;
                 height: 13%;
@@ -3070,6 +3075,7 @@
             display: flex;
             flex-direction: column;
             z-index: 1100; /* Higher z-index value than the banner */
+            transition: max-height 0.3s ease-in-out; /* Add transition */
             } .hamburger-icon {
                 width: 8%;
                 height: 17%;
@@ -3929,6 +3935,7 @@
             display: flex;
             flex-direction: column;
             z-index: 1100; /* Higher z-index value than the banner */
+            transition: max-height 0.3s ease-in-out; /* Add transition */
             } .hamburger-icon {
                 width: 8%;
                 height: 17%;
@@ -4793,6 +4800,7 @@ html{
             display: flex;
             flex-direction: column;
             z-index: 1100; /* Higher z-index value than the banner */
+            transition: max-height 0.3s ease-in-out; /* Add transition */
             } .hamburger-icon {
                 width: 8%;
                 height: 17%;

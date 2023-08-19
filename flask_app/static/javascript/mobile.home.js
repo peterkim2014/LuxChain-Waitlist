@@ -114,9 +114,11 @@ $(document).ready(function() {
             if (currentScrollPos <= opaqueDistance) {
                 // $('.content').addClass('opaque');
                 $('#global-app').addClass('hidden'); // Hide #global-app
+                $('.mobile-header').addClass('small'); // Add the small class
             } else {
                 // $('.content').removeClass('opaque');
                 $('#global-app').removeClass('hidden');
+                $('.mobile-header').removeClass('small'); // Remove the small class
             }
         }
 

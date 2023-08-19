@@ -437,7 +437,7 @@
 #global-contact {
     width: 414px;
     height: 896px;
-    background-image: url("../media/mobileBackgroundContact.webp");
+    background-image: url("../media/mobileBackgroundContact1.webp");
     background-size: cover;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -603,7 +603,7 @@ html{
         #global-faq {
             width: 414px;
             height: 930px;
-            background-image: url("../media/mobileBackgroundFAQ.webp");
+            background-image: url("../media/mobileBackgroundFAQ6.webp");
             background-size: cover;
             overflow-y: hidden;
             overflow-x: hidden;
@@ -942,7 +942,7 @@ html{
 #global-contact {
     max-width: 100%;
     max-height: max-content;
-    background-image: url("../media/mobileBackgroundContact.webp");
+    background-image: url("../media/mobileBackgroundContact1.webp");
     background-size: cover;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -1108,7 +1108,7 @@ html{
 #global-faq {
     width: fit-content;
     max-height: max-content;
-    background-image: url("../media/mobileBackgroundFAQ.webp");
+    background-image: url("../media/mobileBackgroundFAQ6.webp");
     background-size: 100%;
     background-position: cover;
     height: 830px;
@@ -2005,7 +2005,7 @@ body {
 #global-contact {
     max-width: 100%;
     max-height: max-content;
-    background-image: url("../media/mobileBackgroundContact.webp");
+    background-image: url("../media/mobileBackgroundContact1.webp");
     background-size: cover;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -2171,7 +2171,7 @@ html{
 #global-faq {
     width: fit-content;
     max-height: max-content;
-    background-image: url("../media/mobileBackgroundFAQ.webp");
+    background-image: url("../media/mobileBackgroundFAQ6.webp");
     background-size: 100% ;
     background-position: cover;
     /* height: 100vh; */
@@ -2692,7 +2692,7 @@ html{
     #global-faq {
         width: 820px;
         max-height: max-content;
-        background-image: url("../media/mobileBackgroundIpadFAQ.webp");
+        background-image: url("../media/mobileBackgroundIpadFAQ6.webp");
         background-size: cover;
         /* background-position: cover; */
         height: 1180px;
@@ -3230,7 +3230,7 @@ html{
     #global-faq {
         width: fit-content;
         max-height: max-content;
-        background-image: url("../media/mobileBackgroundIpadFAQ.webp");
+        background-image: url("../media/mobileBackgroundIpadFAQ6.webp");
         background-size: 100%;
         background-position: cover;
         height: 1024px;

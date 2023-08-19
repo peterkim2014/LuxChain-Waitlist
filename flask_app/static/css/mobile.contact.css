@@ -3015,7 +3015,7 @@ html{
 #global-contact {
     max-width: 100%;
     max-height: max-content;
-    background-image: url("../media/mobileBackgroundContact.webp");
+    background-image: url("../media/mobileBackgroundContact1.webp");
     background-size: 100% 100%;
     background-position: center center;
     height: 100vh;
@@ -3080,6 +3080,7 @@ html{
             justify-content: center;
             align-items: center;
             height: 40%;
+            padding-top: 25%;
             } .mobile-body-intro-about-title {
                 display: flex;
                 width: 50%;
@@ -3087,8 +3088,9 @@ html{
                 padding-top: 9%;
                 margin-left: 22%;
                 } .mobile-body-intro-about-title-logo {
-                    width: 17%;
-                    height: 75%;
+                    width: 15%;
+                    height: 26%;
+                    margin-top: 5.5%;
                     } .mobile-body-intro-about-title > h2 {
                         margin-left: 2%;
                         font-size: 4em;
@@ -3099,11 +3101,11 @@ html{
                         } .mobile-about-slogan {
                             color: white;
                             font-family: garet;
-                            font-size: 1.05em;
-                            margin-left: 10%;
+                            font-size: 1.17em;
+                            margin-left: 11.7%;
                             /* padding-bottom: %; */
                             height: 100%;
-                            margin-top: -1%;
+                            margin-top: -19%;
             }.contact-content {
                 display: flex;
                 width: 90%;
@@ -3116,7 +3118,7 @@ html{
                     height: 50%;
                     flex-direction: column;
                     gap: 7vw;
-                    margin-top: 20%;
+                    margin-top: -90%;
                     justify-content: center;
                     margin-left: 10%;
                     } .form-name {
@@ -3180,7 +3182,7 @@ html{
     #global-faq {
         width: fit-content;
         max-height: max-content;
-        background-image: url("../media/mobileBackgroundFAQ5.webp");
+        background-image: url("../media/mobileBackgroundIpadFAQ.webp");
         background-size: 100%;
         background-position: cover;
         height: 1024px;
@@ -3197,14 +3199,14 @@ html{
         text-decoration: none;
         overflow-y: scroll;
         overscroll-behavior: none;
-        /* } .mobile-header {
+        } .mobile-header {
             margin: 0;
             max-height: 17%;
             display: flex;
             flex-direction: column;
             } .hamburger-icon {
-                width: 8%;
-                height: 17%;
+                width: 6%;
+                height: 13%;
                 margin-top: 10%;
                 margin-left: 7%;
                 } .mobile-nav-bar {
@@ -3212,71 +3214,78 @@ html{
                     height: 40%;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 4.25%;
+                    margin-top: 1.5%;
                     } .mobile-nav-box {
-                            width: 3.5%;
-                            height: 26%;
-                            margin-left: 65%;
-                            margin-top: 2.85%;
-                        }.mobile-nav-bar-links {
+                            width: 3.2%;
+                            height: 31%;
+                            margin-left: 44.75%;
+                            margin-top: 10%;
+                            z-index: 4;
+                        } .mobile-nav-bar-links-preview {
                             padding-top: 1%;
-                            padding-right: 5%;
                             display: flex;
                             justify-content: space-evenly;
-                            font-size: 0.85em;
+                            font-size: 15px;
                             color: black;
                             gap: 1.3vw;
-                            } .mobile-nav-bar-links > p {
-                                display: flex; */
+                            } .mobile-nav-bar-links-preview > p {
+                                display: flex;
             } .all-questions {
                 display: flex;
                 width: 85%;
                 height: 85%;
                 flex-direction: column;
                 padding-left: 11.3%;
-                margin-top: 39.1%;
+                padding-top: 62%;
                 } .question-one {
                     display: flex;
-                    width: 44%;
+                    width: 45%;
                     flex-direction: column;
                     text-wrap: wrap;
                     } .question-one-header {
                         font-size: 16px;
                         font-weight: 600;
                         margin-top: 0%;
+                        width: 90%;
+                        height: 15%;
                         } .question-one-answer {
                             font-size: 13px;
-                            margin-top: -3%;
+                            margin-top: -2%;
+                            height: 30%;
                 } .question-two {
                     display: flex;
-                    width: 44%;
+                    width: 45%;
                     flex-direction: column;
-                    margin-top: 2%;
+                    margin-top: -40.4%;
                     text-wrap: wrap;
                     } .question-two-header {
                         font-size: 16px;
                         font-weight: 600;
-                        margin-top: 0%;
+                        margin-top: -5%;
+                        height: 15%;
                         } .question-two-answer {
                             font-size: 13px;
-                            margin-top: -3%;
+                            margin-top: -9%;
+                            height: 30%;
                 }.question-three {
                     display: flex;
-                    width: 44%;
+                    width: 45%;
                     flex-direction: column;
-                    margin-top: 5.2%;
+                    margin-top: -43.8%;
                     text-wrap: wrap;
                     } .question-three-header {
                         font-size: 16px;
                         font-weight: 600;
                         margin-top: 0%;
+                        height: 15%;
                         } .question-three-answer {
                             font-size: 13px;
-                            margin-top: -3%;
+                            margin-top: -2%;
+                            height: 30%;
                 } .question-four {
-                    margin-top: -88.5%;
+                    margin-top: -133.5%;
                     display: flex;
-                    width: 46%;
+                    width: 45%;
                     flex-direction: column;
                     text-wrap: wrap;
                     margin-left: 55%;
@@ -3284,14 +3293,16 @@ html{
                         font-size: 16px;
                         font-weight: 600;
                         margin-top: 0%;
+                        height: 15%;
                         } .question-four-answer {
                             font-size: 13px;
-                            margin-top: -3%;
+                            margin-top: -8%;
                             /* margin-bottom: 0%; */
+                            height: 30%;
                 } .question-five {
-                    margin-top: 8.5%;
+                    margin-top: -42.7%;
                     display: flex;
-                    width: 44%;
+                    width: 45%;
                     flex-direction: column;
                     text-wrap: wrap;
                     margin-left: 55%;
@@ -3299,13 +3310,15 @@ html{
                         font-size: 16px;
                         font-weight: 600;
                         margin-top: 0%;
+                        height: 15%;
                         } .question-five-answer {
                             font-size: 13px;
-                            margin-top: -3%;
+                            margin-top: -2%;
+                            height: 30%;
                 } .question-six {
-                    margin-top: 1.7%;
+                    margin-top: -40.9%;
                     display: flex;
-                    width: 44%;
+                    width: 47%;
                     flex-direction: column;
                     text-wrap: wrap;
                     margin-left: 55%;
@@ -3313,8 +3326,9 @@ html{
                         font-size: 16px;
                         font-weight: 600;
                         margin-top: 0%;
+                        height: 15%;
                         } .question-six-answer {
                             font-size: 13px;
-                            margin-top: -3%;
+                            margin-top: -6%;
+                            height: 30%;
                         }
-}

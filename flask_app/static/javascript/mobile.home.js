@@ -107,15 +107,15 @@ $(document).ready(function() {
 
         if (currentScrollPos > lastScrollPos) {
             // Scrolling down
-            $('.content').removeClass('opaque');
+            // $('.content').removeClass('opaque');
             $('#global-app').removeClass('hidden'); // Ensure #global-app is visible when scrolling down
         } else {
             // Scrolling up
             if (currentScrollPos <= opaqueDistance) {
-                $('.content').addClass('opaque');
+                // $('.content').addClass('opaque');
                 $('#global-app').addClass('hidden'); // Hide #global-app
             } else {
-                $('.content').removeClass('opaque');
+                // $('.content').removeClass('opaque');
                 $('#global-app').removeClass('hidden');
             }
         }

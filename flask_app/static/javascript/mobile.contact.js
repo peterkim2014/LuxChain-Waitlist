@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 // Function to animate opacity of specific elements
 function animateTextOpacity(targetOpacity) {
     $('#swipe-container').stop(true).animate({
@@ -95,6 +97,12 @@ function setSideNavBarBoxPositionAndAnimate(section) {
                 "#global-contact": '32%',
                 "#global-faq": '70%',
             };
+        } else if (viewportWidth <= 360 && viewportHeight <= 740) {
+            // Add more conditions for other media queries
+            targetMarginLeft = {
+                "#global-contact": '32%',
+                "#global-faq": '70.75%',
+            };
         }
     
     // const targetMarginLeft = {
@@ -167,6 +175,8 @@ hammer.on('swiperight', function() {
     switchSection("global-contact");
 });
 
+
+});
 // Show the correct section based on the initial URL hash
 switchSection(window.location.hash.substring(1) || "global-contact");
 

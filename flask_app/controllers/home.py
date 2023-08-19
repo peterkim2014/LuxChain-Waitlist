@@ -63,6 +63,7 @@ def post_waitlist():
     }
     email_data = {
         "first_name": request.form["first_name"],
+        "last_name": request.form["last_name"],
         "email": request.form["email"],
     }
 

@@ -1,8 +1,10 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask_app.models.info import waitlist_email, waitlist_app_password, waitlist_username
+# from flask_app.models.info import waitlist_email, waitlist_app_password, waitlist_username
+from flask_app.models.info import email, app_password, username
 import random
+
 
 msg_text = """
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -99,7 +101,8 @@ class Email:
                 return unique_number
 
     @staticmethod
-    def send_mail(text, subject, to_emails=None, from_email=None):
+    def send_mail(text, subject, to_emails=None, from_email=None, data=None):
+        from flask_app.models.user import User
         assert isinstance(to_emails, list)
 
         msg = MIMEMultipart("alternative")
@@ -112,24 +115,30 @@ class Email:
 
         msg_str = msg.as_string()
         # login smtp server
-        server = smtplib.SMTP(host="smtp.luxorawallet.io", port=587)
+        server = smtplib.SMTP(host="smtp.gmail.com", port=587)
         server.ehlo()
         server.starttls()
-        print(waitlist_username, waitlist_email, waitlist_app_password)
-        server.login(waitlist_username, waitlist_app_password)
+        print(username, email, app_password)
+        server.login(username, app_password)
         print("logged in")
         server.sendmail(from_email, to_emails, msg_str)
+        # Insert into database
+        User.create(data)
 
         server.quit()
 
     @staticmethod
-    def send(customer, to_email=None):
+    def send(customer, to_email=None, data=None):
+        
         # assert to_email != None
         my_msg = Email.format_text(my_customer=customer)
         subject = "LuxChain waitlist confirmation"
+        # print(my_msg)
+        data["ticket"]= my_msg["ticket_number"]
+        print(data)
         try:
-            print(waitlist_email)
-            Email.send_mail(text=my_msg, subject=subject, to_emails=[to_email], from_email=waitlist_email)
+            print(email)
+            Email.send_mail(text=my_msg["msg"], subject=subject, to_emails=[to_email], from_email=email, data=data)
             sent = True
         except:
             sent = False
@@ -142,4 +151,8 @@ class Email:
     def format_text(my_customer):
         unique_number = Email.generate_unique_number() 
         msg = msg_text.format(number=unique_number, customer=my_customer)
-        return msg
+        message_data = {
+            "msg": msg,
+            "ticket_number": unique_number
+        }
+        return message_data

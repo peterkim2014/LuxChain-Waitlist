@@ -23,7 +23,7 @@ contact_msg_text = """
         <td align="center" style="word-break: break-word; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
           <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; margin: 0; padding: 0;">
             <tr>
-              <td class="email-masthead" style="word-break: break-word; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 25px 0; vertical-align: center;" align="center">
+              <td class="email-masthead" style="word-break: break-word; font-family: &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 25px 0;" align="center">
                 <img width="80" height="80" src="https://i.imgur.com/YcnIiOy.png" alt="Contact Picture">
                 <a class="f-fallback email-masthead_name" style="color: #A8AAAF; font-size: 24px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
 

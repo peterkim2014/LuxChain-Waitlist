@@ -37,6 +37,42 @@ $(document).ready(function() {
         }
     });
     
+    // Animate the mobile nav box and position
+    const mobileNavBox = $('.mobile-nav-box');
+    const routeMap = {
+        "/#about": "route-about",
+        "/#about-info": "route-about-info",
+    };
+
+    function animateMobileNavBox(route) {
+        const targetClass = routeMap[route];
+        if (targetClass) {
+            mobileNavBox.removeClass("route-about route-about-info");
+            mobileNavBox.addClass(targetClass);
+        }
+    }
+
+    // Set the initial position of the side nav bar box and animate
+    function setSideNavBarBoxPositionAndAnimate(section) {
+        const targetMarginLeft = {
+            "#about": '20%',
+            "#about-info": '70%',
+        };
+        mobileNavBox.css({
+            'margin-left': targetMarginLeft[section],
+            'transition': 'margin-left 0.5s ease-in-out' // Add smooth transition
+        });
+
+        animateMobileNavBox(section);
+    }
+
+    // Animate mobile nav box and position on page load and hashchange
+    setSideNavBarBoxPositionAndAnimate(window.location.hash);
+
+    $(window).on('hashchange', function() {
+        setSideNavBarBoxPositionAndAnimate(window.location.hash);
+    });
+
     $('.hamburger-icon').on('click', function() {
         // Slide the side nav bar in
         $('.side-nav-bar').css('transform', 'translateX(0)');

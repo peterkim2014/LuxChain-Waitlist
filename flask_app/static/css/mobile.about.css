@@ -1,3 +1,20 @@
+/* Class to make content opaque */
+.opaque {
+    opacity: 0.1; /* Opacity value */
+    transition: opacity 0.1s ease; /* Transition effect */
+} .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22vh; /* 20% of viewport height */
+    background-color: rgba(0, 0, 0, 0.450); /* Adjust the background color and opacity */
+    z-index: 1000; /* Ensure the banner appears above other content */
+} .small {
+    max-height: 10%; /* Adjust the height as needed */
+}
+
+
 @media screen and (orientation:landscape) {
     body::before {
         content: "Please rotate your device to portrait mode";
@@ -32,7 +49,7 @@
     background-repeat: no-repeat;
     padding: 10px;
     /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-    z-index: 1000; /* Ensures the side nav bar appears above other content */
+    z-index: 1200; /* Ensures the side nav bar appears above other content */
     display: flex; /* Initially hidden */
     flex-direction: column;
     justify-content: space-between;
@@ -241,7 +258,7 @@
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -460,6 +477,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -696,7 +714,7 @@ body {
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -915,6 +933,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -1160,6 +1179,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -1401,6 +1421,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -1649,7 +1670,7 @@ body {
         background-repeat: no-repeat;
         padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1000; /* Ensures the side nav bar appears above other content */
+        z-index: 1200; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -1866,6 +1887,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -2123,6 +2145,7 @@ body {
                 flex-direction: column;
                 position: fixed;
                 margin-top: 50;
+                z-index: 1100; /* Ensure the banner appears above other content */
                 } .hamburger-icon {
                     width: 6%;
                     height: 13%;

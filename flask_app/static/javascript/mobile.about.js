@@ -21,6 +21,36 @@ $(document).ready(function() {
         switchSection(window.location.hash.substring(1));
     });
 
+    // Track scroll position
+    let lastScrollPos = 0;
+    const opaqueDistance = window.innerHeight * 0.2; // 20% of the viewport height
+
+    // Function to handle scroll and opacity animation
+    function handleScroll() {
+        const currentScrollPos = window.scrollY;
+
+        if (currentScrollPos > lastScrollPos) {
+            // Scrolling down
+            // $('.content').removeClass('opaque');
+            $('#about-info').removeClass('hidden'); // Ensure #about-info is visible when scrolling down
+        } else {
+            // Scrolling up
+            if (currentScrollPos <= opaqueDistance) {
+                // $('.content').addClass('opaque');
+                $('#about-info').addClass('hidden'); // Hide #about-info
+                $('.mobile-header').addClass('small'); // Add the small class
+            } else {
+                // $('.content').removeClass('opaque');
+                $('#about-info').removeClass('hidden');
+                $('.mobile-header').removeClass('small'); // Remove the small class
+            }
+        }
+
+        lastScrollPos = currentScrollPos;
+    }
+    // Attach scroll event listener
+    $(window).on('scroll', handleScroll);
+
     // Set the initial opacity of the swipe container to 1
     $('#swipe-container').css('opacity', '0');
 

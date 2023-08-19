@@ -773,7 +773,7 @@
                         width: 80vw;
                         font-size: 1.25em;
                         margin-left: -38.5%;
-                        margin-top: 12.5%;
+                        margin-top: 11.5%;
                         } .swiping-features-two-description > a {
                             font-size: 18px;
                             font-weight: 600;
@@ -790,21 +790,21 @@
                     display: flex;
                     width: 100%;
                     height: 78%;
-                    margin-left: -1%;
+                    margin-left: -1.6%;
                     margin-top: -1%;
                     } .swiping-features-three-description {
                         display: flex;
                         flex-direction: column;
                         width: 80vw;
                         font-size: 1.25em;
-                        margin-left: -40.5%;
+                        margin-left: -39.5%;
                         margin-top: 12%;
                         } .swiping-features-three-description > a {
                             font-size: 18px;
                             font-weight: 600;
                             margin-top: -12%;
                         } .swiping-features-three-description > p {
-                            width: 95%;
+                            width: 90%;
                             height: 30%;
                             font-size: 15px;
                             margin-top: -51%;

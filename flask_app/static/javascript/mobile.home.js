@@ -17,8 +17,15 @@ $(document).ready(function() {
         if (dynamicLoad) {
             // Hide all sections
             $(".dynamicLoad").hide();
-            // Show the selected section
-            $(`#${dynamicLoad}`).show();
+            
+            // Show the selected section with a fade-in animation
+            $(`#${dynamicLoad}`).show().addClass('fade-in');
+            
+            // Remove the fade-in class after the animation is done
+            setTimeout(() => {
+                $(`#${dynamicLoad}`).removeClass('fade-in');
+            }, 500);
+            
             // Update the URL hash
             window.location.hash = dynamicLoad;
         }
@@ -98,17 +105,24 @@ $(document).ready(function() {
             // Add more conditions for other media queries
             targetMarginLeft = {
                 "#global-intro": '13%',
-                "#global-app": '42%',
-                "#global-waitlist": '75%',
+                "#global-app": '40.75%',
+                "#global-waitlist": '75.5%',
             };
         } else if (viewportWidth >= 391 && viewportWidth <= 414 && viewportHeight >= 845 && viewportHeight <= 896) {
             // Add more conditions for other media queries
             targetMarginLeft = {
-                "#global-intro": '14%',
+                "#global-intro": '13.25%',
                 "#global-app": '42%',
                 "#global-waitlist": '75%',
             };
-        }
+        } else if (viewportWidth <= 360 && viewportHeight <= 740) {
+            // Add more conditions for other media queries
+            targetMarginLeft = {
+                "#global-intro": '12.75%',
+                "#global-app": '42%',
+                "#global-waitlist": '75%',
+            };
+        } 
 
         mobileNavBox.css({
             'margin-left': targetMarginLeft[section],

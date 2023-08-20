@@ -121,7 +121,7 @@ $(document).ready(function() {
         } else if (viewportWidth >= 415 && viewportWidth <= 768 && viewportHeight >= 897 && viewportHeight <= 1024) {
             // Add more conditions for other media queries
             targetMarginLeft = {
-                "#about": '25%',
+                "#about": '26.5%',
                 "#about-info": '65%',
             };
         } else if (viewportWidth >= 361 && viewportWidth <= 390 && viewportHeight >= 741 && viewportHeight <= 844) {

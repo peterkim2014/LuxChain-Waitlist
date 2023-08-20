@@ -250,7 +250,7 @@
         background-repeat: no-repeat;
         padding: 25px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1300; /* Ensures the side nav bar appears above other content */
+        z-index: 1400; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -471,7 +471,6 @@ html{
             margin-top: 50;
             z-index: 1100;
         } .hamburger-icon {
-                z-index: 1100;
                 width: 6%;
                 height: 13%;
                 margin-top: 11.4%;
@@ -3365,7 +3364,8 @@ html{
             margin: 0;
             max-height: 17%;
             display: flex;
-            flex-direction: column;z-index: 1100;
+            flex-direction: column;
+            z-index: 1100;
         } .hamburger-icon {
                 z-index: 1100; /* Ensure the banner appears above other content */
                 width: 6%;

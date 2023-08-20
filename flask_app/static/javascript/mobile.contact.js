@@ -79,7 +79,7 @@ $(document).ready(function() {
                 // Add more conditions for other media queries
                 targetMarginLeft = {
                     "#global-contact": '32%',
-                    "#global-faq": '68%',
+                    "#global-faq": '68.5%',
                 };
             } else if (viewportWidth >= 361 && viewportWidth <= 390 && viewportHeight >= 741 && viewportHeight <= 844) {
                 // Add more conditions for other media queries
@@ -133,7 +133,7 @@ $(document).ready(function() {
     $(window).on("scroll", function() {
         const currentScroll = $(this).scrollTop();
 
-        if (currentScroll > mobileHeaderHeight && currentScroll > previousScroll) {
+        if (currentScroll > (mobileHeaderHeight - 75) && currentScroll > previousScroll) {
             mobileHeader.slideUp(300); // Slide up with animation
         } else if (currentScroll < 50) { // Slide down only at the top of the page
             mobileHeader.slideDown(300); // Slide down with animation

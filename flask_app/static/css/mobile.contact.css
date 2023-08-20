@@ -40,9 +40,9 @@
     background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15px;
+    padding: 25px;
     /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-    z-index: 1200; /* Ensures the side nav bar appears above other content */
+    z-index: 1300; /* Ensures the side nav bar appears above other content */
     display: flex; /* Initially hidden */
     flex-direction: column;
     justify-content: space-between;
@@ -248,9 +248,9 @@
         background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 25px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1200; /* Ensures the side nav bar appears above other content */
+        z-index: 1300; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -469,13 +469,16 @@ html{
             flex-direction: column;
             position: fixed;
             margin-top: 50;
-            } .hamburger-icon {
+            z-index: 1100;
+        } .hamburger-icon {
+                z-index: 1100;
                 width: 6%;
                 height: 13%;
                 margin-top: 11.4%;
                 margin-left: 7%;
                 padding: 20px;
                 cursor: pointer;
+                z-index: 1200;
                 } .mobile-nav-bar {
                     width: 100%;
                     height: 40%;
@@ -641,8 +644,9 @@ html{
                 position: fixed;
                 margin-top: 50;
                 /* padding-top: 10%; */
-                z-index: 1100; /* Ensure the banner appears above other content */
-                } .hamburger-icon {
+                z-index: 1100;
+            } .hamburger-icon {
+                    z-index: 1200; /* Ensure the banner appears above other content */
                     width: 6%;
                     height: 13%;
                     margin-top: 11.4%;
@@ -771,9 +775,9 @@ html{
         background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 25px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1200; /* Ensures the side nav bar appears above other content */
+        z-index: 1300; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -992,6 +996,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100;
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -999,6 +1004,7 @@ html{
             margin-left: 7%;
             padding: 20px;
             cursor: pointer;
+            z-index: 1200;
             } .mobile-nav-bar {
                 width: 100%;
                 height: 40%;
@@ -1165,8 +1171,9 @@ body {
         flex-direction: column;
         position: fixed;
         margin-top: 50;
-        z-index: 1100; /* Ensure the banner appears above other content */
-        } .hamburger-icon {
+        z-index: 1100;
+    } .hamburger-icon {
+            z-index: 1200; /* Ensure the banner appears above other content */
             width: 6%;
             height: 13%;
             margin-top: 11.4%;
@@ -1316,9 +1323,9 @@ body {
         background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 25px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1200; /* Ensures the side nav bar appears above other content */
+        z-index: 1300; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -1537,6 +1544,7 @@ html{
         display: flex;
         flex-direction: column;
         position: fixed;
+        z-index: 1100;
         /* margin-top: 50; */
         } .hamburger-icon {
             width: 6%;
@@ -1545,6 +1553,7 @@ html{
             margin-left: 7%;
             padding: 20px;
             cursor: pointer;
+            z-index: 1200;
             } .mobile-nav-bar {
                 width: 100%;
                 height: 40%;
@@ -1712,8 +1721,9 @@ body {
         flex-direction: column;
         position: fixed;
         /* margin-top: 50; */
-        z-index: 1100; /* Ensure the banner appears above other content */
-        } .hamburger-icon {
+        z-index: 1100;
+    } .hamburger-icon {
+            z-index: 1200; /* Ensure the banner appears above other content */
             width: 6%;
             height: 13%;
             margin-top: 11.4%;
@@ -1868,9 +1878,9 @@ body {
         background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 25px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1200; /* Ensures the side nav bar appears above other content */
+        z-index: 1300; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -2090,6 +2100,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100;
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -2097,6 +2108,7 @@ html{
             margin-left: 7%;
             padding: 20px;
             cursor: pointer;
+            z-index: 1200;
             } .mobile-nav-bar {
                 width: 100%;
                 height: 40%;
@@ -2264,8 +2276,9 @@ body {
         flex-direction: column;
         position: fixed;
         margin-top: 50;
-        z-index: 1100; /* Ensure the banner appears above other content */
-        } .hamburger-icon {
+        z-index: 1100;
+    } .hamburger-icon {
+            z-index: 1200; /* Ensure the banner appears above other content */
             width: 6%;
             height: 13%;
             margin-top: 11.4%;
@@ -2414,9 +2427,9 @@ body {
         background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 25px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1200; /* Ensures the side nav bar appears above other content */
+        z-index: 1300; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -2640,6 +2653,7 @@ html{
         flex-direction: column;
         position: fixed;
         /* margin-top: 30; */
+        z-index: 1100;
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -2647,6 +2661,7 @@ html{
             margin-left: 7%;
             padding: 20px;
             cursor: pointer;
+            z-index: 1200;
             } .mobile-nav-bar {
                 width: 100%;
                 height: 40%;
@@ -2810,8 +2825,9 @@ html{
             max-height: 17%;
             display: flex;
             flex-direction: column;
-            z-index: 1100; /* Ensure the banner appears above other content */
-            } .hamburger-icon {
+            z-index: 1100;
+        } .hamburger-icon {
+                z-index: 1200; /* Ensure the banner appears above other content */
                 width: 6%;
                 height: 13%;
                 margin-top: 10%;
@@ -2954,9 +2970,9 @@ html{
         background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 25px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
-        z-index: 1200; /* Ensures the side nav bar appears above other content */
+        z-index: 1300; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
         flex-direction: column;
         justify-content: space-between;
@@ -3180,6 +3196,7 @@ html{
         flex-direction: column;
         position: fixed;
         margin-top: 50;
+        z-index: 1100;
         } .hamburger-icon {
             width: 6%;
             height: 13%;
@@ -3187,6 +3204,7 @@ html{
             margin-left: 7%;
             padding: 20px;
             cursor: pointer;
+            z-index: 1200;
             } .mobile-nav-bar {
                 width: 100%;
                 height: 40%;
@@ -3347,15 +3365,16 @@ html{
             margin: 0;
             max-height: 17%;
             display: flex;
-            flex-direction: column;
-            z-index: 1100; /* Ensure the banner appears above other content */
-            } .hamburger-icon {
+            flex-direction: column;z-index: 1100;
+        } .hamburger-icon {
+                z-index: 1100; /* Ensure the banner appears above other content */
                 width: 6%;
                 height: 13%;
                 margin-top: 10%;
                 margin-left: 7%;
                 padding: 20px;
                 cursor: pointer;
+                z-index: 1200;
                 } .mobile-nav-bar {
                     width: 100%;
                     height: 40%;

@@ -125,7 +125,13 @@ $(document).ready(function() {
                 "#about": '22%',
                 "#about-info": '65%',
             };
-        }
+        } else if (viewportWidth <= 360 && viewportHeight <= 740) {
+            // Add more conditions for other media queries
+            targetMarginLeft = {
+                "#about": '22%',
+                "#about-info": '65%',
+            };
+        } 
 
         mobileNavBox.css({
             'margin-left': targetMarginLeft[section],

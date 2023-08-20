@@ -3,18 +3,6 @@
     opacity: 0.1; /* Opacity value */
     transition: opacity 0.1s ease; /* Transition effect */
 } 
-/* .banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 24vh; 
-    background-color: rgba(0, 0, 0, 0.450); 
-    z-index: 1000; 
-}  */
-.small {
-    max-height: 10%; /* Adjust the height as needed */
-}
 
 
 @media screen and (orientation:landscape) {
@@ -247,16 +235,6 @@
 } 
 
 @media only screen and (max-width: 820px) and (max-height: 1180px) and (min-width: 769px) and (min-height: 1025px) {
-
-    .banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 20vh; 
-        background-color: rgba(0, 0, 0, 0.450); 
-        z-index: 1000; 
-    } 
 
     .side-nav-bar {
         position: fixed;
@@ -716,17 +694,6 @@ body {
                             }
 }
 @media only screen and (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) and (min-height: 897px) { 
-
-    .banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 24vh; 
-        background-color: rgba(0, 0, 0, 0.450); 
-        z-index: 1000; 
-    } 
-
     .side-nav-bar {
         position: fixed;
         text-align: center;
@@ -1185,16 +1152,6 @@ body {
 
 @media only screen and (max-width: 390px) and (max-height: 844px) and (min-width: 361px) and (min-height: 741px) { 
 
-    .banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 18vh; 
-        background-color: rgba(0, 0, 0, 0.450); 
-        z-index: 1000; 
-    } 
-
 /* Mobile styles */
 #about {
     max-width: 100%;
@@ -1439,16 +1396,6 @@ body {
 }
 
 @media only screen and (max-width: 360px) and (max-height: 740px) { 
-
-    .banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 22vh; 
-        background-color: rgba(0, 0, 0, 0.450); 
-        z-index: 1000; 
-    } 
 
 /* Mobile styles */
 
@@ -1910,16 +1857,6 @@ body {
 
 @media only screen and (max-width: 375px) and (max-height: 667px) and (min-width: 361px) { 
 
-    .banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 24vh; 
-        background-color: rgba(0, 0, 0, 0.450); 
-        z-index: 1000; 
-    } 
-
     .side-nav-bar {
         position: fixed;
         text-align: center;
@@ -2374,16 +2311,6 @@ body {
                 }
 }
 @media only screen and (max-width: 414px) and (max-height: 896px) and (min-width: 391px) and (min-height: 845px) { 
-
-    .banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 24vh; 
-        background-color: rgba(0, 0, 0, 0.450); 
-        z-index: 1000; 
-    } 
 
     #about {
         width: 414px;

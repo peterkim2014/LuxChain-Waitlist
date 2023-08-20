@@ -135,22 +135,13 @@ $(document).ready(function() {
 
         if (currentScroll > mobileHeaderHeight && currentScroll > previousScroll) {
             mobileHeader.slideUp(300); // Slide up with animation
-        } else if (currentScroll < previousScroll) {
+        } else if (currentScroll < 50) { // Slide down only at the top of the page
             mobileHeader.slideDown(300); // Slide down with animation
         }
 
         previousScroll = currentScroll;
     });
 
-    $("#global-app").on("touchmove", function(e) {
-        const currentScroll = $(this).scrollTop();
-
-        if (currentScroll > mobileHeaderHeight) {
-            mobileHeader.css("transform", "translateY(" + -mobileHeaderHeight + "px)");
-        } else {
-            mobileHeader.css("transform", "translateY(0px)");
-        }
-    });
 
 
     $('.hamburger-icon').on('click', function() {

@@ -265,7 +265,21 @@ $(document).ready(function() {
         }
     });
 
+    const mobileHeader = $(".mobile-header");
+    const mobileHeaderHeight = mobileHeader.outerHeight();
+    let previousScroll = 0;
 
+    $(window).on("scroll", function() {
+        const currentScroll = $(this).scrollTop();
+
+        if (currentScroll > mobileHeaderHeight && currentScroll > previousScroll) {
+            mobileHeader.slideUp(300); // Slide up with animation
+        } else if (currentScroll < 50) { // Slide down only at the top of the page
+            mobileHeader.slideDown(300); // Slide down with animation
+        }
+
+        previousScroll = currentScroll;
+    });
 
     $('.hamburger-icon').on('click', function() {
         // Slide the side nav bar in

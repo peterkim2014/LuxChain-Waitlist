@@ -268,13 +268,14 @@ $(document).ready(function() {
     const mobileHeader = $(".mobile-header");
     const mobileHeaderHeight = mobileHeader.outerHeight();
     let previousScroll = 0;
+    const tolerance = 0;
 
     $(window).on("scroll", function() {
         const currentScroll = $(this).scrollTop();
 
-        if (currentScroll > mobileHeaderHeight && currentScroll > previousScroll) {
+        if (currentScroll > (mobileHeaderHeight - 50) && currentScroll > previousScroll) {
             mobileHeader.slideUp(300); // Slide up with animation
-        } else if (currentScroll < 50) { // Slide down only at the top of the page
+        } else if (currentScroll < previousScroll - tolerance) { // Slide down only at the top of the page
             mobileHeader.slideDown(300); // Slide down with animation
         }
 

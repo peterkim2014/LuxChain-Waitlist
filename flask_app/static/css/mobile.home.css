@@ -936,14 +936,14 @@
                         font-weight: 600;
                         font-size: 20px;
                         /* margin-bottom: 10%; */
-                        margin-top: 50%;
+                        /* margin-top: 50%; */
                         /* margin: 0; */
                         height: 5%;
-                        margin-top: 5.8%;
+                        /* margin-top: 5.8%; */
                         } .bank-comparison-icon {
                             height: 1.9%;
                             width: 13%;
-                            margin-top: -11.5%;
+                            margin-top: -7.5%;
                         }.bank-comparison-icon-titles {
                             /* padding-top: 31%; */
                             height: 6%;
@@ -954,26 +954,32 @@
                             margin-left: 10%;
                             /* gap: 7vw; */
                         } .bank-comparison-icon-titles-one {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
                             margin-left: -34%;
+                            margin-top: 2.25%;
                         } .bank-comparison-icon-titles-two {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
                             margin-left: 18%;
+                            margin-top: 2.25%;
+                            text-align: center;
                         } .bank-comparison-icon-titles-three {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 13.3%;
+                            margin-left: 17.25%;
+                            margin-top: 2.25%;
                         } .bank-comparison-icon-titles-four {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
-                            margin-left: 13%;
+                            margin-left: 14.5%;
+                            margin-top: 2.25%;
                         } .bank-comparison-icon-titles-five {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
-                            margin-left: 18%;
+                            margin-left: 22%;
+                            margin-top: 2.25%;
                         }.blockchain-comparison-icon-titles {
                             display: flex;
                             font-size: 14px;
@@ -982,42 +988,47 @@
                             height: 6%;
                             margin-left: -15%;
                         } .blockchain-comparison-icon-titles-one {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
                             margin-left: -9%;
+                            margin-top: 5.5%;
                         } .blockchain-comparison-icon-titles-two {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
-                            margin-left: 19%;
+                            margin-left: 20%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-three {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 13.3%;
+                            margin-left: 15.5%;
+                            margin-top: 1.5%;
                         } .blockchain-comparison-icon-titles-four {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
-                            margin-left: 10%;
+                            margin-left: 16%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-five {
-                            height: 4%;
+                            height: 25%;
                             width: 20%;
-                            margin-left: 10%;
+                            margin-left: 18%;
+                            margin-top: 1.5%;
                         }.blockchain-system {
                             font-weight: 600;
                             font-size: 20px;
                             /* padding-top: 10%; */
                             /* margin: 0; */
                             margin-left: 1%;
-                            margin-top: 24.1%;
+                            margin-top: 26%;
                             height: 5%;
                         } .vs-comparison {
                             /* margin: 0; */
-                            margin-top: -3%;
+                            margin-top: -3.25%;
                             height: 3%;
                         } .blockchain-comparison-icon {
                             height: 2.2%;
                             width: 22%;
-                            margin-top: -11.5%;
+                            margin-top: -7.5%;
                             margin-left: 1%;
                         }
 
@@ -1838,17 +1849,17 @@
                         font-weight: 600;
                         font-size: 20px;
                         /* margin-bottom: 10%; */
-                        margin-top: 5%;
+                        /* margin-top: 5%; */
                         /* margin: 0; */
                         height: 5%;
                         /* margin-top: 7.5%; */
                         } .bank-comparison-icon {
                             height: 2%;
                             width: 13%;
-                            margin-top: -11%;
+                            margin-top: -7.5%;
                         }.bank-comparison-icon-titles {
                             /* padding-top: 31%; */
-                            height: 6%;
+                            height: 5%;
                             margin-top: 32.5%;
                             display: flex;
                             /* justify-content: space-around; */
@@ -1856,26 +1867,31 @@
                             margin-left: 10%;
                             /* gap: 7vw; */
                         } .bank-comparison-icon-titles-one {
-                            height: 4%;
-                            width: 15%;
+                            height: 25%;
+                            width: 20%;
                             margin-left: -29%;
+                            margin-top: 1.5%;
                         } .bank-comparison-icon-titles-two {
-                            height: 4%;
-                            width: 15%;
-                            margin-left: 15%;
+                            height: 25%;
+                            width: 20%;
+                            margin-left: 12%;
+                            margin-top: 1.5%;
                         } .bank-comparison-icon-titles-three {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
                             text-align: center;
                             margin-left: 11.5%;
+                            margin-top: 1.5%;
                         } .bank-comparison-icon-titles-four {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
                             margin-left: 12.5%;
+                            margin-top: 1.5%;
                         } .bank-comparison-icon-titles-five {
-                            height: 4%;
-                            width: 15%;
-                            margin-left: 15%;
+                            height: 25%;
+                            width: 35%;
+                            margin-left: 19.5%;
+                            margin-top: 1.5%;
                         }.blockchain-comparison-icon-titles {
                             display: flex;
                             font-size: 14px;
@@ -1884,42 +1900,47 @@
                             height: 6%;
                             margin-left: -15%;
                         } .blockchain-comparison-icon-titles-one {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
-                            margin-left: -6%;
+                            margin-left: -5%;
+                            margin-top: 5.5%;
                         } .blockchain-comparison-icon-titles-two {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
                             margin-left: 17%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-three {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.3%;
+                            margin-left: 13.25%;
+                            margin-top: 1.5%;
                         } .blockchain-comparison-icon-titles-four {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
-                            margin-left: 8%;
+                            margin-left: 14.75%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-five {
-                            height: 4%;
+                            height: 25%;
                             width: 20%;
-                            margin-left: 9%;
+                            margin-left: 15.75%;
+                            margin-top: 1.5%;
                         } .blockchain-system {
                             font-weight: 600;
                             font-size: 20px;
                             /* padding-top: 10%; */
                             /* margin: 0; */
                             margin-left: 1%;
-                            margin-top: 23.8%;
+                            margin-top: 24.5%;
                             height: 5%;
                         } .vs-comparison {
                             /* margin: 0; */
-                            margin-top: -3.5%;
+                            margin-top: -1.5%;
                             height: 3%;
                         } .blockchain-comparison-icon {
                             height: 2.1%;
                             width: 20%;
-                            margin-top: -11.5%;
+                            margin-top: -9.5%;
                             margin-left: 1%;
                         }
 
@@ -2513,14 +2534,14 @@
                         font-weight: 600;
                         font-size: 12px;
                         /* margin-bottom: 10%; */
-                        margin-top: 6%;
+                        /* margin-top: 6%; */
                         /* margin: 0; */
                         height: 5%;
-                        margin-top: 4.5%;
+                        margin-top: 5.5%;
                         } .bank-comparison-icon {
                             height: 3.2%;
                             width: 13%;
-                            margin-top: -7%;
+                            margin-top: -2.5%;
                         }.bank-comparison-icon-titles {
                             /* padding-top: 31%; */
                             height: 6%;
@@ -2533,24 +2554,29 @@
                         } .bank-comparison-icon-titles-one {
                             height: 4%;
                             width: 15%;
-                            margin-left: -26%;
+                            margin-left: -26.5%;
+                            margin-top: 2.5%;
                         } .bank-comparison-icon-titles-two {
                             height: 4%;
                             width: 15%;
-                            margin-left: 15%;
+                            margin-left: 15.5%;
+                            margin-top: 2.5%;
                         } .bank-comparison-icon-titles-three {
                             height: 4%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.5%;
+                            margin-left: 15.75%;
+                            margin-top: 2.5%;
                         } .bank-comparison-icon-titles-four {
                             height: 4%;
                             width: 25%;
-                            margin-left: 11.5%;
+                            margin-left: 13%;
+                            margin-top: 2.5%;
                         } .bank-comparison-icon-titles-five {
                             height: 4%;
                             width: 15%;
-                            margin-left: 17%;
+                            margin-left: 20%;
+                            margin-top: 2.5%;
                         }.blockchain-comparison-icon-titles {
                             display: flex;
                             font-size: 7px;
@@ -2562,23 +2588,28 @@
                             height: 4%;
                             width: 15%;
                             margin-left: -6%;
+                            margin-top: 5.5%;
                         } .blockchain-comparison-icon-titles-two {
                             height: 4%;
                             width: 15%;
                             margin-left: 17%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-three {
                             height: 4%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.3%;
+                            margin-left: 14%;
+                            margin-top: 1.5%;
                         } .blockchain-comparison-icon-titles-four {
                             height: 4%;
                             width: 25%;
-                            margin-left: 8%;
+                            margin-left: 15.75%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-five {
                             height: 4%;
                             width: 20%;
-                            margin-left: 9%;
+                            margin-left: 16%;
+                            margin-top: 1.5%;
                         } .blockchain-system {
                             font-weight: 600;
                             font-size: 12px;
@@ -2589,13 +2620,13 @@
                             height: 5%;
                         } .vs-comparison {
                             /* margin: 0; */
-                            margin-top: 0.8%;
+                            margin-top: 0.5%;
                             height: 3%;
                             font-size: 10px;
                         } .blockchain-comparison-icon {
                             height: 3.4%;
                             width: 22%;
-                            margin-top: -7.5%;
+                            margin-top: -2.5%;
                             margin-left: 1%;
                         }
 
@@ -3401,14 +3432,14 @@
                         font-weight: 600;
                         font-size: 12px;
                         /* margin-bottom: 10%; */
-                        margin-top: 10.8%;
+                        margin-top: 15.5%;
                         /* margin: 0; */
                         height: 5%;
                         /* margin-top: 7%; */
                         } .bank-comparison-icon {
                             height: 2.3%;
                             width: 13%;
-                            margin-top: -10%;
+                            margin-top: -5%;
                         }.bank-comparison-icon-titles {
                             /* padding-top: 31%; */
                             height: 6%;
@@ -3419,26 +3450,31 @@
                             margin-left: 6%;
                             /* gap: 7vw; */
                         } .bank-comparison-icon-titles-one {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
-                            margin-left: -22%;
+                            margin-left: -21.5%;
+                            margin-top: 3%;
                         } .bank-comparison-icon-titles-two {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
-                            margin-left: 13%;
+                            margin-left: 14%;
+                            margin-top: 3%;
                         } .bank-comparison-icon-titles-three {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.5%;
+                            margin-left: 13%;
+                            margin-top: 3%;
                         } .bank-comparison-icon-titles-four {
-                            height: 4%;
+                            height: 25%;
                             width: 25%;
-                            margin-left: 10%;
+                            margin-left: 11.5%;
+                            margin-top: 3%;
                         } .bank-comparison-icon-titles-five {
-                            height: 4%;
+                            height: 25%;
                             width: 15%;
-                            margin-left: 12%;
+                            margin-left: 18%;
+                            margin-top: 3%;
                         }.blockchain-comparison-icon-titles {
                             display: flex;
                             font-size: 7px;
@@ -3450,23 +3486,28 @@
                             height: 4%;
                             width: 15%;
                             margin-left: -3%;
+                            margin-top: 5.5%;
                         } .blockchain-comparison-icon-titles-two {
                             height: 4%;
                             width: 15%;
-                            margin-left: 15%;
+                            margin-left: 16.5%;
+                            margin-top: 2.5%;
                         } .blockchain-comparison-icon-titles-three {
                             height: 4%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 9%;
+                            margin-left: 11.75%;
+                            margin-bottom: 1.75%;
                         } .blockchain-comparison-icon-titles-four {
                             height: 4%;
                             width: 25%;
-                            margin-left: 7%;
+                            margin-left: 12.75%;
+                            margin-top: 2.5%;
                         } .blockchain-comparison-icon-titles-five {
                             height: 4%;
                             width: 20%;
-                            margin-left: 7%;
+                            margin-left: 15%;
+                            margin-bottom: 1.75%;
                         } .blockchain-system {
                             font-weight: 600;
                             font-size: 12px;
@@ -3477,13 +3518,13 @@
                             height: 5%;
                         } .vs-comparison {
                             /* margin: 0; */
-                            margin-top: -4%;
+                            margin-top: -1.5%;
                             height: 3%;
                             font-size: 10px;
                         } .blockchain-comparison-icon {
                             height: 2.2%;
                             width: 20%;
-                            margin-top: -10.5%;
+                            margin-top: -5%;
                             margin-left: 1%;
                         }
 
@@ -4278,14 +4319,14 @@
                         font-weight: 600;
                         font-size: 12px;
                         /* margin-bottom: 10%; */
-                        margin-top: 3%;
+                        /* margin-top: 1.5%; */
                         /* margin: 0; */
                         height: 5%;
                         /* margin-top: 7%; */
                         } .bank-comparison-icon {
                             height: 2.3%;
                             width: 13%;
-                            margin-top: -11%;
+                            margin-top: -7.5%;
                         }.bank-comparison-icon-titles {
                             /* padding-top: 31%; */
                             height: 6%;
@@ -4299,23 +4340,28 @@
                             height: 4%;
                             width: 15%;
                             margin-left: -24%;
+                            margin-top: 0.5%;
                         } .bank-comparison-icon-titles-two {
                             height: 4%;
                             width: 15%;
                             margin-left: 15%;
+                            margin-top: 0.5%;
                         } .bank-comparison-icon-titles-three {
                             height: 4%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.5%;
+                            margin-left: 14.25%;
+                            margin-top: 0.5%;
                         } .bank-comparison-icon-titles-four {
                             height: 4%;
                             width: 25%;
-                            margin-left: 12.5%;
+                            margin-left: 12%;
+                            margin-top: 0.5%;
                         } .bank-comparison-icon-titles-five {
                             height: 4%;
                             width: 15%;
-                            margin-left: 11%;
+                            margin-left: 19%;
+                            margin-top: 0.5%;
                         }.blockchain-comparison-icon-titles {
                             display: flex;
                             font-size: 7px;
@@ -4326,41 +4372,46 @@
                         } .blockchain-comparison-icon-titles-one {
                             height: 4%;
                             width: 15%;
-                            margin-left: -6%;
+                            margin-left: -5%;
+                            margin-top: 9.5%;
                         } .blockchain-comparison-icon-titles-two {
                             height: 4%;
                             width: 15%;
-                            margin-left: 17%;
+                            margin-left: 17.25%;
+                            margin-top: 6.5%;
                         } .blockchain-comparison-icon-titles-three {
                             height: 4%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.3%;
+                            margin-left: 14%;
+                            margin-top: 4.5%;
                         } .blockchain-comparison-icon-titles-four {
                             height: 4%;
                             width: 25%;
-                            margin-left: 8%;
+                            margin-left: 13%;
+                            margin-top: 6.5%;
                         } .blockchain-comparison-icon-titles-five {
                             height: 4%;
                             width: 20%;
-                            margin-left: 9%;
+                            margin-left: 15.5%;
+                            margin-top: 4.5%;
                         } .blockchain-system {
                             font-weight: 600;
                             font-size: 12px;
                             /* padding-top: 10%; */
                             /* margin: 0; */
                             margin-left: 1%;
-                            margin-top: 24.5%;
+                            margin-top: 27.5%;
                             height: 5%;
                         } .vs-comparison {
                             /* margin: 0; */
-                            margin-top: -5%;
+                            margin-top: -5.75%;
                             height: 3%;
                             font-size: 10px;
                         } .blockchain-comparison-icon {
                             height: 2.2%;
                             width: 20%;
-                            margin-top: -11.5%;
+                            margin-top: -5.5%;
                             margin-left: 1%;
                         }
 
@@ -5138,14 +5189,14 @@ html{
                         font-weight: 600;
                         font-size: 12px;
                         /* margin-bottom: 10%; */
-                        margin-top: 6%;
+                        margin-top: 7.5%;
                         /* margin: 0; */
                         height: 5%;
                         /* margin-top: 7%; */
                         } .bank-comparison-icon {
                             height: 3.2%;
                             width: 13%;
-                            margin-top: -7%;
+                            margin-top: -2.5%;
                         }.bank-comparison-icon-titles {
                             /* padding-top: 31%; */
                             height: 6%;
@@ -5158,24 +5209,29 @@ html{
                         } .bank-comparison-icon-titles-one {
                             height: 4%;
                             width: 15%;
-                            margin-left: -26%;
+                            margin-left: -26.75%;
+                            margin-top: 3.5%;
                         } .bank-comparison-icon-titles-two {
                             height: 4%;
                             width: 15%;
-                            margin-left: 15%;
+                            margin-left: 16%;
+                            margin-top: 3.5%;
                         } .bank-comparison-icon-titles-three {
                             height: 4%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.5%;
+                            margin-left: 15.5%;
+                            margin-top: 3.5%;
                         } .bank-comparison-icon-titles-four {
                             height: 4%;
                             width: 25%;
                             margin-left: 12.5%;
+                            margin-top: 3.5%;
                         } .bank-comparison-icon-titles-five {
                             height: 4%;
                             width: 15%;
-                            margin-left: 15%;
+                            margin-left: 20.75%;
+                            margin-top: 3.5%;
                         }.blockchain-comparison-icon-titles {
                             display: flex;
                             font-size: 7.5px;
@@ -5187,40 +5243,43 @@ html{
                             height: 4%;
                             width: 15%;
                             margin-left: -6%;
+                            margin-top: 5.5%;
                         } .blockchain-comparison-icon-titles-two {
                             height: 4%;
                             width: 15%;
-                            margin-left: 17%;
+                            margin-left: 17.5%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-three {
                             height: 4%;
                             width: 25%;
                             text-align: center;
-                            margin-left: 11.3%;
+                            margin-left: 14%;
                         } .blockchain-comparison-icon-titles-four {
                             height: 4%;
                             width: 25%;
-                            margin-left: 8%;
+                            margin-left: 14.5%;
+                            margin-top: 3.5%;
                         } .blockchain-comparison-icon-titles-five {
                             height: 4%;
                             width: 20%;
-                            margin-left: 9%;
+                            margin-left: 16.5%;
                         } .blockchain-system {
                             font-weight: 600;
                             font-size: 12px;
                             /* padding-top: 10%; */
                             /* margin: 0; */
                             margin-left: 1%;
-                            margin-top: 28.2%;
+                            margin-top: 30%;
                             height: 5%;
                         } .vs-comparison {
                             /* margin: 0; */
-                            margin-top: 2%;
+                            margin-top: 1.8%;
                             height: 3%;
                             font-size: 10px;
                         } .blockchain-comparison-icon {
                             height: 3.4%;
                             width: 22%;
-                            margin-top: -7.5%;
+                            margin-top: -2.5%;
                             margin-left: 1%;
                         }
 

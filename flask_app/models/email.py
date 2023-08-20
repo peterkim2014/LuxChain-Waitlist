@@ -110,13 +110,13 @@ class Email:
         msg["From"] = from_email
         msg["To"] = " ,".join(to_emails)
         msg["Subject"] = subject
-
         text_body = MIMEText(text, "html")
         msg.attach(text_body)
 
         msg_str = msg.as_string()
         # login smtp server
-        server = smtplib.SMTP(host="smtp.gmail.com", port=587)
+        server = smtplib.SMTP(host="smtp.luxorawallet.io", port=587)
+        print(server)
         server.ehlo()
         server.starttls()
         print(username, email, app_password)
@@ -140,8 +140,10 @@ class Email:
         try:
             print(email)
             Email.send_mail(text=my_msg["msg"], subject=subject, to_emails=[to_email], from_email=email, data=data)
+            print("SMTP Connection Established")
             sent = True
         except:
+            print("SMTP Connection Not Connected")
             sent = False
 
         print(sent)

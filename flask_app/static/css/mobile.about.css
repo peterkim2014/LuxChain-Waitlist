@@ -2339,8 +2339,8 @@ body {
                 z-index: 1100; /* Ensure the banner appears above other content */
             } .hamburger-icon {
                     z-index: 1200; /* Ensure the banner appears above other content */
-                    width: 6%;
-                    height: 13%;
+                    width: 7.7%;
+                    height: 15%;
                     margin-top: 11.4%;
                     margin-left: 7%;
                     padding: 20px;
@@ -2355,7 +2355,7 @@ body {
                         } .mobile-nav-bar-box-container {
                             width: 100%;
                             height: 100%;
-                            margin-top: -2%;
+                            margin-top: -10.5%;
                             z-index: 4;
                         }  .mobile-nav-box {
                             width: 4.7%;

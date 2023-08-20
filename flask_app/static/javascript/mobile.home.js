@@ -268,7 +268,6 @@ $(document).ready(function() {
     const mobileHeader = $(".mobile-header");
     const mobileHeaderHeight = mobileHeader.outerHeight();
     let previousScroll = 0;
-    const tolerance = 80; // Adjust this value to initiate slideDown sooner or later
     const threshold = 20; // Adjust this value to control when the header slides down on scrolling down
 
     $(window).on("scroll", function() {
@@ -276,7 +275,7 @@ $(document).ready(function() {
 
         if (currentScroll > (mobileHeaderHeight - 50) && currentScroll > previousScroll) {
             mobileHeader.slideUp(300); // Slide up with animation
-        } else if ((currentScroll < previousScroll - tolerance) || (currentScroll <= threshold)) { // Slide down when scrolling up or when close to the top of the page
+        } else if (currentScroll <= threshold) { // Slide down only when close to the top of the page
             mobileHeader.slideDown(300); // Slide down with animation
         }
 

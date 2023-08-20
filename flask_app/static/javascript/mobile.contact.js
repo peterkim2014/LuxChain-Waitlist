@@ -11,8 +11,15 @@ $(document).ready(function() {
         if (dynamicLoad) {
             // Hide all sections
             $(".dynamicLoad").hide();
-            // Show the selected section
-            $(`#${dynamicLoad}`).show();
+            
+            // Show the selected section with a fade-in animation
+            $(`#${dynamicLoad}`).show().addClass('fade-in');
+            
+            // Remove the fade-in class after the animation is done
+            setTimeout(() => {
+                $(`#${dynamicLoad}`).removeClass('fade-in');
+            }, 500);
+            
             // Update the URL hash
             window.location.hash = dynamicLoad;
         }
@@ -73,7 +80,7 @@ $(document).ready(function() {
             if (viewportWidth >= 769 && viewportWidth <= 820 && viewportHeight >= 1025 && viewportHeight <= 1180) {
                 targetMarginLeft = {
                     "#global-contact": '32%',
-                    "#global-faq": '68%',
+                    "#global-faq": '68.5%',
                 };
             } else if (viewportWidth >= 415 && viewportWidth <= 768 && viewportHeight >= 897 && viewportHeight <= 1024) {
                 // Add more conditions for other media queries
@@ -85,12 +92,12 @@ $(document).ready(function() {
                 // Add more conditions for other media queries
                 targetMarginLeft = {
                     "#global-contact": '32%',
-                    "#global-faq": '70%',
+                    "#global-faq": '70.5%',
                 };
             } else if (viewportWidth >= 361 && viewportWidth <= 375 && viewportHeight >= 667 && viewportHeight <= 896) {
                 // Add more conditions for other media queries
                 targetMarginLeft = {
-                    "#global-contact": '30%',
+                    "#global-contact": '31%',
                     "#global-faq": '71%',
                 };
             } else if (viewportWidth >= 391 && viewportWidth <= 414 && viewportHeight >= 845 && viewportHeight <= 896) {

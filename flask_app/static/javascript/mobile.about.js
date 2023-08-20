@@ -9,8 +9,15 @@ $(document).ready(function() {
         if (dynamicLoad) {
             // Hide all sections
             $(".dynamicLoad").hide();
-            // Show the selected section
-            $(`#${dynamicLoad}`).show();
+            
+            // Show the selected section with a fade-in animation
+            $(`#${dynamicLoad}`).show().addClass('fade-in');
+            
+            // Remove the fade-in class after the animation is done
+            setTimeout(() => {
+                $(`#${dynamicLoad}`).removeClass('fade-in');
+            }, 500);
+            
             // Update the URL hash
             window.location.hash = dynamicLoad;
         }
@@ -127,8 +134,8 @@ $(document).ready(function() {
         } else if (viewportWidth >= 361 && viewportWidth <= 390 && viewportHeight >= 741 && viewportHeight <= 844) {
             // Add more conditions for other media queries
             targetMarginLeft = {
-                "#about": '22%',
-                "#about-info": '66%',
+                "#about": '21.75%',
+                "#about-info": '63%',
             };
         } else if (viewportWidth >= 361 && viewportWidth <= 375 && viewportHeight >= 667 && viewportHeight <= 896) {
             // Add more conditions for other media queries
@@ -146,7 +153,7 @@ $(document).ready(function() {
             // Add more conditions for other media queries
             targetMarginLeft = {
                 "#about": '22%',
-                "#about-info": '65%',
+                "#about-info": '63%',
             };
         } 
 

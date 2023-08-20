@@ -1190,20 +1190,11 @@ body {
         flex-direction: column;
         position: fixed;
         margin-top: 50;
-<<<<<<< HEAD
         z-index: 1100; /* Ensure the banner appears above other content */
         } .hamburger-icon {
             width: 7.5%;
             height: 15%;
             margin-top: 8.4%;
-=======
-        z-index: 1100;
-    } .hamburger-icon {
-            z-index: 1200; /* Ensure the banner appears above other content */
-            width: 6%;
-            height: 13%;
-            margin-top: 11.4%;
->>>>>>> f570bbe9cd7aff1b2e6ba7fb91f71d273d0dc3a8
             margin-left: 7%;
             padding: 20px;
             cursor: pointer;
@@ -2872,6 +2863,215 @@ html{
         /* overflow-y: hidden; */
     }
 
+    .side-nav-bar {
+        position: fixed;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 100%;
+        background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+        /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
+        z-index: 1300; /* Ensures the side nav bar appears above other content */
+        display: flex; /* Initially hidden */
+        flex-direction: column;
+        justify-content: space-between;
+        transform: translateX(-100%); /* Move it off the screen */
+        transition: transform 0.5s ease-in-out; /* Animation */
+        }.hamburger-return {
+            height: 3%;
+            width: 13.7%;
+            margin-top: 15%;
+            margin-left: 70%;
+            } .side-nav-links {
+                display: flex;
+                flex-direction: column;
+                height: 54%;
+                width: 100%;
+                padding-bottom: 93.5%;
+        } .nav-links {
+            display: flex;
+            flex-direction: column;
+            height: 26.5%;
+            } .head-links {
+                display: flex;
+                justify-content: space-around;
+                height: 25%;
+                } .head-links > img {
+                    height: 100%;
+                    width: 20%;
+                    } .head-links > a {
+                        height: 100%;
+                        width: 75%;
+            } .nav-sub-links {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                width: 100%;
+                padding-bottom: 180.5%;
+                } .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                    height: 26.5%;
+                    } .head-links {
+                        display: flex;
+                        justify-content: space-around;
+                        height: 25%;
+                        } .head-links > img {
+                            height: 100%;
+                            width: 20%;
+                            } .head-links > a {
+                                height: 100%;
+                                width: 75%;
+                                color: white;
+                                text-decoration: none;
+                    } .nav-sub-links {
+                        display: flex;
+                        flex-direction: column;
+                        height: 60%;
+                        padding-bottom: 150.5%;
+                        width: 100%;
+                        } .nav-link-one {
+                            display: flex;
+                            flex-direction: column;
+                            height: 80%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: -2%;
+                            } .head-link-one {
+                                display: flex;
+                                width: 100%;
+                                height: 30%;
+                                } .head-link-one > img {
+                                    margin-left: 2%;
+                                    height: 51%;
+                                    width: 10%;
+                                    padding-right: 5%;
+                                    margin-top: 3.5%;
+                                    } .head-link-one > a {
+                                        font-weight: 500;
+                                        font-size: 30px;
+                                        margin-top: 3.5%;
+                                        height: 50%;
+                                        width: 40%;
+                                        color: white;
+                                        margin-left: -2%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-one {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 50%;
+                                            margin-top: 1%;
+                                            gap: 3.2vw;
+                                            justify-content: start;
+                                            margin-left: -5%;
+                                            } .nav-sub-link-one > a {
+                                                height: 100%;
+                                                font-size: 18.5px;
+                                                color: white;
+                                                text-decoration: none;
+                        } .nav-link-two {
+                            display: flex;
+                            flex-direction: column;
+                            height: 30%;
+                            width: 100%;
+                            padding-left: 7%;
+                            margin-top: 23.5%;
+                            } .head-link-two {
+                                display: flex;
+                                width: 100%;
+                                height: 70%;
+                                margin-top: -9%;
+                                } .head-link-two > img {
+                                    margin-top: -8.5%;
+                                    height: 60%;
+                                    width: 12.1%;
+                                    padding-right: 6%;
+                                    } .head-link-two > a {
+                                        font-weight: 100;
+                                        font-size: 30px;
+                                        margin-top: -9%;
+                                        height: 75%;
+                                        width: 40%;
+                                        color: white;
+                                        margin-left: -2%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-two {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 25%;
+                                            margin-top: -8.5%;
+                                            gap: 3.6vw;
+                                            margin-left: -5%;
+                                            justify-content: start;
+                                        } .nav-sub-link-two-one {
+                                                height: 100%;
+                                                font-size: 18.5px;
+                                                color: white;
+                                                text-decoration: none;
+                                                } .nav-sub-link-two-two {
+                                                    height: 100%;
+                                                    font-size: 18.5px;
+                                                    color: white;
+                                                    margin-left: 10.5%;
+                                                    text-decoration: none;
+                        } .nav-link-three {
+                            display: flex;
+                            flex-direction: column;
+                            height: 30%;
+                            width: 100%;
+                            padding-left: 5.5%;
+                            margin-top: 35%;
+                            } .head-link-three {
+                                display: flex;
+                                width: 100%;
+                                height: 70%;
+                                margin-top: -20%;
+                                } .head-link-three > img {
+                                    height: 58%;
+                                    width: 11%;
+                                    padding-right: 6%;
+                                    margin-top: -1.1%;
+                                    margin-left: 1.5%;
+                                    } .head-link-three > a {
+                                        font-weight: 100;
+                                        font-size: 30px;
+                                        margin-top: -1.3%;
+                                        height: 74%;
+                                        width: 60%;
+                                        color: white;
+                                        margin-left: -1%;
+                                        text-decoration: none;
+                                        } .nav-sub-link-three {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            height: 100%;
+                                            padding-top: 4%;
+                                            gap: 3.6vw;
+                                            justify-content: start;
+                                            margin-left: -5%;
+                                            margin-top: -6%;
+                                            } .nav-sub-link-three-one {
+                                                height: 25%;
+                                                font-size: 18.5px;
+                                                color: white;
+                                                margin-left: 3%;
+                                                text-decoration: none;
+                                                } .nav-sub-link-three-two {
+                                                    height: 25%;
+                                                    font-size: 18.5px;
+                                                    color: white;
+                                                    margin-left: -21.5%;
+                                                    text-decoration: none;
+    
+                        }
+
     
     body {
         margin: 0;
@@ -3043,7 +3243,7 @@ html{
         background-image: url("../media/sideNavBarBackgroundMobileOldestSix.webp");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 25px;
+        padding: 10px;
         /* box-shadow: 5px 0 5px rgba(0, 0, 0, 0.7); */
         z-index: 1300; /* Ensures the side nav bar appears above other content */
         display: flex; /* Initially hidden */
@@ -3458,9 +3658,9 @@ html{
                     margin-top: 1.5%;
                     } .mobile-nav-box {
                             width: 3.2%;
-                            height: 31%;
+                            height: 35%;
                             margin-left: 44.75%;
-                            margin-top: 10%;
+                            margin-top: 9.5%;
                             z-index: 4;
                         } .mobile-nav-bar-links-preview {
                             padding-top: 1%;

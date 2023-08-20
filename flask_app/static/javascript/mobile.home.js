@@ -208,6 +208,8 @@ $(document).ready(function() {
     let swipingFeatures = document.querySelectorAll('.swiping-features > div');
     swipingFeatures[0].classList.add('active');
 
+    let intervalId; // Store the interval ID
+
     function switchSwipingFeature() {
         let activeDiv = document.querySelector('.swiping-features > div.active');
         activeDiv.classList.remove('active');
@@ -231,7 +233,33 @@ $(document).ready(function() {
         }
     }
 
-    setInterval(switchSwipingFeature, 3000);
+    function startInterval() {
+        intervalId = setInterval(switchSwipingFeature, 3000);
+    }
+
+    startInterval();
+
+    // Add touch and hold functionality for mobile devices
+    let isHolding = false;
+
+    swipingFeatures.forEach(div => {
+        div.addEventListener('touchstart', () => {
+            isHolding = true;
+            clearInterval(intervalId);
+        });
+
+        div.addEventListener('touchend', () => {
+            isHolding = false;
+            startInterval();
+        });
+
+        div.addEventListener('touchcancel', () => {
+            if (isHolding) {
+                isHolding = false;
+                startInterval();
+            }
+        });
+    });
 
     window.addEventListener("orientationchange", function() {
         if (window.orientation === 90 || window.orientation === -90) {

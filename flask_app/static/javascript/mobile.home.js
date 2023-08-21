@@ -75,6 +75,10 @@ $(document).ready(function() {
     rewardGoldText.classList.add("inactive-rewards")
     rewardSilverNumber.classList.add("inactive-rewards")
     rewardSilverText.classList.add("inactive-rewards")
+    rewardGoldNumberWaitlist.classList.add("inactive-rewards")
+    rewardGoldTextWaitlist.classList.add("inactive-rewards")
+    rewardSilverNumberWaitlist.classList.add("inactive-rewards")
+    rewardSilverTextWaitlist.classList.add("inactive-rewards")
 
     function floatElement(element, amplitude, period, isRotated = false) {
         let start = null;

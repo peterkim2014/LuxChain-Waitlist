@@ -54,14 +54,22 @@ $(document).ready(function() {
 
     const rewardsStepsOne = document.querySelector(".rewards-steps-one");
     const platinumReward = document.querySelector(".platinum-reward");
+    const rewardsStepsOneWaitlist = document.querySelector(".rewards-steps-one-waitlist");
+    const platinumRewardWaitlist = document.querySelector(".platinum-reward-waitlist");
 
     rewardsStepsOne.classList.add("glow-animation");
     platinumReward.classList.add("glow-animation");
+    rewardsStepsOneWaitlist.classList.add("glow-animation");
+    platinumRewardWaitlist.classList.add("glow-animation");
 
     const rewardGoldNumber = document.querySelector(".rewards-steps-two");
     const rewardGoldText = document.querySelector(".gold-reward");
     const rewardSilverNumber = document.querySelector(".rewards-steps-three");
     const rewardSilverText = document.querySelector(".silver-reward");
+    const rewardGoldNumberWaitlist = document.querySelector(".rewards-steps-two-waitlist");
+    const rewardGoldTextWaitlist = document.querySelector(".gold-reward-waitlist");
+    const rewardSilverNumberWaitlist = document.querySelector(".rewards-steps-three-waitlist");
+    const rewardSilverTextWaitlist = document.querySelector(".silver-reward-waitlist");
 
     rewardGoldNumber.classList.add("inactive-rewards")
     rewardGoldText.classList.add("inactive-rewards")

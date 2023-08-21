@@ -49,6 +49,9 @@ $(document).ready(function() {
     // Upon page load, animate the opacity of these text elements to 1.
     animateTextOpacity('1');
 
+
+
+
     const rewardsStepsOne = document.querySelector(".rewards-steps-one");
     const platinumReward = document.querySelector(".platinum-reward");
 
@@ -65,10 +68,31 @@ $(document).ready(function() {
     rewardSilverNumber.classList.add("inactive-rewards")
     rewardSilverText.classList.add("inactive-rewards")
 
-    const rewardsRedirect = document.querySelector(".rewards-redirect");
-        const sliver = document.createElement("div");
-        sliver.className = "sliver";
-        rewardsRedirect.appendChild(sliver);
+    function floatElement(element, amplitude, period, isRotated = false) {
+        let start = null;
+    
+        function animate(timestamp) {
+            if (!start) {
+                start = timestamp;
+            }
+            const progress = (timestamp - start) / period;
+            const xOffset = amplitude * Math.sin(2 * Math.PI * progress);
+            element.style.transform = `translateX(${xOffset}px)` + (isRotated ? ' rotateY(180deg)' : '');
+            requestAnimationFrame(animate);
+        }
+    
+        requestAnimationFrame(animate);
+    }
+    
+    const firstArrow = document.querySelector(".first-rewards-arrow");
+    const lastArrow = document.querySelector(".last-rewards-arrow");
+    
+    floatElement(firstArrow, 2.5, 1500);  // amplitude: 2.5px, period: 1500ms (1.5 seconds)
+    floatElement(lastArrow, -2.5, 1500, true);  // amplitude: -2.5px, period: 1500ms (1.5 seconds), isRotated: true
+    
+
+
+
 
     // Animate the mobile nav box and position
     const mobileNavBox = $('.mobile-nav-box');

@@ -2564,11 +2564,12 @@
                         margin-top: -26.4%;
                         z-index: 2;
                     } .mobile-nav-bar-links {
-                        margin-top: -0.5%;
+                        margin-top: -2.5%;
                         display: flex;
                         justify-content: space-evenly;
                         font-size: 0.9em;
                         color: white;
+                        height: 4%;
                         /* gap: 5vw; */
                         } .mobile-nav-bar-links > p {
                             display: flex;
@@ -2973,21 +2974,22 @@
                         z-index: 4;
                     }  .mobile-nav-box {
                         width: 5%;
-                        height: 45%;
+                        height: 48%;
                         margin-left: 74.7%;
-                        margin-top: 12%;
+                        margin-top: 10.5%;
                     } .mobile-nav-bar-line {
                         width: 100%;
-                        height: 18%;
+                        height: 15%;
                         margin-top: -30.4%;
                         /* z-index: 2; */
                     } .mobile-nav-bar-links-preview {
-                        margin-top: -0.5%;
+                        margin-top: -2.6%;
                         display: flex;
                         justify-content: space-evenly;
                         font-size: 0.9em;
                         color: black;
                         gap: 1.3vw;
+                        height: 4%;
                         } .mobile-nav-bar-links > p {
                             display: flex;
             } .mobile-waitlist-body {

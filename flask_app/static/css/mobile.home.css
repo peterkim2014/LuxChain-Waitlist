@@ -1248,7 +1248,7 @@
                     text-align: center;
                     } .mobile-waitlist-banner {
                         width: 100%;
-                        height: 40%;
+                        height: 50%;
                         /* margin-top: -10%; */
                         /* padding-top: -50%; */
                         } .waitlist-title > a {
@@ -1258,7 +1258,65 @@
                             } .waitlist-title > p {
                                 color: white;
                                 font-size: 12px;
-            } .waitlist-form {
+            }  .intro-rewards-waitlist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 40%;
+                width: 75%;
+                /* margin-top: 10%; */
+                margin-left: 12%;
+                /* margin-top:  */
+                } .rewards-steps-waitlist {
+                    display: flex;
+                    /* flex-direction: column; */
+                    /* align-items: center; */
+                    justify-content: space-between;
+                    width: 51.5%;
+                    height: 39%;
+                    /* gap: 0.6vw; */
+                    margin-left: 4%;
+                    margin-top: -8%;
+                    z-index: 6
+                    } .intro-rewards-waitlist > img {
+                        height: 75%;
+                        width: 58%;
+                        z-index: 4
+                        /* align-items: center; */
+                    } .rewards-steps-one-waitlist {
+                        height: 5%;
+                        width: 7.5%;
+                        align-items: center;
+                    } .rewards-steps-two-waitlist {
+                        height: 5%;
+                        width: 7.5%;
+                        align-items: center;
+                    } .rewards-steps-three-waitlist {
+                        height: 5%;
+                        width: 7.5%;
+                        align-items: center;
+                    } .individual-reward-steps-waitlist {
+                        display: flex;
+                        justify-content: space-between;
+                        text-align: center;
+                        width: 70%;
+                        height: 55%;
+                        gap: 2.5vw;
+                        font-size: 15px;
+                        color: white;
+                        margin-top: 4%;
+                        } .platinum-reward-waitlist {
+                            margin-left: 2.5%;
+                            height: 100%;
+                            width: 30%;
+                        } .gold-reward-waitlist {
+                            height: 100%;
+                            width: 30%;
+                        } .silver-reward-waitlist {
+                            height: 100%;
+                            width: 30%;
+                }.waitlist-form {
                 display: flex;
                 flex-direction: column;
                 width: 80%;
@@ -2238,17 +2296,75 @@
                     text-align: center;
                     } .mobile-waitlist-banner {
                         width: 100%;
-                        height: 50%;
+                        height: 60%;
                         /* padding-top: -50%; */
                         } .waitlist-title > a {
                             color: black;
                             font-size: 32px;
-                            margin-top: -6.5%;
+                            margin-top: -5.9%;
                             } .waitlist-title > p {
                                 color: white;
                                 font-size: 14px;
                                 margin-top: 3%;
-            } .waitlist-form {
+            } .intro-rewards-waitlist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 40%;
+                width: 75%;
+                /* margin-top: 10%; */
+                margin-left: 12%;
+                /* margin-top:  */
+                } .rewards-steps-waitlist {
+                    display: flex;
+                    /* flex-direction: column; */
+                    /* align-items: center; */
+                    justify-content: space-between;
+                    width: 51.5%;
+                    height: 39%;
+                    /* gap: 0.6vw; */
+                    margin-left: 4%;
+                    margin-top: -8%;
+                    z-index: 6
+                    } .intro-rewards-waitlist > img {
+                        height: 75%;
+                        width: 58%;
+                        z-index: 4
+                        /* align-items: center; */
+                    } .rewards-steps-one-waitlist {
+                        height: 5%;
+                        width: 7.5%;
+                        align-items: center;
+                    } .rewards-steps-two-waitlist {
+                        height: 5%;
+                        width: 7.5%;
+                        align-items: center;
+                    } .rewards-steps-three-waitlist {
+                        height: 5%;
+                        width: 7.5%;
+                        align-items: center;
+                    } .individual-reward-steps-waitlist {
+                        display: flex;
+                        justify-content: space-between;
+                        text-align: center;
+                        width: 70%;
+                        height: 55%;
+                        gap: 2.5vw;
+                        font-size: 15px;
+                        color: white;
+                        margin-top: 4%;
+                        } .platinum-reward-waitlist {
+                            margin-left: 2.5%;
+                            height: 100%;
+                            width: 30%;
+                        } .gold-reward-waitlist {
+                            height: 100%;
+                            width: 30%;
+                        } .silver-reward-waitlist {
+                            height: 100%;
+                            width: 30%;
+                } .waitlist-form {
                 display: flex;
                 flex-direction: column;
                 width: 80%;
@@ -3050,7 +3166,7 @@
                     text-align: center;
                     } .mobile-waitlist-banner {
                         width: 100%;
-                        height: 40%;
+                        height: 80%;
                         } .waitlist-title > a {
                             color: black;
                             font-size: 25px;
@@ -3058,6 +3174,71 @@
                             } .waitlist-title > p {
                                 color: white;
                                 font-size: 12px;
+            } .rewards-steps-waitlist {
+                display: flex;
+                /* flex-direction: column; */
+                /* align-items: center; */
+                justify-content: space-between;
+                width: 51.5%;
+                height: 45%;
+                /* gap: 0.6vw; */
+                margin-left: 25.1%;
+                margin-top: -10.6%;
+                z-index: 6;
+                } .intro-rewards-waitlist > img {
+                    height: 33%;
+                    width: 58%;
+                    z-index: 4;
+                    margin-left: 20%;
+                    /* margin-top: -1%; */
+                    /* align-items: center; */
+                } .rewards-steps-one-waitlist {
+                    height: 5%;
+                    width: 7.5%;
+                    align-items: center;
+                    font-size: 12px;
+                    
+                } .rewards-steps-two-waitlist {
+                    height: 5%;
+                    width: 7.5%;
+                    font-size: 12px;
+                    align-items: center;
+                } .rewards-steps-three-waitlist {
+                    height: 5%;
+                    width: 7.5%;
+                    font-size: 12px;
+                    align-items: center;
+                    /* margin-left: -1%; */
+                } .individual-reward-steps-waitlist {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 70%;
+                    height: 30%;
+                    gap: 3vw;
+                    font-size: 11px;
+                    color: white;
+                    margin-top: -7%;
+                    margin-left: 14%;
+                    /* padding-top: 3%; */
+                    } .platinum-reward-waitlist {
+                        margin-left: 2.5%;
+                        height: 100%;
+                        width: 30%;
+                        /* margin-top: -1%; */
+                        font-size: 10.5px;
+                    } .gold-reward-waitlist {
+                        height: 100%;
+                        width: 30%;
+                        /* margin-top: -1%; */
+                        font-size: 10.5px;
+                        opacity: 60%;
+                    } .silver-reward-waitlist {
+                        height: 100%;
+                        width: 30%;
+                        /* margin-top: -1%; */
+                        font-size: 10.5px;
+                        opacity: 60%;
             } .waitlist-form {
                 display: flex;
                 flex-direction: column;

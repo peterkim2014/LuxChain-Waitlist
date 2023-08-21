@@ -89,8 +89,6 @@ $(document).ready(function() {
         }
     });
 
-
-    
     // Animate the mobile nav box and position
     const mobileNavBox = $('.mobile-nav-box');
     const routeMap = {

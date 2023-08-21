@@ -49,7 +49,26 @@ $(document).ready(function() {
     // Upon page load, animate the opacity of these text elements to 1.
     animateTextOpacity('1');
 
+    const rewardsStepsOne = document.querySelector(".rewards-steps-one");
+    const platinumReward = document.querySelector(".platinum-reward");
 
+    rewardsStepsOne.classList.add("glow-animation");
+    platinumReward.classList.add("glow-animation");
+
+    const rewardGoldNumber = document.querySelector(".rewards-steps-two");
+    const rewardGoldText = document.querySelector(".gold-reward");
+    const rewardSilverNumber = document.querySelector(".rewards-steps-three");
+    const rewardSilverText = document.querySelector(".silver-reward");
+
+    rewardGoldNumber.classList.add("inactive-rewards")
+    rewardGoldText.classList.add("inactive-rewards")
+    rewardSilverNumber.classList.add("inactive-rewards")
+    rewardSilverText.classList.add("inactive-rewards")
+
+    const rewardsRedirect = document.querySelector(".rewards-redirect");
+        const sliver = document.createElement("div");
+        sliver.className = "sliver";
+        rewardsRedirect.appendChild(sliver);
 
     // Animate the mobile nav box and position
     const mobileNavBox = $('.mobile-nav-box');

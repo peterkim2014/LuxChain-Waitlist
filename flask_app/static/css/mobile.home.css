@@ -26,7 +26,49 @@
 } .fade-in {
     animation-name: fadeIn;
     animation-duration: 0.4s;
-  }
+} .glow-animation {
+    animation: glow 1s infinite alternate;
+} .inactive-rewards {
+    opacity: 0.55;
+} .rewards-redirect a, .rewards-redirect img {
+    /* position: relative; */
+    z-index: 1;
+}
+.rewards-redirect a, .rewards-redirect img {
+    position: relative;
+}
+.rewards-redirect a {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 60%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    animation: shine 4s infinite linear;
+    position: relative;
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes shine {
+    0% {
+        background-position: 300%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
   
   @keyframes fadeIn {
     from {

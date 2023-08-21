@@ -592,7 +592,7 @@
         } .mobile-body-intro-description {
             display: flex;
             flex-direction: column;
-            height: 40%;
+            height: 45%;
             margin-left: 2%;
             } .mobile-body-intro-description-one {
                 display: flex;
@@ -605,7 +605,62 @@
                     color: white;
                     padding-bottom: 37%;
                     font-size: 17px;
+
+
+
+
+        /* The Join Waitlist Membership Feature */
+        } .intro-rewards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 40%;
+            width: 75%;
+            } .rewards-steps {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 37.5%;
+                } .rewards-steps > img {
+                    height: 100%;
+                    width: 60%;
+                } .individual-reward-steps {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 70%;
+                    height: 30%;
+                    } .platinum-reward {
+                        margin-left: 2.5%;
+                    } .gold-reward {
+                    } .silver-reward {
+            } .rewards-redirect {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 35%;
+                width: 75%;
+                margin-top: 15%;
+                } .first-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                } .rewards-redirect > a {
+                    height: 37.5%;
+                    width: 70%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                } .last-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                    transform: rotateY(180deg);
                 }
+
+
+
 
     #global-app {
         margin: 0;
@@ -1195,6 +1250,8 @@
 @media only screen and (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) and (min-height: 897px) { 
 
 
+
+
     .side-nav-bar {
         position: fixed;
         text-align: center;
@@ -1473,8 +1530,8 @@
         } .mobile-body-intro {
             display: flex;
             width: 100%;
-            height: 40%;
-            padding-top: 50%;
+            height: 55%;
+            padding-top: 45%;
             align-items: center;
             flex-direction: column;
             } .mobile-body-intro-header {
@@ -1520,7 +1577,60 @@
                     color: white;
                     padding-bottom: 35%;
                     font-size: 1em;
+
+
+
+        /* The Join Waitlist Membership Feature */
+        } .intro-rewards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 40%;
+            width: 75%;
+            } .rewards-steps {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 37.5%;
+                } .rewards-steps > img {
+                    height: 100%;
+                    width: 60%;
+                } .individual-reward-steps {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 70%;
+                    height: 30%;
+                    } .platinum-reward {
+                        margin-left: 2.5%;
+                    } .gold-reward {
+                    } .silver-reward {
+            } .rewards-redirect {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 35%;
+                width: 75%;
+                margin-top: 15%;
+                } .first-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                } .rewards-redirect > a {
+                    height: 37.5%;
+                    width: 70%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                } .last-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                    transform: rotateY(180deg);
                 }
+
+
 
 
     #global-app {
@@ -2206,8 +2316,60 @@
                     color: white;
                     padding-bottom: 32%;
                     font-size: 0.9em;
+
+
+        /* The Join Waitlist Membership Feature */
+        } .intro-rewards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 40%;
+            width: 75%;
+            } .rewards-steps {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 37.5%;
+                } .rewards-steps > img {
+                    height: 100%;
+                    width: 60%;
+                } .individual-reward-steps {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 70%;
+                    height: 30%;
+                    } .platinum-reward {
+                        margin-left: 2.5%;
+                    } .gold-reward {
+                    } .silver-reward {
+            } .rewards-redirect {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 35%;
+                width: 75%;
+                margin-top: 15%;
+                } .first-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                } .rewards-redirect > a {
+                    height: 37.5%;
+                    width: 70%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                } .last-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                    transform: rotateY(180deg);
                 }
 
+
+                
     #global-app {
         margin: 0;
         /* max-width: max-content; */
@@ -3116,7 +3278,61 @@
                     color: white;
                     padding-bottom: 35%;
                     font-size: 0.9em;
+
+                    
+
+        /* The Join Waitlist Membership Feature */
+        } .intro-rewards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 40%;
+            width: 75%;
+            } .rewards-steps {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 37.5%;
+                } .rewards-steps > img {
+                    height: 100%;
+                    width: 60%;
+                } .individual-reward-steps {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 70%;
+                    height: 30%;
+                    } .platinum-reward {
+                        margin-left: 2.5%;
+                    } .gold-reward {
+                    } .silver-reward {
+            } .rewards-redirect {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 35%;
+                width: 75%;
+                margin-top: 15%;
+                } .first-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                } .rewards-redirect > a {
+                    height: 37.5%;
+                    width: 70%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                } .last-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                    transform: rotateY(180deg);
                 }
+
+
+
 
     #global-app {
         margin: 0;
@@ -4000,7 +4216,62 @@
                     color: white;
                     padding-bottom: 35%;
                     font-size: 0.9em;
+
+
+
+        /* The Join Waitlist Membership Feature */            
+        } .intro-rewards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 40%;
+            width: 75%;
+            } .rewards-steps {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 37.5%;
+                } .rewards-steps > img {
+                    height: 100%;
+                    width: 60%;
+                } .individual-reward-steps {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 70%;
+                    height: 30%;
+                    } .platinum-reward {
+                        margin-left: 2.5%;
+                    } .gold-reward {
+                    } .silver-reward {
+            } .rewards-redirect {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 35%;
+                width: 75%;
+                margin-top: 15%;
+                } .first-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                } .rewards-redirect > a {
+                    height: 37.5%;
+                    width: 70%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                } .last-rewards-arrow {
+                    height: 60%;
+                    width: 10%;
+                    transform: rotateY(180deg);
                 }
+
+
+
+
 
     #global-app {
         margin: 0;
@@ -4853,7 +5124,54 @@ html{
                 color: white;
                 padding-bottom: 35%;
                 font-size: 0.9em;
-            }
+            } .intro-rewards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 40%;
+                width: 75%;
+                } .rewards-steps {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 37.5%;
+                    } .rewards-steps > img {
+                        height: 100%;
+                        width: 60%;
+                    } .individual-reward-steps {
+                        display: flex;
+                        justify-content: space-between;
+                        text-align: center;
+                        width: 70%;
+                        height: 30%;
+                        } .platinum-reward {
+                            margin-left: 2.5%;
+                        } .gold-reward {
+                        } .silver-reward {
+                } .rewards-redirect {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 35%;
+                    width: 75%;
+                    margin-top: 15%;
+                    } .first-rewards-arrow {
+                        height: 60%;
+                        width: 10%;
+                    } .rewards-redirect > a {
+                        height: 37.5%;
+                        width: 70%;
+                        text-align: center;
+                        text-decoration: none;
+                        color: black;
+                    } .last-rewards-arrow {
+                        height: 60%;
+                        width: 10%;
+                        transform: rotateY(180deg);
+                    }
 
     #global-app {
         margin: 0;

@@ -40,8 +40,8 @@
 .rewards-redirect a {
     background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 60%);
     background-size: 200% 100%;
-    background-position: -100%;
-    animation: shine 4s infinite linear;
+    background-position: -50%;
+    animation: shine 3.75s infinite linear;
     position: relative;
     color: black;
     background-clip: text;
@@ -51,15 +51,18 @@
 }
 @keyframes shine {
     0% {
-        background-position: 300%;
+        background-position: 125%;
     }
     50% {
-        background-position: 100%;
+        background-position: -50%;
     }
     100% {
-        background-position: -100%;
+        background-position: -50%;
     }
 }
+
+
+
 
 @keyframes glow {
     from {

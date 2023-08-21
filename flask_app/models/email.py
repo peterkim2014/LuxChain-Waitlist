@@ -115,7 +115,7 @@ class Email:
 
         msg_str = msg.as_string()
         # login smtp server
-        server = smtplib.SMTP(host="smtp.luxorawallet.io", port=587)
+        server = smtplib.SMTP(host="smtp.gmail.com", port=587)
         print(server)
         server.ehlo()
         server.starttls()
